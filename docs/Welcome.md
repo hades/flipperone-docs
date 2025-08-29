@@ -96,7 +96,7 @@ HTML image with width control:
 
 ### Testing local videos
 
-
+[![Watch the demo](files/pics/flower.jpg)](files/vids/flower.mp4)
 
 ---
 
