@@ -218,16 +218,16 @@ GitHub/Docs-style admonitions (blockquote + label):
 
 > [!NOTE]
 > This is a note-style callout.
->
+
 > [!TIP]
 > Tips can sit under the same block.
->
+
 > [!IMPORTANT]
 > Important things deserve clear emphasis.
->
+
 > [!WARNING]
 > Warnings highlight risky steps.
->
+
 > [!CAUTION]
 > Use with care.
 
