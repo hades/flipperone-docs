@@ -231,6 +231,8 @@ GitHub/Docs-style admonitions (blockquote + label):
 > [!CAUTION]
 > Use with care.
 
+> 💡 **Tip:** Remember to save your work often.
+
 Nested blockquote:
 > Outer quote
 >> Inner quote
