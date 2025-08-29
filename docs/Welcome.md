@@ -96,7 +96,7 @@ HTML image with width control:
 
 ### Testing local videos
 
-![Local video](files/vids/flower.mp4 "Local video asset example")
+[![Local video](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")](files/vids/flower.mp)
 
 **HTML5 `<video>` tag:**
 
