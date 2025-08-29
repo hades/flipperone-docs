@@ -94,6 +94,10 @@ HTML image with width control:
 
 [![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
+### Testing local videos
+
+![Local video](files/vids/flower.mp4 "Local video asset example")
+
 **HTML5 `<video>` tag:**
 
 <video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls width="480">
