@@ -74,7 +74,7 @@ Markdown images with alt + title:
 
 Relative image path (may 404 in some viewers):
 
-![Local diagram](./assets/diagram.png "Local asset example")
+![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")
 
 Reference-style image:
 
