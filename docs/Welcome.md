@@ -96,20 +96,7 @@ HTML image with width control:
 
 ### Testing local videos
 
-[![Local video](files/pics/flower.jpg "Local video example")](files/vids/flower.mp4)
 
-**HTML5 `<video>` tag:**
-
-<video src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" controls width="480">
-  Sorry, your browser doesn't support embedded videos.
-</video>
-
-**HTML5 `<audio>` tag:**
-
-<audio controls>
-  <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3" type="audio/mpeg" />
-  Your browser does not support the audio tag.
-</audio>
 
 ---
 
