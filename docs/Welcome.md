@@ -74,7 +74,12 @@ Relative image path:
 
 HTML image with width control:
 
-<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" width="10%" />
+<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" size="60" />
+
+<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" style="width:60px;" />
+
+<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" width="60" />
+
 
 ---
 
@@ -338,5 +343,6 @@ Text
 
 With text
 More text
+
 ![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Even with a local image")
 :::
