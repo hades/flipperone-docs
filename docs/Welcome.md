@@ -22,9 +22,8 @@ Testing markdown syntax and how it's rendered in Archbee.
 - [Details / accordion](#details--accordion)
 - [Math](#math)
 - [Mermaid diagrams](#mermaid-diagrams)
-- [Footnotes](#footnotes)
 - [Rules, escapes, emoji](#rules-escapes-emoji)
-- [Inline HTML test](#inline-html-test)
+- [Archbee syntax](#testing-archbee-syntax)
 
 ---
 
@@ -32,7 +31,7 @@ Testing markdown syntax and how it's rendered in Archbee.
 
 # H1 Heading
 ## H2 Heading
-### H3 Heading
+### H3 Heading <- Can't go any lower
 #### H4 Heading
 
 Paragraph under headings. Line breaks work with two spaces at end.  
@@ -47,25 +46,21 @@ This is a second line.
 - *italic*
 - ***bold italic***
 - ~~strikethrough~~
-- `inline code` 
+- __underline__
+- `inline code`
 - $10^6$
-- $H_2O$
+- ```tex H_2O$ ```
 
 Block of text with soft-wrap and hard-wrap differences.  
-This line intentionally ends with two spaces to force a break.
+This line intentionally ends with two spaces to force a break ```tex H_2O$ ```.
 
 ---
 
 ## Links
 
 - Inline link: [Archbee](https://archbee.com "Archbee site")
-- Reference link: [GitHub][gh]
 - Autolink: <https://example.com>
-- Email: <mailto:hello@example.com>
 - Anchor to a section: [Jump to Tables](#tables)
-- Image-as-a-link: [![Badge demo](files/pics/Flipper_Mobile_App_add_widget.jpg)](https://shields.io)
-
-[gh]: https://github.com "GitHub Home"
 
 ---
 
@@ -75,19 +70,15 @@ Markdown images with alt + title:
 
 ![Remote placeholder banner](https://placehold.co/800x180/png?text=Remote+Banner+800x180 "Remote Banner")
 
-Relative image path (may 404 in some viewers):
+Relative image path:
 
 ![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")
 
 Reference-style image:
 
-![Ref image][ref-img]
-
 HTML image with width control:
 
-<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" width="320" />
-
-[ref-img]: https://placehold.co/640x200?text=Reference+Image
+<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" width="10%" />
 
 ---
 
@@ -125,8 +116,8 @@ Basic table:
 
 | Feature     | Supported | Notes              |
 |-------------|:---------:|--------------------|
-| Bold        | ✅        | `**text**`         |
-| Italic      | ✅        | `*text*`           |
+| Bold        | ✅        | **text**           |
+| Italic      | ✅        | *text*             |
 | Footnotes   | ✅        | See [below](#footnotes) |
 
 Table with images & links:
@@ -222,7 +213,8 @@ GitHub/Docs-style admonitions (blockquote + label):
 > 💡 **Tip:** Remember to save your work often.
 
 :::hint{type="info"}
-Archbee uses its own syntax for callouts.
+### Heading inside a callout###
+Archbee uses its own syntax for callouts. Available styles: info, warning, success, danger.
 :::
 
 ---
@@ -278,15 +270,6 @@ sequenceDiagram
 
 ---
 
-## Footnotes
-
-Here is a statement that needs a footnote.[^1] And another one.[^long]
-
-[^1]: Short footnote text.
-[^long]: This is a longer footnote with **formatting**, links like [example](https://example.com), and even `inline code`.
-
----
-
 ## Rules, escapes, emoji
 
 Horizontal rules:
@@ -302,30 +285,55 @@ Emoji shortcodes: :rocket: :tada: :zap: :warning:
 ---
 # Testing archbee syntax
 
+## Flow with steps
+
 ::::WorkflowBlock
 :::WorkflowBlockItem
-Item 1
+Included subitems
 
 1. Subitem 1
 2. Subitem 2
 :::
 
 :::WorkflowBlockItem
-Item 2
+Added text
+
+Text body
 :::
 
 :::WorkflowBlockItem
-Item 3
+Added image
+
+![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")
 :::
 ::::
+
+## Formula
 
 ```tex
 int_0^infty x^2 dx
 ```
 
+## Callouts
+
 :::hint{type="info"}
 Test
 :::
+
+:::hint{type="success"}
+
+:::
+
+:::hint{type="warning"}
+
+:::
+
+:::hint{type="danger"}
+
+:::
+
+
+## Vertical divider
 
 ::::VerticalSplit{layout="middle"}
 :::VerticalSplitItem
@@ -340,3 +348,13 @@ Text
 Text
 :::
 ::::
+
+## Expandible text
+
+:::ExpandableHeading
+### Expandible heading
+
+With text
+More text
+![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Even with a local image")
+:::
