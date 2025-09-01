@@ -19,7 +19,6 @@ Testing markdown syntax and how it's rendered in Archbee.
 - [Tables](#tables)
 - [Code & syntax highlighting](#code--syntax-highlighting)
 - [Quotes & callouts](#quotes--callouts)
-- [Details / accordion](#details--accordion)
 - [Math](#math)
 - [Mermaid diagrams](#mermaid-diagrams)
 - [Rules, escapes, emoji](#rules-escapes-emoji)
@@ -32,7 +31,6 @@ Testing markdown syntax and how it's rendered in Archbee.
 # H1 Heading
 ## H2 Heading
 ### H3 Heading <- Can't go any lower
-#### H4 Heading
 
 Paragraph under headings. Line breaks work with two spaces at end.  
 This is a second line.
@@ -46,13 +44,12 @@ This is a second line.
 - *italic*
 - ***bold italic***
 - ~~strikethrough~~
-- __underline__
 - `inline code`
 - $10^6$
-- ```tex H_2O$ ```
+- $H_2O$
 
 Block of text with soft-wrap and hard-wrap differences.  
-This line intentionally ends with two spaces to force a break ```tex H_2O$ ```.
+This line intentionally ends with two spaces to force a break.
 
 ---
 
@@ -74,7 +71,6 @@ Relative image path:
 
 ![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")
 
-Reference-style image:
 
 HTML image with width control:
 
@@ -213,23 +209,9 @@ GitHub/Docs-style admonitions (blockquote + label):
 > 💡 **Tip:** Remember to save your work often.
 
 :::hint{type="info"}
-### Heading inside a callout###
+### Heading inside a callout
 Archbee uses its own syntax for callouts. Available styles: info, warning, success, danger.
 :::
-
----
-
-## Details / accordion
-
-<details>
-  <summary>Click to expand details</summary>
-  
-  Hidden content with **bold**, code `x = 42`, and a small list:
-  - Point 1
-  - Point 2
-  
-  Another paragraph.
-</details>
 
 ---
 
