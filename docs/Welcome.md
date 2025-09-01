@@ -71,16 +71,6 @@ Relative image path:
 
 ![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")
 
-
-HTML image with width control:
-
-<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" size="60" />
-
-<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" style="width:60px;" />
-
-<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" width="60" />
-
-
 ---
 
 ## Videos
