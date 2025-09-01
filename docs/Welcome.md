@@ -270,9 +270,9 @@ Inline math: $E=mc^2$ and $\alpha + \beta = \gamma$.
 
 Display math:
 
-$$
+```tex
 \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
-$$
+```
 
 ---
 
