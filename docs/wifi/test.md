@@ -2,34 +2,56 @@
 
 # Learning archbee syntax
 
+## Flow with steps
+
 ::::WorkflowBlock
 :::WorkflowBlockItem
-Item 1
+Included subitems
 
 1. Subitem 1
 2. Subitem 2
 :::
 
 :::WorkflowBlockItem
-Item 2
+Added text
 
 Text body
 :::
 
 :::WorkflowBlockItem
-Item 3
+Added image
 
 ![Local image](files/pics/Flipper_Mobile_App_add_widget.jpg "Local asset example")
 :::
 ::::
 
+## Formula
+
 ```tex
 int_0^infty x^2 dx
 ```
 
+## Callouts
+
 :::hint{type="info"}
 Test
 :::
+
+:::hint{type="success"}
+
+:::
+
+:::hint{type="warning"}
+
+:::
+
+:::hint{type="danger"}
+
+:::
+
+##
+
+## Vertical divider
 
 ::::VerticalSplit{layout="middle"}
 :::VerticalSplitItem
@@ -44,6 +66,12 @@ Text
 Text
 :::
 ::::
+
+:::ExpandableHeading
+### Expandible heading
+
+With text
+:::
 
 Cool, now when a key is pressed in the editor, its corresponding keycode is logged in the console.
 
