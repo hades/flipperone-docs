@@ -14,14 +14,12 @@ Testing markdown syntax and how it's rendered in Archbee.
 - [Text styles](#text-styles)
 - [Links](#links)
 - [Images](#images)
-- [Videos & audio](#videos--audio)
+- [Videos & audio](#videos)
 - [Lists](#lists)
-- [Task lists](#task-lists)
 - [Tables](#tables)
 - [Code & syntax highlighting](#code--syntax-highlighting)
 - [Quotes & callouts](#quotes--callouts)
 - [Details / accordion](#details--accordion)
-- [Definition lists](#definition-lists)
 - [Math](#math)
 - [Mermaid diagrams](#mermaid-diagrams)
 - [Footnotes](#footnotes)
@@ -36,8 +34,6 @@ Testing markdown syntax and how it's rendered in Archbee.
 ## H2 Heading
 ### H3 Heading
 #### H4 Heading
-##### H5 Heading
-###### H6 Heading
 
 Paragraph under headings. Line breaks work with two spaces at end.  
 This is a second line.
@@ -46,7 +42,14 @@ This is a second line.
 
 ## Text styles
 
-Regular text, **bold**, *italic*, ***bold italic***, ~~strikethrough~~, <u>underline (HTML)</u>, `inline code`, <mark>highlight (HTML)</mark>, H~2~O (via HTML: H<sub>2</sub>O), 10^6 (via HTML: 10<sup>6</sup>).
+- Regular text 
+- **bold**
+- *italic*
+- ***bold italic***
+- ~~strikethrough~~
+- `inline code` 
+- $10^6$
+- $H_2O$
 
 Block of text with soft-wrap and hard-wrap differences.  
 This line intentionally ends with two spaces to force a break.
@@ -60,7 +63,7 @@ This line intentionally ends with two spaces to force a break.
 - Autolink: <https://example.com>
 - Email: <mailto:hello@example.com>
 - Anchor to a section: [Jump to Tables](#tables)
-- Image-as-a-link: [![Badge demo](https://img.shields.io/badge/Build-passing-success)](https://shields.io)
+- Image-as-a-link: [![Badge demo](files/pics/Flipper_Mobile_App_add_widget.jpg)](https://shields.io)
 
 [gh]: https://github.com "GitHub Home"
 
@@ -82,21 +85,17 @@ Reference-style image:
 
 HTML image with width control:
 
-<img src="https://placehold.co/320x120?text=HTML+img+320x120" alt="HTML img" width="320" />
+<img src="files/pics/Flipper_Mobile_App_add_widget.jpg" alt="HTML img" width="320" />
 
 [ref-img]: https://placehold.co/640x200?text=Reference+Image
 
 ---
 
-## Videos & audio
+## Videos
 
 **YouTube via linked thumbnail (common Markdown pattern):**
 
 [![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
-
-### Testing local videos
-
-[Watch the demo](files/vids/flower.mp4)
 
 ---
 
@@ -120,16 +119,6 @@ Mixed list:
 
 ---
 
-## Task lists
-
-- [x] Parse Markdown
-- [x] Render tables
-- [ ] Support admonitions
-  - [x] Nested checked item
-  - [ ] Nested unchecked item
-
----
-
 ## Tables
 
 Basic table:
@@ -138,7 +127,6 @@ Basic table:
 |-------------|:---------:|--------------------|
 | Bold        | ✅        | `**text**`         |
 | Italic      | ✅        | `*text*`           |
-| Underline   | ⚠️        | HTML only          |
 | Footnotes   | ✅        | See [below](#footnotes) |
 
 Table with images & links:
@@ -233,9 +221,9 @@ GitHub/Docs-style admonitions (blockquote + label):
 
 > 💡 **Tip:** Remember to save your work often.
 
-Nested blockquote:
-> Outer quote
->> Inner quote
+:::hint{type="info"}
+Archbee uses its own syntax for callouts.
+:::
 
 ---
 
@@ -253,22 +241,11 @@ Nested blockquote:
 
 ---
 
-## Definition lists
-
-Term 1
-: Definition for term 1
-
-Term 2
-: Multi-line definitions are fine.  
-  Second line here.
-
----
-
 ## Math
 
 Inline math: $E=mc^2$ and $\alpha + \beta = \gamma$.
 
-Display math:
+Display math (used Archbee syntax):
 
 ```tex
 \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
@@ -321,20 +298,6 @@ ___
 Escaped characters: \*literal asterisks\*, \_underscores\_, \`backticks\`, \#hash.
 
 Emoji shortcodes: :rocket: :tada: :zap: :warning:
-
----
-
-## Inline HTML test
-
-<kbd>Cmd</kbd> + <kbd>K</kbd> to open link dialog.
-
-<button type="button">HTML Button</button>
-
-<div style="padding:8px;border:1px dashed;">Inline HTML container with <strong>bold</strong> and <em>italic</em>.</div>
-
----
-
-_The end. Back to [top](#archbee--github-markdown-torture-test)._
 
 ---
 # Testing archbee syntax
