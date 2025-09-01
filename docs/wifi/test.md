@@ -12,10 +12,14 @@ Item 1
 
 :::WorkflowBlockItem
 Item 2
+
+Text body
 :::
 
 :::WorkflowBlockItem
 Item 3
+
+![](https://archbee-image-uploads.s3.amazonaws.com/3GUDYkC5JgUWgo6RW8piO-QPKKzO2cEejnGi5UMTpGs-20250901-132622.png)
 :::
 ::::
 
