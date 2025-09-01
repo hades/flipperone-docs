@@ -335,3 +335,45 @@ Emoji shortcodes: :rocket: :tada: :zap: :warning:
 ---
 
 _The end. Back to [top](#archbee--github-markdown-torture-test)._
+
+---
+# Testing archbee syntax
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+Item 1
+
+1. Subitem 1
+2. Subitem 2
+:::
+
+:::WorkflowBlockItem
+Item 2
+:::
+
+:::WorkflowBlockItem
+Item 3
+:::
+::::
+
+```tex
+int_0^infty x^2 dx
+```
+
+:::hint{type="info"}
+Test
+:::
+
+::::VerticalSplit{layout="middle"}
+:::VerticalSplitItem
+**Left side**
+
+Text
+:::
+
+:::VerticalSplitItem
+**Right side**
+
+Text
+:::
+::::
