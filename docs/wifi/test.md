@@ -1,8 +1,45 @@
 # This is wifi/test.md
 
+# Learning archbee syntax
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+Item 1
+
+1. Subitem 1
+2. Subitem 2
+:::
+
+:::WorkflowBlockItem
+Item 2
+:::
+
+:::WorkflowBlockItem
+Item 3
+:::
+::::
+
+```tex
+int_0^infty x^2 dx
+```
+
 :::hint{type="info"}
 Test
 :::
+
+::::VerticalSplit{layout="middle"}
+:::VerticalSplitItem
+**Left side**
+
+Text
+:::
+
+:::VerticalSplitItem
+**Right side**
+
+Text
+:::
+::::
 
 Cool, now when a key is pressed in the editor, its corresponding keycode is logged in the console.
 
