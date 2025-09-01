@@ -73,6 +73,28 @@ Text
 With text
 :::
 
+## Images
+
+Markdown images with alt + title:
+
+![Remote placeholder banner](https://placehold.co/800x180/png?text=Remote+Banner+800x180 "Remote Banner")
+
+Relative image path (may 404 in some viewers):
+
+![Local diagram](./assets/diagram.png "Local asset example")
+
+Reference-style image:
+
+![Ref image][ref-img]
+
+HTML image with width control:
+
+<img src="https://placehold.co/320x120?text=HTML+img+320x120" alt="HTML img" width="320" />
+
+[ref-img]: https://placehold.co/640x200?text=Reference+Image
+
+
+
 Cool, now when a key is pressed in the editor, its corresponding keycode is logged in the console.
 
 Now we want to make it actually change the content. For the purposes of our example, let's implement turning all ampersand, `&`, keystrokes into the word `and` upon being typed.
