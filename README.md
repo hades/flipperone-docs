@@ -1,8 +1,9 @@
-# Flipper One Documentation
-![Flipper One Documentation](https://cdn.flipper.net/flipper-one-blueprint-docs-draft.png)
-
-This repo contains the source files of Flipper One documentation published at https://docs.flipper.net/one
+# Flipper One Documentation Sources 
+This repo contains the source files of Flipper One Developer portal published at https://docs.flipper.net/one
 It's published via Archbee integration.
+
+![Flipper One Developer Portal](https://cdn.flipper.net/flipper-one-developer-portal-splash.jpg)
+
 
 # How to edit? 
 1. Fork this repository
