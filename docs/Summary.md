@@ -1,11 +1,12 @@
-# Table of contents
-
+# Contents
 - [Welcome](Welcome.md)
+- [How to join](general/test.md)
 
-## General Topics
 
-- [General page](general/test.md)
-
-## WiFi Topics
+# Hardware
 
 - [WiFi Info](wifi/test.md)
+
+# Software 
+
+- [text](wifi/test.md)
