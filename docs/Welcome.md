@@ -1,11 +1,13 @@
-# Welcome to the Flipper One Developer Portal
+# Welcome
 
-![Flipper One blueprint draft](https://cdn.flipper.net/flipper-one-blueprint-docs-draft.png)
+**Welcome to the Flipper One Developers Portal** — the main entry point for all open development resources.  
+Flipper One is a community-driven project developing a portable Linux multi-tool for hackers. We develop it publicly, sharing the entire process, challenges we face, and discussing solutions with the community. 
 
-This is the main entry point to Flipper One development resources.  
-Flipper One is a **community-driven project**, and we need your help to build the best portable Linux-based multi-tool for hackers.  
+Anyone can join the development of Flipper One and contribute. Whether you are an engineer, developer, designer, programmer, or even just an enthusiastic user, you’re welcome to take part in the process. To learn how to get involved, see the section How to Join.
 
-Here you’ll find manuals on how to join the development process, links to resources, and ways to contribute.
+![Flipper One development cover](https://cdn.flipper.net/flipper-one-developing-splash.jpg)
+
+
 
 ---
 
