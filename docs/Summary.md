@@ -1,4 +1,3 @@
-# Contents
 - [Welcome](Welcome.md)
 - [How to join](general/test.md)
 
