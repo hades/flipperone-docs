@@ -1,6 +1,5 @@
 - [Welcome](Welcome.md)
-- [How to join](general/test.md)
-
+- [How to join](How-to-join.md)
 
 # Hardware
 
