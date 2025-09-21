@@ -8,91 +8,17 @@ Even if you don’t yet know how to contribute, you may find an interesting task
 
 **TODO: Fix email subscription form**
 
-:::Iframe{iframeHeight="0" code="<iframe width=&#x22;540&#x22; height=&#x22;305&#x22; src=&#x22;https://183c2432.sibforms.com/serve/MUIFAEEwnfX33pTfuV8IPBAsuMSDP1A3kkcufPsMejI4BkbYN3l7ljPR8yg2JH75mXWrSqTclAREHvY4AqwAxktKlYPb8tk02xumYTCfFidnHErzK3vTN4xIlDa0jvtAggB98PbcTrdA-yG6n4wKNbzj_s70CorjVceUA2IVLwHrxfgFd9uyMQtX3d8CMrPntfR_smaWAkbv57Zh&#x22; frameborder=&#x22;0&#x22; scrolling=&#x22;auto&#x22; allowfullscreen style=&#x22;display: block;margin-left: auto;margin-right: auto;max-width: 100%;&#x22;></iframe>"}
-****
-:::
+### Archbee's iframe:
 
-
-
-![](https://183c2432.sibforms.com/serve/MUIFAEEwnfX33pTfuV8IPBAsuMSDP1A3kkcufPsMejI4BkbYN3l7ljPR8yg2JH75mXWrSqTclAREHvY4AqwAxktKlYPb8tk02xumYTCfFidnHErzK3vTN4xIlDa0jvtAggB98PbcTrdA-yG6n4wKNbzj_s70CorjVceUA2IVLwHrxfgFd9uyMQtX3d8CMrPntfR_smaWAkbv57Zh)
-
-
-
-
-
-
-
-
-
-Your subscription could not be saved. Please try again.
-
-You subscribed to Flipper One updates!
-
-**Participate in developing Flipper One**
-
-Subscribe for regular updates on Flipper One’s development and share your feedback as a software, electrical, or mechanical engineer.
-
-Enter your email address
-
-```text
-            <div class="entry__field">
-              <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
-            </div>
-          </div>
-
-          <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-          </label>
-        </div>
-      </div>
-    </div>
-    <div style="padding: 8px 0;">
-      <div class="sib-optin sib-form-block" data-required="true">
-        <div class="form__entry entry_mcq">
-          <div class="form__label-row ">
-            <div class="entry__choice" style="">
-              <label>
-                <input type="checkbox" class="input_replaced" value="1" id="PLEDGE_COLLECTED" name="PLEDGE_COLLECTED" required />
-                <span class="checkbox checkbox_tick_positive"
-        style="margin-left:"
-        ></span><span style="font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;"><p>I agree to receive your newsletters and accept the data privacy statement (<a href="https://flipperzero.one/privacy" target="_blank">flipperzero.one/privacy</a>).</p><span data-required="*" style="display: inline;" class="entry__label entry__label_optin"></span></span> </label>
-            </div>
-          </div>
-          <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-          </label>
-        </div>
-      </div>
-    </div>
-    <div style="padding: 8px 0;">
-      <div class="g-recaptcha-v3" data-sitekey="6LdzXMMrAAAAADISp3g64D0JBU_OMaojdL_lkZpO" style="display: none"></div>
-    </div>
-    <div style="padding: 8px 0;">
-      <div class="sib-form-block" style="text-align: left">
-        <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
-          <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" style="">
-            <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-          </svg>
-          SUBSCRIBE
-        </button>
-      </div>
-    </div>
-
-    <input type="text" name="email_address_check" value="" class="input--hidden">
-    <input type="hidden" name="locale" value="en">
-  </form>
-</div>
-```
-
-
-
-
-
-:::Iframe{code="<script defer src=&#x22;https://sibforms.com/forms/end-form/build/main.js&#x22;></script>"}
-
-:::
-
-:::Iframe{code="<script src=&#x22;https://www.google.com/recaptcha/api.js?render=6LdzXMMrAAAAADISp3g64D0JBU_OMaojdL_lkZpO&hl=en&#x22; async defer></script>"}
+:::Iframe{iframeHeight="0" code="<!-- <p>paste i<iframe width=&#x22;540&#x22; height=&#x22;305&#x22; src=&#x22;https://183c2432.sibforms.com/serve/MUIFAEEwnfX33pTfuV8IPBAsuMSDP1A3kkcufPsMejI4BkbYN3l7ljPR8yg2JH75mXWrSqTclAREHvY4AqwAxktKlYPb8tk02xumYTCfFidnHErzK3vTN4xIlDa0jvtAggB98PbcTrdA-yG6n4wKNbzj_s70CorjVceUA2IVLwHrxfgFd9uyMQtX3d8CMrPntfR_smaWAkbv57Zh&#x22; frameborder=&#x22;0&#x22; scrolling=&#x22;auto&#x22; allowfullscreen style=&#x22;display: block;margin-left: auto;margin-right: auto;max-width: 100%;&#x22;></iframe>frame code here</p> -->"}
 
 :::
 
 
+
+### Archbees HTML:
+
+:::Iframe{iframeHeight="0" code="<!-- Begin Brevo Form --><!-- START - We recommend to place the below code in head tag of your website html  --><style>  @font-face {    font-display: block;    font-family: Roboto;    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format(&#x22;woff2&#x22;), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format(&#x22;woff&#x22;)  }  @font-face {    font-display: fallback;    font-family: Roboto;    font-weight: 600;    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format(&#x22;woff2&#x22;), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format(&#x22;woff&#x22;)  }  @font-face {    font-display: fallback;    font-family: Roboto;    font-weight: 700;    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format(&#x22;woff2&#x22;), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format(&#x22;woff&#x22;)  }  #sib-container input:-ms-input-placeholder {    text-align: left;    font-family: Helvetica, sans-serif;    color: #c0ccda;  }  #sib-container input::placeholder {    text-align: left;    font-family: Helvetica, sans-serif;    color: #c0ccda;  }  #sib-container textarea::placeholder {    text-align: left;    font-family: Helvetica, sans-serif;    color: #c0ccda;  }  #sib-container a {    text-decoration: underline;    color: #2BB2FC;  }</style><link rel=&#x22;stylesheet&#x22; href=&#x22;https://sibforms.com/forms/end-form/build/sib-styles.css&#x22;><!--  END - We recommend to place the above code in head tag of your website html --><!-- START - We recommend to place the below code where you want the form in your website html  --><div class=&#x22;sib-form&#x22; style=&#x22;text-align: center;         background-color: #ffffff;                                 &#x22;>  <div id=&#x22;sib-form-container&#x22; class=&#x22;sib-form-container&#x22;>    <div id=&#x22;error-message&#x22; class=&#x22;sib-form-message-panel&#x22; style=&#x22;font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;&#x22;>      <div class=&#x22;sib-form-message-panel__text sib-form-message-panel__text--center&#x22;>        <svg viewBox=&#x22;0 0 512 512&#x22; class=&#x22;sib-icon sib-notification__icon&#x22;>          <path d=&#x22;M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z&#x22; />        </svg>        <span class=&#x22;sib-form-message-panel__inner-text&#x22;>                          Your subscription could not be saved. Please try again.                      </span>      </div>    </div>    <div></div>    <div id=&#x22;success-message&#x22; class=&#x22;sib-form-message-panel&#x22; style=&#x22;font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;&#x22;>      <div class=&#x22;sib-form-message-panel__text sib-form-message-panel__text--center&#x22;>        <svg viewBox=&#x22;0 0 512 512&#x22; class=&#x22;sib-icon sib-notification__icon&#x22;>          <path d=&#x22;M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z&#x22; />        </svg>        <span class=&#x22;sib-form-message-panel__inner-text&#x22;>                          You subscribed to Flipper One updates!                      </span>      </div>    </div>    <div></div>    <div id=&#x22;sib-container&#x22; class=&#x22;sib-container--large sib-container--vertical&#x22; style=&#x22;text-align:center; background-color:rgba(244,244,244,1); max-width:540px; border-radius:10px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr&#x22;>      <form id=&#x22;sib-form&#x22; method=&#x22;POST&#x22; action=&#x22;https://183c2432.sibforms.com/serve/MUIFAEEwnfX33pTfuV8IPBAsuMSDP1A3kkcufPsMejI4BkbYN3l7ljPR8yg2JH75mXWrSqTclAREHvY4AqwAxktKlYPb8tk02xumYTCfFidnHErzK3vTN4xIlDa0jvtAggB98PbcTrdA-yG6n4wKNbzj_s70CorjVceUA2IVLwHrxfgFd9uyMQtX3d8CMrPntfR_smaWAkbv57Zh&#x22; data-type=&#x22;subscription&#x22;>        <div style=&#x22;padding: 8px 0;&#x22;>          <div class=&#x22;sib-form-block&#x22; style=&#x22;font-size:26px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left&#x22;>            <p><strong>Participate in developing Flipper One</strong></p>          </div>        </div>        <div style=&#x22;padding: 8px 0;&#x22;>          <div class=&#x22;sib-form-block&#x22; style=&#x22;font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent; text-align:left&#x22;>            <div class=&#x22;sib-text-form-block&#x22;>              <p>Subscribe for regular updates on Flipper One’s development and share your feedback as a software, electrical, or mechanical engineer.</p>            </div>          </div>        </div>        <div style=&#x22;padding: 8px 0;&#x22;>          <div class=&#x22;sib-input sib-form-block&#x22;>            <div class=&#x22;form__entry entry_block&#x22;>              <div class=&#x22;form__label-row &#x22;>                <label class=&#x22;entry__label&#x22; style=&#x22;font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;&#x22; for=&#x22;EMAIL&#x22; data-required=&#x22;*&#x22;>Enter your email address</label>                <div class=&#x22;entry__field&#x22;>                  <input class=&#x22;input &#x22; type=&#x22;text&#x22; id=&#x22;EMAIL&#x22; name=&#x22;EMAIL&#x22; autocomplete=&#x22;off&#x22; placeholder=&#x22;EMAIL&#x22; data-required=&#x22;true&#x22; required />                </div>              </div>              <label class=&#x22;entry__error entry__error--primary&#x22; style=&#x22;font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;&#x22;>              </label>            </div>          </div>        </div>        <div style=&#x22;padding: 8px 0;&#x22;>          <div class=&#x22;sib-optin sib-form-block&#x22; data-required=&#x22;true&#x22;>            <div class=&#x22;form__entry entry_mcq&#x22;>              <div class=&#x22;form__label-row &#x22;>                <div class=&#x22;entry__choice&#x22; style=&#x22;&#x22;>                  <label>                    <input type=&#x22;checkbox&#x22; class=&#x22;input_replaced&#x22; value=&#x22;1&#x22; id=&#x22;PLEDGE_COLLECTED&#x22; name=&#x22;PLEDGE_COLLECTED&#x22; required />                    <span class=&#x22;checkbox checkbox_tick_positive&#x22;            style=&#x22;margin-left:&#x22;            ></span><span style=&#x22;font-size:14px; text-align:left; font-family:Helvetica, sans-serif; color:#3C4858; background-color:transparent;&#x22;><p>I agree to receive your newsletters and accept the data privacy statement (<a href=&#x22;https://flipperzero.one/privacy&#x22; target=&#x22;_blank&#x22;>flipperzero.one/privacy</a>).</p><span data-required=&#x22;*&#x22; style=&#x22;display: inline;&#x22; class=&#x22;entry__label entry__label_optin&#x22;></span></span> </label>                </div>              </div>              <label class=&#x22;entry__error entry__error--primary&#x22; style=&#x22;font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;&#x22;>              </label>            </div>          </div>        </div>        <div style=&#x22;padding: 8px 0;&#x22;>          <div class=&#x22;g-recaptcha-v3&#x22; data-sitekey=&#x22;6LdzXMMrAAAAADISp3g64D0JBU_OMaojdL_lkZpO&#x22; style=&#x22;display: none&#x22;></div>        </div>        <div style=&#x22;padding: 8px 0;&#x22;>          <div class=&#x22;sib-form-block&#x22; style=&#x22;text-align: left&#x22;>            <button class=&#x22;sib-form-block__button sib-form-block__button-with-loader&#x22; style=&#x22;font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;&#x22; form=&#x22;sib-form&#x22; type=&#x22;submit&#x22;>              <svg class=&#x22;icon clickable__icon progress-indicator__icon sib-hide-loader-icon&#x22; viewBox=&#x22;0 0 512 512&#x22; style=&#x22;&#x22;>                <path d=&#x22;M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z&#x22; />              </svg>              SUBSCRIBE            </button>          </div>        </div>        <input type=&#x22;text&#x22; name=&#x22;email_address_check&#x22; value=&#x22;&#x22; class=&#x22;input--hidden&#x22;>        <input type=&#x22;hidden&#x22; name=&#x22;locale&#x22; value=&#x22;en&#x22;>      </form>    </div>  </div></div><!-- END - We recommend to place the above code where you want the form in your website html  --><!-- START - We recommend to place the below code in footer or bottom of your website html  --><script>  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';  window.LOCALE = 'en';  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = &#x22;The information provided is invalid. Please review the field format and try again.&#x22;;  window.REQUIRED_ERROR_MESSAGE = &#x22;This field cannot be left blank. &#x22;;  window.GENERIC_INVALID_MESSAGE = &#x22;The information provided is invalid. Please review the field format and try again.&#x22;;  window.translation = {    common: {      selectedList: '{quantity} list selected',      selectedLists: '{quantity} lists selected',      selectedOption: '{quantity} selected',      selectedOptions: '{quantity} selected',    }  };  var AUTOHIDE = Boolean(0);</script><script defer src=&#x22;https://sibforms.com/forms/end-form/build/main.js&#x22;></script><script src=&#x22;https://www.google.com/recaptcha/api.js?render=6LdzXMMrAAAAADISp3g64D0JBU_OMaojdL_lkZpO&hl=en&#x22; async defer></script><!-- END - We recommend to place the above code in footer or bottom of your website html  --><!-- End Brevo Form -->"}
+
+:::
 
