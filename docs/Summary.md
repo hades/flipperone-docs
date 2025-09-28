@@ -18,10 +18,11 @@
 - [FlipCTL](software/FlipCTL.md)
 
 ## 🧪 Testing
-- [Testing](testing/Testing.md)
+- [About Testing](testing/About-Testing.md)
 - [Power](testing/Power.md)
 - [Graphics](testing/Graphics.md)
 - [Network](testing/Network.md)
 
 ## 📚 Resources
-- [Rockchip RK3576](resources/Rockchip-RK3576.md)
+- [Rockchip RK3576](resources/rockchip/Rockchip-RK3576.md)
+  - [RK3576 Boot flow](resources/RK3576-Boot-flow.md)
