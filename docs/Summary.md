@@ -25,4 +25,4 @@
 
 ## 📚 Resources
 - [Rockchip RK3576](resources/rockchip/Rockchip-RK3576.md)
-  - [RK3576 Boot flow](resources/RK3576-Boot-flow.md)
+  - [RK3576 Boot flow](resources/rockchip/RK3576-Boot-flow.md)
