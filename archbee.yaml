@@ -1,5 +1,5 @@
 root: ./docs
 structure:
-  readme: Welcome.md
-  summary: Summary.md
+  readme: ./docs/Welcome.md
+  summary: ./docs/Summary.md
   assets: files
