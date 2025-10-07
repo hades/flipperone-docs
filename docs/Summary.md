@@ -1,5 +1,4 @@
 - [Welcome](Welcome.md)
-
 - [How to join](How-to-join.md)
 - [🚧 Open tasks](Open-tasks.md)
 
