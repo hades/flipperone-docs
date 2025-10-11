@@ -1,3 +1,5 @@
 # About Software
 
-This section covers the software stack and development for Flipper One.
+This section covers the software stack of Flipper One.
+
+TODO: blocks of all software components

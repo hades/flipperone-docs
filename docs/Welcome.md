@@ -7,47 +7,43 @@ Anyone can join the development of Flipper One and contribute. Whether you are a
 
 ![Flipper One developers portal](https://cdn.flipper.net/flipper-one-developer-portal-splash.jpg)
 
-### Why are we doing this?
-We believe in openness and knowledge sharing. From our past experience, we’ve learned that it’s possible to build successful projects in the open — without hiding anything from the community. It’s exciting and fun, and it gives everyone a chance to see what the development of large, complex projects looks like from the inside. We’re proud of our team and the projects we create, and we believe that not only the final result can be great, but the process itself as well. While others hide their work, we turn ours into an open show — and invite you to join.
-
+## Why are we doing this?
+We believe in openness and knowledge sharing. From our past experience, we’ve learned that it’s possible to build successful projects in the open — without hiding anything from the community. It’s exciting and fun, and it gives everyone a chance to see what the development of large, complex projects looks like from the inside. We’re proud of our team and the projects we create, and we believe that not only the final result can be great, but the process itself as well. While others hide their work, we turn ours into an open reality show — and invite you to join.
 
 ---
 
 ## How it works
 
-The Flipper One development process has many parts:  
-- hardware design  
-- mechanics  
-- software  
-- documentation  
+Flipper One development process состоит из множества частей. Все подсистемы устройства мы разрабатываем in-house нашей командой, при этом мы будем делать это публично и показывать сообществу процесс. Любой инженер из сообщества сможет наблюдать за процессом разработки, прокомментировать любое наше решение, предложить свои изменения или даже приосоедениться к нашей команде на full time job.
 
-Each part is described in its own section.  
+Подсистемы разработки Flipper One:
 
-If you’re an expert in a specific area, you can browse the current tasks and see where your skills fit best.  
-Once you find something interesting, you can contribute by editing this wiki, writing code, or sharing your knowledge.
+- **Hardware** — разработка электроники, схемотехники, выбор и верификация электронных компонентов.
+- **Mechanics** — дизайн механических элементов устрйства, кнопки, корпус, крышки и т.д. 
+- **Software** — разработка загрузчика, Linux ядра, драйверов, userspace приложений
+- **Documentation**  — написание технической документации по всем компонентам продукта.
+
+If you’re an expert in a specific area, you can browse the current tasks and see where your skills fit best. Once you find something релевантное для вас, you can contribute by editing this wiki, writing code, or sharing your knowledge.
 
 ---
 
 ## How to join
+1. **Read How to Join**  
+   Check out [How to join](link) manual чтобы как узнать приосоедениться к процессу разрабокти Flipper One.
 
-1. **Subscribe to our mailing list**  
-   You’ll receive regular development updates, usually once a week.  
-   Every week we’ll send out a summary of current progress, open tasks, and updates.
-
-2. **Learn how to edit this wiki**  
-   Contribute directly by improving documentation, adding guides, or updating progress.
-
-3. **Join our community chat**  
-   We’re considering Discord/Matrix for real-time discussions. Stay tuned for the official link.
-
----
-
-## Help needed
-
-Here we will publish open tasks where help from the community is especially needed.  
+2. **Subscribe to our mailing list**  
+   You’ll receive regular development updates, usually once a week. LINK
+   
+3. **Посмотрите Open Task**  
+   Take a look at [🚧 Open tasks](Open-tasks.md) page to see where we need your help
+   
+3. **Join community**  
+   Discord, Twitter
 
 ---
 
 ## Links
-
 We will post regular updates on our social media — follow us to stay up to date.  
+
+* Discord — [discord.gg/flipper](https://discord.gg/flipper)
+* X/Twitter — [@flipper_dev](https://x.com/flipper_dev)
