@@ -1,5 +1,5 @@
 # How to join 
-::Image[]{src="files/pics/community-bw-icon.png" size="30" position="left" caption="Community icon"}
+::Image[]{src="files/pics/community-bw-icon.png" size="30"}
 Flipper One development includes hardware, software, mechanics, ergonomics, design, interfaces, and more. To contribute, choose your area of expertise, check open tasks, and see how you can help. If you’re not sure where to start, subscribe to updates and follow along as a spectator — you may find a topic later where you’d like to join in.
 
 # Subscribe to email list
