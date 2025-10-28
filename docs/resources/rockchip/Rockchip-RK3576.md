@@ -2,8 +2,6 @@
 
 This section contains technical resources and documentation for the Rockchip RK3576 processor used in Flipper One.
 
-
-
 # Maskrom 
 
 In maskrom mode, when miniloader in not loaded in RAM, device does not printing anything in UART.
