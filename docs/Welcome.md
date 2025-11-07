@@ -1,49 +1,120 @@
 # Welcome
 
- **Welcome to the Flipper One Developers Portal** — the main entry point for all open development resources.  
-Flipper One is a community-driven project developing a portable Linux multi-tool for hackers. We develop it publicly, sharing the entire process, challenges we face, and discussing solutions with the community. 
+![Flipper One developers portal banner](https://cdn.flipper.net/Flipper_One_main_page_banner.jpg)
 
-Anyone can join the development of Flipper One and contribute. Whether you are an engineer, developer, designer, programmer, or even just an enthusiastic user, you’re welcome to take part in the process. To learn how to get involved, see the section How to Join.
+Flipper One is a community-driven project that aims to develop a portable Linux multi-tool for hackers. We develop Flipper One publicly, sharing the entire process, challenges we face, and collaborating with the community on solutions.
 
-![Flipper One developers portal](https://cdn.flipper.net/flipper-one-developer-portal-splash.jpg)
+![Flipper One developers portal](https://cdn.flipper.net/Flipper_One_main_page_image%20(1).png)
 
-## Why are we doing this?
-We believe in openness and knowledge sharing. From our past experience, we’ve learned that it’s possible to build successful projects in the open — without hiding anything from the community. It’s exciting and fun, and it gives everyone a chance to see what the development of large, complex projects looks like from the inside. We’re proud of our team and the projects we create, and we believe that not only the final result can be great, but the process itself as well. While others hide their work, we turn ours into an open reality show — and invite you to join.
+:::hint{type="info"}
+**Anyone can join the development of Flipper One!**
+
+Whether you are an engineer, developer, designer, programmer, or even just an enthusiastic user, you're welcome to take part in the process. To learn how to get involved, see [How to Join](How-to-join.md).
+:::
 
 ---
 
+## Why build openly?
+
+- **Share knowledge.** From our past experience, we've learned that it's possible to build successful projects in the open and share knowledge with the community.
+- **Show that creating devices can be fun.** We're showing you every step of how we create Flipper One and making it an open reality show — and invite you to join.
+- **Let the community contribute to the product.** We want to create Flipper One in collaboration with the community and implement their feedback into the final device.
+
+---
 ## How it works
 
-Flipper One development process состоит из множества частей. Все подсистемы устройства мы разрабатываем in-house нашей командой, при этом мы будем делать это публично и показывать сообществу процесс. Любой инженер из сообщества сможет наблюдать за процессом разработки, прокомментировать любое наше решение, предложить свои изменения или даже приосоедениться к нашей команде на full time job.
+The Flipper One development process consists of many areas. All device subsystems are developed in-house by our team. Community members will be able to follow the development process, comment on any of our decisions, suggest their own changes, or even join our team full-time.
 
-Подсистемы разработки Flipper One:
+::::LinkArray
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/qLV0RVELkY1IO-iychEyp-20251103-162353.jpg"}
+### [Hardware](About-Hardware.md)
 
-- **Hardware** — разработка электроники, схемотехники, выбор и верификация электронных компонентов.
-- **Mechanics** — дизайн механических элементов устрйства, кнопки, корпус, крышки и т.д. 
-- **Software** — разработка загрузчика, Linux ядра, драйверов, userspace приложений
-- **Documentation**  — написание технической документации по всем компонентам продукта.
+Development of electronics, circuit design, selection and verification of electronic components.
+:::
 
-If you’re an expert in a specific area, you can browse the current tasks and see where your skills fit best. Once you find something релевантное для вас, you can contribute by editing this wiki, writing code, or sharing your knowledge.
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/ed7Q9INZFgXDzr6fNJced-20251103-162546.jpg"}
+### [Mechanics](Mechanics.md)
+
+Design of the Flipper One's mechanical parts, such as buttons, casing, and covers.
+:::
+
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/YmL63ZYzn4-Ws7A0AHson-20251103-164223.jpg"}
+### [Software](About-Software.md)
+
+Development of the bootloader, Linux kernel, drivers, and userspace applications.
+:::
+
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Lqwz7qx1eFmNQ0th5s_Zu-20251103-170251.jpg"}
+### Documentation
+
+Writing technical documentation for all of Flipper One’s components.
+:::
+::::
+
+:::hint{type="info"}
+If you're an expert in a specific field, you can explore the available tasks to find where your skills are most valuable. Once you discover something relevant to you, you can contribute by editing this wiki, writing code, or sharing your expertise.
+:::
 
 ---
 
-## How to join
-1. **Read How to Join**  
-   Check out [How to join](link) manual чтобы как узнать приосоедениться к процессу разрабокти Flipper One.
+## How to join the development
 
-2. **Subscribe to our mailing list**  
-   You’ll receive regular development updates, usually once a week. LINK
-   
-3. **Посмотрите Open Task**  
-   Take a look at [🚧 Open tasks](Open-tasks.md) page to see where we need your help
-   
-3. **Join community**  
-   Discord, Twitter
+::::WorkflowBlock
+:::WorkflowBlockItem
+**Subscribe to our** [✉️ Mailing list](How-to-join.md)
+You’ll receive regular development updates, usually once a week.
+:::
+
+:::WorkflowBlockItem
+**Read the** [📝 Contribution guide](How-to-join.md)
+There, you will learn how to contribute to the development of Flipper One.
+:::
+
+:::WorkflowBlockItem
+**Review** [🚧 Open tasks](Open-tasks.md)
+This is the place where you can find issues we need help with.
+:::
+
+:::WorkflowBlockItem
+**Follow us on social media**
+Join our communities on [Discord](https://discord.com/invite/flipper) and [X](https://x.com/flipper_zero) to stay up-to-date and share your thoughts with us and others.﻿
+:::
+::::
+
+For more information, visit [How to Join](https://docs.flipper.net/one/how-to-join).
 
 ---
 
 ## Links
-We will post regular updates on our social media — follow us to stay up to date.  
 
-* Discord — [discord.gg/flipper](https://discord.gg/flipper)
-* X/Twitter — [@flipper_dev](https://x.com/flipper_dev)
+::::LinkArray
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/doVC8Airf2_FH2IwVxxAV_monosnap-miro-2023-04-13-19-25-16.png"}
+### [Discord](http://flipperzero.one/discord)
+
+Community chat and voice server
+:::
+
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/rHafxEDRcrYcmsUgyQY8k-20251103-185944.png"}
+### [X (Twitter)](https://x.com/flipper_dev)
+
+Updates and project announcements
+:::
+
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/XtFJi2JWdAqzFyxSrXG98-20251103-185955.png"}
+### [GitHub](https://github.com)
+
+Firmware source code
+:::
+
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/fVimEz8uecJoL_qqmVVFs-20251103-190022.png"}
+### [OnShape](https://www.onshape.com/en/)
+
+3D models of mechanical parts
+:::
+
+:::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/KoQKSyQQcLn6Z7C0fAwtR-20251103-190033.png"}
+### [Altium](https://www.altium.com/)
+
+Schematics of PCBs
+:::
+::::
