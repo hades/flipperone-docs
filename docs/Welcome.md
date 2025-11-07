@@ -27,19 +27,19 @@ The Flipper One development process consists of many areas. All device subsystem
 
 ::::LinkArray
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/qLV0RVELkY1IO-iychEyp-20251103-162353.jpg"}
-### [Hardware](About-Hardware.md)
+### :Link[Hardware]{href="https://docs.flipper.net/one/about-hardware" newTab="true" hasDisabledNofollow="false"}
 
 Development of electronics, circuit design, selection and verification of electronic components.
 :::
 
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/ed7Q9INZFgXDzr6fNJced-20251103-162546.jpg"}
-### [Mechanics](Mechanics.md)
+### :Link[Mechanics]{href="https://docs.flipper.net/one/mechanics" newTab="true" hasDisabledNofollow="false"}
 
 Design of the Flipper One's mechanical parts, such as buttons, casing, and covers.
 :::
 
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/YmL63ZYzn4-Ws7A0AHson-20251103-164223.jpg"}
-### [Software](About-Software.md)
+### :Link[Software]{href="https://docs.flipper.net/one/about-software" newTab="true" hasDisabledNofollow="false"}
 
 Development of the bootloader, Linux kernel, drivers, and userspace applications.
 :::
