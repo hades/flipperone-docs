@@ -4,7 +4,7 @@
 
 Flipper One is a community-driven project that aims to develop a portable Linux multi-tool for hackers. We develop Flipper One publicly, sharing the entire process, challenges we face, and collaborating with the community on solutions.
 
-![Flipper One developers portal](https://cdn.flipper.net/Flipper_One_main_page_image%20(1).png)
+![Flipper One developers portal](https://cdn.flipper.net/flipper-one-developer-portal-splash-cropped.jpg)
 
 :::hint{type="info"}
 **Anyone can join the development of Flipper One!**
