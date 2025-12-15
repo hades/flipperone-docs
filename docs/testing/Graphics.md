@@ -46,7 +46,7 @@ GL_EXTENSIONS = GL_....
 
 # HDMI — Default target
 
-In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-DisplayPort routed to second video out `(vo2)` . So HDMI should support 4K\@120 output and USB-DisplayPort only 1080p.
+In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-DisplayPort routed to second video out `(vo2)` . So HDMI should support 4K\@120 output and USB-C DisplayPort only 1080p.
 
 - Boot device in `Default` boot target with 4k\@120 monitor connected to HDMI&#x20;
 - Check what screen resolution and frame rate are automatically configured&#x20;
@@ -57,33 +57,33 @@ In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-Displa
 - ❌ TODO: Run `HDMI CEC` tests
 - ❌ TODO Run `HDMI Audio` tests
 
-# HDMI — USB-DisplayPort target
+# HDMI — 4K-USB-DisplayPort target
 
-In `USB-DisplayPort` boot target HDMI is routed to second `(vo2)` and USB-DisplayPort routed to main video out `(vo0)` . So HDMI should only support 1080p and USB-DisplayPort should support 4K\@120
+In `4K-USB-DisplayPort` boot target HDMI is routed to second `(vo2)` and USB-C DisplayPort routed to main video out `(vo0)` . So HDMI should only support 1080p and USB-C DisplayPort should support 4K\@120
 
-- Boot device in `USB-DisplayPort` boot target with 4k\@120 monitor connected to HDMI&#x20;
+- Boot device in `4K-USB-DisplayPort` boot target with 4k\@120 monitor connected to HDMI&#x20;
 - Check what screen resolution and frame rate are automatically configured&#x20;
   **Expected: FullHD\@60hz**
 - Run `GPU driver performance` tests
 - ❌ TODO: Run `HDMI CEC` tests
 - ❌ TODO Run `HDMI Audio` tests
 
-# USB-DisplayPort —  Default target
+# USB-DisplayPort — Default target
 
-In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-DisplayPort routed to second video out `(vo2)` . So HDMI should support 4K\@120 output and USB-DisplayPort only 1080p.
+In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-C DisplayPort routed to second video out `(vo2)` . So HDMI should support 4K\@120 output and USB-C DisplayPort only 1080p.
 
-- Boot device in `USB-DisplayPort` boot target with 4k\@120 monitor connected to USB-DisplayPort over USB Type-C cable&#x20;
+- Boot device in `4K-USB-DisplayPort` boot target with 4k\@120 monitor connected to USB-C DisplayPort over USB Type-C cable&#x20;
 - Check screen resolution and frame rate automatically configured.&#x20;
   **Expected: 1080\@60hz???**
   **⚠️ Currently failed&#x20;**
 - Run `GPU driver performance` tests
 - ❌ TODO: Test USB device (mouse+keyboard) connected to monitor USB hub
 
-# USB-C Display Port —  USB-DisplayPort target
+# USB-C Display Port —  4K-USB-DisplayPort target
 
-In `USB-DisplayPort` boot target HDMI is routed to second video out `(vo2)` and USB-DisplayPort routed to second video out `(vo0)` . So HDMI should support 4K\@120 output and USB-DisplayPort only 1080p.
+In `4K-USB-DisplayPort` boot target HDMI is routed to second video out `(vo2)` and USB-C DisplayPort routed to second video out `(vo0)` . So HDMI should support 4K\@120 output and USB-C DisplayPort only 1080p.
 
-- Boot device in `USB-DisplayPort` boot target with 4k\@120 monitor connected to USB-DisplayPort over USB Type-C cable&#x20;
+- Boot device in `4K-USB-DisplayPort` boot target with 4k\@120 monitor connected to USB-C DisplayPort over USB Type-C cable&#x20;
 - Check screen resolution and frame rate automatically configured.&#x20;
   **Expected: 1080\@60hz???**
   **⚠️ Currently failed&#x20;**
