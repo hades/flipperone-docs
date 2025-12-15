@@ -90,7 +90,7 @@ In `USB-DisplayPort` boot target HDMI is routed to second video out `(vo2)` and 
 - Run `GPU driver performance` tests
 - ❌ TODO: Test USB device (mouse+keyboard) connected to monitor USB hub
 
-# NO Graphics  target
+# NO Graphics target
 
 In `NO Graphics` boot target HDMI and USB-DisplayPort are null-routed and not connected to any video core. So no video output should work
 
