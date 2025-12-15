@@ -19,6 +19,7 @@
 
 ## 🧪 Testing
 - [About Testing](testing/About-Testing.md)
+- [General](testing/General.md)
 - [Power](testing/Power.md)
 - [Graphics](testing/Graphics.md)
 - [Network](testing/Network.md)
