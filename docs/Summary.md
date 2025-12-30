@@ -22,7 +22,7 @@
 - [General](testing/General.md)
 - [Power](testing/Power.md)
 - [Graphics](testing/Graphics.md)
-    - (Video decoding)(testing/Video-decoding.md)
+    - [Video decoding](testing/Video-decoding.md)
 - [Network](testing/Network.md)
 
 ## 📚 Resources
