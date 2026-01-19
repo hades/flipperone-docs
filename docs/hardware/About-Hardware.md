@@ -2,17 +2,17 @@
 This section covers the hardware development of Flipper One. It includes the electronics (PCB, schematics) and mechanical (case, assembly, buttons) design. 
 
 ###  Electronics Schematics
-Электрические схемы всех плат Flipper One TODO: INTERNAL LINK TO Schematics.md 
+Electrical schematics of all Flipper One boards. TODO: INTERNAL LINK TO Schematics.md
 
 ### Mechanics 
-Механический дизайн внещних поверхностей поверхностей лицевой панели и задней крышки с модулями Flipper One. 
+Mechanical design of the external surfaces of the front panel and rear cover with Flipper One modules.
 
 ### Modules
-Модули для Flipper One разделенные на две категории: GPIO и M.2 модули 
+Modules for Flipper One, divided into two categories: GPIO and M.2 modules.
 
 #### GPIO modules
-GPIO модули подключаются через внешний GPIO порт на задней панели без необходимости открывать крышку.  Это DIY модули для энтузиастов, которые можно изготовить на макетной плате из готовых компонентов
+GPIO modules connect via the external GPIO port on the rear panel without the need to open the cover. These are DIY modules for enthusiasts that can be built on a prototyping board using off-the-shelf components.
 
 #### M.2 modules
-M.2 модули — это платы расширения в форм-факторе M.2 (раньше назывался NGFF), такие модули часто используется в ноутбуках и промышленных компьютерах. В этом формате часто бывают SSD диски, Cellular modems, WiFi adapters, SDR radios and more. Flipper 
+M.2 modules are expansion boards in the M.2 form factor (formerly called NGFF). Such modules are often used in laptops and industrial computers. In this format, you commonly find SSD drives, cellular modems, Wi-Fi adapters, SDR radios, and more.
 
