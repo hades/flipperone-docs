@@ -1,10 +1,10 @@
 # About Hardware
 
-This section covers the hardware development of Flipper One. It includes the electronics (PCB, schematics) and mechanical (case, assembly, buttons) design.
+This section covers the hardware development of Flipper One. It includes the electronics (PCB, schematics) and mechanical (case, assembly, buttons) design.&#x20;
 
 # Tech specs
 
-TODO: Finalize naming, description and tech specs of controls, ports and interfaces
+TODO: Finalize naming, description and tech specs of controls, ports and interfaces&#x20;
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/L9hw7RZXHbTHmSLBySl3x_flipperone-controls-and-indicators-v003.png)
 
@@ -22,16 +22,26 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   <tr>
     <td align="center">
       <p><strong>PTT Button</strong></p>
-      <p>🎤︎︎</p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/xsFRd7Ahws8dSdVisqNsB-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left">
-      <p>Push-to-talk button to activate microphone in walkie-talkie mode, for voice control and more. ⚠️ Since this is software button that can be overrided in application there is a big chance that this button will be used in many different usecases beyond the microphone. </p>
+      <p>Push-to-talk button to activate microphone in walkie-talkie mode, for voice control and more.</p>
+      <p>⚠️ Since this is software button that can be overrided in application there is a big chance that this button will be used in many different usecases beyond the microphone.</p>
       <p>TODO: choose more general icon, not microphone</p>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
+    </td>
+    <td>
     </td>
   </tr>
   <tr>
     <td align="center">
       <p><strong>Touchpad</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/JP__awtzIDsLFT4Nb-nco-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left">
       <p>Touchpad for on-screen keyboard and menu navigation, content scrolling. Support horizontal and vertical scroll. Most likely will be always duplicate D-pad navigation and will be used for quick move in long lists.</p>
@@ -39,37 +49,41 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   </tr>
   <tr>
     <td align="center">
-      <p><strong>Escape button</strong></p>
-      <p>╳</p>
+      <p><strong>Escape button </strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/6Xjs07cOI-ba4BxRR7EO0-20260122-124532.svg" alt=""></p>
+      <p></p><div></div><p></p>
     </td>
     <td align="left">
-      <p>App defined button. Recommended UI actions: cancel, stop, pause, breake, abort, back, discard.</p>
-      <p>TODO: finalize name? </p>
+      <p>App defined button</p>
+      <p>Recommended UI actions: cancel, stop, pause, breake, abort, back, discard.</p>
+      <p>TODO: finalize name?</p>
     </td>
   </tr>
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>View button</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/rDgkRg_dF9IFOgihFVzjh-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>App defined button. Recommended UI actions: help, search, view, </p>
-      <p>TODO: finalize icon and name </p>
+      <p>App defined button</p>
+      <p>Recommended UI actions: help, search, view,</p>
+      <p>TODO: finalize icon and name</p>
     </td>
   </tr>
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>Power button</strong></p>
-      <p>+ </p>
-      <p><strong>Power LED</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Wajayyyz7n7hH5qMcgFR3-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>Control device modes, turn ON/OFF, boot OS. </p>
+      <p>Control device modes, turn ON/OFF, boot OS.</p>
       <p>TODO: Full description needed. What long press do? LED colors and modes. Only soft button or connected to some hardware triggers?</p>
     </td>
   </tr>
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>Edit button</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Z8AnX2Jf40l1Zop7HwdWE-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
       <p>App defined button. Recommended UI actions: more, edit, extra, config, rename.</p>
@@ -78,6 +92,7 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>Run button</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/7V284sTkyMo-Kh8iEm5FU-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
       <p>App defined button. Recommended UI actions: start, run, enter, save</p>
@@ -86,14 +101,16 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>App Switcher</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/QSbhOJEmg3J-QEZEoJ9Hf-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>ALT+TAB like button, list all opened apps windows. Works only inside runned Linux, not in MCU mode? </p>
+      <p>ALT+TAB like button, list all opened apps windows. Works only inside runned Linux, not in MCU mode?</p>
     </td>
   </tr>
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>Back button</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/isUzdRsHTCEmLK39viMeA-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
       <p>Back, exit in menus and apps.</p>
@@ -102,6 +119,7 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   <tr>
     <td align="center" colSpan="1" rowSpan="1">
       <p><strong>D-pad</strong></p>
+      <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/8ws4ll4i12rS5doBU3TeK-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
       <p>Main navigation D-pad with 5-buttons: UP, DOWN, LEFT, RIGHT and OK in center.</p>
@@ -140,9 +158,9 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
     <td>
       <p>Analog stereo audio out + microphone input.</p>
       <p>TODO: better name (3.5 Audio Jack? Audio Jack? 3.5 Jack?). Full tech spec:</p>
-      <p>TRRS: what? </p>
+      <p>TRRS: what?</p>
       <p>Needs Pinout + compatible male jacks schematics</p>
-      <p>What I can connect? </p>
+      <p>What I can connect?</p>
     </td>
   </tr>
   <tr>
@@ -155,7 +173,7 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   </tr>
   <tr>
     <td colSpan="1" rowSpan="1">
-      <p><strong>USB-C </strong></p>
+      <p><strong>USB-C</strong></p>
     </td>
     <td colSpan="1" rowSpan="1">
       <p>TODO: better name, full tech spec</p>
@@ -242,4 +260,4 @@ GPIO modules connect via the external GPIO port on the rear panel without the ne
 
 ### M.2 modules
 
-M.2 modules are expansion boards in the M.2 form factor (formerly called NGFF). Such modules are often used in laptops and industrial computers. In this format, you commonly find SSD drives, cellular modems, Wi-Fi adapters, SDR radios, and more.
+M.2 modules are expansion boards in the M.2 form factor (formerly called NGFF). Such modules are often used in laptops and industrial computers. In this format, you commonly find SSD drives, cellular modems, Wi-Fi adapters, SDR radios, and more.&#x20;

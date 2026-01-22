@@ -1,75 +1,77 @@
 # Markup Example
 
-This page contains examples of markup that can be used in this wiki.  
+This page contains examples of markup that can be used in this wiki.
 It supports basic **Markdown**, but also includes some **Archbee-specific syntax**.
 
-This wiki is powered by the [Archbee documentation system](https://archbee.com) and is connected to the public GitHub repository [github.com/flipperdevices/flipper-one-docs](https://github.com/flipperdevices/flipper-one-docs).  
+This wiki is powered by the [**Archbee documentation system**](https://archbee.com) and is connected to the public GitHub repository [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs).
 That means anyone can suggest edits to any page, and once the Flipper team approves them, the changes will appear in this documentation.
 
 ## GitHub Sources
 
-The source files for this wiki are stored in the [github.com/flipperdevices/flipper-one-docs](https://github.com/flipperdevices/flipper-one-docs).  
-To edit any page, create a **pull request** with your changes: [FIX How to make a pull request to this wiki](LINK).
+The source files for this wiki are stored in the [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs).
+To edit any page, create a **pull request** with your changes: [**FIX How to make a pull request to this wiki**]().
 
 Each time a change is committed to the GitHub repository, the wiki is automatically rebuilt and updated on the website.
 
 # Archbee Markup
 
-This wiki supports **Markdown** formatting, but not all features are available.  
+This wiki supports **Markdown** formatting, but not all features are available.
 In some cases, you’ll need to use **Archbee-specific tags**.
 
-
 **Quick jump:**
-- [Headings](#headings)
-- [Text styles](#text-styles)
-- [Links](#links)
-- [Images](#images)
-- [Videos & audio](#videos)
-- [Lists](#lists)
-- [Tables](#tables)
-- [Code & syntax highlighting](#code--syntax-highlighting)
-- [Quotes & callouts](#quotes--callouts)
-- [Math](#math)
-- [Mermaid diagrams](#mermaid-diagrams)
-- [Rules, escapes, emoji](#rules-escapes-emoji)
-- [Archbee syntax](#testing-archbee-syntax)
 
----
+- [**Headings**](./#headings)
+- [**Text styles**](./#text-styles)
+- [**Links**](./#links)
+- [**Images**](./#images)
+- [**Videos & audio**](./#videos)
+- [**Lists**](./#lists)
+- [**Tables**](./#tables)
+- [**Code & syntax highlighting**](./#code--syntax-highlighting)
+- [**Quotes & callouts**](./#quotes--callouts)
+- [**Math**](./#math)
+- [**Mermaid diagrams**](./#mermaid-diagrams)
+- [**Rules, escapes, emoji**](./#rules-escapes-emoji)
+- [**Archbee syntax**](./#testing-archbee-syntax)
+
+***
 
 ## Headings
 
 # H1 Heading
-## H2 Heading
-### H3 Heading <- Can't go any lower
 
-Paragraph under headings. Line breaks work with two spaces at end.  
+## H2 Heading
+
+### H3 Heading \<- Can't go any lower
+
+Paragraph under headings. Line breaks work with two spaces at end.
 This is a second line.
 
----
+***
 
 ## Text styles
 
-- Regular text 
+- Regular text
 - **bold**
 - *italic*
 - ***bold italic***
 - ~~strikethrough~~
 - `inline code`
 - $10^6$
-- $H_2O$
+- $H\_2O$
 
-Block of text with soft-wrap and hard-wrap differences.  
+Block of text with soft-wrap and hard-wrap differences.
 This line intentionally ends with two spaces to force a break.
 
----
+***
 
 ## Links
 
-- Inline link: [Archbee](https://archbee.com "Archbee site")
-- Autolink: <https://example.com>
-- Anchor to a section: [Jump to Tables](#tables)
+- Inline link: [**Archbee**](https://archbee.com)
+- Autolink: [**https://example.com**](https://example.com)
+- Anchor to a section: [**Jump to Tables**](./#tables)
 
----
+***
 
 ## Images
 
@@ -87,63 +89,139 @@ The only way to resize image is archbee syntax:
 
 `::Image[]{src="files/pics/test-image.jpg" size="40" position="left" caption="This is caption of text image, resized to 40 px ang alignet to left"}`
 
-::Image[]{src="files/pics/test-image.jpg" size="40" position="left" caption="This is caption of text image, resized to 40 px ang alignet to left"}
+::Image[]{src="files/pics/test-image.jpg" size="40" position="left" caption="This is caption of text image, resized to 40 px ang alignet to left" sha="793d70a667b264bda4823ee16319f78736d5e070" initialPath="files/pics/test-image.jpg" githubPath="docs/files/pics/test-image.jpg" width="1200" height="630" darkWidth="1200" darkHeight="630"}
 
-
----
+***
 
 ## Videos
 
 **YouTube via linked thumbnail (common Markdown pattern):**
 
-[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+::embed[[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
 
----
+***
 
 ## Lists
 
 Unordered list:
+
 - Item A
   - Nested A.1
     - Nested A.1.a
 - Item B
 
 Ordered list (start at 3):
-3. Three
-4. Four
-5. Five
+3\. Three
+4\. Four
+5\. Five
 
 Mixed list:
+
 - First
+
 1. Second (numbered inside bullets)
+
 - Third
 
----
+***
 
 ## Tables
 
 Basic table:
 
-| Feature     | Supported | Notes              |
-|-------------|:---------:|--------------------|
-| Bold        | ✅        | **text**           |
-| Italic      | ✅        | *text*             |
-| Footnotes   | ✅        | See [below](#footnotes) |
+<table isTableHeaderOn="true" columnWidths="[object Object]">
+  <tr>
+    <td>
+      <p>Feature</p>
+    </td>
+    <td align="center">
+      <p>Supported</p>
+    </td>
+    <td>
+      <p>Notes</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Bold</p>
+    </td>
+    <td align="center">
+      <p>✅</p>
+    </td>
+    <td>
+      <p><strong>text</strong></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Italic</p>
+    </td>
+    <td align="center">
+      <p>✅</p>
+    </td>
+    <td>
+      <p><em>text</em></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p>Footnotes</p>
+    </td>
+    <td align="center">
+      <p>✅</p>
+    </td>
+    <td>
+      <p>See <a href=""><strong>below</strong></a></p>
+    </td>
+  </tr>
+</table>
 
 Table with images & links:
 
-| Avatar | User            | Link                                 |
-|:------:|-----------------|--------------------------------------|
-| ![](https://placehold.co/48x48) | **Alice**         | [Profile](https://example.com/alice) |
-| ![](https://placehold.co/48x48) | **Bob**           | [Website](https://example.com)       |
+<table isTableHeaderOn="true" columnWidths="[object Object]">
+  <tr>
+    <td align="center">
+      <p>Avatar</p>
+    </td>
+    <td>
+      <p>User</p>
+    </td>
+    <td>
+      <p>Link</p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p><img src="https://placehold.co/48x48" alt=""></p>
+    </td>
+    <td>
+      <p><strong>Alice</strong></p>
+    </td>
+    <td>
+      <p><a href="https://example.com/alice"><strong>Profile</strong></a></p>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <p><img src="https://placehold.co/48x48" alt=""></p>
+    </td>
+    <td>
+      <p><strong>Bob</strong></p>
+    </td>
+    <td>
+      <p><a href="https://example.com"><strong>Website</strong></a></p>
+    </td>
+  </tr>
+</table>
 
----
+***
 
 ## Code & syntax highlighting
 
 Inline: `const hi = "world";`
 
 Fenced (JavaScript):
+
 ```javascript
 export function greet(name) {
   return `Hello, ${name}!`;
@@ -152,6 +230,7 @@ console.log(greet("Archbee"));
 ```
 
 Fenced (Python):
+
 ```python
 def fib(n):
     a, b = 0, 1
@@ -165,6 +244,7 @@ print(fib(10))
 ```
 
 Fenced (Bash):
+
 ```bash
 #!/usr/bin/env bash
 set -euo pipefail
@@ -172,6 +252,7 @@ curl -I https://archbee.com
 ```
 
 Diff block:
+
 ```diff
 + Added line
 - Removed line
@@ -179,6 +260,7 @@ Diff block:
 ```
 
 JSON block:
+
 ```json
 {
   "name": "archbee-md-test",
@@ -188,6 +270,7 @@ JSON block:
 ```
 
 YAML block:
+
 ```yaml
 name: archbee-md-test
 on:
@@ -195,39 +278,54 @@ on:
     branches: [ main ]
 ```
 
----
+***
 
 ## Quotes & callouts
 
 Regular blockquote:
 
-> “Documentation is a love letter that you write to your future self.” — Damian Conway
+:::BlockQuote
+“Documentation is a love letter that you write to your future self.” — Damian Conway
+:::
 
 GitHub/Docs-style admonitions (blockquote + label):
 
-> [!NOTE]
-> This is a note-style callout.
+:::BlockQuote
+\[!NOTE]
+This is a note-style callout.
+:::
 
-> [!TIP]
-> Tips can sit under the same block.
+:::BlockQuote
+\[!TIP]
+Tips can sit under the same block.
+:::
 
-> [!IMPORTANT]
-> Important things deserve clear emphasis.
+:::BlockQuote
+\[!IMPORTANT]
+Important things deserve clear emphasis.
+:::
 
-> [!WARNING]
-> Warnings highlight risky steps.
+:::BlockQuote
+\[!WARNING]
+Warnings highlight risky steps.
+:::
 
-> [!CAUTION]
-> Use with care.
+:::BlockQuote
+\[!CAUTION]
+Use with care.
+:::
 
-> 💡 **Tip:** Remember to save your work often.
+:::BlockQuote
+💡 **Tip:** Remember to save your work often.
+:::
 
 :::hint{type="info"}
 ### Heading inside a callout
+
 Archbee uses its own syntax for callouts. Available styles: info, warning, success, danger.
 :::
 
----
+***
 
 ## Math
 
@@ -239,7 +337,7 @@ Display math (used Archbee syntax):
 \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
 ```
 
----
+***
 
 ## Mermaid diagrams
 
@@ -264,21 +362,24 @@ sequenceDiagram
   S-->>U: Renders page
 ```
 
----
+***
 
 ## Rules, escapes, emoji
 
 Horizontal rules:
 
----
 ***
-___
 
-Escaped characters: \*literal asterisks\*, \_underscores\_, \`backticks\`, \#hash.
+***
 
-Emoji shortcodes: :rocket: :tada: :zap: :warning:
+***
 
----
+Escaped characters: \*literal asterisks\*, \_underscores\_, \`backticks\`, #hash.
+
+Emoji shortcodes: 🚀 🎉 ⚡ ⚠️
+
+***
+
 # Testing archbee syntax
 
 ## Flow with steps
@@ -328,7 +429,6 @@ Test
 
 :::
 
-
 ## Vertical divider
 
 ::::VerticalSplit{layout="middle"}
@@ -356,3 +456,12 @@ More text
 ![Local image](files/pics/test-image.jpg "Even with a local image")
 :::
 
+***
+
+# Testing colored text
+
+Text without color
+
+Colored text (regular)
+
+Colored text (bold)
