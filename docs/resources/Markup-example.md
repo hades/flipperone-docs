@@ -97,7 +97,7 @@ The only way to resize image is archbee syntax:
 
 **YouTube via linked thumbnail (common Markdown pattern):**
 
-::embed[[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+::embed[[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
 
 ***
 
@@ -462,7 +462,7 @@ More text
 
 Text without color
 
-Colored text (regular)
+
 
 Colored text (bold)
 
