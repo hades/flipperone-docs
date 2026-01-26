@@ -24,6 +24,7 @@
 - [Graphics](testing/Graphics.md)
     - [Video decoding](testing/Video-decoding.md)
 - [Network](testing/Network.md)
+- [M.2 Modules])(testing/M_2.md)
 
 ## 📚 Resources
 - [Rockchip RK3576](resources/rockchip/Rockchip-RK3576.md)
