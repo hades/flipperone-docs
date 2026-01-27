@@ -2,7 +2,7 @@
 
 This section contains the electrical schematics of Flipper One. They are published in the format ???
 
-The source files are located in the repository: 
+The source files are located in the repository:
 
 Flipper One runs on two controllers—one of them is a SoC (system-on-chip) with Linux inside, to which all interfaces are connected—Wi-Fi, Bluetooth, Ethernet, USB, HDMI, M2 connector, SD card.
 
@@ -23,8 +23,6 @@ The following are connected to the internal hub: wifi/bt, lines on the m2 connec
 The controller can be either a USB device or a USB host, so the side connector can perform both of these roles, while the hub is only a host, so only devices can be connected to the upper USB ports.
 
 The controller can also use USB Type-C alt mode, in which case a DisplayPort appears in the connector instead of USB.
-
-
 
 ## Main block scheme
 
@@ -66,26 +64,26 @@ Flipper One has several USB ports available to the user: one on the side and two
 
 The port on the side is the main one. It is the most functional: it has PD input and output with different voltages, it can work as both a host and a device (you can connect devices to it and connect it to other devices, such as laptops), and it can switch to Display Port mode to show the image on a connected monitor.
 
-<table isTableHeaderOn="true" selectedColumns="" selectedRows="" columnWidths="[object Object]">
+<table isTableHeaderOn="true" columnWidths="[object Object]">
   <tr>
-    <td align="left" lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)">
+    <td lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)" align="left">
     </td>
-    <td align="left" lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)">
+    <td lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)" align="left">
       <p>Power</p>
     </td>
-    <td align="left" lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)">
+    <td lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)" align="left">
       <p>USB</p>
     </td>
-    <td align="left" lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)">
+    <td lightBackgroundColor="rgb(242, 243, 245)" darkBackgroundColor="rgb(242, 243, 245)" align="left">
       <p>Role</p>
     </td>
   </tr>
   <tr>
     <td align="left">
-      <p>⬅ Side USB-C [</p><div>SCH</div>]<p></p>
+      <p>⬅ Side USB-C [SCH]</p>
     </td>
     <td align="left">
-      <p>PD 5-24V input-output </p>
+      <p>PD 5-24V input-output</p>
     </td>
     <td align="left">
       <p>3.1+2.0</p>
@@ -97,7 +95,9 @@ The port on the side is the main one. It is the most functional: it has PD input
   </tr>
   <tr>
     <td align="left">
-      <p><em>⬆</em> Top USB-C [</p><div>SCH</div>]<p></p>
+      <p>]</p>
+      <p><em>⬆</em> Top USB-C [</p>
+      <p>SCH</p>
     </td>
     <td align="left">
       <p>PD 5v</p>
@@ -111,7 +111,9 @@ The port on the side is the main one. It is the most functional: it has PD input
   </tr>
   <tr>
     <td align="left">
-      <p><em>⬆</em> Top USB-A [</p><div>SCH</div>]<p></p>
+      <p>]</p>
+      <p><em>⬆</em> Top USB-A [</p>
+      <p>SCH</p>
     </td>
     <td align="left">
       <p>5v</p>
@@ -125,7 +127,9 @@ The port on the side is the main one. It is the most functional: it has PD input
   </tr>
   <tr>
     <td align="left">
-      <p>USB in GPIO connector [</p><div>SCH</div>]<p></p>
+      <p>]</p>
+      <p>USB in GPIO connector [</p>
+      <p>SCH</p>
     </td>
     <td align="left">
       <p>3.3/5V power on connector</p>
@@ -139,7 +143,9 @@ The port on the side is the main one. It is the most functional: it has PD input
   </tr>
   <tr>
     <td align="left">
-      <p>USB in M.2 connector [</p><div>SCH</div>]<p></p>
+      <p>]</p>
+      <p>USB in M.2 connector [</p>
+      <p>SCH</p>
     </td>
     <td align="left">
       <p>3.3V power on connector</p>
