@@ -2,6 +2,10 @@
 - [How to join](How-to-join.md)
 - [🚧 Open tasks](Open-tasks.md)
 
+## General 
+- [Tech Specs](general/Tech-Specs.md)
+- [Features](general/Features.md)
+
 ## ⚙️ Hardware
 - [About Hardware](hardware/About-Hardware.md)
 - [Schematics](hardware/Schematics.md)
