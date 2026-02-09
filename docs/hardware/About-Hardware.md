@@ -49,7 +49,7 @@ TODO: Finalize naming, description and tech specs of controls, ports and interfa
   </tr>
   <tr>
     <td align="center">
-      <p><strong>Escape button</strong></p>
+      <p><strong>ESC button</strong></p>
       <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/6Xjs07cOI-ba4BxRR7EO0-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left">
@@ -167,7 +167,7 @@ Some buttons and their combinations have hardware-defined behavior that does not
       <p><strong>Power ON</strong></p>
     </td>
     <td align="left">
-      <p>Hold <code>Power</code> button for 1 sec to turn ON device from Power OFF. </p>
+      <p>Hold <code>Power</code> button for 1 sec to turn ON device from Power OFF.</p>
       <p>First turn ON from transport mode is the same Power ON. Connecting USB to charging port also Power ON the device.</p>
     </td>
   </tr>
