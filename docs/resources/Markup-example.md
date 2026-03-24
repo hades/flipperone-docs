@@ -1,10 +1,15 @@
-# Markup Example
+---
+title: Markup Example
+docTags: 
+createdAt: Mon Feb 09 2026 20:59:11 GMT+0000 (Coordinated Universal Time)
+updatedAt: Tue Mar 24 2026 17:32:44 GMT+0000 (Coordinated Universal Time)
+---
 
 This page contains examples of markup that can be used in this wiki.
 It supports basic **Markdown**, but also includes some **Archbee-specific syntax**.
 
 This wiki is powered by the [**Archbee documentation system**](https://archbee.com) and is connected to the public GitHub repository [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs).
-That means anyone can suggest edits to any page, and once the Flipper team approves them, the changes will appear in this documentation.
+That means anyone can suggest edits to any page, and once the Flipper team approves them, the changes will appear in this documentation.&#x20;
 
 ## GitHub Sources
 
@@ -89,7 +94,7 @@ The only way to resize image is archbee syntax:
 
 `::Image[]{src="files/pics/test-image.jpg" size="40" position="left" caption="This is caption of text image, resized to 40 px ang alignet to left"}`
 
-::Image[]{src="files/pics/test-image.jpg" size="40" position="left" caption="This is caption of text image, resized to 40 px ang alignet to left" sha="793d70a667b264bda4823ee16319f78736d5e070" initialPath="files/pics/test-image.jpg" githubPath="docs/files/pics/test-image.jpg" width="1200" height="630" darkWidth="1200" darkHeight="630"}
+::Image[]{src="files/pics/test-image.jpg" size="40" position="flex-start" caption="This is caption of text image, resized to 40 px ang alignet to left" sha="793d70a667b264bda4823ee16319f78736d5e070" initialPath="files/pics/test-image.jpg" githubPath="docs/files/pics/test-image.jpg" width="1200" height="630" darkWidth="1200" darkHeight="630"}
 
 ***
 
@@ -97,7 +102,7 @@ The only way to resize image is archbee syntax:
 
 **YouTube via linked thumbnail (common Markdown pattern):**
 
-::embed[[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+::embed[[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
 
 ***
 
@@ -129,7 +134,7 @@ Mixed list:
 
 Basic table:
 
-<table isTableHeaderOn="true" columnWidths="[object Object]">
+<table isTableHeaderOn="true" columnWidths="220,220,221">
   <tr>
     <td>
       <p>Feature</p>
@@ -178,7 +183,7 @@ Basic table:
 
 Table with images & links:
 
-<table isTableHeaderOn="true" columnWidths="[object Object]">
+<table isTableHeaderOn="true" columnWidths="220,220,221">
   <tr>
     <td align="center">
       <p>Avatar</p>
@@ -461,8 +466,6 @@ More text
 # Testing  text properties
 
 Text without color
-
-
 
 Colored text (bold)
 
