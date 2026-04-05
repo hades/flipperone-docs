@@ -25,13 +25,13 @@ Flipper One is a large and complex project, divided into several sub-projects. E
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **Hardware**
+### [**Hardware**](https://docs.flipper.net/one/hardware-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/9plDPlgbxscoFIacbj8Q9-20260331-093234.png" size="38" width="333" height="243" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Electrical hardware development. This is where the printed circuit boards (PCBs), antennas, and everything related to the electrical connections of chips, connectors, and processors are designed. The Hardware team works closely with the Mechanics team to ensure the electronics are compatible with the enclosure. **Learn more**
+Electrical hardware development. This is where the printed circuit boards (PCBs), antennas, and everything related to the electrical connections of chips, connectors, and processors are designed. The Hardware team works closely with the Mechanics team to ensure the electronics are compatible with the enclosure. [**>> Learn more**](https://docs.flipper.net/one/hardware-overview)
 :::
 ::::
 
@@ -39,13 +39,13 @@ Electrical hardware development. This is where the printed circuit boards (PCBs)
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **Mechanics**
+### [**Mechanics**](https://docs.flipper.net/one/mechanics-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/C5VLSGhfaLWBS5E3VIMF8-20260331-093258.png" size="40" width="357" height="333" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Mechanical and industrial design. This is where the enclosure, buttons, plastic and metal parts, and mounting components are designed. Everything the user physically interacts with. Many mechanical tasks are tightly coupled with the Hardware team. 
+Mechanical and industrial design. This is where the enclosure, buttons, plastic and metal parts, and mounting components are designed. Everything the user physically interacts with. Many mechanical tasks are tightly coupled with the Hardware team. [**>> Learn more**](https://docs.flipper.net/one/mechanics-overview)
 :::
 ::::
 
@@ -53,13 +53,13 @@ Mechanical and industrial design. This is where the enclosure, buttons, plastic 
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **Linux (CPU Software)**
+### [**Linux (CPU Software)**](https://docs.flipper.net/one/linux-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/ELzD0IezeYIDXuYC1yP2a-20260331-093341.png" size="34" width="267" height="318" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This is the largest and most complex sub-project, spanning many repositories. It contains the core software that users will interact with directly. **Learn more**
+Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This is the largest and most complex sub-project, spanning many repositories. It contains the core software that users will interact with directly. [**>> Learn more**](https://docs.flipper.net/one/linux-overview)
 :::
 ::::
 
@@ -67,13 +67,13 @@ Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **MCU Firmware**
+### [**MCU Firmware**](https://docs.flipper.net/one/mcu-firmware-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/On5sGCZ3-QWo2sYbRVTam-20260331-093415.png" size="38" width="309" height="306" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touchpad, and power subsystem, as well as co-processor communication between the MCU and CPU. **Learn more**
+Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touchpad, and power subsystem, as well as co-processor communication between the MCU and CPU. [**>> Learn more**](https://docs.flipper.net/one/mcu-firmware-overview)
 :::
 ::::
 
@@ -81,13 +81,13 @@ Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touc
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **User Interface**
+### [**User Interface**](https://docs.flipper.net/one/user-interface-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/CzLfRFqDmQf-g_0Mu_WA--20260331-093442.png" size="36" width="282" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-UI/UX development. This is where the user interface, visual communication of the device, all graphics, and visual design are developed. **Learn more**
+UI/UX development. This is where the user interface, visual communication of the device, all graphics, and visual design are developed. [**>> Learn more**](https://docs.flipper.net/one/user-interface-overview)
 :::
 ::::
 
@@ -95,13 +95,13 @@ UI/UX development. This is where the user interface, visual communication of the
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **Docs**
+### [**Docs**](https://docs.flipper.net/one/docs-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/RfUa81BVRdDm1qKCoXnrd-20260331-093508.png" size="36" width="273" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contributor guides. **Learn more**
+Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contributor guides. [**>> Learn more**](https://docs.flipper.net/one/docs-overview)
 :::
 ::::
 
@@ -109,13 +109,13 @@ Developer portal wiki, technical docs, guides, and datasheets. All documentation
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### **Test & Validation**
+### [**Testing & Validation**](https://docs.flipper.net/one/testing-overview)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/M8o8dC4criD5llKbqSJB6-20260331-093535.png" size="36" width="282" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes demos and sample audio and video files. **>> Learn more**
+Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes demos and sample audio and video files. [**>> Learn more**](https://docs.flipper.net/one/testing-overview)
 :::
 ::::
 
