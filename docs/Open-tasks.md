@@ -1,4 +1,5 @@
 # 🚧 Open tasks
+<sub>Page auto-generated 5 April 2026 at 21:13 using [this script](https://github.com/flipperdevices/flipperone-docs/blob/public-release/tools/generate_open_tasks.py)</sub>
 
 This page lists open tasks across all Flipper One repositories that are looking for contributors.
 All issues are labeled `help wanted` in their respective repos.

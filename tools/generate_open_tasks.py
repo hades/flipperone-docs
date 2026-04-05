@@ -12,6 +12,7 @@ Usage:
 import json
 import subprocess
 import sys
+from datetime import datetime
 from textwrap import shorten
 
 # Repository definitions: (slug, display name, project URL, description)
@@ -93,8 +94,13 @@ def generate_page(issues):
         repo_full = issue["repository"]["nameWithOwner"]
         by_repo.setdefault(repo_full, []).append(issue)
 
+    script_url = "https://github.com/flipperdevices/flipperone-docs/blob/public-release/tools/generate_open_tasks.py"
+    now = datetime.now()
+    timestamp = now.strftime("%-d %B %Y at %H:%M")
+
     lines = []
     lines.append("# \U0001f6a7 Open tasks")
+    lines.append(f"<sub>Page auto-generated {timestamp} using [this script]({script_url})</sub>")
     lines.append("")
     lines.append("This page lists open tasks across all Flipper One repositories that are looking for contributors.")
     lines.append("All issues are labeled `help wanted` in their respective repos.")
