@@ -10,7 +10,7 @@ This repository is part of the [Flipper One – Docs](http://docs.flipper.net/on
 * [**Sub-project overview**](http://docs.flipper.net/one/docs-overview)
 * [**Task Tracker**](https://github.com/orgs/flipperdevices/projects/10)
 * [**Miro templates**](https://miro.com/app/board/uXjVJ6y839o=/)
-* [**⚠️TODO Figma templates**](https://figma.com)
+* [**Figma templates**](https://www.figma.com/design/HcwlmmIJlW4LoiQu4RtwwH/Flipper-One-%E2%80%94-Docs?node-id=0-1&p=f&t=aYrPCUA166BloJuV-0)
 
 ## How to Contribute
 
