@@ -2,12 +2,12 @@
 title: Mechanics
 docTags: 
 createdAt: Mon Feb 09 2026 20:59:11 GMT+0000 (Coordinated Universal Time)
-updatedAt: Tue Mar 24 2026 14:43:00 GMT+0000 (Coordinated Universal Time)
+updatedAt: Wed Mar 25 2026 10:11:21 GMT+0000 (Coordinated Universal Time)
 ---
 
-::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/PiuX0-xvP3jRWBk-tW5yn-20260324-105215.png" size="80" width="2060" height="1580" position="center" caption}
+::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/PiuX0-xvP3jRWBk-tW5yn-20260324-105215.png" size="80" width="2060" height="1580" position="center"}
 
-The Flipper One has a complex mechanical design. Its case is made of plastic, aluminum, and rubber. Inside, it has a 29 W·h Li-ion battery, parts that get hot, many buttons, ports, slots, and expansion modules support.
+The Flipper One has a complex mechanical design. Its case is made of plastic, aluminum, and rubber. Inside, it has a 23 W·h Li-ion battery, parts that get hot, many buttons, ports, slots, and expansion modules support.
 
 We opened some parts of the device design and invite the community to follow the project and help find the best solutions. Here’s what is now open:
 
@@ -29,7 +29,7 @@ All tasks of the mechanical team are tracked in the GitHub Projects: :Link[Flipp
 Tasks marked with the **Help needed** tag include questions or problems that need community assistance to resolve. Learn more about how to contribute **here**.
 :::
 
-# **Device 3D model viewer**
+# Device 3D model viewer
 
 You can view, edit or export enclosure 3D-model via :Link[**Onshape**]{href="https://www.onshape.com/" newTab="true" hasDisabledNofollow="false"} - a cloud-based CAD (Computer-Aided Design), like SolidWorks or AutoCAD, but directly in your web browser.&#x20;
 
@@ -41,7 +41,7 @@ Open the link in your web browser: :Link[Flipper One - Onshape]{href="https://ca
 - **Hide model parts.** Click the **eye icon** next to a part in the list on the left.
 - **Move model parts.** Select a part in the 3D view or from the list on the left, then drag it to the desired position.
 
-:::Iframe{iframeHeight="500" code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipperzero.one/Pan_rotate_and_move_parts_compressed.mp4&#x22;&#xA;></video>"}
+:::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipperzero.one/Pan_rotate_and_move_parts_compressed.mp4&#x22;&#xA;></video>" iframeHeight="500"}
 
 :::
 
