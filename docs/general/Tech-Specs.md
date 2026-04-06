@@ -94,7 +94,7 @@ This page describes the full technical specifications of the Flipper One. Since 
       <p><strong>Internal Storage</strong></p>
     </td>
     <td>
-      <p>64 GB UFS 2.0</p>
+      <p>64 GB UFS 2.2</p>
     </td>
   </tr>
   <tr>
@@ -356,13 +356,30 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## M.2 Expansion Port
 
+
 <table isTableHeaderOn="false" columnWidths="220,441">
   <tr>
     <td>
       <p><strong>M.2 Type</strong></p>
     </td>
     <td>
-      <p>Key B (TODO: add sizes)</p>
+      <p>Key B</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><strong>Supported Sizes</strong></p>
+    </td>
+    <td>
+      <p>2242, 3042, 3052 mm</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><strong>Supported Thickness</strong></p>
+    </td>
+    <td>
+      <p>Up to S3 (double-sided modules)</p>
     </td>
   </tr>
   <tr>
@@ -370,7 +387,7 @@ This page describes the full technical specifications of the Flipper One. Since 
       <p><strong>Interfaces</strong></p>
     </td>
     <td>
-      <p>PCIe 2.1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / SIM card</p>
+      <p>PCIe 2.1 x1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card</p>
     </td>
   </tr>
 </table>
@@ -450,6 +467,14 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## Debug port 
 
-TODO: Picture with pinout 
+![Flipper One Debug Port Pinout](files/pics/flipper_one_debug_port_pinout.png "Flipper One Debug Port Pinout")
 
-TODO: table with pinout
+Description | PIN | PIN | Description
+--- | --- | --- | ---
+3V3 ⚠️ MCU POWER? | 1  |  2 |  MCU RESET
+MCU SWD CLOCK     | 3  |  4 |  MCU SWD IO
+MCU UART TX       | 5  |  6 |  MCU UART RX
+MCU GPIO 41       | 7  |  8 |  MCU GPIO 40
+CPU RESET         | 9  | 10 |  CPU UART0 TX
+CPU UART0 RX      | 11 | 12 |  CPU GPIO0_D2
+CPU GPIO0_D3      | 13 | 14 |  GND
