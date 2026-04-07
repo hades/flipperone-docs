@@ -27,6 +27,7 @@ User interface design: operating modes, on-screen graphics, device prints, and F
     <td align="left">
       <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/11"><strong>GPIO header USB pins design</strong></a></p>
       <p>Need to choose clear labels for the USB Data Positive and USB Data Negative pins on the GPIO header. The labels must...</p>
+      <p></p>
     </td>
     <td align="center">
       <p>💬 1</p>
@@ -34,8 +35,9 @@ User interface design: operating modes, on-screen graphics, device prints, and F
   </tr>
   <tr>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/10"><strong>Device back plate prints: M.2 Module and Compliance Info</strong></a></p>
+      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/10">Device back plate prints: M.2 Module and Compliance Info</a></p>
       <p>The following drawings will be transferred to the device case via silk screen printing. So reasonable to use gray and white...</p>
+      <p></p>
     </td>
     <td align="center" colSpan="1" rowSpan="1">
       <p>💬 3</p>
@@ -43,7 +45,7 @@ User interface design: operating modes, on-screen graphics, device prints, and F
   </tr>
   <tr>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/8"><strong>FlipCTL logo</strong></a></p>
+      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/8">FlipCTL logo</a></p>
       <p>We need a logo for the FlipCTL project. It should illustrate orange menu-based interfaces. With an optional dolphin logo.</p>
     </td>
     <td align="center" colSpan="1" rowSpan="1">
@@ -52,8 +54,9 @@ User interface design: operating modes, on-screen graphics, device prints, and F
   </tr>
   <tr>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/1"><strong>Describe operating modes + draw scheme</strong></a></p>
+      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/1">Describe operating modes + draw scheme</a></p>
       <p>We need to describe and name all operating modes</p>
+      <p></p>
     </td>
     <td align="center" colSpan="1" rowSpan="1">
       <p>💬 21</p>
