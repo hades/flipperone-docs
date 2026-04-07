@@ -25,9 +25,9 @@ User interface design: operating modes, on-screen graphics, device prints, and F
   </tr>
   <tr>
     <td align="left">
-      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/11"><strong>GPIO header USB pins design</strong></a></p>
+      <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/11">GPIO header USB pins design</a></p>
       <p>Need to choose clear labels for the USB Data Positive and USB Data Negative pins on the GPIO header. The labels must...</p>
-      <p></p>
+      <p> </p>
     </td>
     <td align="center">
       <p>💬 1</p>
@@ -37,7 +37,7 @@ User interface design: operating modes, on-screen graphics, device prints, and F
     <td align="left" colSpan="1" rowSpan="1">
       <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/10">Device back plate prints: M.2 Module and Compliance Info</a></p>
       <p>The following drawings will be transferred to the device case via silk screen printing. So reasonable to use gray and white...</p>
-      <p></p>
+      <p> </p>
     </td>
     <td align="center" colSpan="1" rowSpan="1">
       <p>💬 3</p>
@@ -56,7 +56,7 @@ User interface design: operating modes, on-screen graphics, device prints, and F
     <td align="left" colSpan="1" rowSpan="1">
       <p>🟢 <a href="https://github.com/flipperdevices/flipperone-ui/issues/1">Describe operating modes + draw scheme</a></p>
       <p>We need to describe and name all operating modes</p>
-      <p></p>
+      <p> </p>
     </td>
     <td align="center" colSpan="1" rowSpan="1">
       <p>💬 21</p>
