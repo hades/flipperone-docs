@@ -356,6 +356,9 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## M.2 Expansion Port
 
+TODO: replace to better picture
+
+![Flipper One M.2 port pinout](files/pics/flipper_one_m2_port_pinout.png "Flipper One M.2 port pinout")
 
 <table isTableHeaderOn="false" columnWidths="220,660">
   <tr>
@@ -391,6 +394,46 @@ This page describes the full technical specifications of the Flipper One. Since 
     </td>
   </tr>
 </table>
+
+### M.2 Pinout (Key B, MDT670B02412)
+
+Description | PIN | PIN | Description
+--- | --- | --- | ---
+CONFIG_2 | 75 | 74 | 3.3 V/VBAT
+VIO_CFG (I) or GND | 73 | 72 | 3.3 V/VBAT
+GND | 71 | 70 | 3.3 V/VBAT
+CONFIG_1 | 69 | 68 | SUSCLK (O)(0/1.8V/3.3V)
+RESET# (O)(0/1.8V) | 67 | 66 | SIM DETECT (O)
+ANTCTL3 (I)(0/1.8V) | 65 | 64 | COEX_RXD (I)(0/1.8V)
+ANTCTL2 (I)(0/1.8V) | 63 | 62 | COEX_TXD (O)(0/1.8V)
+ANTCTL1 (I)(0/1.8V) | 61 | 60 | COEX3 (I/O)(0/1.8V)
+ANTCTL0 (I)(0/1.8V) | 59 | 58 | NC
+GND | 57 | 56 | NC
+REFCLKp | 55 | 54 | PEWAKE# (I/O)(0/1.8V/3.3V)
+REFCLKn | 53 | 52 | CLKREQ# (I/O)(0/1.8V/3.3V)
+GND | 51 | 50 | PERST# (O)(0/1.8V/3.3V)
+PETp0/SATA-A+ | 49 | 48 | GPIO_4 (I/O)(0/1.8V)
+PETn0/SATA-A- | 47 | 46 | GPIO_3 (I/O)(0/1.8V)
+GND | 45 | 44 | GPIO_2 (I/O)/ALERT# (I)(0/1.8V)
+PERp0/SATA-B- | 43 | 42 | GPIO_1 (I/O)/SMB_DATA (I/O)/(0/1.8V)
+PERn0/SATA-B+ | 41 | 40 | GPIO_0 (I/O)/SMB_CLK (I/O)/(0/1.8V)
+GND | 39 | 38 | DEVSLP (O)
+PETp1/USB3.1-Tx+/SSIC-TxP | 37 | 36 | UIM_PWR (I)
+PETn1/USB3.1-Tx-/SSIC-TxN | 35 | 34 | UIM_DATA (I/O)
+GND | 33 | 32 | UIM_CLK (I)
+PERp1/USB3.1-Rx+/SSIC-RxP | 31 | 30 | UIM_RESET (I)
+PERn1/USB3.1-Rx-/SSIC-RxN | 29 | 28 | PLA_S2# (I)/GPIO_8 (I/O)(0/1.8V)
+GND | 27 | 26 | GPIO_10 (I/O)(0/1.8V)
+DPR (O)(0/1.8V) | 25 | 24 | GPIO_7 (I/O)(0/1.8V)
+GPIO_11 (I/O)(0/1.8V) | 23 | 22 | GPIO_6 (I/O)(0/1.8V)
+CONFIG_0 | 21 | 20 | GPIO_5 (I/O)(0/1.8V)
+CONNECTOR KEY B | — | — | CONNECTOR KEY B
+GND | 11 | 10 | GPIO_9/DAS/DSS (I/O)/LED_1# (I)(0/3.3V)
+USB_D- | 9 | 8 | W_DISABLE1# (O)(0/1.8V/3.3V)
+USB_D+ | 7 | 6 | FULL_CARD_POWER_OFF# (O)(0/1.8V or 3.3V)
+GND | 5 | 4 | 3.3V
+GND | 3 | 2 | 3.3V
+CONFIG_3 | 1 | — | —
 
 ## GPIO Pinout
 
