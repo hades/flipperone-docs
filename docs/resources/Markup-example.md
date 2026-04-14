@@ -6,23 +6,12 @@ createdAt: Tue Apr 07 2026 18:42:40 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Apr 08 2026 12:24:04 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page contains examples of markup that can be used in this wiki.
-It supports basic **Markdown**, but also includes some **Archbee-specific syntax**.
+# Markup Reference
 
-This wiki is powered by the [**Archbee documentation system**](https://archbee.com) and is connected to the public GitHub repository [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs).
-That means anyone can suggest edits to any page, and once the Flipper team approves them, the changes will appear in this documentation.&#x20;
+This page is a reference for contributors writing Flipper One documentation.
+It covers both standard **Markdown** and **Archbee-specific syntax** supported by this wiki.
 
-## GitHub Sources
-
-The source files for this wiki are stored in the [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs).
-To edit any page, create a **pull request** with your changes: [**FIX How to make a pull request to this wiki**]().
-
-Each time a change is committed to the GitHub repository, the wiki is automatically rebuilt and updated on the website.
-
-# Archbee Markup
-
-This wiki supports **Markdown** formatting, but not all features are available.
-In some cases, you’ll need to use **Archbee-specific tags**.
+The source files live on GitHub at [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs). Every merged pull request automatically rebuilds the live site. To contribute, fork the repo and open a pull request.
 
 **Quick jump:**
 
@@ -30,193 +19,145 @@ In some cases, you’ll need to use **Archbee-specific tags**.
 - [**Text styles**](./#text-styles)
 - [**Links**](./#links)
 - [**Images**](./#images)
-- [**Videos & audio**](./#videos)
+- [**Videos**](./#videos)
 - [**Lists**](./#lists)
 - [**Tables**](./#tables)
-- [**Code & syntax highlighting**](./#code--syntax-highlighting)
-- [**Quotes & callouts**](./#quotes--callouts)
+- [**Code**](./#code--syntax-highlighting)
+- [**Callouts**](./#callouts)
 - [**Math**](./#math)
 - [**Mermaid diagrams**](./#mermaid-diagrams)
-- [**Rules, escapes, emoji**](./#rules-escapes-emoji)
-- [**Archbee syntax**](./#testing-archbee-syntax)
+- [**Archbee components**](./#archbee-components)
 
 ***
 
 ## Headings
 
-# H1 Heading
+Flipper One documentation supports headings H1–H3. Use H1 for page-level sections, H2 for subsections, H3 for sub-subsections.
 
-## H2 Heading
-
-### H3 Heading \<- Can't go any lower
-
-Paragraph under headings. Line breaks work with two spaces at end.
-This is a second line.
+| Flipper One docs | Markdown |
+| --- | --- |
+| Heading H1 | `# Heading H1` |
+| Heading H2 | `## Heading H2` |
+| Heading H3 | `### Heading H3` |
 
 ***
 
 ## Text styles
 
-- Regular text
-- **bold**
-- *italic*
-- ***bold italic***
-- ~~strikethrough~~
-- `inline code`
-- $10^6$
-- $H\_2O$
-
-Block of text with soft-wrap and hard-wrap differences.
-This line intentionally ends with two spaces to force a break.
+| Flipper One docs | Markdown |
+| --- | --- |
+| Regular text | `Regular text` |
+| **Bold** | `**Bold**` |
+| *Italic* | `*Italic*` |
+| ***Bold italic*** | `***Bold italic***` |
+| ~~Strikethrough~~ | `~~Strikethrough~~` |
+| `Inline code` | `` `Inline code` `` |
+| $10^6$ and $H\_2O$ | `$10^6$` and `$H\_2O$` |
 
 ***
 
 ## Links
 
-- Inline link: [**Archbee**](https://archbee.com)
-- Autolink: [**https://example.com**](https://example.com)
-- Anchor to a section: [**Jump to Tables**](./#tables)
+| Flipper One docs | Markdown |
+| --- | --- |
+| [**Archbee**](https://archbee.com) | `[**Archbee**](https://archbee.com)` |
+| [https://example.com](https://example.com) | `[https://example.com](https://example.com)` |
+| [Jump to Tables](./#tables) | `[Jump to Tables](./#tables)` |
 
 ***
 
 ## Images
 
-Markdown images with alt + title:
+Standard Markdown image with alt text and optional title:
 
-![Remote placeholder banner](https://placehold.co/800x180/png?text=Remote+Banner+800x180 "Remote Banner")
+| Flipper One docs | Markdown |
+| --- | --- |
+| ![Remote image](https://placehold.co/300x80/png?text=Remote+image) | `![Alt text](https://example.com/image.png "Title")` |
+| ![Local image](files/pics/test-image.jpg) | `![Alt text](files/pics/test-image.jpg "Title")` |
 
-Relative image path:
+To **resize or align** an image, standard Markdown is not enough — use Archbee syntax:
 
-![Local image](files/pics/test-image.jpg "Local asset example")
+`::Image[]{src="files/pics/test-image.jpg" size="40" position="flex-start" caption="Caption text"}`
 
-## Archbee image resize and align
-
-The only way to resize image is archbee syntax:
-
-`::Image[]{src="files/pics/test-image.jpg" size="40" position="left" caption="This is caption of text image, resized to 40 px ang alignet to left"}`
-
-::Image[]{src="files/pics/test-image.jpg" size="40" position="flex-start" caption="This is caption of text image, resized to 40 px ang alignet to left" sha="793d70a667b264bda4823ee16319f78736d5e070" initialPath="files/pics/test-image.jpg" githubPath="docs/files/pics/test-image.jpg" width="1200" height="630" darkWidth="1200" darkHeight="630"}
+| Attribute | Description |
+| --- | --- |
+| `src` | Path to the image (relative or absolute URL) |
+| `size` | Width in pixels |
+| `position` | Alignment: `flex-start` (left), `center`, `flex-end` (right) |
+| `caption` | Optional caption shown below the image |
 
 ***
 
 ## Videos
 
-**YouTube via linked thumbnail (common Markdown pattern):**
+To embed a YouTube video, use Archbee's embed syntax with the video URL:
 
-::embed[[![Watch the demo](https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)[**https://www.youtube.com/watch?v=dQw4w9WgXcQ**](https://www.youtube.com/watch?v=dQw4w9WgXcQ)]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+`::embed[]{url="https://www.youtube.com/watch?v=VIDEO_ID"}`
 
 ***
 
 ## Lists
 
-Unordered list:
-
-- Item A
-  - Nested A.1
-    - Nested A.1.a
-- Item B
-
-Ordered list (start at 3):
-3\. Three
-4\. Four
-5\. Five
-
-Mixed list:
-
-- First
-
-1. Second (numbered inside bullets)
-
-- Third
+| Flipper One docs | Markdown |
+| --- | --- |
+| Unordered: `- Item A` / `- Nested A.1` / `- Item B` | `- Item A`<br />`  - Nested A.1`<br />`- Item B` |
+| Ordered: `1. First` / `2. Second` / `3. Third` | `1. First`<br />`2. Second`<br />`3. Third` |
 
 ***
 
 ## Tables
 
-Basic table:
+Archbee supports two table formats.
 
-<table isTableHeaderOn="true" columnWidths="220,220,221">
+**Standard Markdown pipe tables** — simple and readable, but no control over column widths or alignment:
+
+```markdown
+| Column 1 | Column 2 | Column 3 |
+| --- | --- | --- |
+| Cell | **Bold** | ✅ |
+```
+
+| Column 1 | Column 2 | Column 3 |
+| --- | --- | --- |
+| Cell | **Bold** | ✅ |
+
+**HTML tables** — use when you need column widths, cell alignment, or images inside cells:
+
+```html
+<table isTableHeaderOn="true" columnWidths="220,440,220">
   <tr>
-    <td>
-      <p>Feature</p>
-    </td>
-    <td align="center">
-      <p>Supported</p>
-    </td>
-    <td>
-      <p>Notes</p>
-    </td>
+    <td><p>Header 1</p></td>
+    <td><p>Header 2</p></td>
+    <td align="center"><p>Header 3</p></td>
   </tr>
   <tr>
-    <td>
-      <p>Bold</p>
-    </td>
-    <td align="center">
-      <p>✅</p>
-    </td>
-    <td>
-      <p><strong>text</strong></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>Italic</p>
-    </td>
-    <td align="center">
-      <p>✅</p>
-    </td>
-    <td>
-      <p><em>text</em></p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p>Footnotes</p>
-    </td>
-    <td align="center">
-      <p>✅</p>
-    </td>
-    <td>
-      <p>See <a href=""><strong>below</strong></a></p>
-    </td>
+    <td><p>Cell</p></td>
+    <td><p><strong>Bold cell</strong></p></td>
+    <td align="center"><p>✅</p></td>
   </tr>
 </table>
+```
 
-Table with images & links:
-
-<table isTableHeaderOn="true" columnWidths="220,220,221">
+<table isTableHeaderOn="true" columnWidths="220,440,220">
   <tr>
-    <td align="center">
-      <p>Avatar</p>
-    </td>
-    <td>
-      <p>User</p>
-    </td>
-    <td>
-      <p>Link</p>
-    </td>
+    <td><p>Attribute</p></td>
+    <td><p>Description</p></td>
+    <td><p>Example</p></td>
   </tr>
   <tr>
-    <td align="center">
-      <p><img src="https://placehold.co/48x48" alt=""></p>
-    </td>
-    <td>
-      <p><strong>Alice</strong></p>
-    </td>
-    <td>
-      <p><a href="https://example.com/alice"><strong>Profile</strong></a></p>
-    </td>
+    <td><p><code>isTableHeaderOn</code></p></td>
+    <td><p>Renders the first row as a bold header</p></td>
+    <td><p><code>"true"</code> / <code>"false"</code></p></td>
   </tr>
   <tr>
-    <td align="center">
-      <p><img src="https://placehold.co/48x48" alt=""></p>
-    </td>
-    <td>
-      <p><strong>Bob</strong></p>
-    </td>
-    <td>
-      <p><a href="https://example.com"><strong>Website</strong></a></p>
-    </td>
+    <td><p><code>columnWidths</code></p></td>
+    <td><p>Comma-separated pixel widths per column. Total should be ~880 px to fill the content area</p></td>
+    <td><p><code>"220,440,220"</code></p></td>
+  </tr>
+  <tr>
+    <td><p><code>align</code></p></td>
+    <td><p>Horizontal alignment on a <code>&lt;td&gt;</code> element</p></td>
+    <td><p><code>align="center"</code></p></td>
   </tr>
 </table>
 
@@ -224,120 +165,53 @@ Table with images & links:
 
 ## Code & syntax highlighting
 
-Inline: `const hi = "world";`
+| Flipper One docs | Markdown |
+| --- | --- |
+| `const hi = "world";` | `` `const hi = "world";` `` |
+| Fenced block with language | ` ```javascript ` / `// your code` / ` ``` ` |
+| Diff block | ` ```diff ` / `+ Added line` / `- Removed line` / ` ``` ` |
 
-Fenced (JavaScript):
-
-```javascript
-export function greet(name) {
-  return `Hello, ${name}!`;
-}
-console.log(greet("Archbee"));
-```
-
-Fenced (Python):
-
-```python
-def fib(n):
-    a, b = 0, 1
-    seq = []
-    while len(seq) < n:
-        a, b = b, a + b
-        seq.append(a)
-    return seq
-
-print(fib(10))
-```
-
-Fenced (Bash):
-
-```bash
-#!/usr/bin/env bash
-set -euo pipefail
-curl -I https://archbee.com
-```
-
-Diff block:
-
-```diff
-+ Added line
-- Removed line
-! Changed line (not standard, but some themes show this)
-```
-
-JSON block:
-
-```json
-{
-  "name": "archbee-md-test",
-  "private": true,
-  "scripts": { "start": "node index.js" }
-}
-```
-
-YAML block:
-
-```yaml
-name: archbee-md-test
-on:
-  push:
-    branches: [ main ]
-```
+Supported language tags: `javascript`, `typescript`, `python`, `bash`, `c`, `cpp`, `json`, `yaml`, `diff`, `tex`, `mermaid`.
 
 ***
 
-## Quotes & callouts
+## Callouts
 
-Regular blockquote:
-
-:::BlockQuote
-“Documentation is a love letter that you write to your future self.” — Damian Conway
-:::
-
-GitHub/Docs-style admonitions (blockquote + label):
-
-:::BlockQuote
-\[!NOTE]
-This is a note-style callout.
-:::
-
-:::BlockQuote
-\[!TIP]
-Tips can sit under the same block.
-:::
-
-:::BlockQuote
-\[!IMPORTANT]
-Important things deserve clear emphasis.
-:::
-
-:::BlockQuote
-\[!WARNING]
-Warnings highlight risky steps.
-:::
-
-:::BlockQuote
-\[!CAUTION]
-Use with care.
-:::
-
-:::BlockQuote
-💡 **Tip:** Remember to save your work often.
-:::
+Archbee supports four callout styles using `:::hint{type="..."}`:
 
 :::hint{type="info"}
-### Heading inside a callout
+**info** — General information or context.
 
-Archbee uses its own syntax for callouts. Available styles: info, warning, success, danger.
+`:::hint{type="info"} ... :::`
+:::
+
+:::hint{type="success"}
+**success** — Positive outcome or confirmation.
+
+`:::hint{type="success"} ... :::`
+:::
+
+:::hint{type="warning"}
+**warning** — Something to be careful about.
+
+`:::hint{type="warning"} ... :::`
+:::
+
+:::hint{type="danger"}
+**danger** — Risk of data loss or breaking change.
+
+`:::hint{type="danger"} ... :::`
 :::
 
 ***
 
 ## Math
 
-Inline math: $E=mc^2$ and $\alpha + \beta = \gamma$.
-
-Display math (used Archbee syntax):
+| Flipper One docs | Markdown |
+| --- | --- |
+| $E=mc^2$ | `$E=mc^2$` |
+| $\alpha + \beta = \gamma$ | `$\alpha + \beta = \gamma$` |
+| Display math block | ` ```tex ` / `\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}` / ` ``` ` |
 
 ```tex
 \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
@@ -347,7 +221,7 @@ Display math (used Archbee syntax):
 
 ## Mermaid diagrams
 
-Flowchart:
+Use a fenced `mermaid` block. Supported diagram types: `flowchart`, `sequenceDiagram`, `classDiagram`, `gantt`, and more.
 
 ```mermaid
 flowchart TD
@@ -357,8 +231,6 @@ flowchart TD
   C --> E[Ship it]
   D --> E
 ```
-
-Sequence diagram:
 
 ```mermaid
 sequenceDiagram
@@ -370,104 +242,124 @@ sequenceDiagram
 
 ***
 
-## Rules, escapes, emoji
+## Archbee components
 
-Horizontal rules:
+### Workflow steps
 
-***
+Use `WorkflowBlock` with `WorkflowBlockItem` for numbered step-by-step flows:
 
-***
+```markdown
+::::WorkflowBlock
+:::WorkflowBlockItem
+Step one title
 
-***
+Step description.
+:::
 
-Escaped characters: \*literal asterisks\*, \_underscores\_, \`backticks\`, #hash.
+:::WorkflowBlockItem
+Step two title
 
-Emoji shortcodes: 🚀 🎉 ⚡ ⚠️
-
-***
-
-# Testing archbee syntax
-
-## Flow with steps
+Step description.
+:::
+::::
+```
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-Included subitems
+Step one title
 
-1. Subitem 1
-2. Subitem 2
+Step description.
 :::
 
 :::WorkflowBlockItem
-Added text
+Step two title
 
-Text body
-:::
-
-:::WorkflowBlockItem
-Added image
-
-![Local image](files/pics/test-image.jpg "Local asset example")
+Step description.
 :::
 ::::
 
-## Formula
+***
 
-```tex
-int_0^infty x^2 dx
-```
+### Two-column layout
 
-## Callouts
+Use `VerticalSplit` to place content side by side:
 
-:::hint{type="info"}
-Test
-:::
-
-:::hint{type="success"}
-
-:::
-
-:::hint{type="warning"}
-
-:::
-
-:::hint{type="danger"}
-
-:::
-
-## Vertical divider
-
+```markdown
 ::::VerticalSplit{layout="middle"}
 :::VerticalSplitItem
 **Left side**
 
-Text
+Content
 :::
 
 :::VerticalSplitItem
 **Right side**
 
-Text
+Content
+:::
+::::
+```
+
+::::VerticalSplit{layout="middle"}
+:::VerticalSplitItem
+**Left side**
+
+Content
+:::
+
+:::VerticalSplitItem
+**Right side**
+
+Content
 :::
 ::::
 
-## Expandible text
+***
+
+### Expandable section
+
+Use `ExpandableHeading` for collapsible content:
+
+```markdown
+:::ExpandableHeading
+### Section title
+
+Content shown when expanded.
+:::
+```
 
 :::ExpandableHeading
-### Expandible heading
+### Section title
 
-With text
-More text
-
-![Local image](files/pics/test-image.jpg "Even with a local image")
+Content shown when expanded.
 :::
 
 ***
 
-# Testing  text properties
+## Image rendering tests
 
-Text without color
+Testing how Archbee renders different combinations of image syntax for local vs remote images.
 
-Colored text (bold)
+## Remote URL, no title
 
-**Bold text using Markdown**
+![Remote image](https://placehold.co/400x120/png?text=Remote+no+title)
+
+## Remote URL, with title
+
+![Remote image](https://placehold.co/400x120/png?text=Remote+with+title "This is a caption")
+
+## Local path, no title
+
+![Local image](files/pics/test-image.jpg)
+
+## Local path, with title
+
+![Local image](files/pics/test-image.jpg "This is a caption")
+
+## Local path, Archbee syntax, position center
+
+::Image[]{src="files/pics/test-image.jpg" size="400" position="center" caption="This is a caption"}
+
+## Local path, Archbee syntax, position left
+
+::Image[]{src="files/pics/test-image.jpg" size="400" position="flex-start" caption="This is a caption"}
