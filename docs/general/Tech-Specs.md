@@ -207,7 +207,7 @@ This page describes the full technical specifications of the Flipper One. Since 
       <p><strong>Wi-Fi Chipset</strong></p>
     </td>
     <td align="left">
-      <p>MediaTek MT7921U</p>
+      <p>MediaTek MT7921AUN</p>
     </td>
   </tr>
   <tr>
