@@ -41,15 +41,51 @@ flipperone-docs/
     ├── files/
     │   └── pics/
     ├── general/
-    │   ├── Features.md
-    │   └── Tech-Specs.md
+    │   ├── Tech-Specs.md
+    │   └── Features.md
     ├── hardware/
     │   ├── About-Hardware.md
-    │   ├── Mechanics.md
+    │   ├── Power-subsystem.md
     │   ├── Schematics.md
-    │   ├── WiFi.md
+    │   ├── WiFi-Bluetooth.md
+    │   ├── M2-port.md
+    │   ├── GPIO-port.md
+    │   ├── Datasheets.md
     │   └── modules/
-    ├── resources/
-    ├── software/
-    └── testing/
+    │       ├── Expansion-modules.md
+    │       ├── GPIO-Modules.md
+    │       └── M2-Modules.md
+    ├── mechanics/
+    │   ├── About-Mechanics.md
+    │   ├── Mechanical-design.md
+    │   ├── Module-enclosures.md
+    │   └── Heat-sink.md
+    ├── mcu-firmware/
+    │   ├── About-MCU-Firmware.md
+    │   ├── Architecture.md
+    │   ├── Interconnect-protocol.md
+    │   └── Firmware-update.md
+    ├── cpu-software/
+    │   ├── About-CPU-Software.md
+    │   ├── Architecture.md
+    │   ├── Build-system.md
+    │   ├── Flipper-OS.md
+    │   └── FlipCTL.md
+    ├── user-interface/
+    │   ├── About-User-Interface.md
+    │   └── Design-guide.md
+    ├── testing/
+    │   ├── About-Testing.md
+    │   ├── General.md
+    │   ├── Power.md
+    │   ├── Graphics.md
+    │   ├── Video-decoding.md
+    │   ├── Network.md
+    │   └── M_2.md
+    └── resources/
+        ├── About-Docs.md
+        ├── Markup-example.md
+        └── rockchip/
+            ├── Rockchip-RK3576.md
+            └── RK3576-Boot-flow.md
 ```
