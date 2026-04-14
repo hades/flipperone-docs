@@ -11,22 +11,22 @@ updatedAt: Wed Apr 08 2026 12:24:04 GMT+0000 (Coordinated Universal Time)
 This page is a reference for contributors writing Flipper One documentation.
 It covers both standard **Markdown** and **Archbee-specific syntax** supported by this wiki.
 
-The source files live on GitHub at [**github.com/flipperdevices/flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs). Every merged pull request automatically rebuilds the live site. To contribute, fork the repo and open a pull request.
+The source files live on GitHub at [github.com/flipperdevices/flipper-one-docs](https://github.com/flipperdevices/flipper-one-docs). Every merged pull request automatically rebuilds the live site. To contribute, fork the repo and open a pull request.
 
 **Quick jump:**
 
-- [**Headings**](./#headings)
-- [**Text styles**](./#text-styles)
-- [**Links**](./#links)
-- [**Images**](./#images)
-- [**Videos**](./#videos)
-- [**Lists**](./#lists)
-- [**Tables**](./#tables)
-- [**Code**](./#code--syntax-highlighting)
-- [**Callouts**](./#callouts)
-- [**Math**](./#math)
-- [**Mermaid diagrams**](./#mermaid-diagrams)
-- [**Archbee components**](./#archbee-components)
+- [Headings](./#headings)
+- [Text styles](./#text-styles)
+- [Links](./#links)
+- [Images](./#images)
+- [Videos](./#videos)
+- [Lists](./#lists)
+- [Tables](./#tables)
+- [Code](./#code--syntax-highlighting)
+- [Callouts](./#callouts)
+- [Math](./#math)
+- [Mermaid diagrams](./#mermaid-diagrams)
+- [Archbee components](./#archbee-components)
 
 ***
 
@@ -34,33 +34,33 @@ The source files live on GitHub at [**github.com/flipperdevices/flipper-one-docs
 
 Flipper One documentation supports headings H1–H3. Use H1 for page-level sections, H2 for subsections, H3 for sub-subsections.
 
-| Flipper One docs | Markdown |
+| **Flipper One docs** | **Markdown** |
 | --- | --- |
-| Heading H1 | `# Heading H1` |
-| Heading H2 | `## Heading H2` |
-| Heading H3 | `### Heading H3` |
+| # Heading H1 | `# Heading H1` |
+| ## Heading H2 | `## Heading H2` |
+| ### Heading H3 | `### Heading H3` |
 
 ***
 
 ## Text styles
 
-| Flipper One docs | Markdown |
+| **Flipper One docs** | **Markdown** |
 | --- | --- |
 | Regular text | `Regular text` |
 | **Bold** | `**Bold**` |
 | *Italic* | `*Italic*` |
+| <u>Underline</u> | `__Underline__` |
 | ***Bold italic*** | `***Bold italic***` |
 | ~~Strikethrough~~ | `~~Strikethrough~~` |
 | `Inline code` | `` `Inline code` `` |
-| $10^6$ and $H\_2O$ | `$10^6$` and `$H\_2O$` |
 
 ***
 
 ## Links
 
-| Flipper One docs | Markdown |
+| **Flipper One docs** | **Markdown** |
 | --- | --- |
-| [**Archbee**](https://archbee.com) | `[**Archbee**](https://archbee.com)` |
+| [Archbee](https://archbee.com) | `[Archbee](https://archbee.com)` |
 | [https://example.com](https://example.com) | `[https://example.com](https://example.com)` |
 | [Jump to Tables](./#tables) | `[Jump to Tables](./#tables)` |
 
@@ -68,12 +68,18 @@ Flipper One documentation supports headings H1–H3. Use H1 for page-level secti
 
 ## Images
 
-Standard Markdown image with alt text and optional title:
+Standard Markdown image syntax:
 
-| Flipper One docs | Markdown |
+| **Flipper One docs** | **Markdown** |
 | --- | --- |
-| ![Remote image](https://placehold.co/300x80/png?text=Remote+image) | `![Alt text](https://example.com/image.png "Title")` |
-| ![Local image](files/pics/test-image.jpg) | `![Alt text](files/pics/test-image.jpg "Title")` |
+| **Remote URL** ![Remote image](https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=300&h=120&fit=crop) | `![Alt text](https://example.com/image.png "Title")` |
+| **Local path** ![Local image](files/pics/test-image.jpg) | `![Alt text](files/pics/test-image.jpg "Title")` |
+
+:::hint{style="info"}
+**Caption alignment** depends on the image source, not the syntax:
+- **Remote URL** — caption is rendered **centered**
+- **Local path** — caption is rendered **left-aligned**
+:::
 
 To **resize or align** an image, standard Markdown is not enough — use Archbee syntax:
 
@@ -82,26 +88,82 @@ To **resize or align** an image, standard Markdown is not enough — use Archbee
 | Attribute | Description |
 | --- | --- |
 | `src` | Path to the image (relative or absolute URL) |
-| `size` | Width in pixels |
-| `position` | Alignment: `flex-start` (left), `center`, `flex-end` (right) |
-| `caption` | Optional caption shown below the image |
+| `size` | Width value (exact unit unclear — likely a percentage of the content area) |
+| `position` | Page alignment when image is smaller than content area: `flex-start` (left), `center`, `flex-end` (right). Has no effect on caption alignment. |
+| `caption` | Optional caption shown below the image. Always left-aligned for local images. |
 
 ***
 
 ## Videos
 
-To embed a YouTube video, use Archbee's embed syntax with the video URL:
+Two ways to embed video are supported.
+
+**YouTube** — use Archbee's embed syntax:
 
 `::embed[]{url="https://www.youtube.com/watch?v=VIDEO_ID"}`
+
+::embed[]{url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
+
+**Self-hosted / CDN video** — use an HTML `<video>` tag:
+
+```html
+<video
+    autoplay muted loop playsinline style="width: 100%; margin: 0 !important;"
+    src="https://cdn.example.com/your-video.mp4"
+></video>
+```
+
+<video
+    autoplay muted loop playsinline style="width: 100%; margin: 0 !important;"
+    src="https://cdn.flipperzero.one/Pan_rotate_and_move_parts_compressed.mp4"
+></video>
 
 ***
 
 ## Lists
 
-| Flipper One docs | Markdown |
-| --- | --- |
-| Unordered: `- Item A` / `- Nested A.1` / `- Item B` | `- Item A`<br />`  - Nested A.1`<br />`- Item B` |
-| Ordered: `1. First` / `2. Second` / `3. Third` | `1. First`<br />`2. Second`<br />`3. Third` |
+<table isTableHeaderOn="true" columnWidths="330,330">
+  <tr>
+    <td><p><strong>Flipper One docs</strong></p></td>
+    <td><p><strong>Markdown</strong></p></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li>Item A
+          <ul><li>Nested A.1</li></ul>
+        </li>
+        <li>Item B</li>
+      </ul>
+    </td>
+    <td><p><code>- Item A</code><br /><code>&nbsp;&nbsp;- Nested A.1</code><br /><code>- Item B</code></p></td>
+  </tr>
+  <tr>
+    <td>
+      <ol>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+      </ol>
+    </td>
+    <td><p><code>1. First</code><br /><code>2. Second</code><br /><code>3. Third</code></p></td>
+  </tr>
+  <tr>
+    <td>
+      <ul>
+        <li><input type="checkbox" disabled /> Item A</li>
+        <li><input type="checkbox" disabled /> Item B</li>
+      </ul>
+    </td>
+    <td><p><code>[] Item A</code><br /><code>[] Item B</code></p></td>
+  </tr>
+</table>
+
+***
+
+## Divider
+
+Use `***` or `---` to insert a horizontal divider:
 
 ***
 
@@ -124,7 +186,7 @@ Archbee supports two table formats.
 **HTML tables** — use when you need column widths, cell alignment, or images inside cells:
 
 ```html
-<table isTableHeaderOn="true" columnWidths="220,440,220">
+<table isTableHeaderOn="true" columnWidths="165,330,165">
   <tr>
     <td><p>Header 1</p></td>
     <td><p>Header 2</p></td>
@@ -138,7 +200,7 @@ Archbee supports two table formats.
 </table>
 ```
 
-<table isTableHeaderOn="true" columnWidths="220,440,220">
+<table isTableHeaderOn="true" columnWidths="165,330,165">
   <tr>
     <td><p>Attribute</p></td>
     <td><p>Description</p></td>
@@ -151,7 +213,7 @@ Archbee supports two table formats.
   </tr>
   <tr>
     <td><p><code>columnWidths</code></p></td>
-    <td><p>Comma-separated pixel widths per column. Total should be ~880 px to fill the content area</p></td>
+    <td><p>Comma-separated pixel widths per column. Total must not exceed 660 px</p></td>
     <td><p><code>"220,440,220"</code></p></td>
   </tr>
   <tr>
@@ -165,11 +227,35 @@ Archbee supports two table formats.
 
 ## Code & syntax highlighting
 
-| Flipper One docs | Markdown |
-| --- | --- |
-| `const hi = "world";` | `` `const hi = "world";` `` |
-| Fenced block with language | ` ```javascript ` / `// your code` / ` ``` ` |
-| Diff block | ` ```diff ` / `+ Added line` / `- Removed line` / ` ``` ` |
+**Fenced block with language:**
+
+````markdown
+```javascript
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+```
+````
+
+```javascript
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+```
+
+**Diff block:**
+
+````markdown
+```diff
++ Added line
+- Removed line
+```
+````
+
+```diff
++ Added line
+- Removed line
+```
 
 Supported language tags: `javascript`, `typescript`, `python`, `bash`, `c`, `cpp`, `json`, `yaml`, `diff`, `tex`, `mermaid`.
 
@@ -177,41 +263,43 @@ Supported language tags: `javascript`, `typescript`, `python`, `bash`, `c`, `cpp
 
 ## Callouts
 
-Archbee supports four callout styles using `:::hint{type="..."}`:
+Archbee supports four callout styles using `:::hint{style="..."}`:
 
-:::hint{type="info"}
+:::hint{style="info"}
 **info** — General information or context.
 
-`:::hint{type="info"} ... :::`
+`:::hint{style="info"} Your text here :::`
 :::
 
-:::hint{type="success"}
+:::hint{style="success"}
 **success** — Positive outcome or confirmation.
 
-`:::hint{type="success"} ... :::`
+`:::hint{style="success"} Your text here :::`
 :::
 
-:::hint{type="warning"}
+:::hint{style="warning"}
 **warning** — Something to be careful about.
 
-`:::hint{type="warning"} ... :::`
+`:::hint{style="warning"} Your text here :::`
 :::
 
-:::hint{type="danger"}
+:::hint{style="danger"}
 **danger** — Risk of data loss or breaking change.
 
-`:::hint{type="danger"} ... :::`
+`:::hint{style="danger"} Your text here :::`
 :::
 
 ***
 
 ## Math
 
-| Flipper One docs | Markdown |
-| --- | --- |
-| $E=mc^2$ | `$E=mc^2$` |
-| $\alpha + \beta = \gamma$ | `$\alpha + \beta = \gamma$` |
-| Display math block | ` ```tex ` / `\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}` / ` ``` ` |
+Archbee only supports math via a fenced `tex` block. Inline math (`$...$`) is **not supported**.
+
+````markdown
+```tex
+\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+```
+````
 
 ```tex
 \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
@@ -334,32 +422,3 @@ Content shown when expanded.
 Content shown when expanded.
 :::
 
-***
-
-## Image rendering tests
-
-Testing how Archbee renders different combinations of image syntax for local vs remote images.
-
-## Remote URL, no title
-
-![Remote image](https://placehold.co/400x120/png?text=Remote+no+title)
-
-## Remote URL, with title
-
-![Remote image](https://placehold.co/400x120/png?text=Remote+with+title "This is a caption")
-
-## Local path, no title
-
-![Local image](files/pics/test-image.jpg)
-
-## Local path, with title
-
-![Local image](files/pics/test-image.jpg "This is a caption")
-
-## Local path, Archbee syntax, position center
-
-::Image[]{src="files/pics/test-image.jpg" size="400" position="center" caption="This is a caption"}
-
-## Local path, Archbee syntax, position left
-
-::Image[]{src="files/pics/test-image.jpg" size="400" position="flex-start" caption="This is a caption"}
