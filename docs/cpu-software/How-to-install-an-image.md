@@ -68,28 +68,21 @@ The recommended tools for flashing boards in MaskROM mode have only been tested 
 
 **On Debian:**
 
-```bash
-sudo apt update
-sudo apt install -y git curl build-essential pkg-config libusb-1.0-0-dev
-```
+`sudo apt update && sudo apt install -y git curl build-essential pkg-config libusb-1.0-0-dev`
 
 **On macOS:**
 
-```bash
-brew install libusb
-```
+`brew install libusb`
 
 2. Install the **Rust compiler** and **Cargo package manager**:
-```bash
-curl https://sh.rustup.rs -sSf | sh
-````
+
+`curl https://sh.rustup.rs -sSf | sh`
 
 3. Reopen the terminal.
 
 4. Build the **rockusb tool**:
-```bash
-cargo install --branch switch-storage --git https://github.com/collabora/rockchiprs.git --example rockusb --features=nusb rockusb
-```
+
+`cargo install --branch switch-storage --git https://github.com/collabora/rockchiprs.git --example rockusb --features=nusb rockusb`
 
 #### Step 2. Preparing the image and entering MaskROM mode
 
@@ -110,31 +103,28 @@ To complete this step, you need to know your board’s target name, the USB port
 #### Step 3. Flashing the image
 
 1. List connected devices in MaskROM mode:
-```bash
-rockusb list
-````
+
+`rockusb list`
+
 If no devices are listed, check the USB connection, make sure the correct USB port is being used, re-enter MaskROM mode, and run the command again.
 
 2. Load the bootloader into RK3576 RAM:
-```bash
-rockusb download-boot [path to rk3576_spl_loader_*.bin]
-````
+
+`rockusb download-boot [path to rk3576_spl_loader_*.bin]`
 
 3. Select the storage device you want to use:
-````bash
-rockusb change-storage X
-````
+
+`rockusb change-storage X`
+
 Where X can be: 1 — eMMC; 7 — NAND; 8 — SPI NAND; 9 — SPI NOR; 10 — UFS or SATA; 11 — NVMe.
 
 4. Write the OS image to the storage device:
-```bash
-rockusb write-bmap [path to the OS image file for your board]
-````
+
+`rockusb write-bmap [path to the OS image file for your board]`
 
 5. Reboot the RK3576:
-````bash
-rockusb reset-device
-````
+
+`rockusb reset-device`
 
 ### Erasing the onboard storage drive via USB
 
@@ -143,28 +133,25 @@ To erase the onboard storage device, follow steps 1 and 2 from the [Writing to t
 Then perform the following steps:
 
 1. List connected devices in MaskROM mode:
-```bash
-rockusb list
-```
+
+`rockusb list`
+
 If no devices are listed, check the USB connection, make sure the correct USB port is being used, re-enter MaskROM mode, and run the command again.
 
 2. Load the bootloader into RK3576 RAM:
-```bash
-rockusb download-boot [path to rk3576_spl_loader_*.bin]
-````
+
+`rockusb download-boot [path to rk3576_spl_loader_*.bin]`
 
 3. Select the storage device to erase: 
-```bash
-rockusb change-storage X
-```
+
+`rockusb change-storage X`
+
 Where X can be: 1 — eMMC; 7 — NAND; 8 — SPI NAND; 9 — SPI NOR; 10 — UFS or SATA; 11 — NVMe.
 
 4. Erase the storage device:
-```bash
-rockusb erase-flash
-```
+
+`rockusb erase-flash`
 
 5. Reboot the RK3576:
-```bash
-rockusb reset-device
-```
+
+`rockusb reset-device`
