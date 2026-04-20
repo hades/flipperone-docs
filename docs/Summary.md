@@ -32,10 +32,11 @@
 
 ## 🐧 Linux (CPU Software)
 - [About Linux (CPU Software)](cpu-software/About-CPU-Software.md)
-- [Architecture of CPU Software](cpu-software/Architecture.md)
-- [Build system](cpu-software/Build-system.md)
 - [Flipper OS](cpu-software/Flipper-OS.md)
 - [FlipCTL](cpu-software/FlipCTL.md)
+- [Build system](cpu-software/Build-system.md)
+- [How to install an image](cpu-software/How-to-install-an-image.md)
+- [Supported boards](cpu-software/Supported-boards.md)
 
 ## 🎨 User Interface
 - [About User Interface](user-interface/About-User-Interface.md)
