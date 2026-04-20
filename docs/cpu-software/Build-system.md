@@ -10,7 +10,7 @@ You can either download a prebuilt OS image from our [public build server](./#pu
 
 The OS images are built using scripts from the [flipperone-linux-build-scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) repository. These scripts fetch sources from multiple additional repositories, compile the code, and assemble the resulting artifacts into full disk images for all supported boards.
 
-::Image[]{src="files/pics/os-disk-image-build-flow.jpg" size="100" position="center" caption="OS disk image build flow"}
+![OS disk image build flow diagram](/files/pics/os-disk-image-build-flow.jpg)
 
 Build system flow consists of steps required for building a full disk image from scratch:
 
@@ -26,7 +26,7 @@ The Flipper OS image files are stored in the `out/images` directory.
 
 ## OS image file naming
 
-::Image[]{src="files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
+::Image[]{src="/files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
 
 The OS image filename consists of several parts. Let’s break them down using the example above:
 
@@ -46,11 +46,11 @@ Each disk image is accompanied by a `.bmap` file that contains a map of the used
 
 The official OS build server web-interface is available at https://linux-images.flipp.dev/. We use **Buildbot** as our continuous integration (CI) framework to automate the build process. This web interface allows you to monitor the status of OS image builds.
 
-::Image[]{src="files/pics/os-buildbot.png" size="100" position="center" caption="OS disk image build flow"}
+![BuildBot web interface screenshot](/files/pics/os-buildbot.png)
 
 The images produced by each build are uploaded to a public web server, where they can be downloaded: https://dl-linux-images.flipp.dev/full-img/
 
-::Image[]{src="files/pics/os-build-list.png" size="100" position="center" caption="OS disk image build flow"}
+![Web server interface with build list](/files/pics/os-build-list.png)
 
 Each build is stored in a separate directory, where the directory name matches the build ID.
 
