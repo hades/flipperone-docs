@@ -26,7 +26,7 @@ The Flipper OS image files are stored in the `out/images` directory.
 
 ## OS image file naming
 
-::Image[]{src="files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
+::Image[]{src="/files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
 
 The OS image filename consists of several parts. Let’s break them down using the example above:
 
