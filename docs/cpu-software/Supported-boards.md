@@ -18,8 +18,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 
 **Switching to MaskROM mode:** from the boot menu on the screen.
 
-**MaskROM USB port:**
-![usb-c icon](files/pics/icon_usb_c.png) USB-C1.
+**MaskROM USB port:** :inlineImage[]{src="files/pics/icon_usb_c.png" alt caption="usb-c icon"} USB-C1.
 
 ---
 
@@ -39,7 +38,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 
 **Switching to MaskROM mode:** Hold the MASKROM button while powering on the board.
 
-**MaskROM USB port:** ![usb-c icon](files/pics/icon_usb_c.png) OTG USB-C.
+**MaskROM USB port:** :inlineImage[]{src="files/pics/icon_usb_c.png" alt caption="usb-c icon"} OTG USB-C.
 
 **Product documentation:**
 
@@ -65,7 +64,7 @@ https://docs.armsom.org/armsom-sige5
 
 **Switching to MaskROM mode:** Hold the MASKROM button while powering on the board.
 
-**MaskROM USB port:** ![usb-c icon](files/pics/icon_usb_c.png) USB-C port. 
+**MaskROM USB port:** :inlineImage[]{src="files/pics/icon_usb_c.png" alt caption="usb-c icon"} USB-C port. 
 
 **Product documentation:** https://wiki.t-firefly.com/en/ROC-RK3576-PC/
 
@@ -85,7 +84,7 @@ https://docs.armsom.org/armsom-sige5
 
 **Switching to MaskROM mode:** Connect the ADC0 pin to the GND pin while powering on the board.
 
-**MaskROM USB port:** ![usb-c icon](files/pics/icon_usb_c.png) USB-C port next to the HDMI port.
+**MaskROM USB port:** :inlineImage[]{src="files/pics/icon_usb_c.png" alt caption="usb-c icon"} USB-C port next to the HDMI port.
 
 **Product documentation:** https://wiki.luckfox.com/Luckfox-Omni3576/Luckfox-Omni3576-quick-start
 
@@ -105,7 +104,7 @@ https://docs.armsom.org/armsom-sige5
 
 **Switching to MaskROM mode:** Hold the Maskrom button while powering on the board.
 
-**MaskROM USB port:** ![usb-a icon](files/pics/icon_top_usb3.png) Top USB-A 3.0 port.
+**MaskROM USB port:** :inlineImage[]{src="files/pics/icon_top_usb3.png" alt caption="usb-a icon"} Top USB-A 3.0 port.
 
 **Product documentation:** https://docs.radxa.com/en/rock4/rock4d
 
@@ -129,7 +128,7 @@ https://docs.armsom.org/armsom-sige5
 
 **Switching to MaskROM mode:** Hold the MASK button while powering on the board.
 
-**MaskROM USB port:** ![usb-a icon](files/pics/icon_top_usb3.png) Top USB-A 3.0 port.
+**MaskROM USB port:** :inlineImage[]{src="files/pics/icon_top_usb3.png" alt caption="usb-a icon"} Top USB-A 3.0 port.
 
 **Product documentation:** https://wiki.friendlyelec.com/wiki/index.php/NanoPi_M5
 

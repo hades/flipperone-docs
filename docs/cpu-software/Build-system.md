@@ -10,7 +10,7 @@ You can either download a prebuilt OS image from our [public build server](./#pu
 
 The OS images are built using scripts from the [flipperone-linux-build-scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) repository. These scripts fetch sources from multiple additional repositories, compile the code, and assemble the resulting artifacts into full disk images for all supported boards.
 
-::Image[]{src="files/pics/os-disk-image-build-flow.jpg" size="80" position="center" caption="OS disk image build flow"}
+::Image[]{src="files/pics/os-disk-image-build-flow.jpg" size="100" position="center" caption="OS disk image build flow"}
 
 Build system flow consists of steps required for building a full disk image from scratch:
 
@@ -26,7 +26,7 @@ The Flipper OS image files are stored in the `out/images` directory.
 
 ## OS image file naming
 
-::Image[]{src="files/pics/os-image-file-name.jpg" size="85" position="center" caption="OS image file name structure"}
+::Image[]{src="files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
 
 The OS image filename consists of several parts. Let’s break them down using the example above:
 
@@ -60,7 +60,9 @@ By default, the Buildbot monitors each of the Git repositories labeled with ⚡ 
 
 Using the same build scripts as the official build server, you can build a Flipper OS image locally on your machine. This is useful for testing your changes on Flipper One or any [supported SBC](Supported-boards.md) before submitting pull requests with modifications to the repository.
 
-:::hint{style="warning"} Now image building is supported **only on Linux** (on EXT4 or XFS file system) due to limitations related to sparse images handling.:::
+:::hint{style="warning"}
+Now image building is supported **only on Linux** (on EXT4 or XFS file system) due to limitations related to sparse images handling.
+:::
 
 To build Flipper OS images locally:
 
