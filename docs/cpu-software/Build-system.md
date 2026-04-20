@@ -10,7 +10,7 @@ You can either download a prebuilt OS image from our [public build server](./#pu
 
 The OS images are built using scripts from the [flipperone-linux-build-scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) repository. These scripts fetch sources from multiple additional repositories, compile the code, and assemble the resulting artifacts into full disk images for all supported boards.
 
-::Image[]{src="files/pics/os-disk-image-build-flow.jpg" size="80" position="center" caption="OS disk image build flow"}
+::Image[]{src="files/pics/os-disk-image-build-flow.jpg" size="100" position="center" caption="OS disk image build flow"}
 
 Build system flow consists of steps required for building a full disk image from scratch:
 
@@ -26,7 +26,7 @@ The Flipper OS image files are stored in the `out/images` directory.
 
 ## OS image file naming
 
-::Image[]{src="files/pics/os-image-file-name.jpg" size="85" position="center" caption="OS image file name structure"}
+::Image[]{src="files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
 
 The OS image filename consists of several parts. Let’s break them down using the example above:
 
