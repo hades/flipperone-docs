@@ -6,7 +6,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 
 **Prototype. Not for sale!**
 
-::Image[]{src="files/pics/flipper_one_prototype.jpg" size="50" position="center" caption=""}
+::Image[]{src="files/pics/flipper_one_prototype.jpg" size="50" position="center" caption="Flipper One (HW ver. F0B0C1)"}
 
 ✅ DisplayPort on USB-C1.
 
@@ -26,7 +26,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 
 **Recommended board!**
 
-::Image[]{src="files/pics/banana-pi-m5-pro.png" size="38" position="center" caption=""}
+::Image[]{src="files/pics/banana-pi-m5-pro.png" size="38" position="center" caption="Banana Pi BPI-M5 Pro"}
 
 ✅ DisplayPort on USB-C.
 
@@ -52,7 +52,7 @@ https://docs.armsom.org/armsom-sige5
 
 ## FireFly ROC-RK3576-PC
 
-::Image[]{src="files/pics/roc-rk3576.jpg" size="42" position="center" caption=""}
+::Image[]{src="files/pics/roc-rk3576.jpg" size="42" position="center" caption="FireFly ROC-RK3576-PC"}
 
 ✅ DisplayPort on USB-C.
 
@@ -72,7 +72,7 @@ https://docs.armsom.org/armsom-sige5
 
 ## Luckfox Omni3576
 
-::Image[]{src="files/pics/luckfox-omni3576.png" size="48" position="center" caption=""}
+::Image[]{src="files/pics/luckfox-omni3576.png" size="48" position="center" caption="Luckfox Omni3576"}
 
 ✅ DisplayPort on USB-C.
 
@@ -92,7 +92,7 @@ https://docs.armsom.org/armsom-sige5
 
 ## Radxa ROCK 4D
 
-::Image[]{src="files/pics/radxa-rock-4d.png" size="38" position="center" caption=""}
+::Image[]{src="files/pics/radxa-rock-4d.png" size="38" position="center" caption="Radxa ROCK 4D"}
 
 ❌ No DisplayPort on USB-C. 
 
@@ -112,7 +112,7 @@ https://docs.armsom.org/armsom-sige5
 
 ## NanoPi M5
 
-::Image[]{src="files/pics/nanopi-m5.png" size="38" position="center" caption=""}
+::Image[]{src="files/pics/nanopi-m5.png" size="38" position="center" caption="NanoPi M5"}
 
 ❌ No DisplayPort on USB-C.
 
@@ -138,7 +138,7 @@ https://docs.armsom.org/armsom-sige5
 
 **Evaluation board. Not for sale!**
 
-::Image[]{src="files/pics/evb1.png" size="38" position="center" caption=""}
+::Image[]{src="files/pics/evb1.png" size="38" position="center" caption="Rockchip RK3576 EVB1"}
 
 **Target name:** `evb1`.
 
