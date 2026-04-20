@@ -10,7 +10,7 @@ You can either download a prebuilt OS image from our [public build server](./#pu
 
 The OS images are built using scripts from the [flipperone-linux-build-scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) repository. These scripts fetch sources from multiple additional repositories, compile the code, and assemble the resulting artifacts into full disk images for all supported boards.
 
-![OS disk image build flow diagram](/files/pics/os-disk-image-build-flow.jpg)
+![OS disk image build flow diagram](/files/pics/os-disk-image-build-flow.jpg "OS disk image build flow")
 
 Build system flow consists of steps required for building a full disk image from scratch:
 
@@ -27,6 +27,7 @@ The Flipper OS image files are stored in the `out/images` directory.
 ## OS image file naming
 
 ::Image[]{src="/files/pics/os-image-file-name.jpg" size="100" position="center" caption="OS image file name structure"}
+![OS disk image build flow diagram](/files/pics/os-image-file-name.jpg "OS image file name")
 
 The OS image filename consists of several parts. Let’s break them down using the example above:
 
@@ -46,11 +47,11 @@ Each disk image is accompanied by a `.bmap` file that contains a map of the used
 
 The official OS build server web-interface is available at https://linux-images.flipp.dev/. We use **Buildbot** as our continuous integration (CI) framework to automate the build process. This web interface allows you to monitor the status of OS image builds.
 
-![BuildBot web interface screenshot](/files/pics/os-buildbot.png)
+![BuildBot web interface](/files/pics/os-buildbot.png "BuildBot web interface")
 
 The images produced by each build are uploaded to a public web server, where they can be downloaded: https://dl-linux-images.flipp.dev/full-img/
 
-![Web server interface with build list](/files/pics/os-build-list.png)
+![Web server interface with build list](/files/pics/os-build-list.png "Web server interface with build list")
 
 Each build is stored in a separate directory, where the directory name matches the build ID.
 
@@ -66,20 +67,19 @@ Now image building is supported **only on Linux** (on EXT4 or XFS file system) d
 
 To build Flipper OS images locally:
 
-1. Install **docker** and **git**.
+1. Install [**docker**](https://www.docker.com/) and [**git**](https://git-scm.com/).
 2. Clone the build scripts repository: 
-```
-git clone https://github.com/flipperdevices/rk3576-linux-build 
-cd rk3576-linux-build
-```
+
+`git clone https://github.com/flipperdevices/rk3576-linux-build && cd rk3576-linux-build`
+
 3. Build the Docker image: 
-```
-docker build -t rk3576-linux-build .
-```
+
+`docker build -t rk3576-linux-build .`
+
 4. Run the container:
-```
-docker run --privileged --rm -v $(pwd)/out:/artifacts rk3576-linux-build
-```
+
+`docker run --privileged --rm -v $(pwd)/out:/artifacts rk3576-linux-build`
+
 5. Wait for the build to complete. This is a long-running process that may take from several tens of minutes to over an hour.
 
 The Flipper OS full disk images will be saved in the `rk3576-linux-build/out/images` directory.
