@@ -62,17 +62,13 @@ Use an SD card with a capacity of 4 GB or larger. The SD card will be erased dur
 The recommended tools for flashing boards in MaskROM mode have only been tested on **Linux (Debian)** and **macOS**. Windows instructions will be available later.
 :::
 
-#### Step 1. Flashing tools installation
+**Step 1. Flashing tools installation**
 
 1. Install the required dependencies.
 
-**On Debian:**
+On Debian: `sudo apt update && sudo apt install -y git curl build-essential pkg-config libusb-1.0-0-dev`
 
-`sudo apt update && sudo apt install -y git curl build-essential pkg-config libusb-1.0-0-dev`
-
-**On macOS:**
-
-`brew install libusb`
+On macOS: `brew install libusb`
 
 2. Install the **Rust compiler** and **Cargo package manager**:
 
@@ -84,7 +80,7 @@ The recommended tools for flashing boards in MaskROM mode have only been tested 
 
 `cargo install --branch switch-storage --git https://github.com/collabora/rockchiprs.git --example rockusb --features=nusb rockusb`
 
-#### Step 2. Preparing the image and entering MaskROM mode
+**Step 2. Preparing the image and entering MaskROM mode**
 
 :::hint{style="info"}
 To complete this step, you need to know your board’s target name, the USB port used in MaskROM mode, and how to enter MaskROM mode. This information is available on the [Supported Boards](Supported-boards.md) page for your specific board.
@@ -100,7 +96,7 @@ To complete this step, you need to know your board’s target name, the USB port
 
 3. Put the board into MaskROM mode.
 
-#### Step 3. Flashing the image
+**Step 3. Flashing the image**
 
 1. List connected devices in MaskROM mode:
 
