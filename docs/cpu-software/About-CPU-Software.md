@@ -65,6 +65,7 @@ This subproject includes several public GitHub repositories containing Linux OS 
 
 :::hint{type="info"}
 To contribute to the Linux (CPU Software) sub-project, you need to have a GitHub account. You can create one on the [GitHub website](https://github.com/signup).
+:::
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/EcotI__FOd58IUCUyNzqC-20260420-091800.jpg)
 
@@ -72,6 +73,10 @@ Anyone can contribute to the Linux (CPU Software) sub-project via the GitHub rep
 
 - [**Comment on an open task**](./#comment-on-an-open-task)
 - [**Contribute via a pull request**](./#share-a-new-design-as-a-pull-request)
+
+***
+
+## Comment on an open task
 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
@@ -87,10 +92,6 @@ To keep collaboration productive, please keep comments on-topic. Open tasks are 
 👍 — I think the green button works better. Here's an example I made: `mypicture.jpg`&#x20;
 :::
 ::::
-
-***
-
-## Comment on an open task
 
 Open tasks that need the community's help are labeled **help wanted**. If you have ideas on how to improve the design, you can contribute by commenting on the task and attaching screenshots, videos, or links:
 
