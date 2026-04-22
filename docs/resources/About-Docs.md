@@ -255,3 +255,5 @@ Open a pull request to the `public-release` branch of the original repository. A
 :::::
 
 Once your pull request is merged, Archbee automatically picks up the changes and rebuilds the live site at [**docs.flipper.net/one**](https://docs.flipper.net/one).
+
+Test how changing a page via GitHub affects the published page's URL.
