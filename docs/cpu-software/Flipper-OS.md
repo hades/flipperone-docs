@@ -38,7 +38,7 @@ And of course, you can create your own custom profiles for any use case.
 
 In most Linux distributions, the update system is not fully reliable. If an error occurs during an update, the operating system can end up in an inconsistent state, where some files are updated and others are not.
 
-![FlipCTL GUI demo](/files/pics/flipper-os-ab-updating.jpg "FlipCTL GUI demo (nmap wrapper)")
+![FlipCTL GUI demo](/files/pics/flipper-os-ab-updating.jpg "A/B update flow diagram")
 
 In Flipper OS, updates are atomic. If an error occurs during installation, the system automatically rolls back to the previous working version.
 
