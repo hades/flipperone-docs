@@ -38,7 +38,7 @@ As the low-power MCU, we use the **[Raspberry Pi RP2350 microcontroller](https:/
 
 ## Firmware architecture
 
-The MCU firmware is built on the FreeRTOS kernel and a set of libraries and drivers organized in a layered firmware architecture.
+The MCU firmware is built on the **[FreeRTOS](https://www.freertos.org/)** kernel and a set of libraries and drivers organized in a layered firmware architecture.
 
 ![MCU firmware architecture](/files/pics/mcu-firmware-architecture.jpg "MCU firmware architecture")
 
