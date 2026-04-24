@@ -122,7 +122,7 @@ Where X can be: 1 — eMMC; 7 — NAND; 8 — SPI NAND; 9 — SPI NOR; 10 — UF
 
 `rockusb reset-device`
 
-### Erasing the onboard storage drive via USB
+### Erasing the onboard storage drive
 
 To erase the onboard storage device, follow steps 1 and 2 from the **[Writing to the onboard storage drive](./#writing-to-the-onboard-storage-drive)** instructions, excluding the OS image prepare step. 
 
