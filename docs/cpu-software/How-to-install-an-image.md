@@ -4,7 +4,7 @@ Flipper OS can be installed on many Rockchip RK3576-based boards, many of which 
 
 ## Rockchip MaskROM mode
 
-The Rockchip RK3576 supports a special **MaskROM mode** that allows writing to the on-board storage devices connected to the chip (SPI/eMMC/UFS flash chips) via USB. In this mode, only a dedicated MaskROM USB port of the RK3576 is used.
+The Rockchip RK3576 supports a special **MaskROM mode** that allows writing to the on-board storage drives connected to the chip (SPI/eMMC/UFS flash chips) via USB. In this mode, only a dedicated MaskROM USB port of the RK3576 is used.
 
 ::Image[]{src="files/pics/rk3576_maskrom_mode.jpg" size="80" position="center" caption=""}
 
@@ -14,11 +14,11 @@ Switching into MaskROM mode varies across different boards, so on the **[Support
 
 ## Board boot priority
 
-The RK3576 chip may have a different boot priority list for onboard storage devices. This list can contain up to two items (for example, eMMC flash and an SD card). The boot priority is determined by the voltage on the RK3576 `SARADC_VIN0_BOOT` pin, which is set using a resistor divider on the board and can also be pulled to ground via an onboard button or switch to trigger MaskROM mode.
+The RK3576 chip may have a different boot priority list for onboard storage drives. This list can contain up to two items (for example, eMMC flash and an SD card). The boot priority is determined by the voltage on the RK3576 `SARADC_VIN0_BOOT` pin, which is set using a resistor divider on the board and can also be pulled to ground via an onboard button or switch to trigger MaskROM mode.
 
 ::Image[]{src="files/pics/rk3576_boot_priority_logic.jpg" size="80" position="center" caption=""}
 
-After power-on, the RK3576 reads the voltage on the `SARADC_VIN0_BOOT` pin to determine the boot priority list and to check if MaskROM mode has been requested. If not, it attempts to boot from the first storage device in the priority list. If no bootable OS found on that device, it proceeds to the second storage device in the list. If again no bootable OS is detected, the RK3576 switches to MaskROM mode and waits for commands from a PC via the MaskROM USB port.
+After power-on, the RK3576 reads the voltage on the `SARADC_VIN0_BOOT` pin to determine the boot priority list and to check if MaskROM mode has been requested. If not, it attempts to boot from the first storage drive in the priority list. If no bootable OS found on that device, it proceeds to the second storage drive in the list. If again no bootable OS is detected, the RK3576 switches to MaskROM mode and waits for commands from a PC via the MaskROM USB port.
 
 The table below lists all supported boot priority lists (referred to by Rockchip as boot modes) for the RK3576, along with the corresponding resistor combinations and ADC values for each mode.
 
@@ -34,7 +34,7 @@ There are two main ways to install an operating system on the board:
 
 * **[Writing an image to the onboard storage drive](./#writing-to-the-onboard-storage-drive)** via USB (in MaskROM mode). 
 
-Please note that the RK3576 boots from storage devices according to its boot priority list, as described in the **[Board Boot Priority](./#board-boot-priority)** section. If you need the RK3576 to skip booting from the onboard storage device that already contains a bootable OS, you can **[erase it in MaskROM mode](./erasing-the-onboard-storage-drive-via-usb)**.
+Please note that the RK3576 boots from storage drives according to its boot priority list, as described in the **[Board Boot Priority](./#board-boot-priority)** section. If you need the RK3576 to skip booting from the onboard storage drive that already contains a bootable OS, you can **[erase it in MaskROM mode](./erasing-the-onboard-storage-drive-via-usb)**.
 
 ### Writing to an SD card
 
@@ -108,13 +108,13 @@ If no devices are listed, check the USB connection, make sure the correct USB po
 
 `rockusb download-boot [path to rk3576_spl_loader_*.bin]`
 
-3. Select the storage device you want to use:
+3. Select the storage drive you want to use:
 
 `rockusb change-storage X`
 
 Where X can be: 1 — eMMC; 7 — NAND; 8 — SPI NAND; 9 — SPI NOR; 10 — UFS or SATA; 11 — NVMe.
 
-4. Write the OS image to the storage device:
+4. Write the OS image to the storage drive:
 
 `rockusb write-bmap [path to the OS image file for your board]`
 
@@ -124,7 +124,7 @@ Where X can be: 1 — eMMC; 7 — NAND; 8 — SPI NAND; 9 — SPI NOR; 10 — UF
 
 ### Erasing the onboard storage drive
 
-To erase the onboard storage device, follow steps 1 and 2 from the **[Writing to the onboard storage drive](./#writing-to-the-onboard-storage-drive)** instructions, excluding the OS image prepare step. 
+To erase the onboard storage drive, follow steps 1 and 2 from the **[Writing to the onboard storage drive](./#writing-to-the-onboard-storage-drive)** instructions, excluding the OS image prepare step. 
 
 Then perform the following steps:
 
@@ -138,13 +138,13 @@ If no devices are listed, check the USB connection, make sure the correct USB po
 
 `rockusb download-boot [path to rk3576_spl_loader_*.bin]`
 
-3. Select the storage device to erase: 
+3. Select the storage drive to erase: 
 
 `rockusb change-storage X`
 
 Where X can be: 1 — eMMC; 7 — NAND; 8 — SPI NAND; 9 — SPI NOR; 10 — UFS or SATA; 11 — NVMe.
 
-4. Erase the storage device:
+4. Erase the storage drive:
 
 `rockusb erase-flash`
 
