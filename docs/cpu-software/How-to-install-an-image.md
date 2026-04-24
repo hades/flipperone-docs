@@ -86,7 +86,7 @@ On macOS: `brew install libusb`
 To complete this step, you need to know your board’s target name, the USB port used in MaskROM mode, and how to enter MaskROM mode. This information is available on the [Supported Boards](Supported-boards.md) page for your specific board.
 :::
 
-1. [Download](./Build-system.md#public-build-server) or [build an OS image locally](./Build-system.md#local-build-of-the-os). You need: 
+1. [Download](./Build-system.md#public-build-server) or [build an OS image locally](How-to-build-an-image-locally.md). You need: 
 
     * The bootloader image for your board (the build system places it here: `/u-boot/[Target name]/rk3576_spl_loader_v*.bin`).
 

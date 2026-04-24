@@ -4,7 +4,7 @@ A build system is a framework for producing OS full disk images for various supp
 
 Disk images include two Linux kernels (Mainline kernel 7.0 and BSP kernel 6.1), between which you can switch from the terminal or via the U-Boot menu.
 
-You can either download a prebuilt OS image from our [public build server](./#public-build-server) or [build your own image locally](./#local-build-of-the-os).
+You can either download a prebuilt OS image from our [public build server](./#public-build-server) or [build your own image locally](How-to-build-an-image-locally.md).
 
 ## OS disk image build flow
 
@@ -55,30 +55,3 @@ The images produced by each build are uploaded to a public web server, where the
 Each build is stored in a separate directory, where the directory name matches the build ID.
 
 By default, the Buildbot monitors each of the Git repositories labeled with ⚡ icon on the image build diagram for any changes (by polling them every 5 minutes), and rebuild any components affected by a change.
-
-## Local build of the OS
-
-Using the same build scripts as the official build server, you can build a Flipper OS image locally on your machine. This is useful for testing your changes on Flipper One or any [supported SBC](Supported-boards.md) before submitting pull requests with modifications to the repository.
-
-:::hint{style="warning"}
-Now image building is supported **only on Linux** (on EXT4 or XFS file system) due to limitations related to sparse images handling.
-:::
-
-To build Flipper OS images locally:
-
-1. Install [**docker**](https://www.docker.com/) and [**git**](https://git-scm.com/).
-2. Clone the build scripts repository: 
-
-`git clone https://github.com/flipperdevices/rk3576-linux-build && cd rk3576-linux-build`
-
-3. Build the Docker image: 
-
-`docker build -t rk3576-linux-build .`
-
-4. Run the container:
-
-`docker run --privileged --rm -v $(pwd)/out:/artifacts rk3576-linux-build`
-
-5. Wait for the build to complete. This is a long-running process that may take from several tens of minutes to over an hour.
-
-The Flipper OS full disk images will be saved in the `rk3576-linux-build/out/images` directory.
