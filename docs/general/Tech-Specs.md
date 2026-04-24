@@ -8,7 +8,7 @@ updatedAt: Wed Apr 22 2026 13:16:25 GMT+0000 (Coordinated Universal Time)
 
 This page describes the full technical specifications of the Flipper One. Since the device is under active development, specifications may change.
 
-![Flipper One outline](files/pics/flipper_one_outline_no_screen.png)
+![Flipper One outline](/files/pics/flipper_one_outline_no_screen.png)
 
 ## Main CPU — RK3576
 

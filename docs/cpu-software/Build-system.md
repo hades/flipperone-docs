@@ -44,11 +44,11 @@ Each disk image is accompanied by a `.bmap` file that contains a map of the used
 
 ## Public build server
 
-The official OS build server web-interface is available at https://linux-images.flipp.dev/. We use **Buildbot** as our continuous integration (CI) framework to automate the build process. This web interface allows you to monitor the status of OS image builds.
+The official OS build server web-interface is available at [https://linux-images.flipp.dev/](https://linux-images.flipp.dev/). We use **Buildbot** as our continuous integration (CI) framework to automate the build process. This web interface allows you to monitor the status of OS image builds.
 
 ![BuildBot web interface](/files/pics/os-buildbot.png "BuildBot web interface")
 
-The images produced by each build are uploaded to a public web server, where they can be downloaded: https://dl-linux-images.flipp.dev/full-img/
+The images produced by each build are uploaded to a public web server, where they can be downloaded: [https://dl-linux-images.flipp.dev/full-img/](https://dl-linux-images.flipp.dev/full-img/).
 
 ![Web server interface with build list](/files/pics/os-build-list.png "Web server interface with build list")
 
