@@ -1,3 +1,35 @@
 # About MCU Firmware
 
-This section covers the low power co-process firmware that works together with main CPU in Flipper One
+Flipper One uses a dual-processor architecture with a main processor (SoC Rockchip RK3576) and a low power co-processor (MCU Raspberry Pi RP2350) that works together. This sub-project includes the low power co-processor firmware.
+
+This page explains the structure of the MCU Firmware sub-project, provides links to all the resources and explains how to contribute to the sub-project.
+
+The MCU Firmware sub-project consists of:
+
+- ✅ **[Task tracker](https://github.com/orgs/flipperdevices/projects/8)**
+- 📁 **[MCU Firmware source code](https://github.com/flipperdevices/flipperone-mcu-firmware)** GitHub repository
+
+We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositoriy via pull requests.
+
+![MCU firmware subproject structure](/files/pics/mcu-firmware-subproject-structure.jpg)
+
+***
+
+## ✅  Tasks tracker
+
+All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — Linux (CPU Software)](https://github.com/orgs/flipperdevices/projects/8/). There, you can see what the engineering team is working on and follow progress and discussions.
+
+**<TODO: Task tracker screenshot with collouts)>**
+
+**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [**Contribution guide**](About-Mechanics.md) first.
+
+***
+
+## 📁 MCU Firmware sources GitHub repository
+
+This subproject includes a public GitHub repositoriy containing MCU Firmware for Raspberry Pi RP2350:
+
+**[https://github.com/flipperdevices/flipperone-mcu-firmware](https://github.com/flipperdevices/flipperone-mcu-firmware)**
+
+Learn more about MCU Firmware architecture in the dedicated page: **[MCU Firmware architecture](Architecture.md)**.
+
