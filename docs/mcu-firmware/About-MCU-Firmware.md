@@ -7,7 +7,7 @@ This page explains the structure of the MCU Firmware sub-project, provides links
 The MCU Firmware sub-project consists of:
 
 - ✅ **[Task tracker](https://github.com/orgs/flipperdevices/projects/8)**
-- 📁 **[MCU Firmware source code](https://github.com/flipperdevices/flipperone-mcu-firmware)** GitHub repository
+- 📁 **[MCU Firmware sources repository](https://github.com/flipperdevices/flipperone-mcu-firmware)**
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositoriy via pull requests.
 
@@ -17,7 +17,7 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 ## ✅  Tasks tracker
 
-All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — Linux (CPU Software)](https://github.com/orgs/flipperdevices/projects/8/). There, you can see what the engineering team is working on and follow progress and discussions.
+All MCU Firmware team tasks are tracked in the GitHub project **[Flipper One — Linux (CPU Software)](https://github.com/orgs/flipperdevices/projects/8/)**. There, you can see what the engineering team is working on and follow progress and discussions.
 
 **<TODO: Task tracker screenshot with collouts)>**
 
@@ -25,7 +25,7 @@ All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — L
 
 ***
 
-## 📁 MCU Firmware sources GitHub repository
+## 📁 MCU firmware sources
 
 This subproject includes a public GitHub repositoriy containing MCU Firmware for Raspberry Pi RP2350:
 

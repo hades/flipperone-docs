@@ -33,7 +33,7 @@ As the low-power MCU, we use the **[Raspberry Pi RP2350 microcontroller](https:/
 - A rich set of peripheral interfaces, including SPI, I²C, UART, and PWM.
 - A powerful PIO (Programmable Input/Output) subsystem for flexible, timing-precise hardware interfacing.
 
-![RP2350 architecture](/files/pics/rp2350-internals.png "RP2350 architecture")
+![RP2350 block diagram](/files/pics/rp2350-internals.png "RP2350 block diagram")
 
 
 ## Firmware architecture
@@ -41,4 +41,3 @@ As the low-power MCU, we use the **[Raspberry Pi RP2350 microcontroller](https:/
 The MCU firmware is built on the **[FreeRTOS](https://www.freertos.org/)** kernel and a set of libraries and drivers organized in a layered firmware architecture.
 
 ![MCU firmware architecture](/files/pics/mcu-firmware-architecture.jpg "MCU firmware architecture")
-
