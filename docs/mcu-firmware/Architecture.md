@@ -8,8 +8,10 @@ Flipper One uses a dual-processor architecture with **High-Performance Linux CPU
 - Managing the battery and power subsystems
 - Implements Power Bank mode
 - Managing system power states
-- Handling communication with external devices through the CC pins of the USB-C ports
+- Handling communication through the CC pins of the USB-C ports
 - Controlling the main CPU power-on and boot process
+
+## CPU and MCU interconnection
 
 The MCU and CPU are interconnected via several interfaces and GPIO pins, including: 
 
@@ -36,7 +38,7 @@ As the low-power MCU, we use the **[Raspberry Pi RP2350 microcontroller](https:/
 
 ## Firmware architecture
 
-The MCU firmware is built on the FreeRTOS kernel and a set of libraries and drivers organized in a layered firmware architecture.
+The MCU firmware is built on the **[FreeRTOS](https://www.freertos.org/)** kernel and a set of libraries and drivers organized in a layered firmware architecture.
 
 ![MCU firmware architecture](/files/pics/mcu-firmware-architecture.jpg "MCU firmware architecture")
 
