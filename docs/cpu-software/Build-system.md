@@ -60,7 +60,7 @@ By default, the Buildbot monitors each of the Git repositories labeled with ⚡ 
 
 Using the same build scripts as the official build server, you can build a Flipper OS image locally on your machine. This is useful for testing your changes on Flipper One or any [supported SBC](Supported-boards.md) before submitting pull requests with modifications to the repository.
 
-:::hint{style="warning"}
+:::hint{type="warning"}
 Now image building is supported **only on Linux** (on EXT4 or XFS file system) due to limitations related to sparse images handling.
 :::
 

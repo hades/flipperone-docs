@@ -454,10 +454,10 @@ Supported language tags: `markdown`, `html`, `javascript`, `typescript`, `python
 
 ## Callouts
 
-Archbee supports four callout styles using `:::hint{style="..."}`:
+Archbee supports four callout styles using `:::hint{type="..."}`:
 
 ```markdown
-:::hint{style="info"}
+:::hint{type="info"}
 Your text for the **info callout** here
 :::
 ```
@@ -469,7 +469,7 @@ Your text for the **info callout** here
 ‎&#x20;
 
 ```markdown
-:::hint{style="success"}
+:::hint{type="success"}
 Your text for the **success callout** here
 :::
 ```
@@ -481,7 +481,7 @@ Your text for the **success callout** here
 ‎&#x20;
 
 ```markdown
-:::hint{style="warning"}
+:::hint{type="warning"}
 Your text for the **warning callout** here
 :::
 ```
@@ -493,7 +493,7 @@ Your text for the **warning callout** here
 ‎&#x20;
 
 ```markdown
-:::hint{style="danger"}
+:::hint{type="danger"}
 Your text for the **danger callout** here
 :::
 ```
