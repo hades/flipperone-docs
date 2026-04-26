@@ -6,9 +6,9 @@ createdAt: Wed Apr 22 2026 13:04:53 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Apr 22 2026 13:32:21 GMT+0000 (Coordinated Universal Time)
 ---
 
-Will this break the URL?
+# Title
 
-This page explains how the Docs sub-project works — how the Developer Portal is structured, how source files are stored and published, and how you can contribute.
+The Developer Portal — also called the wiki or the Docs — is the main documentation for Flipper One sub-projects. We update it as we work on Flipper One, so some pages may be out of date. This page explains how the Docs are organized, how pages are stored and published, and how you can contribute.
 
 \<image placeholder>
 
@@ -23,37 +23,42 @@ The Docs sub-project consists of:
 
 We'd love your feedback and help — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the Docs GitHub repository via pull requests.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/CekWx_z_PDlUOfCesCeYO-20260421-161345.jpg)
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/SJvfebqo6nXS15ILW8r8H-20260424-154620.jpg)
 
 ***
 
-# How the Developer Portal works
+## ✅ Task tracker
 
-The Flipper One Developer Portal is hosted on [**Archbee**](https://archbee.com), but all source files live in the :Link[flipper-one-docs GitHub repository]{href="https://github.com/flipperdevices/flipper-one-docs" newTab="true" hasDisabledNofollow="false"} — made possible by Archbee's GitHub integration. Diagrams, screenshots, and illustrations are created in Miro and Figma, then exported to the repository alongside the Markdown.
+All Docs sub-project tasks are tracked in the GitHub project [Flipper One — Docs](https://github.com/orgs/flipperdevices/projects/10). There, you can see what the team is working on and find open tasks where the community can help.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/HewLM9f9czM5cdbaLMptM-20260421-155957.jpg "Draft")
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/thnPuI0oZ2C2o4ekvaFP2-20260421-151307.jpg "Update for the Docs sub-project")
 
-:::hint{type="info"}
-**In short:** GitHub is the source of truth for all text, images, and page hierarchy. Archbee reads from GitHub and renders the live site at :Link[docs.flipper.net/one]{href="https://docs.flipper.net/one" newTab="true" hasDisabledNofollow="false"}.
-:::
+Tasks labeled **help wanted** are open for contribution. You're welcome to join discussions or submit changes — just read the :Link[Contribution guide]{href="https://docs.flipper.net/one/about-docs#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
+
+***
+
+## How the Developer Portal works
+
+The Flipper One Developer Portal is hosted on [Archbee](https://archbee.com), but all source files live in the :Link[GitHub repository]{href="https://github.com/flipperdevices/flipper-one-docs" newTab="true" hasDisabledNofollow="false"} — made possible by Archbee's GitHub integration. Diagrams, screenshots, and illustrations are created in Miro and Figma, then exported to the repository alongside the Markdown.
+
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Bprz1b0hmCQdEGPDQOs3n-20260424-163044.jpg "Draft")
 
 Whenever a pull request is merged into the `public-release` branch, Archbee automatically rebuilds the site with the changes.
 
 ***
 
-# Repository structure
+## GitHub repository structure
 
 The repository contains the source files for the entire Developer Portal:
 
 ```none
 flipperone-docs/
-├── .archbee.json          # Archbee integration settings
+├── archbee.json           # Sidebar hierarchy + Archbee integration settings
 ├── README.md              # Repository overview
 ├── tools/
 │   └── generate_open_tasks.py  # Generates Open-tasks.md from GitHub issues
 └── docs/
     ├── Welcome.md         # Main page at docs.flipper.net/one
-    ├── Summary.md         # Controls the sidebar hierarchy
     ├── How-to-join.md
     ├── Open-tasks.md      # Auto-generated — do not edit manually
     ├── files/
@@ -70,66 +75,124 @@ flipperone-docs/
 
 ***
 
-## How Summary.md works
+### Markdown and Archbee syntax
 
-`Summary.md` defines the left sidebar (table of contents) of the Developer Portal. It defines sections, page names, file paths, and nesting levels. Ideally, nesting should not go deeper than two levels.
+All pages in the Developer Portal are written in **Markdown** (`.md`) — the same format used for GitHub READMEs and most open-source documentation. On top of standard Markdown, Archbee adds a set of components for callouts, tabs, workflow blocks, embedded media, and more.
 
-When adding a new page, always update :Link[docs/Summary.md ]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/docs/Summary.md" newTab="true" hasDisabledNofollow="false"}to include it. Without this, the page will not appear in the sidebar, and readers won't be able to find it.
+For the full list of supported syntax with live examples, see the :Link[Markup example]{href="https://docs.flipper.net/one/markup-example" newTab="true" hasDisabledNofollow="false"} page. It covers:
 
-### Syntax
+- Headings, lists, links, and tables
+- Callouts
+- Images and videos
+- Code blocks and tabbed code
+- Workflow steps and other Archbee components
 
-The file uses nested Markdown bullet lists with ## category headings. For example:
+:::hint{type="info"}
+Always check the :Link[Markup example]{href="https://docs.flipper.net/one/markup-example" newTab="true" hasDisabledNofollow="false"} page before writing or editing — some Markdown features behave differently in Archbee, and component syntax can be easy to mistype.
+:::
+
+***
+
+### Images and other assets
+
+All images, diagrams, and screenshots live in a single folder: `docs/files/pics/`. Keeping everything in one place makes it easier to find, reuse, and clean up unused files.
+
+To use an image in a page, reference it from your Markdown using a relative path:
 
 ```markdown
-- [Welcome](Welcome.md)
-- [How to join](How-to-join.md)
+![Caption text](files/pics/your-image.png)
+```
 
-## 🔌 Hardware
-- [About Hardware](hardware/About-Hardware.md)
-- [GPIO port](hardware/GPIO-port.md)
-- [Expansion modules](hardware/modules/Expansion-modules.md)
-  - [GPIO modules](hardware/modules/GPIO-Modules.md)
-  - [M.2 modules](hardware/modules/M2-Modules.md)
+For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Markup example]{href="https://docs.flipper.net/one/markup-example" newTab="true" hasDisabledNofollow="false"} page.
+‎ 
+
+**Naming and size guidelines:**
+
+- Use descriptive, lowercase filenames with hyphens — for example, `gpio-pinout.png`, not `IMG_0042.PNG`.
+- Compress large screenshots before committing. Keep individual files under a few MB where possible.
+- Prefer `.png` for screenshots and diagrams, `.jpg` for photos.
+
+***
+
+### How archbee.json works
+
+`archbee.json` lives at the repo root and defines the left sidebar (table of contents) of the Developer Portal — sections, page names, file paths, and nesting levels.
+
+When adding a new page, always update :Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true" hasDisabledNofollow="false"} to include it. Without this, the page will not appear in the sidebar, and readers won't be able to find it.
+
+**Syntax**
+
+The sidebar tree lives in `structure.docsTree` — an array of entries that are either pages or category groups. For example:
+
+```json
+{
+  "root": "./docs",
+  "structure": {
+    "readme": "Welcome.md",
+    "assets": "files",
+    "docsTree": [
+      {
+        "categoryName": "Welcome",
+        "isCategory": false,
+        "path": "Welcome.md",
+        "children": []
+      },
+      {
+        "categoryName": "🔌 Hardware",
+        "isCategory": true,
+        "children": [
+          {
+            "categoryName": "About Hardware",
+            "isCategory": false,
+            "path": "hardware/About-Hardware.md",
+            "children": []
+          },
+          {
+            "categoryName": "Expansion modules",
+            "isCategory": false,
+            "path": "hardware/modules/Expansion-modules.md",
+            "children": [
+              {
+                "categoryName": "GPIO modules",
+                "isCategory": false,
+                "path": "hardware/modules/GPIO-Modules.md",
+                "children": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
 ```
 
 ‎&#x20;
 
-### Rules
+**Rules**
 
-- A bullet of the form `- [Title](path.md)` becomes a navigable page. The path is relative to the `docs/` folder.
-- A `## Heading` line becomes a category group that visually separates sections (for example, `## Hardware`).
-- Indented bullets (two spaces per level) become sub-pages nested under the parent page.
-- Emojis in titles render as-is in the sidebar. They are purely cosmetic and used for quick visual scanning.
+- An entry with `"isCategory": false` and a `path` becomes a navigable page. The `path` is relative to the `docs/` folder and includes the `.md` extension.
+- An entry with `"isCategory": true` becomes a category group that visually separates sections (for example, `🔌 Hardware`). Category groups have no `path` — only `children`.
+- A page entry can also have its own `children` — those become sub-pages nested under it.
+- `categoryName` is the sidebar label. Emojis render as-is and are purely cosmetic for quick visual scanning.
 
 :::hint{type="info"}
-**Page names in the sidebar** come from the first H1 heading (`#`) in the `.md` file — not from the square brackets in `Summary.md`. Keep page titles short so they fit comfortably in the sidebar.
+**Page names in the sidebar** come from the first H1 heading (`#`) in the `.md` file — not from `categoryName` in `archbee.json`. Keep page titles short so they fit comfortably in the sidebar.
 
 This is a known issue — we notified Archbee.
 :::
 
 ‎&#x20;
 
-### How to add a new page
+**How to add a new page**
 
 1. Create the `.md` file under `docs/...`
-2. Add a bullet to `Summary.md` at the right place in the hierarchy.
+2. Add an entry for it in `archbee.json` → `structure.docsTree` at the right place in the hierarchy. Ideally, nesting should not go deeper than two levels.
 3. Open a pull request. The live site rebuilds on merge.
 
-If you forget step 3, the page may publish without the correct sidebar position. Always update both files in the same pull request.
-
 ***
 
-# ✅ Task tracker
-
-All Docs sub-project tasks are tracked in the GitHub project [**Flipper One — Docs**](https://github.com/orgs/flipperdevices/projects/10). There, you can see what the team is working on and find open tasks where the community can help.
-
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/thnPuI0oZ2C2o4ekvaFP2-20260421-151307.jpg "Update for the Docs sub-project")
-
-Tasks labeled **help wanted** are open for contribution. You're welcome to join discussions or submit changes — just read the contribution guide below first.
-
-***
-
-# 📊 Diagrams on Miro
+## 📊 Diagrams on Miro
 
 All diagrams used in the Developer Portal, architecture overviews, flow charts, and conceptual visuals are designed on the [**Flipper One — Docs Miro board**](https://miro.com/app/board/uXjVJ6y839o=/).
 
@@ -141,7 +204,7 @@ Spotted an error or have an idea for a new diagram? Share them with us in a :Lin
 
 ***
 
-# 🎨 Illustrations on Figma
+## 🎨 Illustrations on Figma
 
 Illustrations used across the Developer Portal — section illustrations and decorative graphics are designed in the [**Flipper One — Docs Figma file**](https://www.figma.com/design/HcwlmmIJlW4LoiQu4RtwwH/Flipper-One-%E2%80%94-Docs).
 
@@ -153,37 +216,92 @@ Have an idea for a new illustration or a tweak to an existing one? Share them wi
 
 ***
 
-# How to contribute
+## How to contribute
+
+:::hint{type="info"}
+To contribute to the Docs sub-project, you need to have a GitHub account. You can create one on the :Link[GitHub website]{href="https://github.com/signup" newTab="true" hasDisabledNofollow="false"}.
+:::
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/HX3LlC7T8p5Y5nP3T41Em-20260421-141111.jpg)
 
-Anyone can contribute to the Docs sub-project via GitHub by commenting on the open tasks or making pull requests with fixes and guides:
+Anyone can contribute to the Docs sub-project:
 
-- :Link[Comment on an open task]{href="https://docs.flipper.net/one/about-docs#comment-on-an-open-task" newTab="false" hasDisabledNofollow="true"}
-- :Link[Share fixes and guides as a pull request]{href="https://docs.flipper.net/one/about-docs#share-fixes-and-guides-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}
+**Step 0:** Check open tasks in the :Link[task tracker]{href="https://github.com/orgs/flipperdevices/projects/10" newTab="true" hasDisabledNofollow="false"} and read the :Link[Markup example]{href="https://docs.flipper.net/one/markup-example" newTab="true" hasDisabledNofollow="false"} page to learn the supported Markdown and Archbee syntax.
+
+**Step 1:** Fork the :Link[flipperone-docs]{href="https://github.com/flipperdevices/flipperone-docs" newTab="true" hasDisabledNofollow="false"} repository.
+
+**Step 2:** Edit Markdown files in the `docs/` folder.
+
+**Step 3:** Submit your work as a **pull request** to our GitHub repo.
 
 ***
 
-## Comment on an open task
+### Submit your fix or guide as a pull request
+
+If you've spotted an error, want to clarify a section, or want to add a new guide, you're welcome to contribute. Fork the repository, make your changes on a new branch, and submit a pull request to the original repository:
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+Read the :Link[Markup example]{href="https://docs.flipper.net/one/markup-example" newTab="true" hasDisabledNofollow="false"} page to learn the supported Markdown and Archbee syntax before writing or editing pages.
+:::
+
+:::WorkflowBlockItem
+Go to the :Link[flipperone-docs]{href="https://github.com/flipperdevices/flipperone-docs" newTab="true" hasDisabledNofollow="false"} repository and fork it to your account by clicking the **Fork** button in the upper-right corner.
+
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/lbp-PmXVHpP_Th11IKb0Q-20260421-151341.png "Update for the Docs sub-project")
+:::
+
+:::WorkflowBlockItem
+In your forked repository, find the `.md` file you want to edit under `docs/`, or create a new one in the appropriate subfolder.
+:::
+
+:::WorkflowBlockItem
+(Optional) If your change includes **images, diagrams, or screenshots**, upload them to the `docs/files/pics/` folder and reference them from your Markdown using a relative path:
+
+```markdown
+![Caption](files/pics/your-image.png)
+```
+
+Use descriptive, lowercase filenames with hyphens (for example, `gpio-pinout.png`). Keep images under 1 MB where possible — compress large screenshots before committing.
+:::
+
+:::WorkflowBlockItem
+(Optional) If you are **adding a new page**, you can also edit :Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true" hasDisabledNofollow="false"} to add it to the sidebar hierarchy. Ideally, nesting should not go deeper than two levels.
+
+It's okay if you don't do it — we'll update this file after merging your PR with a new page.
+:::
+
+:::WorkflowBlockItem
+Create a new branch in your fork and commit your changes to it.
+
+Name the branch using your GitHub nickname and a short description of what changed: `nickname/what-changed`. For example: `john/github-integration-update`.
+
+Keep the commit description concise and clear. For example: `Update: rename authentication to auth`.
+:::
+
+:::WorkflowBlockItem
+Open a pull request to the `dev` branch of the original repository. Add a clear title and description explaining what you changed.
+
+The `dev` branch is our staging branch for documentation contributions. After review, we promote changes from `dev` to `public-release`, which publishes them to the live site.
+
+We highly recommend attaching screenshots that show what changed and a link to the open task this pull request is associated with.
+:::
+::::
+
+Once your pull request is merged into `dev` and later promoted to `public-release`, Archbee automatically picks up the changes and rebuilds the live site at :Link[docs.flipper.net/one]{href="https://docs.flipper.net/one" newTab="true" hasDisabledNofollow="false"}.
+
+***
+
+### Suggest your change as a comment on an open task
 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
 
 To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you’re always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
 
-:::Paragraph{indent="1"}
-**Bad vs good comments:**
-:::
-
-:::Paragraph{indent="1"}
-❌ — I don't like this section
-👍 — Step 2 should remind readers to check the "Update GitHub PR" box
-:::
 ::::
 
-‎&#x20;
-
-Open tasks that need the community's help are labeled **help wanted**. If you have ideas on how to improve the guide, you can contribute by commenting on the task and attaching screenshots, videos, or links:
+Open tasks that need the community's help are labeled **help wanted**. If you have ideas on how to improve a page, you can contribute by commenting on the task and attaching screenshots, videos, or links:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -191,13 +309,13 @@ In the :Link[Docs GitHub project]{href="https://github.com/orgs/flipperdevices/p
 :::
 
 ::::WorkflowBlockItem
-In the comments section, clearly write your comment, and if necessary, attach a screenshot, video, or a link.
+In the comments section, clearly describe your suggestion and, if helpful, attach a screenshot, video, or link to a draft pull request.
 
 :::hint{type="info"}
-**Important:** If you share a link, ensure the content is accessible to others.
+**Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="https://docs.flipper.net/one/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
 :::
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/HW8_FuiKf7SdOnTpe77VY-20260421-142833.png)
+\<image placeholder>
 
 **Attachment size limit:**
 
@@ -211,51 +329,5 @@ Click **Comment**.
 :::::
 
 We review all comments carefully! We may ask additional questions about your idea in the task thread, so please follow notifications from GitHub in your email.
-
-***
-
-## Share fixes and guides as a pull request
-
-Anyone can contribute to the Flipper One documentation via GitHub — fork the repository, make your changes, and open a pull request:
-
-:::::WorkflowBlock
-:::WorkflowBlockItem
-Read the [**Markup example**](https://docs.flipper.net/one/markup-example) page to learn the supported Markdown and Archbee syntax before writing or editing pages.
-:::
-
-:::WorkflowBlockItem
-Go to the [**flipper-one-docs**](https://github.com/flipperdevices/flipper-one-docs) repository on GitHub and fork it to your account by clicking the **Fork** button in the upper-right corner.
-
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/lbp-PmXVHpP_Th11IKb0Q-20260421-151341.png "Update for the Docs sub-project")
-:::
-
-:::WorkflowBlockItem
-In your forked repository, find the `.md` file you want to edit under `docs/`, or create a new one in the appropriate subfolder.
-:::
-
-::::WorkflowBlockItem
-(Optional) If you are **adding a new page**, you can also edit :Link[docs/Summary.md]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/docs/Summary.md" newTab="true" hasDisabledNofollow="false"} to add it to the sidebar hierarchy.
-
-:::hint{type="info"}
-It's okay if you don't do it — we'll update this file after merging your PR with a new page.
-:::
-::::
-
-::::WorkflowBlockItem
-Commit your changes to a new branch in your fork.
-
-:::hint{type="info"}
-Name the branch to reflect your GitHub nickname and the area of changes. For example: `john/GitHub-integration-update`
-
-Make a commit description concise and clear. For example: `Update: rename authentication to auth`
-:::
-::::
-
-:::WorkflowBlockItem
-Open a pull request to the `public-release` branch of the original repository. Add a clear title and description explaining what you changed.
-:::
-:::::
-
-Once your pull request is merged, Archbee automatically picks up the changes and rebuilds the live site at [**docs.flipper.net/one**](https://docs.flipper.net/one).
 
 Test how changing a page via GitHub affects the published page's URL.

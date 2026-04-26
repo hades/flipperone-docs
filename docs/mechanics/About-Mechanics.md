@@ -245,15 +245,9 @@ We review all ideas carefully! We may ask additional questions about your idea i
 
 To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you’re always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
 
-:::Paragraph{indent="1"}
-**Bad vs good comments:**
-:::
-
-:::Paragraph{indent="1"}
-❌ — I like the green button instead of the orange one
-👍 — I think the green button works better. Here's an example I made: `mypicture.jpg`&#x20;
-:::
 ::::
+
+‎ 
 
 Open tasks that need the community's help are labeled **help wanted**. If you have ideas on how to improve the design, you can contribute by commenting on the task and attaching screenshots, videos, or links:
 
