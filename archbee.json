@@ -85,6 +85,7 @@
           { "path": "cpu-software/Flipper-OS", "name": "Flipper OS" },
           { "path": "cpu-software/FlipCTL", "name": "FlipCTL" },
           { "path": "cpu-software/Build-system", "name": "Build system" },
+          { "path": "cpu-software/How-to-build-an-image-locally", "name": "How to build an image locally" },
           { "path": "cpu-software/How-to-install-an-image", "name": "How to install an image" },
           { "path": "cpu-software/Supported-boards", "name": "Supported boards" }
         ]
