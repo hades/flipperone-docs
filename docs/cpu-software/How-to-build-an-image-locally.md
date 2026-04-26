@@ -4,7 +4,7 @@ This page describes how to build the OS image locally on your computer. This is 
 
 When building the image locally, the same workflow is used as on the Build Server. This workflow is described in the **[Build system](Build-system.md)** page.
 
-:::hint{style="warning"}
+:::hint{type="warning"}
 Now image building is supported **only on Linux** (on EXT4 or XFS file system) due to limitations related to sparse images handling.
 :::
 

@@ -38,7 +38,7 @@ Please note that the RK3576 boots from storage drives according to its boot prio
 
 ### Writing to an SD card
 
-:::hint{style="warning"}
+:::hint{type="warning"}
 Use an SD card with a capacity of 4 GB or larger. The SD card will be erased during the OS writing process.
 :::
 
@@ -58,7 +58,7 @@ Use an SD card with a capacity of 4 GB or larger. The SD card will be erased dur
 
 ### Writing to the onboard storage drive
 
-:::hint{style="warning"}
+:::hint{type="warning"}
 The recommended tools for flashing boards in MaskROM mode have only been tested on **Linux (Debian)** and **macOS**. Windows instructions will be available later.
 :::
 
@@ -82,7 +82,7 @@ On macOS: `brew install libusb`
 
 **Step 2: Prepare the OS image and enter MaskROM mode**
 
-:::hint{style="info"}
+:::hint{type="info"}
 To complete this step, you need to know your board’s target name, the USB port used in MaskROM mode, and how to enter MaskROM mode. This information is available on the **[Supported Boards](Supported-boards.md)** page for your specific board.
 :::
 
