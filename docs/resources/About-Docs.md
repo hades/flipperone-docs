@@ -29,9 +29,9 @@ We'd love your feedback and help — look for tasks tagged **help wanted** in th
 
 All Docs sub-project tasks are tracked in the GitHub project [Flipper One — Docs](https://github.com/orgs/flipperdevices/projects/10). There, you can see what the team is working on and find open tasks where the community can help.
 
-![Docs board explainer](/files/pics/docs-board-explainer.png "How the Docs board is organized")
+![Docs board explainer](/files/pics/docs-board-explainer.png "How the Docs task tracker is organized")
 
-Tasks labeled **help wanted** are open for contribution. You're welcome to join discussions or submit changes — just read the :Link[Contribution guide]{href="https://docs.flipper.net/one/about-docs#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
+Tasks labeled **help wanted** are open for contribution. You're welcome to join discussions or submit changes — just read the :Link[Contribution guide]{href="https://docs.flipper.net/one/resources/about-docs#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
 
 ***
 
@@ -200,7 +200,7 @@ All diagrams used in the Developer Portal, architecture overviews, flow charts, 
 The board is publicly viewable: anyone can open it, inspect existing diagrams and templates, and export a copy for reference or offline editing.
 
 :::hint{type="info"}
-Spotted an error or have an idea for a new diagram? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="true" hasDisabledNofollow="false"}.
+Spotted an error or have an idea for a new diagram? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="false"}.
 :::
 
 ***
@@ -212,7 +212,7 @@ Illustrations used across the Developer Portal — section illustrations and dec
 Like the Miro board, the Figma file is publicly viewable: you can browse every frame, inspect layers, and export illustrations at any resolution.
 
 :::hint{type="info"}
-Have an idea for a new illustration or a tweak to an existing one? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="true" hasDisabledNofollow="false"}.
+Have an idea for a new illustration or a tweak to an existing one? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="false"}.
 :::
 
 ***
@@ -315,7 +315,7 @@ In the :Link[Docs GitHub project]{href="https://github.com/orgs/flipperdevices/p
 In the comments section, clearly describe your suggestion and, if helpful, attach a screenshot, video, or link to a draft pull request.
 
 :::hint{type="info"}
-**Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="https://docs.flipper.net/one/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
+**Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
 :::
 
 ![](/files/pics/docs-good-vs-bad-comment.png)
