@@ -6,8 +6,6 @@ createdAt: Wed Apr 22 2026 13:04:53 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Apr 22 2026 13:32:21 GMT+0000 (Coordinated Universal Time)
 ---
 
-# Title
-
 The Developer Portal — also called the wiki or the Docs — is the main documentation for Flipper One sub-projects. We update it as we work on Flipper One, so some pages may be out of date. This page explains how the Docs are organized, how pages are stored and published, and how you can contribute.
 
 ![About Docs](/files/pics/about-docs-main-image.jpg)
@@ -41,7 +39,7 @@ Tasks labeled **help wanted** are open for contribution. You're welcome to join 
 
 The Flipper One Developer Portal is hosted on [Archbee](https://archbee.com), but all source files live in the :Link[GitHub repository]{href="https://github.com/flipperdevices/flipper-one-docs" newTab="true" hasDisabledNofollow="false"} — made possible by Archbee's GitHub integration. Diagrams, screenshots, and illustrations are created in Miro and Figma, then exported to the repository alongside the Markdown.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Bprz1b0hmCQdEGPDQOs3n-20260424-163044.jpg "Draft")
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Bprz1b0hmCQdEGPDQOs3n-20260424-163044.jpg)
 
 The repository uses two long-lived branches:
 
@@ -202,7 +200,7 @@ All diagrams used in the Developer Portal, architecture overviews, flow charts, 
 The board is publicly viewable: anyone can open it, inspect existing diagrams and templates, and export a copy for reference or offline editing.
 
 :::hint{type="info"}
-Spotted an error or have an idea for a new diagram? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/about-docs#share-fixes-and-guides-as-a-pull-request" newTab="true" hasDisabledNofollow="false"}.
+Spotted an error or have an idea for a new diagram? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="true" hasDisabledNofollow="false"}.
 :::
 
 ***
@@ -214,7 +212,7 @@ Illustrations used across the Developer Portal — section illustrations and dec
 Like the Miro board, the Figma file is publicly viewable: you can browse every frame, inspect layers, and export illustrations at any resolution.
 
 :::hint{type="info"}
-Have an idea for a new illustration or a tweak to an existing one? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/about-docs#share-fixes-and-guides-as-a-pull-request" newTab="true" hasDisabledNofollow="false"}.
+Have an idea for a new illustration or a tweak to an existing one? Share them with us in a :Link[pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="true" hasDisabledNofollow="false"}.
 :::
 
 ***
@@ -252,8 +250,6 @@ Read the :Link[Markup example]{href="https://docs.flipper.net/one/markup-example
 Go to the :Link[flipperone-docs]{href="https://github.com/flipperdevices/flipperone-docs" newTab="true" hasDisabledNofollow="false"} repository and fork it to your account by clicking the **Fork** button in the upper-right corner.
 
 Your fork opens on the `dev` branch — the staging branch for contributions. All your work happens here; you don't need to switch branches.
-
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/lbp-PmXVHpP_Th11IKb0Q-20260421-151341.png "Update for the Docs sub-project")
 :::
 
 :::WorkflowBlockItem
@@ -322,7 +318,7 @@ In the comments section, clearly describe your suggestion and, if helpful, attac
 **Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="https://docs.flipper.net/one/about-docs#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
 :::
 
-![Good vs bad comment on a Docs task](/files/pics/docs-good-vs-bad-comment.png "Good vs bad comment on a Docs task")
+![](/files/pics/docs-good-vs-bad-comment.png)
 
 **Attachment size limit:**
 
