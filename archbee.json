@@ -293,7 +293,7 @@
             "path": "resources/About-Docs.md",
             "children": [
               {
-                "categoryName": "Markup example",
+                "categoryName": "Markup example test",
                 "isCategory": false,
                 "path": "resources/Markup-example.md",
                 "children": []
