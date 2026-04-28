@@ -1,5 +1,6 @@
 ---
 title: About Mechanics
+slug: mechanics/about
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Sun Apr 26 2026 19:21:47 GMT+0000 (Coordinated Universal Time)
