@@ -1,403 +1,156 @@
 ---
-title: Tech Specs
+title: Tech specs
 slug: general/tech-specs
 docTags: 
 createdAt: Wed Apr 22 2026 13:04:54 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Apr 22 2026 13:16:25 GMT+0000 (Coordinated Universal Time)
 ---
+# Tech specs
 
 This page describes the full technical specifications of the Flipper One. Since the device is under active development, specifications may change.
 
 ![Flipper One outline](/files/pics/flipper_one_outline_no_screen.png)
 
-## Main CPU — RK3576
+***
 
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td>
-      <p><strong>CPU</strong></p>
-    </td>
-    <td>
-      <p>Rockchip RK3576</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>Cores</strong></p>
-    </td>
-    <td>
-      <p>8 Cores up to 2.2 GHz (4x High-performance ARM Cortex-A72 + 4x Efficiency ARM Cortex-A53)</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>GPU</strong></p>
-    </td>
-    <td>
-      <p>ARM Mali G52 MC3 — OpenGL ES 1.1/2.0/3.2, OpenCL 2.1, Vulkan 1.2</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>NPU</strong></p>
-    </td>
-    <td>
-      <p>6 TOPS @INT8 Supports int4/int8/int16/FP16/BF16/TF32</p>
-    </td>
-  </tr>
-</table>
+## Size and weight
 
-## Low-Power MCU — RP2350
+⚠️ Final dimensions and weight are pending — values below are placeholders.
 
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>MCU</strong></p>
-    </td>
-    <td align="left">
-      <p>Raspberry Pi RP2350B</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Cores</strong></p>
-    </td>
-    <td align="left">
-      <p>Dual ARM Cortex-M33 @ 150 MHz + Dual RISC-V Hazard3 @ 150 MHz</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>SRAM</strong></p>
-    </td>
-    <td align="left">
-      <p>520 KB</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Flash</strong></p>
-    </td>
-    <td align="left">
-      <p>16 MB</p>
-    </td>
-  </tr>
-</table>
+![Flipper One — front view with dimensions](/files/pics/placeholder-size-front.png "Front view with height and width")
 
-## Memory and Storage
+- **Height:** TBD mm (TBD inches)
+- **Width:** TBD mm (TBD inches)
+- **Depth:** TBD mm (TBD inches)
+- **Weight:** TBD grams (TBD ounces)
 
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>RAM</strong></p>
-    </td>
-    <td align="left">
-      <p>8 GB LPDDR5</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Internal Storage</strong></p>
-    </td>
-    <td align="left">
-      <p>64 GB UFS 2.2</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>MicroSD</strong></p>
-    </td>
-    <td align="left">
-      <p>MicroSD card slot (⚠️UHS-I SDR104???)</p>
-    </td>
-  </tr>
-</table>
+***
 
-## Battery and Power
+## Materials
 
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>Battery</strong></p>
-    </td>
-    <td align="left">
-      <p>24000 mWh</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Charger IC</strong></p>
-    </td>
-    <td align="left">
-      <p>TI BQ25792, up to 3.32 A</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Fuel Gauge</strong></p>
-    </td>
-    <td align="left">
-      <p>TI BQ28Z610</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Charging</strong></p>
-    </td>
-    <td align="left">
-      <p>USB-C Power Delivery up to 26 V</p>
-    </td>
-  </tr>
-</table>
+⚠️ Final material specifications are pending — values below are placeholders.
+
+- **Body:** TBD
+- **Back Plate:** TBD
+- **Antenna Rail:** TBD
+- **Radiator:** TBD
+- **Loop:** TBD
+- **Buttons:** TBD
+- **Display lens:** TBD
+
+***
 
 ## Monochrome LCD Display
 
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>Resolution</strong></p>
-    </td>
-    <td align="left">
-      <p>256 x 144 pixels</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Grayscale</strong></p>
-    </td>
-    <td align="left">
-      <p>64 levels (6-bit)</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Interface</strong></p>
-    </td>
-    <td align="left">
-      <p>QSPI (driven by MCU)</p>
-    </td>
-  </tr>
-</table>
+- **Resolution:** 256 × 144 pixels
+- **Grayscale:** 64 levels (6-bit)
+- **Interface:** QSPI (driven by MCU)
 
-## Wi-Fi & Bluetooth
-
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>Module</strong></p>
-    </td>
-    <td align="left">
-      <p>WXT2AM2101</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Wi-Fi Chipset</strong></p>
-    </td>
-    <td align="left">
-      <p>MediaTek MT7921AUN</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Wi-Fi Modes</strong></p>
-    </td>
-    <td align="left">
-      <p>WiFi 6 (802.11ax), Bands 2.4 GHz / 5 GHz / 6 GHz, 2x2 MIMO</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Bluetooth</strong></p>
-    </td>
-    <td align="left">
-      <p>Bluetooth 5.2 (integrated in MT7921U)</p>
-    </td>
-  </tr>
-</table>
-
-## Gigabit Ethernet
-
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>Ports</strong></p>
-    </td>
-    <td align="left">
-      <p>2x Ethernet (1 Gbit/s)</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>PHY IC</strong></p>
-    </td>
-    <td align="left">
-      <p>Realtek RTL8211F-CG</p>
-    </td>
-  </tr>
-</table>
-
-## Video Output
-
-<table isTableHeaderOn="false" columnWidths="114,547">
-  <tr>
-    <td align="left">
-      <p><strong>HDMI</strong></p>
-    </td>
-    <td align="left">
-      <p>HDMI v2.1, Full-size connector (Type-A), CEC support, up to 4K@120 Hz</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Display Port</strong></p>
-    </td>
-    <td align="left">
-      <p>DisplayPort v1.4 Alt Mode via USB-C1, up to 4K@120 Hz</p>
-    </td>
-  </tr>
-</table>
-
-## Audio
-
-<table isTableHeaderOn="false" columnWidths="101,560">
-  <tr>
-    <td align="left">
-      <p><strong>Codec</strong></p>
-    </td>
-    <td align="left">
-      <p>Nuvoton NAU8822</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>Speaker</strong></p>
-    </td>
-    <td align="left">
-      <p>⚠️ NEEDS CLARIFICATION</p>
-    </td>
-  </tr>
-  <tr>
-    <td align="left">
-      <p><strong>3.5 Audio</strong></p>
-    </td>
-    <td align="left">
-      <p>3.5 mm Audio Jack, Stereo Out + Microphone Input (TRRS)</p>
-    </td>
-  </tr>
-</table>
+***
 
 ## Ports
 
-![Flipper One ports — top](files/pics/flipper_one_ports_top.png "Flipper One ports — top")
+![Flipper One ports — top](/files/pics/flipper_one_ports_top.png "Flipper One ports — top")
 
-![Flipper One ports — bottom](files/pics/flipper_one_ports_bottom.png "Flipper One ports — bottom")
+![Flipper One ports — bottom](/files/pics/flipper_one_ports_bottom.png "Flipper One ports — bottom")
 
-<table isTableHeaderOn="false" columnWidths="131,530">
-  <tr>
-    <td>
-      <p><strong>USB-C1</strong></p>
-    </td>
-    <td>
-      <p>USB 3.1 (5 Gbps) + DisplayPort Alt Mode + USB Power Delivery charging</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>USB-C2</strong></p>
-    </td>
-    <td>
-      <p>USB 3.1 (5 Gbps), Host Only, Power Out</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>USB-A</strong></p>
-    </td>
-    <td>
-      <p>USB 3.1 (5 Gbps), Host Only, Power Out</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>HDMI</strong></p>
-    </td>
-    <td>
-      <p>Full-size HDMI v2.1</p>
-    </td>
-  </tr>
-  <tr>
-    <td colSpan="1" rowSpan="1">
-      <p><strong>Ethernet</strong></p>
-    </td>
-    <td colSpan="1" rowSpan="1">
-      <p>2x RJ45 Gigabit Ethernet</p>
-    </td>
-  </tr>
-  <tr>
-    <td colSpan="1" rowSpan="1">
-      <p><strong>3.5 Audio Out</strong></p>
-    </td>
-    <td colSpan="1" rowSpan="1">
-      <p>3.5 mm Audio Jack</p>
-    </td>
-  </tr>
-  <tr>
-    <td colSpan="1" rowSpan="1">
-      <p><strong>MicroSD</strong></p>
-    </td>
-    <td colSpan="1" rowSpan="1">
-      <p>MicroSD card slot</p>
-    </td>
-  </tr>
-  <tr>
-    <td colSpan="1" rowSpan="1">
-      <p><strong>SIM Card Slot</strong></p>
-    </td>
-    <td colSpan="1" rowSpan="1">
-      <p>Nano SIM (4FF), passively connected to M.2 port</p>
-    </td>
-  </tr>
-</table>
+- **USB-C1:** USB 3.1 (5 Gbps), DisplayPort Alt Mode, USB Power Delivery charging
+- **USB-C2:** USB 3.1 (5 Gbps), host only, power out
+- **USB-A:** USB 3.1 (5 Gbps), host only, power out
+- **HDMI:** full-size, v2.1
+- **Ethernet:** 2× RJ45, Gigabit
+- **3.5 mm jack:** stereo out + microphone input (TRRS)
+- **MicroSD:** card slot
+- **SIM card slot:** Nano SIM (4FF), passively connected to M.2 port
+
+***
+
+## Controls
+
+⚠️ Final control specifications are pending — values below are placeholders.
+
+- **Buttons:** TBD
+- **Touch pad:** TBD
+
+***
+
+## Main CPU — RK3576
+
+- **CPU:** Rockchip RK3576
+- **Cores:** 8 — 4× high-performance ARM Cortex-A72 + 4× efficiency ARM Cortex-A53, up to 2.2 GHz
+- **GPU:** ARM Mali G52 MC3 — OpenGL ES 1.1/2.0/3.2, OpenCL 2.1, Vulkan 1.2
+- **NPU:** 6 TOPS @INT8 — supports int4, int8, int16, FP16, BF16, TF32
+
+***
+
+## Low-Power MCU — RP2350
+
+- **MCU:** Raspberry Pi RP2350B
+- **Cores:** Dual ARM Cortex-M33 @ 150 MHz + Dual RISC-V Hazard3 @ 150 MHz
+- **SRAM:** 520 KB
+- **Flash:** 16 MB
+
+***
+
+## Memory and Storage
+
+- **RAM:** 8 GB LPDDR5
+- **Internal storage:** 64 GB UFS 2.2
+- **MicroSD card slot:** ⚠️ (UHS-I SDR104 — needs verification)
+
+***
+
+## Battery and Power
+
+- **Battery energy:** 24000 mWh
+- **Battery capacity:** 7000 mAh ⚠️ (not final)
+- **Charger IC:** TI BQ25792, up to 3.32 A
+- **Fuel Gauge:** TI BQ28Z610
+- **Charging:** USB-C Power Delivery, up to 26 V
+
+***
+
+## Wi-Fi & Bluetooth
+
+- **Module:** WXT2AM2101
+- **Wi-Fi Chipset:** MediaTek MT7921AUN
+- **Wi-Fi Modes:** Wi-Fi 6 (802.11ax), 2.4 / 5 / 6 GHz bands, 2×2 MIMO
+- **Bluetooth:** 5.2 (integrated in MT7921U)
+
+***
+
+## Gigabit Ethernet
+
+- **Ports:** 2× Ethernet (1 Gbit/s)
+- **PHY IC:** Realtek RTL8211F-CG
+
+***
+
+## Video Output
+
+- **HDMI:** v2.1, Full-size connector (Type-A), CEC support, up to 4K@120 Hz
+- **DisplayPort:** v1.4 Alt Mode via USB-C1, up to 4K@120 Hz
+
+***
+
+## Audio
+
+- **Codec:** Nuvoton NAU8822
+- **Speaker:** ⚠️ needs clarification
+- **3.5 mm jack:** stereo out + microphone input (TRRS)
+
+***
 
 ## M.2 expansion port
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/kBEYmNJI2QKW3dVel7tuQ-20260410-180703.png "The M.2 expansion port is at the back of the device, under the Back Plate")
+The M.2 expansion port is at the back of the device, under the Back Plate.
 
-<table isTableHeaderOn="false" columnWidths="178,483">
-  <tr>
-    <td>
-      <p><strong>M.2 type</strong></p>
-    </td>
-    <td>
-      <p>Key B</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>Supported sizes</strong></p>
-    </td>
-    <td>
-      <p>2242, 3042, 3052 mm</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>Supported thickness</strong></p>
-    </td>
-    <td>
-      <p>Up to S3 (double-sided modules)</p>
-    </td>
-  </tr>
-  <tr>
-    <td>
-      <p><strong>Interfaces</strong></p>
-    </td>
-    <td>
-      <p>PCIe 2.1 x1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card</p>
-    </td>
-  </tr>
-</table>
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/kBEYmNJI2QKW3dVel7tuQ-20260410-180703.png )
+
+- **M.2 type:** Key B
+- **Supported sizes:** 2242, 3042, 3052 mm
+- **Supported thickness:** up to S3 (double-sided modules)
+- **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card
 
 ### M.2 pinout
 
@@ -912,6 +665,8 @@ TODO: replace to better picture
   </tr>
 </table>
 
+***
+
 ## GPIO pinout
 
 ![Flipper One GPIO port pinout](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/IcHiPLMeaz2eQlQW1JkUw_flipperonegpioportpinout.jpg "Flipper One GPIO pinout")
@@ -1138,6 +893,8 @@ TODO: replace to better picture
     </td>
   </tr>
 </table>
+
+***
 
 ## Debug port
 
