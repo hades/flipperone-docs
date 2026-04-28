@@ -1,5 +1,6 @@
 ---
 title: Schematics
+slug: hardware/schematics
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 11:00:48 GMT+0000 (Coordinated Universal Time)
