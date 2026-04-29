@@ -2,14 +2,17 @@
 
 Flipper One uses a dual-processor architecture with **High-Performance Linux CPU (Rockchip RK3576)** and **Low-Power MCU (Raspberry Pi RP2350)**. While the CPU runs Linux and manages all high-level peripherals (USB, HDMI, M.2, Wi-Fi, Ethernet, and audio), the MCU is responsible for the following tasks:
 
-- Rendering image on the LCD display
-- Processing events from the buttons and touchpad
-- Controlling the LEDs
-- Managing the battery and power subsystems
-- Implements Power Bank mode
-- Managing system power states
-- Handling communication through the CC pins of the USB-C ports
-- Controlling the main CPU power-on and boot process
+- Rendering image on the LCD display anc controlling backlight brightness.
+- Processing input events from the buttons and touchpad, and controlling haptic feedback.
+- Handling connection/disconnection events on the 3.5 mm audio jack, as well as headset button press events.
+- Managing the battery and power subsystems.
+- Managing system power states and implementing Power Bank mode.
+- Managing the main CPU power-on sequence and boot process.
+- Handling communication over the CC pins of the USB-C ports.
+- Exposing 2 PIO (Programmable I/O) pins to the GPIO expansion port on the back of the device.
+- Controlling all device LEDs.
+
+![MCU connection diagram](/files/pics/mcu-connection-diagram.jpg "MCU connection diagram")
 
 ## CPU and MCU interconnection
 
