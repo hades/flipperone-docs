@@ -8,38 +8,38 @@ updatedAt: Wed Apr 22 2026 13:16:25 GMT+0000 (Coordinated Universal Time)
 
 This page describes the full technical specifications of the Flipper One. Since the device is under active development, specifications may change.
 
-![Flipper One outline](/files/pics/flipper_one_outline_no_screen.png)
+![Flipper One outline](/files/pics/tech-specs-main.png)
 
 ***
 
 ## Size and weight
 
-⚠️ Final dimensions and weight are pending — values below are placeholders.
+⚠️ Final weight is pending — value below is a placeholder.
 
-![Flipper One — front view with dimensions](/files/pics/placeholder-size-front.png "Front view with height and width")
+![Flipper One — front view with dimensions](/files/pics/flipper-one-dimensions.png)
 
-- **Height:** TBD mm (TBD inches)
-- **Width:** TBD mm (TBD inches)
-- **Depth:** TBD mm (TBD inches)
+- **Width:** 155 mm (6.1 inches)
+- **Height:** 67 mm (2.64 inches)
+- **Depth:** 40 mm (1.57 inches)
 - **Weight:** TBD grams (TBD ounces)
 
 ***
 
 ## Materials
 
-⚠️ Final material specifications are pending — values below are placeholders.
+![Flipper One materials](/files/pics/materials-flipper-one.jpg)
 
-- **Body:** TBD
-- **Back Plate:** TBD
-- **Antenna Rail:** TBD
-- **Radiator:** TBD
-- **Loop:** TBD
-- **Buttons:** TBD
-- **Display lens:** TBD
+- **Body:** PC/ABS
+- **Buttons:** PC/ABS
+- **Screen:** Gorilla Glass
+- **Heat sink:** Anodized aluminum
+- **Bracket:** Anodized aluminum
+- **Lanyard loop:** Anodized aluminum
+- **Bumpers:** TPU
 
 ***
 
-## Monochrome LCD Display
+## Monochrome LCD display
 
 - **Resolution:** 256 × 144 pixels
 - **Grayscale:** 64 levels (6-bit)
@@ -49,31 +49,43 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## Ports
 
-![Flipper One ports — top](/files/pics/flipper_one_ports_top.png "Flipper One ports — top")
+![Flipper One top and back ports](/files/pics/top-and-back-ports.png "Flipper One top and back ports")
 
-![Flipper One ports — bottom](/files/pics/flipper_one_ports_bottom.png "Flipper One ports — bottom")
+![Flipper One audio port and USB-C1](/files/pics/audio-port-and-usb-c1.png "Flipper One audio port and USB-C1")
+
+![Flipper One Ethernet ports](/files/pics/ethernet-ports.png "Flipper One Ethernet ports")
+
+![Flipper One MicroSD and SIM slots](/files/pics/microsd-and-sim-slots.png "Flipper One MicroSD and SIM slots")
 
 - **USB-C1:** USB 3.1 (5 Gbps), DisplayPort Alt Mode, USB Power Delivery charging
 - **USB-C2:** USB 3.1 (5 Gbps), host only, power out
 - **USB-A:** USB 3.1 (5 Gbps), host only, power out
-- **HDMI:** full-size, v2.1
+- **HDMI out:** full-size, v2.1, CEC support, 4K @ 120 Hz
 - **Ethernet:** 2× RJ45, Gigabit
-- **3.5 mm jack:** stereo out + microphone input (TRRS)
-- **MicroSD:** card slot
+- **3.5 mm audio jack:** stereo out + microphone input (TRRS)
+- **MicroSD card slot:** Card up to ?? GB
 - **SIM card slot:** Nano SIM (4FF), passively connected to M.2 port
+- **GPIO port:** 
 
 ***
 
 ## Controls
 
-⚠️ Final control specifications are pending — values below are placeholders.
+![Flipper One buttons](/files/pics/flipper-one-buttons.png "Flipper One buttons")
 
-- **Buttons:** TBD
-- **Touch pad:** TBD
+- **Touchpad:** fast scrolling, haptic feedback
+- **App buttons:** 5 buttons below the screen
+- **Power button:** Power ON / Sleep / OFF, CTRL+ALT+DEL menu, kill app
+- **5-button D-pad:** directional navigation
+- **Back button:** return
+- **App switcher:** single click = ALT+TAB, double click = extra menu
+- **Push-to-Talk (PTT) button:** controllable in Linux userspace
 
 ***
 
 ## Main CPU — RK3576
+
+![Flipper One CPU and MCU](/files/pics/cpu-and-mcu-flipper-one.png "Flipper One CPU and MCU")
 
 - **CPU:** Rockchip RK3576
 - **Cores:** 8 — 4× high-performance ARM Cortex-A72 + 4× efficiency ARM Cortex-A53, up to 2.2 GHz
@@ -82,7 +94,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ***
 
-## Low-Power MCU — RP2350
+## Low-power MCU — RP2350
 
 - **MCU:** Raspberry Pi RP2350B
 - **Cores:** Dual ARM Cortex-M33 @ 150 MHz + Dual RISC-V Hazard3 @ 150 MHz
@@ -91,7 +103,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ***
 
-## Memory and Storage
+## Memory and storage
 
 - **RAM:** 8 GB LPDDR5
 - **Internal storage:** 64 GB UFS 2.2
@@ -99,7 +111,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ***
 
-## Battery and Power
+## Battery and power
 
 - **Battery energy:** 24000 mWh
 - **Battery capacity:** 7000 mAh ⚠️ (not final)
@@ -125,7 +137,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ***
 
-## Video Output
+## Video output
 
 - **HDMI:** v2.1, Full-size connector (Type-A), CEC support, up to 4K@120 Hz
 - **DisplayPort:** v1.4 Alt Mode via USB-C1, up to 4K@120 Hz
@@ -144,7 +156,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 The M.2 expansion port is at the back of the device, under the Back Plate.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/kBEYmNJI2QKW3dVel7tuQ-20260410-180703.png )
+![Flipper One M.2 expansion port](/files/pics/m2-expansion-port.png "Flipper One M.2 expansion port")
 
 - **M.2 type:** Key B
 - **Supported sizes:** 2242, 3042, 3052 mm
