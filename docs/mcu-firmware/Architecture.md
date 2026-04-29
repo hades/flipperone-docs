@@ -10,7 +10,7 @@ Flipper One uses a dual-processor architecture with **High-Performance Linux CPU
 
 - Rendering image on the LCD display anc controlling backlight brightness.
 - Processing events from the buttons and touchpad, and controlling haptic feedback.
-- Handling connection/disconnection events on the 3.5 mm audio jack, as well as headset button press events.
+- Handling 3.5 mm audio jack connect/disconnect and headset button press events.
 - Managing the battery and power subsystems.
 - Managing system power states and implementing Power Bank mode.
 - Managing the main CPU power-on sequence and boot process.
