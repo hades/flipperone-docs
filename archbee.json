@@ -161,6 +161,12 @@
             "children": []
           },
           {
+            "categoryName": "How to build firmware",
+            "isCategory": false,
+            "path": "mcu-firmware/How-to-build-firmware.md",
+            "children": []
+          },
+          {
             "categoryName": "Firmware update",
             "isCategory": false,
             "path": "mcu-firmware/Firmware-update.md",

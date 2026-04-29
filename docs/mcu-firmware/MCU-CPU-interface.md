@@ -14,4 +14,4 @@ The interface between the MCU and CPU consists of:
 - **INT** pin is used by the MCU to notify the CPU of new events.
 - **BOOT0 & BOOT1** pins are used to control the main CPU’s boot process. The BOOT0 pin can force the CPU into MaskROM mode, enabling UFS flash programming via USB. The BOOT1 pin selects the OS boot source; the MCU generates a PWM signal that is converted into a voltage level, which the CPU reads via its ADC during the early boot stage.
 
-![MCU and CPU interface](/files/pics/cpu-and-mcu-interconnection.jpg "MCU and CPU interface")
+![MCU↔CPU interface](/files/pics/cpu-and-mcu-interconnection.jpg "MCU↔CPU interface")
