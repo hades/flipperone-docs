@@ -18,7 +18,7 @@ Flipper One uses a dual-processor architecture with **High-Performance Linux CPU
 - Exposing 2 PIO (Programmable I/O) pins to the GPIO expansion connector.
 - Controlling all device LEDs.
 
-![MCU connection diagram](/files/pics/mcu-connection-diagram.jpg "MCU connection diagram")
+![MCU connection diagram](/files/pics/mcu-connection-diagram-2.jpg "MCU connection diagram")
 
 ## CPU and MCU interconnection
 
