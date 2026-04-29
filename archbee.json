@@ -197,6 +197,12 @@
             "children": []
           },
           {
+            "categoryName": "How to build an image locally",
+            "isCategory": false,
+            "path": "cpu-software/How-to-build-an-image-locally.md",
+            "children": []
+          },
+          {
             "categoryName": "How to install an image",
             "isCategory": false,
             "path": "cpu-software/How-to-install-an-image.md",
@@ -287,7 +293,7 @@
             "path": "resources/About-Docs.md",
             "children": [
               {
-                "categoryName": "Markup example",
+                "categoryName": "Markup example test",
                 "isCategory": false,
                 "path": "resources/Markup-example.md",
                 "children": []
