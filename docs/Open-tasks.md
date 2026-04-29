@@ -1,5 +1,6 @@
 ---
 title: 🚧 Open tasks
+slug: open-tasks
 docTags: 
 createdAt: Wed Apr 08 2026 17:29:37 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Apr 08 2026 18:15:41 GMT+0000 (Coordinated Universal Time)
