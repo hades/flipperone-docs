@@ -32,18 +32,6 @@ The MCU and CPU are interconnected via several interfaces and GPIO pins, includi
 
 ![CPU and MCU interconnection](/files/pics/cpu-and-mcu-interconnection.jpg "CPU and MCU interconnection")
 
-## RP2350 overview
-
-As the low-power MCU, we use the [Raspberry Pi RP2350 microcontroller](https://pip.raspberrypi.com/documents/RP-008373-DS), which features:
-
-- Two selectable ARM Cortex-M33 or Hazard3 RISC-V cores.
-- 520 KB of SRAM.
-- 2 MB of QSPI NOR flash memory.
-- A rich set of peripheral interfaces, including SPI, I²C, UART, and PWM.
-- A powerful PIO (Programmable Input/Output) subsystem for flexible, timing-precise hardware interfacing.
-
-![RP2350 block diagram](/files/pics/rp2350-internals.png "RP2350 block diagram")
-
 ## Firmware architecture
 
 The MCU firmware is built on the [FreeRTOS](https://www.freertos.org/) kernel and a set of libraries and drivers organized in a layered firmware architecture.
