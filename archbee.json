@@ -145,15 +145,21 @@
             "children": []
           },
           {
-            "categoryName": "Architecture of MCU Firmware",
+            "categoryName": "Firmware architecture",
             "isCategory": false,
             "path": "mcu-firmware/Architecture.md",
             "children": []
           },
           {
-            "categoryName": "Interconnect protocol",
+            "categoryName": "MCU↔CPU interface",
             "isCategory": false,
-            "path": "mcu-firmware/Interconnect-protocol.md",
+            "path": "mcu-firmware/MCU-CPU-interface.md",
+            "children": []
+          },
+          {
+            "categoryName": "How to build firmware",
+            "isCategory": false,
+            "path": "mcu-firmware/How-to-build-firmware.md",
             "children": []
           },
           {
