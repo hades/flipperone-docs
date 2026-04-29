@@ -1,10 +1,12 @@
 ---
-title: MCU Firmware Architecture
+title: Firmware architecture
 slug: mcu-firmware/architecture
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:07:05 GMT+0000 (Coordinated Universal Time)
 ---
+
+# MCU Firmware Architecture
 
 Flipper One uses a dual-processor architecture with **High-Performance Linux CPU (Rockchip RK3576)** and **Low-Power MCU (Raspberry Pi RP2350)**. While the CPU runs Linux and manages all high-level peripherals (USB, HDMI, M.2, Wi-Fi, Ethernet, and audio), the MCU is responsible for the following tasks:
 
@@ -20,7 +22,7 @@ Flipper One uses a dual-processor architecture with **High-Performance Linux CPU
 
 ![MCU connection diagram](/files/pics/mcu-connection-diagram-2.jpg "MCU connection diagram")
 
-## CPU and MCU interconnection
+## MCU and CPU interconnection
 
 The MCU and CPU are interconnected via several interfaces and GPIO pins, including:
 
