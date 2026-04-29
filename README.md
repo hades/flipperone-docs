@@ -29,63 +29,24 @@ This repository contains the source files from which the Developer Portal is gen
 
 ```
 flipperone-docs/
-├── .archbee.json    # Archbee settings (explained here https://www.archbee.com/docs/set-up-the-repository)
-├── README.md        # This readme
+├── archbee.json            # Sidebar hierarchy + Archbee integration settings
+├── README.md               # Repository overview
 ├── tools/
 │   └── generate_open_tasks.py  # Generates Open-tasks.md from GitHub issues
 └── docs/
-    ├── Welcome.md     # Main page at docs.flipper.net/one
-    ├── Summary.md     # Table of contents, left panel
+    ├── Welcome.md          # Main page at docs.flipper.net/one
     ├── How-to-join.md
-    ├── Open-tasks.md
+    ├── Open-tasks.md       # Auto-generated — do not edit manually
     ├── files/
-    │   └── pics/
+    │   └── pics/           # Images and other assets
     ├── general/
-    │   ├── Tech-Specs.md
-    │   └── Features.md
     ├── hardware/
-    │   ├── About-Hardware.md
-    │   ├── Power-subsystem.md
-    │   ├── Schematics.md
-    │   ├── WiFi-Bluetooth.md
-    │   ├── M2-port.md
-    │   ├── GPIO-port.md
-    │   ├── Datasheets.md
-    │   └── modules/
-    │       ├── Expansion-modules.md
-    │       ├── GPIO-Modules.md
-    │       └── M2-Modules.md
     ├── mechanics/
-    │   ├── About-Mechanics.md
-    │   ├── Mechanical-design.md
-    │   ├── Module-enclosures.md
-    │   └── Heat-sink.md
     ├── mcu-firmware/
-    │   ├── About-MCU-Firmware.md
-    │   ├── Architecture.md
-    │   ├── Interconnect-protocol.md
-    │   └── Firmware-update.md
     ├── cpu-software/
-    │   ├── About-CPU-Software.md
-    │   ├── Architecture.md
-    │   ├── Build-system.md
-    │   ├── Flipper-OS.md
-    │   └── FlipCTL.md
     ├── user-interface/
-    │   ├── About-User-Interface.md
-    │   └── Design-guide.md
     ├── testing/
-    │   ├── About-Testing.md
-    │   ├── General.md
-    │   ├── Power.md
-    │   ├── Graphics.md
-    │   ├── Video-decoding.md
-    │   ├── Network.md
-    │   └── M_2.md
     └── resources/
-        ├── About-Docs.md
-        ├── Markup-example.md
-        └── rockchip/
-            ├── Rockchip-RK3576.md
-            └── RK3576-Boot-flow.md
 ```
+
+Each section's pages are listed in the sidebar — see [`archbee.json`](archbee.json) for the full hierarchy.
