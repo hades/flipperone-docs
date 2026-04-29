@@ -2,12 +2,12 @@
 
 ![Flipper One Developer Portal](https://cdn.flipper.net/flipper-one-developer-portal-splash.jpg)
 
-This repository is part of the [Flipper One – Docs](http://docs.flipper.net/one/docs-overview) sub-project (aka Developer Portal). It contains documentation source files from which the Flipper One Developer is generated: https://docs.flipper.net/one and the sub-project [task tracker](https://github.com/orgs/flipperdevices/projects/10).
+This repository is part of the [Flipper One – Docs](https://docs.flipper.net/one/resources/about-docs) sub-project (aka Developer Portal). It contains documentation source files from which the Flipper One Developer is generated: https://docs.flipper.net/one and the sub-project [task tracker](https://github.com/orgs/flipperdevices/projects/10).
 
 ## Links
 
 * **Developer Portal:** [docs.flipper.net/one](https://docs.flipper.net/one)
-* [**Sub-project overview**](http://docs.flipper.net/one/docs-overview)
+* [**Sub-project overview**](https://docs.flipper.net/one/resources/about-docs)
 * [**Task Tracker**](https://github.com/orgs/flipperdevices/projects/10)
 * [**Miro templates**](https://miro.com/app/board/uXjVJ6y839o=/)
 * [**Figma templates**](https://www.figma.com/design/HcwlmmIJlW4LoiQu4RtwwH/Flipper-One-%E2%80%94-Docs?node-id=0-1&p=f&t=aYrPCUA166BloJuV-0)
@@ -16,9 +16,9 @@ This repository is part of the [Flipper One – Docs](http://docs.flipper.net/on
 
 This repository contains the source files from which the Developer Portal is generated. You can contribute by editing any pages and creating new ones. How to contribute:
 
-1. Read [How to contribute](http://docs.flipper.net/one/docs-overview)
+1. Read [How to contribute](https://docs.flipper.net/one/resources/about-docs#how-to-contribute)
 2. Fork this repository
-3. Edit Markdown files (Read [markup example](https://docs.flipper.net/one/markup-example))
+3. Edit Markdown files (Read [markup example](https://docs.flipper.net/one/resources/about-docs/markup-example))
 4. Create a pull request
 
 ## Automation

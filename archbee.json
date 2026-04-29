@@ -31,7 +31,14 @@
             "categoryName": "Tech Specs",
             "isCategory": false,
             "path": "general/Tech-Specs.md",
-            "children": []
+            "children": [
+              {
+                "categoryName": "Controls",
+                "isCategory": false,
+                "path": "general/Controls.md",
+                "children": []
+              }
+            ]
           },
           {
             "categoryName": "Features",
@@ -73,38 +80,27 @@
             "categoryName": "M.2 port",
             "isCategory": false,
             "path": "hardware/M2-port.md",
-            "children": []
-          },
-          {
-            "categoryName": "GPIO port",
-            "isCategory": false,
-            "path": "hardware/GPIO-port.md",
-            "children": []
-          },
-          {
-            "categoryName": "Expansion modules",
-            "isCategory": false,
-            "path": "hardware/modules/Expansion-modules.md",
             "children": [
-              {
-                "categoryName": "GPIO modules",
-                "isCategory": false,
-                "path": "hardware/modules/GPIO-Modules.md",
-                "children": []
-              },
               {
                 "categoryName": "M.2 modules",
                 "isCategory": false,
-                "path": "hardware/modules/M2-Modules.md",
+                "path": "hardware/M2-Modules.md",
                 "children": []
               }
             ]
           },
           {
-            "categoryName": "Datasheets",
+            "categoryName": "GPIO port",
             "isCategory": false,
-            "path": "hardware/Datasheets.md",
-            "children": []
+            "path": "hardware/GPIO-port.md",
+            "children": [
+              {
+                "categoryName": "GPIO modules",
+                "isCategory": false,
+                "path": "hardware/GPIO-Modules.md",
+                "children": []
+              }
+            ]
           }
         ]
       },

@@ -31,7 +31,7 @@ All Linux (CPU Software) team tasks are tracked in the GitHub project [Flipper O
 
 **\<TODO: Task tracker screenshot with collouts)>**
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [Contribution guide]() first.
+**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [Contribution guide](#how-to-contribute) first.
 
 ***
 

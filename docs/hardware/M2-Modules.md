@@ -1,6 +1,6 @@
 ---
 title: M.2 modules
-slug: hardware/expansion-modules/m2
+slug: hardware/m2-port/modules
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:00:55 GMT+0000 (Coordinated Universal Time)

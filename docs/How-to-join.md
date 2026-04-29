@@ -60,7 +60,7 @@ Mechanical and industrial design. This is where the enclosure, buttons, plastic 
 :::
 
 :::VerticalSplitItem
-Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This is the largest and most complex sub-project, spanning many repositories. It contains the core software that users will interact with directly. [Learn more](https://docs.flipper.net/one/cpu-software/about) **→**
+Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This is the largest and most complex sub-project, spanning many repositories. It contains the core software that users will interact with directly. :Link[**Learn more**]{href="https://docs.flipper.net/one/cpu-software/about" newTab="true" hasDisabledNofollow="false"}**&#x20;→**
 :::
 ::::
 
@@ -74,7 +74,7 @@ Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This
 :::
 
 :::VerticalSplitItem
-Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touchpad, and power subsystem, as well as co-processor communication between the MCU and CPU. [Learn more](https://docs.flipper.net/one/mcu-firmware/about)**&#x20;→**
+Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touchpad, and power subsystem, as well as co-processor communication between the MCU and CPU. :Link[**Learn more**]{href="https://docs.flipper.net/one/mcu-firmware/about" newTab="true" hasDisabledNofollow="false"}**&#x20;→**
 :::
 ::::
 
@@ -88,7 +88,7 @@ Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touc
 :::
 
 :::VerticalSplitItem
-UI/UX development. This is where the user interface, visual communication of the device, all graphics, and visual design are developed. [Learn more](https://docs.flipper.net/one/user-interface/about) **→**
+UI/UX development. This is where the user interface, visual communication of the device, all graphics, and visual design are developed. :Link[**Learn more**]{href="https://docs.flipper.net/one/user-interface/about" newTab="true" hasDisabledNofollow="false"}**&#x20;→**
 :::
 ::::
 
@@ -102,7 +102,7 @@ UI/UX development. This is where the user interface, visual communication of the
 :::
 
 :::VerticalSplitItem
-Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contribution guides. [Learn more](https://docs.flipper.net/one/resources/about-docs)**&#x20;→**
+Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contribution guides. :Link[**Learn more**]{href="https://docs.flipper.net/one/resources/about-docs" newTab="true" hasDisabledNofollow="false"}**&#x20;→**
 :::
 ::::
 
@@ -116,7 +116,7 @@ Developer portal wiki, technical docs, guides, and datasheets. All documentation
 :::
 
 :::VerticalSplitItem
-Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes, demos, and sample audio and video files. [Learn more](https://docs.flipper.net/one/testing/about) **→**
+Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes, demos, and sample audio and video files. :Link[**Learn more**]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"}**&#x20;→**
 :::
 ::::
 
