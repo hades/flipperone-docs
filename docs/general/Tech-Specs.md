@@ -49,13 +49,13 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## Ports
 
-![Flipper One top and back ports](/files/pics/top-and-back-ports.png "Flipper One top and back ports")
+![Flipper One top and back ports](/files/pics/top-and-back-ports.png)
 
-![Flipper One audio port and USB-C1](/files/pics/audio-port-and-usb-c1.png "Flipper One audio port and USB-C1")
+![Flipper One audio port and USB-C1](/files/pics/audio-port-and-usb-c1.png)
 
-![Flipper One Ethernet ports](/files/pics/ethernet-ports.png "Flipper One Ethernet ports")
+![Flipper One Ethernet ports](/files/pics/ethernet-ports.png)
 
-![Flipper One MicroSD and SIM slots](/files/pics/microsd-and-sim-slots.png "Flipper One MicroSD and SIM slots")
+![Flipper One MicroSD and SIM slots](/files/pics/microsd-and-sim-slots.png)
 
 - **USB-C1:** USB 3.1 (5 Gbps), DisplayPort Alt Mode, USB Power Delivery charging
 - **USB-C2:** USB 3.1 (5 Gbps), host only, power out
@@ -65,13 +65,13 @@ This page describes the full technical specifications of the Flipper One. Since 
 - **3.5 mm audio jack:** stereo out + microphone input (TRRS)
 - **MicroSD card slot:** Card up to ?? GB
 - **SIM card slot:** Nano SIM (4FF), passively connected to M.2 port
-- **GPIO port:** 
+- **GPIO port:** ???
 
 ***
 
 ## Controls
 
-![Flipper One buttons](/files/pics/flipper-one-buttons.png "Flipper One buttons")
+![Flipper One buttons](/files/pics/flipper-one-buttons.png)
 
 - **Touchpad:** fast scrolling, haptic feedback
 - **App buttons:** 5 buttons below the screen
@@ -85,7 +85,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## Main CPU — RK3576
 
-![Flipper One CPU and MCU](/files/pics/cpu-and-mcu-flipper-one.png "Flipper One CPU and MCU")
+![Flipper One CPU and MCU](/files/pics/cpu-and-mcu-flipper-one.png)
 
 - **CPU:** Rockchip RK3576
 - **Cores:** 8 — 4× high-performance ARM Cortex-A72 + 4× efficiency ARM Cortex-A53, up to 2.2 GHz
