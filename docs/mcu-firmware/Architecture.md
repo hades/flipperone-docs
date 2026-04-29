@@ -30,7 +30,7 @@ The MCU and CPU are interconnected via several interfaces and GPIO pins, includi
 - **INT** pin is used by the MCU to notify the CPU of new events.
 - **BOOT0 & BOOT1** pins are used to control the main CPU’s boot process. The BOOT0 pin can force the CPU into MaskROM mode, enabling UFS flash programming via USB. The BOOT1 pin selects the OS boot source; the MCU generates a PWM signal that is converted into a voltage level, which the CPU reads via its ADC during the early boot stage.
 
-![Flipper One dual processor architecture](/files/pics/flipper-one-dual-cpu-architecture.png "Flipper One dual processor architecture")
+![CPU and MCU interconnection](/files/pics/cpu-and-mcu-interconnection.jpg "CPU and MCU interconnection")
 
 ## RP2350 overview
 
