@@ -65,12 +65,6 @@
             "children": []
           },
           {
-            "categoryName": "Schematics",
-            "isCategory": false,
-            "path": "hardware/Schematics.md",
-            "children": []
-          },
-          {
             "categoryName": "Wi-Fi & Bluetooth",
             "isCategory": false,
             "path": "hardware/WiFi-Bluetooth.md",
