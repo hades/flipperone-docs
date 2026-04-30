@@ -12,7 +12,7 @@ To flash Flipper One MCU:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Connect Flipper One **USB-C port 1** to your computer.
+Connect Flipper One **USB-C 1** port to your computer.
 :::
 
 :::WorkflowBlockItem
