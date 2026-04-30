@@ -16,11 +16,45 @@ Connect Flipper One **USB-C 1** port to your computer.
 :::
 
 :::WorkflowBlockItem
-Put the MCU into BOOTSEL mode. The method depends on your device hardware revision. If you are unsure which revision you have, try the available methods below.
+Put the MCU into BOOTSEL mode. The method depends on Flipper One hardware revision. If you are unsure which revision you have, try the available methods below.
 
-* **For Flipper One rev F0.B0.C1:** press and hold simultaneously PTT button, Left button, and Back button.
+**For Flipper One rev F0.B0.C1:** 
 
-* **For Flipper One rev 2.F0.B1.C2:** press and hold simultaneously: ✔ button, ✖ button, Left button, and Back button.
+::::::WorkflowBlock
+
+:::WorkflowBlockItem
+2.1 Press and hold **PTT button**.
+:::
+
+:::WorkflowBlockItem
+2.2 Press and hold **Left and Back buttons** for 3+ sec.
+:::
+
+:::WorkflowBlockItem
+2.3 Release **all buttons**.
+:::
+::::::
+
+![](/files/pics/mcu-switching-to-bootsel-mode-rev-F0.B0.C1.png)
+
+**For Flipper One rev 2.F0.B1.C2:** 
+
+::::::WorkflowBlock
+
+:::WorkflowBlockItem
+2.1 Press and hold **✔ and ✖ buttons**.
+:::
+
+:::WorkflowBlockItem
+2.2 Press and hold **Left and Back buttons** for 3+ sec.
+:::
+
+:::WorkflowBlockItem
+2.3 Release **all buttons**.
+:::
+::::::
+
+![](/files/pics/mcu-switching-to-bootsel-mode-rev-2.F0.B1.C2.png)
 
 If the MCU has successfully swithced to BOOTSEL mode, your operating system will detect it as a Mass Storage Device. If it does not appear, try using a different USB cable and repeat the BOOTSEL procedure.
 :::
