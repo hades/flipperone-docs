@@ -6,8 +6,6 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:32:40 GMT+0000 (Coordinated Universal Time)
 ---
 
-# Remove this before pushing
-
 This page explains the structure of the Hardware sub-project, provides links to its resources, and outlines how to contribute to Flipper One's electrical hardware development.
 
 TODO: Add hero image (e.g., Hardware sub-project structure diagram).
@@ -22,7 +20,7 @@ The Hardware sub-project consists of:
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, share your ideas in the comments, or contribute directly to the docs.
 
-![Hardware sub-project structure](/files/pics/hardware-sub-project-structure.jpg "Hardware sub-project structure")
+![Hardware sub-project structure](/files/pics/hardware-sub-project-structure.jpg)
 
 ***
 
@@ -64,7 +62,7 @@ TODO: Document supported export formats (PDF, Gerber, STEP, BOM, etc.) and the e
 
 Hardware-related documentation lives across two sections of the Developer Portal:
 
-- :Link[🔌 Hardware section]{href="https://docs.flipper.net/one/hardware/about" newTab="true" hasDisabledNofollow="false"} — references for ports, modules, and subsystems: GPIO and M.2 port pinouts, power subsystem, Wi-Fi & Bluetooth, and the GPIO and M.2 modules supported by Flipper One.
+- 🔌 **Hardware section** (you are here) — references for ports, modules, and subsystems: GPIO and M.2 port pinouts, power subsystem, Wi-Fi & Bluetooth, and the GPIO and M.2 modules supported by Flipper One.
 - :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"} — hardware verification procedures for each subsystem (power, graphics, network, M.2, video decoding) so we can confirm components meet design requirements before production.
 
 The :Link[Tech specs]{href="https://docs.flipper.net/one/general/tech-specs" newTab="true" hasDisabledNofollow="false"} page consolidates the full hardware specifications in one place, including controls, ports, dimensions, and pinouts.
