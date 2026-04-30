@@ -162,7 +162,7 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
 - **Supported thickness:** up to S3 (double-sided modules)
 - **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card
 
-### M.2 pinout
+### M.2 port pinout
 
 ![Flipper One M.2 port pinout](/files/pics/m2-port-pinout.jpg)
 
