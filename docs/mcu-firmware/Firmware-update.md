@@ -20,39 +20,21 @@ Put the MCU into BOOTSEL mode. The method depends on Flipper One hardware revisi
 
 **For Flipper One rev F0.B0.C1:** 
 
-::::::WorkflowBlock
-
-:::WorkflowBlockItem
 2.1 Press and hold **PTT button**.
-:::
 
-:::WorkflowBlockItem
 2.2 Press and hold **Left and Back buttons** for 3+ sec.
-:::
 
-:::WorkflowBlockItem
 2.3 Release **all buttons**.
-:::
-::::::
 
 ![](/files/pics/mcu-switching-to-bootsel-mode-rev-F0.B0.C1.png)
 
 **For Flipper One rev 2.F0.B1.C2:** 
 
-::::::WorkflowBlock
-
-:::WorkflowBlockItem
 2.1 Press and hold **✔ and ✖ buttons**.
-:::
 
-:::WorkflowBlockItem
 2.2 Press and hold **Left and Back buttons** for 3+ sec.
-:::
 
-:::WorkflowBlockItem
 2.3 Release **all buttons**.
-:::
-::::::
 
 ![](/files/pics/mcu-switching-to-bootsel-mode-rev-2.F0.B1.C2.png)
 
