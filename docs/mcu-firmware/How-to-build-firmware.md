@@ -48,6 +48,6 @@ To build the MCU firmware locally:
 
 ![](/files/pics/mcu-firmware-vscode-compilation.png)
 :::
-::::
+:::::
 
 After a successful build, the firmware .UF2 file will be located in the **flipperone-mcu-firmware/build** folder. To flash it to the MCU, follow the instructions on the [Firmware Update](Firmware-update.md) page.
