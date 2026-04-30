@@ -65,7 +65,6 @@ This page describes the full technical specifications of the Flipper One. Since 
 - **3.5 mm audio jack:** stereo out + microphone input (TRRS)
 - **MicroSD card slot:** Card up to ?? GB
 - **SIM card slot:** Nano SIM (4FF), passively connected to M.2 port
-- **GPIO port:** ???
 
 ***
 
@@ -165,7 +164,7 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
 
 ### M.2 pinout
 
-![Flipper One M.2 port pinout](/files/pics/m2-port-pinout.jpg "First itteration of Flipper One M.2 port pinout. Rework is required")
+![Flipper One M.2 port pinout](/files/pics/m2-port-pinout.jpg)
 
 <table isTableHeaderOn="true" columnWidths="271,57,61,270">
   <tr>
@@ -678,7 +677,7 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
 
 ## GPIO pinout
 
-![Flipper One GPIO port pinout](/files/pics/gpio-port-pinout.jpg "Flipper One GPIO port pinout")
+![Flipper One GPIO port pinout](/files/pics/gpio-port-pinout.jpg)
 
 <table isTableHeaderOn="true" columnWidths="246,69,66,279">
   <tr>
@@ -905,9 +904,9 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
 
 ***
 
-## Debug port
+## Debug port pinout
 
-![Flipper One debug port pinout](/files/pics/debug-port-pinout.jpg "Flipper One debug port pinout")
+![Flipper One debug port pinout](/files/pics/debug-port-pinout.jpg)
 
 <table isTableHeaderOn="true" columnWidths="246,69,66,279">
   <tr>
@@ -926,7 +925,7 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
   </tr>
   <tr>
     <td align="center">
-      <p>3V3 ⚠️ MCU POWER?</p>
+      <p>3V3 ⚠️ MCU POWER</p>
     </td>
     <td align="center">
       <p><strong>1</strong></p>
@@ -1023,5 +1022,3 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
     </td>
   </tr>
 </table>
-
-Will this affect the URL?
