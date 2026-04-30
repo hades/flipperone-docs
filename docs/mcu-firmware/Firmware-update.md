@@ -6,7 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:14:38 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page explains how to flash the MCU firmware file (`.UF2`) to the Flipper One MCU via USB. You can download the firmware file from the [Firmware Update Server]() or [build it from source code](How-to-build-firmware.md).
+This page explains how to flash the MCU firmware file (`.UF2`) to the Flipper One MCU via USB. You can download the firmware file from the [Firmware Update Server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/) or [build it from source code](How-to-build-firmware.md).
 
 To flash Flipper One MCU:
 
