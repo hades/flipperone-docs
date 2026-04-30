@@ -38,7 +38,7 @@ If you have a paid Figma plan, you can add these assets to your libraries. Check
 ### Flipper One UI — Main board
 Interface development, design assets, illustrations, and source graphics files.
 
-<img width="3584" height="1850" alt="" src="https://github.com/user-attachments/assets/6d3c4da0-afa4-4854-bf1d-405ee0c04e74" />
+<img width="1640" height="557" alt="" src="https://github.com/user-attachments/assets/c5c9a9c7-2447-421a-9b4e-8eb994586c7a" />
 
 [Main board](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1) includes the following pages:
 1. `Documentation` — Illustrations and technical drawings
@@ -46,6 +46,16 @@ Interface development, design assets, illustrations, and source graphics files.
 3. `UI Live Preview` — Pre-assembled UI layouts for look and feel tests on device
 
 ***
+
+# Fonts
+
+Currently in UI use two fonts:
+<img width="585" height="81" alt="" src="https://github.com/user-attachments/assets/096c2da7-e36b-42dc-8e7c-2cb8a04f8165" />
+[Born2bSportyV2](https://github.com/olikraus/u8g2/blob/master/tools/font/ttf/Born2bSportyV2.ttf)
+
+<img width="376" height="56" alt="" src="https://github.com/user-attachments/assets/e33fd268-b0e8-4034-8311-580d539458a1" />
+
+[haxrcorp4089](https://github.com/olikraus/u8g2/blob/master/tools/font/ttf/haxrcorp4089.ttf)
 
 ***
 
