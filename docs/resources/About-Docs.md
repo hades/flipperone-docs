@@ -276,7 +276,7 @@ If you've spotted an error, want to clarify a section, or want to add a new guid
 **(Optional) Add images.** If your change includes images, diagrams, or screenshots, upload them to `docs/files/pics/` and reference them with a relative path:
 
 ```markdown
-![Caption](/files/pics/your-image.png)
+![Alt text](/files/pics/your-image.png "Caption")
 ```
 
 Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep images under 1 MB.
