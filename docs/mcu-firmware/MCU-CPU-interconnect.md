@@ -1,5 +1,5 @@
 ---
-title: MCU↔CPU interface
+title: MCU↔CPU interconnect
 slug: mcu-firmware/mcu-cpu-interconnect
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
