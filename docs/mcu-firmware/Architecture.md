@@ -19,7 +19,7 @@ Flipper One uses a dual-processor architecture with **High-Performance Linux CPU
 - Controlling all device LEDs.
 
 ![MCU connection diagram](/files/pics/mcu-connection-diagram.jpg "MCU connection diagram")
-
+ 
 ## Firmware architecture
 
 The MCU firmware is built on the [FreeRTOS](https://www.freertos.org/) kernel and a set of libraries and drivers organized in a layered firmware architecture.

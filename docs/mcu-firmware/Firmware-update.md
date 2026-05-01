@@ -16,7 +16,7 @@ Connect Flipper One **USB-C 1** port to your computer.
 
 ![](/files/pics/mcu-firmware-usbc1-connection.png)
 :::
-
+ 
 :::WorkflowBlockItem
 Put the MCU into BOOTSEL mode. The method depends on Flipper One hardware revision. If you are unsure which revision you have, try the available methods below.
 
