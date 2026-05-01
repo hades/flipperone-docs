@@ -13,7 +13,7 @@ This page explains the structure of the MCU Firmware sub-project, provides links
 The MCU Firmware sub-project consists of:
 
 - ✅ **[Task tracker](https://github.com/orgs/flipperdevices/projects/8)**
-- 📁 **[Firmware GitHub repository](https://github.com/flipperdevices/flipperone-mcu-firmware)**
+- 📁 **[Firmware sources](https://github.com/flipperdevices/flipperone-mcu-firmware)**
 - 🏭 **[Firmware update server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)**
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositoriy via pull requests.
@@ -26,13 +26,13 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — MCU Firmware](https://github.com/orgs/flipperdevices/projects/8/). There, you can see what the engineering team is working on and follow progress and discussions.
 
-**\<TODO: Task tracker screenshot with collouts)>**
+![MCU Firmware sub-project task tracker on GitHub](/files/pics/mcu-firmware-board-explainer.png "MCU Firmware sub-project task tracker on GitHub")
 
 **Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [**Contribution guide**](About-MCU-Firmware.md) first.
 
 ***
 
-## 📁 Firmware GitHub repository
+## 📁 Firmware sources
 
 This subproject includes a public [MCU Firmware](https://github.com/flipperdevices/flipperone-mcu-firmware) GitHub repository containing RP2350 firmware sources. You can [build the firmware](How-to-build-firmware.md) locally from sources. The resulting `.UF2` firmware file can be flashed to the MCU via USB by following the instructions in [Firmware update](Firmware-update.md).
 
