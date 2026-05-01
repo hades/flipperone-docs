@@ -6,20 +6,26 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 12:57:35 GMT+0000 (Coordinated Universal Time)
 ---
 
-The M.2 expansion port is at the back of the device, under the Back Plate.
-
 ![Flipper One M.2 expansion port](/files/pics/m2-expansion-port.png)
+
+The M.2 port is an internal expansion slot for cellular modems, SSDs, GNSS modules, and similar off-the-shelf M.2 modules. It sits at the back of the device, under the Back Plate.
+
+**Tech specs:**
 
 - **M.2 type:** Key B
 - **Supported sizes:** 2242, 3042, 3052 mm
 - **Supported thickness:** up to S3 (double-sided modules)
-- **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card
+- **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I²C / SIM card
+
+***
 
 ## M.2 port schematic
 
 :::Iframe{code="<iframe src=&#x22;https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=B61B98C6-CB3B-41BC-955F-FA98C558A671&activeView=SCH&#x22; width=&#x22;1280&#x22; height=&#x22;720&#x22; style=&#x22;overflow:hidden;border:none;width:100%;height:500px;&#x22; scrolling=&#x22;no&#x22; allowfullscreen=&#x22;true&#x22; onload=&#x22;window.top.scrollTo(0,0);&#x22;></iframe>" iframeHeight="500"}
 
 :::
+
+***
 
 ## M.2 port pinout
 

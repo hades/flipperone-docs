@@ -15,7 +15,7 @@ The Hardware sub-project covers electrical hardware development: printed circuit
 The Hardware sub-project consists of:
 
 - ✅ :Link[Task tracker]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}
-- ⚡ :Link[Schematics and PCB design on Altium 365]{href="https://flipper.365.altium.com/designs/folder-7D774A8C-512F-4F4E-8518-0403C2316421" newTab="true" hasDisabledNofollow="false"}
+- ⚡ :Link[Schematics and PCB design on Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}
 - 📁 :Link[GitHub repository]{href="https://github.com/flipperdevices/flipperone-hardware" newTab="true" hasDisabledNofollow="false"} — currently README only
 - 📚 Docs: 🔌 **Hardware section** (you're here) and :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"}
 
@@ -29,7 +29,7 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 All Hardware team tasks are tracked in the GitHub project :Link[Flipper One — Hardware]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}. There, you can see what the engineering team is working on and follow progress and discussions.
 
-![Hardware board explainer](/files/pics/hardware-board-explainer.png "How the Hardware task tracker is organized")
+![Hardware board explainer](/files/pics/hardware-board-explainer.png)
 
 **Some tasks are open** to the community and marked with a **help wanted** label. You're welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="https://docs.flipper.net/one/hardware/about#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
 
@@ -37,72 +37,51 @@ All Hardware team tasks are tracked in the GitHub project :Link[Flipper One — 
 
 ## ⚡ Schematics and PCB design on Altium 365
 
-Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on :Link[Altium 365]{href="https://flipper.365.altium.com/designs/folder-7D774A8C-512F-4F4E-8518-0403C2316421" newTab="true" hasDisabledNofollow="false"}, the cloud collaboration platform for for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
+Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on :Link[Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}, the cloud collaboration platform for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
 
 ![Altium 365 Web Viewer interface](/files/pics/altium-ui-general.png)
 
-:::hint{type="info"}
-Shared schematics and PCB layouts match the real product, allowing development of accessories, modules, and external hardware for Flipper One.
-:::
+Click any project in the Flipper One folder to open it in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials).
 
-***
+Click any project in the Flipper One folder to open it in the Web Viewer. Five view tabs are available along the top:
 
-### Altium 365 folder structure
-
-Shared Flipper hardware projects live in the **Flipper Public Altium365 Space** workspace, organized into a folder hierarchy:
-
-```none
-Flipper Public Altium365 Space/
-└── Projects/
-    ├── Flipper One/                   # Flipper One hardware projects
-    └── Flipper Zero/                  # Flipper Zero hardware projects
-```
-
-Open the **Flipper One** folder to access Flipper One hardware projects and click any project to open it in the Web Viewer.
-
-![Altium 365 workspace folder view](/files/pics/altium-ui-projects.png "Flipper One folder")
-
-Each project opens in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials).
-
-![Altium 365 open project — schematic view](/files/pics/altium-ui-view.png "Altium 365 open project — schematic view")
+- **SCH** — schematic
+- **PCB** — 2D layout
+- **3D** — interactive 3D render
+- **Draftsman** — fabrication documentation
+- **BOM** — Bill of Materials
 
 ***
 
 ### How to view the design files
 
-The Altium 365 Web Viewer gives interactive, read-only access to the project directly in your browser — no Altium Designer install required.
+The Altium 365 Web Viewer lets you browse the project directly in your browser — no Altium Designer install required. To see everything the viewer can do, check out the :Link[official Altium 365 Web Viewer documentation]{href="https://www.altium.com/documentation/altium-365/viewers/web-viewer" newTab="true" hasDisabledNofollow="false"}.
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Open the shared workspace.** Go to the :Link[Flipper Public Altium365 Space]{href="https://flipper.365.altium.com/designs/folder-7D774A8C-512F-4F4E-8518-0403C2316421" newTab="true" hasDisabledNofollow="false"}.
+**Open the Flipper One folder.** Go to :Link[Flipper One on Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}.
 :::
 
 :::WorkflowBlockItem
-**Sign in with your Altium account.** You can also sign in with your Google account. If you don't have an Altium account, create one on the :Link[Altium website]{href="https://www.altium.com/" newTab="true" hasDisabledNofollow="false"} — it's free for viewing shared projects.
+**Sign in with your Altium or Google account.** If you don't have an Altium account, create one on the :Link[Altium website]{href="https://www.altium.com/" newTab="true" hasDisabledNofollow="false"} — it's free for viewing shared projects.
 
-![Altium 365 sign-in](/files/pics/altium-ui-login.png "Altium 365 sign-in")
+![Altium 365 sign-in](/files/pics/altium-ui-login.png)
 :::
 
 :::WorkflowBlockItem
-**Open a project.** In **Projects → Flipper One**, click the project you want to inspect (for example, `SDIO-JTAG_ADAPTER` or `Flipper_One_Debug_Probe_V1`).
+**Open a project.** Click the project you want to inspect.
 :::
 
 :::WorkflowBlockItem
 **Switch between views.** Use the tabs at the top of the viewer to move between **SCH**, **PCB**, **3D**, **Draftsman**, and **BOM**.
+
+![Altium 365 open project — schematic view](/files/pics/altium-ui-view.png)
 :::
 
 :::WorkflowBlockItem
 **Inspect components and nets.** All views support pan and zoom, plus search and cross-probing — click a component on the schematic to highlight it on the PCB, or select a net to trace it across the design.
 :::
 ::::
-
-Available views in the Web Viewer:
-
-- Schematic sheets
-- 2D PCB layout
-- 3D board
-- Bill of Materials (BOM)
-- Draftsman documents
 
 ***
 
@@ -112,24 +91,38 @@ The Web Viewer includes a download control whose available formats depend on the
 
 ![Altium 365 Web Viewer download control](/files/pics/altium-ui-download.png "Altium 365 Web Viewer download control")
 
+The Web Viewer can export the entire project or individual derived files for offline reference.
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+**Open a project and click the Downloads icon** in the top-right of the viewer. A panel opens with **Project Source Files** and **Derived Files** sections.
+:::
+
+:::WorkflowBlockItem
+**Download the whole project.** In **Project Source Files**, click the project entry to download all source files as a single archive.
+:::
+
+:::WorkflowBlockItem
+**Or download individual files.** In **Derived Files**, pick what you need — Gerber, Assembly Docs, PDF Schematic, STEP, or BOM.
+:::
+::::
+
+For full info about the download feature, see Altium's :Link[official Web Viewer documentation]{href="https://www.altium.com/documentation/altium-365/viewers/web-viewer#downloading" newTab="true" hasDisabledNofollow="false"}.
+
 ***
 
 ## 📚 Docs
 
-Hardware-related documentation lives across two sections of the Developer Portal:
+Hardware documentation is split across two sections:
 
-- 🔌 **Hardware section** (you're here) — references for ports, modules, and subsystems: GPIO and M.2 port pinouts, power subsystem, Wi-Fi & Bluetooth, and the GPIO and M.2 modules supported by Flipper One.
-- :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"} — hardware verification procedures for each subsystem (power, graphics, network, M.2, video decoding) so we can confirm components meet design requirements before production.
+- 🔌 **Hardware section** (you're here) — port pinouts, modules, and subsystem references (Wi-Fi & Bluetooth, power, M.2, GPIO).
+- :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"} — hardware verification procedures for each subsystem.
 
-The :Link[Tech specs]{href="https://docs.flipper.net/one/general/tech-specs" newTab="true" hasDisabledNofollow="false"} page consolidates the full hardware specifications in one place, including controls, ports, dimensions, and pinouts.
+See also the :Link[Tech specs]{href="https://docs.flipper.net/one/general/tech-specs" newTab="true" hasDisabledNofollow="false"} page for full hardware specifications in one place.
 
 ***
 
 ## How to contribute
-
-:::hint{type="info"}
-To view the schematics and PCB design, you need an Altium 365 account. Create one on the :Link[Altium website]{href="https://www.altium.com/" newTab="true" hasDisabledNofollow="false"}.
-:::
 
 The Hardware sub-project accepts contributions in two forms: **comments on open tasks** for ideas, suggestions, and improvements, and **edits to the docs** for documenting hardware experiments, findings, or external module designs.
 
@@ -156,7 +149,7 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 ::::WorkflowBlockItem
 **Write your suggestion.** In the comments section, clearly describe your suggestion and attach a screenshot, schematic snippet, or a link to your design on Altium 365. Ensure your design is accessible for others to view.
 
-![Good vs bad comment on a Hardware task](/files/pics/hardware-good-vs-bad-comment.png "Good vs bad comment on a Hardware task")
+![Good vs bad comment on a Hardware task](/files/pics/hardware-good-vs-bad-comment.png)
 
 **Attachment size limit:**
 

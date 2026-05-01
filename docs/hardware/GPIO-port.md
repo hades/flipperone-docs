@@ -6,13 +6,19 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 12:58:00 GMT+0000 (Coordinated Universal Time)
 ---
 
-GPIO port pinout, schematics, and use cases.&#x20;
+![GPIO port](/files/pics/gpio-port-main.png)
+
+The GPIO port is an expansion connector for accessories, modules, and external hardware. It exposes 3.3 V and 5 V power rails (both EFUSE-protected up to 2 A), USB 2.0 data lines, and a mix of MCU and CPU GPIOs with multi-function pins for I²C, UART, SPI, SAI, PDM, CAN, PWM, ADC, and SPDIF.
+
+***
 
 ## GPIO port schematic
 
 :::Iframe{code="<iframe src=&#x22;https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=B379A8A7-9847-4DC4-887F-D328E3CC3FC8&activeView=SCH&#x22; width=&#x22;1280&#x22; height=&#x22;720&#x22; style=&#x22;overflow:hidden;border:none;width:100%;height:500px;&#x22; scrolling=&#x22;no&#x22; allowfullscreen=&#x22;true&#x22; onload=&#x22;window.top.scrollTo(0,0);&#x22;></iframe>" iframeHeight="500"}
 
 :::
+
+***
 
 ## GPIO port pinout
 
