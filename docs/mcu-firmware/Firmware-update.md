@@ -13,6 +13,8 @@ To flash Flipper One MCU:
 :::::WorkflowBlock
 :::WorkflowBlockItem
 Connect Flipper One **USB-C 1** port to your computer.
+
+![](/files/pics/mcu-firmware-usbc1-connection.png)
 :::
 
 :::WorkflowBlockItem
