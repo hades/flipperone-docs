@@ -150,13 +150,19 @@ To control whether a link opens in a new tab — and to write short relative hre
 
 `:Link[label]{href="https://example.com" newTab="true" hasDisabledNofollow="false"}`
 
+‎ 
+
 **Same-page anchor (same tab):**
 
 `:Link[label]{href="./#section-name" newTab="false" hasDisabledNofollow="true"}`
 
+‎ 
+
 **Another page in the docs (optional anchor):**
 
 `:Link[label]{href="<relative-path>.md#section-name" newTab="true" hasDisabledNofollow="true"}`
+
+‎ 
 
 Use a path relative to the current file:
 
@@ -165,6 +171,8 @@ Use a path relative to the current file:
 - `../folder/Other-Page.md` — file in a sibling folder
 
 The `#section-name` anchor is optional. Anchor IDs are derived from the heading text (lowercased, spaces replaced with hyphens).
+
+‎ 
 
 <table isTableHeaderOn="true" columnWidths="141,522">
   <tr>
