@@ -51,6 +51,9 @@ Copy the `.UF2` firmware file onto the Mass Storage Device. Once the file copy i
     autoplay muted loop playsinline style="width: 100%; margin: 0 !important;"
     src="https://cdn.flipperzero.one/Monosnap_screencast_2024-01-24_21-27-24.mp4"
 ></video>"}
+<div class="text-center mt-2.5 text-gray-400 pb-5">
+</div>
+
 :::
 
 :::hint{type="success"}
