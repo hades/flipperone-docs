@@ -6,8 +6,6 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 12:57:35 GMT+0000 (Coordinated Universal Time)
 ---
 
-# Test
-
 The M.2 expansion port is at the back of the device, under the Back Plate.
 
 ![Flipper One M.2 expansion port](/files/pics/m2-expansion-port.png)
@@ -19,7 +17,7 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
 
 ## M.2 port schematic
 
-:::Iframe{code="<iframe src=&#x22;https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=B61B98C6-CB3B-41BC-955F-FA98C558A671&activeView=SCH&#x22; width=&#x22;1280&#x22; height=&#x22;720&#x22; style=&#x22;overflow:hidden;border:none;width:100%;height:720px;&#x22; scrolling=&#x22;no&#x22; allowfullscreen=&#x22;true&#x22; onload=&#x22;window.top.scrollTo(0,0);&#x22;></iframe>" iframeHeight="720"}
+:::Iframe{code="<iframe src=&#x22;https://personal-viewer.365.altium.com/client/index.html?feature=embed&source=B61B98C6-CB3B-41BC-955F-FA98C558A671&activeView=SCH&#x22; width=&#x22;1280&#x22; height=&#x22;720&#x22; style=&#x22;overflow:hidden;border:none;width:100%;height:500px;&#x22; scrolling=&#x22;no&#x22; allowfullscreen=&#x22;true&#x22; onload=&#x22;window.top.scrollTo(0,0);&#x22;></iframe>" iframeHeight="500"}
 
 :::
 
