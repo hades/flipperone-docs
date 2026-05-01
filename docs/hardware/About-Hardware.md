@@ -41,8 +41,6 @@ Selected parts of Flipper One's electrical design — schematics, PCB layouts, a
 
 ![Altium 365 Web Viewer interface](/files/pics/altium-ui-general.png "Altium 365 Web Viewer interface")
 
-Click any project in the Flipper One folder to open it in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials).
-
 Click any project in the Flipper One folder to open it in the Web Viewer. Five view tabs are available along the top:
 
 - **SCH** — schematic
@@ -55,7 +53,7 @@ Click any project in the Flipper One folder to open it in the Web Viewer. Five v
 
 ### How to view the design files
 
-The Altium 365 Web Viewer lets you browse the project directly in your browser — no Altium Designer install required. To see everything the viewer can do, check out the :Link[official Altium 365 Web Viewer documentation]{href="https://www.altium.com/documentation/altium-365/viewers/web-viewer" newTab="true" hasDisabledNofollow="false"}.
+The Altium 365 Web Viewer lets you browse the project directly in your browser — no Altium Designer install required.
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
@@ -89,7 +87,7 @@ The Altium 365 Web Viewer lets you browse the project directly in your browser �
 
 The Web Viewer includes a download control whose available formats depend on the view you're in. From the schematic, PCB, or BOM views you can download a copy of the document for offline reference.
 
-![Altium 365 Web Viewer download control](/files/pics/altium-ui-download.png "Altium 365 Web Viewer download control")
+![Altium 365 Web Viewer download control](/files/pics/altium-ui-download.png)
 
 The Web Viewer can export the entire project or individual derived files for offline reference.
 
