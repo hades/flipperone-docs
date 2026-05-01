@@ -50,8 +50,6 @@ Click **Compile Project**.
 If you get an error during the first build, click **Compile Project** again.
 :::
 
-:::
-
 :::::
 
 ![](/files/pics/mcu-firmware-vscode-compilation.png)
