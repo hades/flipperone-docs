@@ -17,7 +17,7 @@ The Hardware sub-project consists of:
 - ✅ :Link[Task tracker]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}
 - ⚡ :Link[Schematics and PCB design on Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}
 - 📁 :Link[GitHub repository]{href="https://github.com/flipperdevices/flipperone-hardware" newTab="true" hasDisabledNofollow="false"} — currently README only
-- 📚 Docs: 🔌 **Hardware section** (you're here) and :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"}
+- 📚 Docs: 🔌 **Hardware section** (you're here) and :Link[🧪 Testing section]{href="../testing/About-Testing.md" newTab="true" hasDisabledNofollow="true"}
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, share your ideas in the comments, or contribute directly to the docs.
 
@@ -116,7 +116,7 @@ For full info about the download feature, see Altium's :Link[official Web Viewer
 Hardware documentation is split across two sections:
 
 - 🔌 **Hardware section** (you're here) — port pinouts, modules, and subsystem references (Wi-Fi & Bluetooth, power, M.2, GPIO).
-- :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"} — hardware verification procedures for each subsystem.
+- :Link[🧪 Testing section]{href="../testing/About-Testing.md" newTab="true" hasDisabledNofollow="true"} — hardware verification procedures for each subsystem.
 
 See also the :Link[Tech specs]{href="https://docs.flipper.net/one/general/tech-specs" newTab="true" hasDisabledNofollow="false"} page for full hardware specifications in one place.
 

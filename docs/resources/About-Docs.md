@@ -104,7 +104,7 @@ To use an image in a page, reference it from your Markdown using a relative path
 ![Caption text](/files/pics/your-image.png)
 ```
 
-For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Images section of the Markup example]{href="./Markup-example.md#images" newTab="true" hasDisabledNofollow="true"} page.
+For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Markup example]{href="./Markup-example.md" newTab="true" hasDisabledNofollow="true"} page.
 
 ‎
 
