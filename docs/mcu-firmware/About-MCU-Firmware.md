@@ -6,15 +6,15 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:35:13 GMT+0000 (Coordinated Universal Time)
 ---
 
-Flipper One uses a dual-processor architecture with a main processor (SoC Rockchip RK3576) and a low power co-processor (MCU Raspberry Pi RP2350) that works together. This sub-project includes the low power co-processor firmware.
+Flipper One uses a dual-processor architecture with a **main processor** (SoC Rockchip RK3576) and a **low power co-processor** (MCU Raspberry Pi RP2350) that works together. This sub-project includes the low power co-processor firmware.
 
 This page explains the structure of the MCU Firmware sub-project, provides links to all the resources and explains how to contribute to the sub-project.
 
 The MCU Firmware sub-project consists of:
 
 - ✅ **[Task tracker](https://github.com/orgs/flipperdevices/projects/8)**
-- 🏭 **[Firmware build server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)**
-- 📁 **[MCU Firmware sources repository](https://github.com/flipperdevices/flipperone-mcu-firmware)**
+- 📁 **[Firmware sources](https://github.com/flipperdevices/flipperone-mcu-firmware)**
+- 🏭 **[Firmware update server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)**
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositoriy via pull requests.
 
@@ -24,22 +24,23 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 ## ✅  Tasks tracker
 
-All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — Linux (CPU Software)](https://github.com/orgs/flipperdevices/projects/8/). There, you can see what the engineering team is working on and follow progress and discussions.
+All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — MCU Firmware](https://github.com/orgs/flipperdevices/projects/8/). There, you can see what the engineering team is working on and follow progress and discussions.
 
-**\<TODO: Task tracker screenshot with collouts)>**
+![MCU Firmware sub-project task tracker on GitHub](/files/pics/mcu-firmware-board-explainer.png "MCU Firmware sub-project task tracker on GitHub")
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [**Contribution guide**](About-MCU-Firmware.md) first.
-
-***
-
-## 🏭 Firmware build server
+**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals.
 
 ***
 
-## 📁 MCU firmware sources
+## 📁 Firmware sources
 
-This subproject includes a public GitHub repositoriy containing MCU Firmware for Raspberry Pi RP2350:
+This subproject includes a public [MCU Firmware](https://github.com/flipperdevices/flipperone-mcu-firmware) GitHub repository containing RP2350 firmware sources. You can [build the firmware](How-to-build-firmware.md) locally from sources. The resulting `.UF2` firmware file can be flashed to the MCU via USB by following the instructions in [Firmware update](Firmware-update.md).
 
-[https://github.com/flipperdevices/flipperone-mcu-firmware](https://github.com/flipperdevices/flipperone-mcu-firmware)
 
-Learn more about MCU Firmware architecture in the dedicated page[MCU Firmware architecture](Architecture.md).
+Learn more about the firmware architecture on the [Firmware architecture](Architecture.md) page.
+
+***
+
+## 🔄 Firmware update server
+
+Every merge into the `dev` branch, as well as every pull request in the firmware repository, triggers an automated build on the firmware build server and uploading `.UF2` files to the [Firmware Update Server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/).
