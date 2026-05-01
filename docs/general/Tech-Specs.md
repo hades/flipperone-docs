@@ -70,14 +70,14 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ## Controls
 
-![Flipper One buttons](/files/pics/flipper-one-buttons.png)
+![Flipper One controls](/files/pics/controls-explainer.png "Flipper One controls")
 
 - **Touchpad:** fast scrolling, haptic feedback
 - **App buttons:** 5 buttons below the screen
 - **Power button:** Power ON / Sleep / OFF, CTRL+ALT+DEL menu, kill app
 - **5-button D-pad:** directional navigation
 - **Back button:** return
-- **App switcher:** single click = ALT+TAB, double click = extra menu
+- **App Switcher:** single click = ALT+TAB, double click = extra menu
 - **Push-to-Talk (PTT) button:** controllable in Linux userspace
 
 ***

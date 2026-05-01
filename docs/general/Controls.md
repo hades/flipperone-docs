@@ -3,9 +3,13 @@ title: Controls
 slug: general/tech-specs/controls
 ---
 
-![Flipper One buttons](/files/pics/flipper-one-buttons.png)
+This page describes the controls of Flipper One — the buttons, touchpad, and D-pad used to navigate the interface, switch apps, and trigger device-level actions like power and recovery. Most buttons are adaptive and context-dependent: their current action is shown on the screen above the button.
 
-### Controls description
+![Flipper One controls](/files/pics/controls-explainer.png "Flipper One controls")
+
+***
+
+## Controls description
 
 <table isTableHeaderOn="true" columnWidths="331,332">
   <tr>
@@ -118,7 +122,9 @@ slug: general/tech-specs/controls
   </tr>
 </table>
 
-### Buttons shortcuts&#x20;
+***
+
+## Buttons shortcuts&#x20;
 
 Some buttons and their combinations have hardware-defined behavior that does not depend on software. These combinations can hardware-reset, power off, or put the device into full recovery mode.
 
@@ -168,22 +174,3 @@ Some buttons and their combinations have hardware-defined behavior that does not
   </tr>
 </table>
 
-### Electronics Schematics
-
-Electrical schematics of all Flipper One boards. TODO: INTERNAL LINK TO Schematics.md
-
-### Mechanics
-
-Mechanical design of the external surfaces of the front panel and rear cover with Flipper One modules.
-
-### Modules
-
-Modules for Flipper One, divided into two categories: GPIO and M.2 modules.
-
-### GPIO modules
-
-GPIO modules connect via the external GPIO port on the rear panel without the need to open the cover. These are DIY modules for enthusiasts that can be built on a prototyping board using off-the-shelf components.
-
-### M.2 modules
-
-M.2 modules are expansion boards in the M.2 form factor (formerly called NGFF). Such modules are often used in laptops and industrial computers. In this format, you commonly find SSD drives, cellular modems, Wi-Fi adapters, SDR radios, and more.&#x20;
