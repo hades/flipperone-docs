@@ -62,9 +62,9 @@ Flipper Public Altium365 Space/
 
 Open the **Flipper One** folder to access Flipper One hardware projects and click any project to open it in the Web Viewer.
 
-![Altium 365 workspace folder view](/files/pics/altium-ui-projects.png "Altium 365 workspace folder view")
+![Altium 365 workspace folder view](/files/pics/altium-ui-projects.png "Flipper One folder")
 
-Each project opens in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials) — plus a left sidebar for navigating **Design** files, **Simulation**, **Tasks**, **Releases**, **History**, and the **Assembly Assistant**.
+Each project opens in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials).
 
 ![Altium 365 open project — schematic view](/files/pics/altium-ui-view.png "Altium 365 open project — schematic view")
 
@@ -100,11 +100,11 @@ The Altium 365 Web Viewer gives interactive, read-only access to the project dir
 
 Available views in the Web Viewer:
 
-- **Schematic sheets** — full electrical diagrams.
-- **2D PCB layout** — board outline, placement, routing, layers.
-- **3D board** — interactive 3D render of the assembled board.
-- **Bill of Materials (BOM)** — full component list.
-- **Draftsman documents, layer stackup, and Gerber data** — where available.
+- Schematic sheets
+- 2D PCB layout
+- 3D board
+- Bill of Materials (BOM)
+- Draftsman documents
 
 ***
 
