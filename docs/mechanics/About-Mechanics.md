@@ -30,7 +30,7 @@ All mechanical team tasks are tracked in the GitHub project :Link[Flipper One �
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/j85RNnCbi9_-rFd0k5pPt-20260426-190415.png "Mechaincs sub-project task tracker on GitHub")
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="https://docs.flipper.net/one/mechanics/about#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
+**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="./#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
 
 ***
 

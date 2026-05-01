@@ -31,7 +31,7 @@ All Hardware team tasks are tracked in the GitHub project :Link[Flipper One — 
 
 ![Hardware board explainer](/files/pics/hardware-board-explainer.png)
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You're welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="https://docs.flipper.net/one/hardware/about#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
+**Some tasks are open** to the community and marked with a **help wanted** label. You're welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="./#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
 
 ***
 

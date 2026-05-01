@@ -80,7 +80,7 @@ flipperone-docs/
 
 All pages in the Developer Portal are written in **Markdown** (`.md`) — the same format used for GitHub READMEs and most open-source documentation. On top of standard Markdown, Archbee adds a set of components for callouts, tabs, workflow blocks, embedded media, and more.
 
-For the full list of supported syntax with live examples, see the :Link[Markup example]{href="https://docs.flipper.net/one/resources/about-docs/markup-example" newTab="true"} page. It covers:
+For the full list of supported syntax with live examples, see the :Link[Markup example]{href="./Markup-example.md" newTab="true" hasDisabledNofollow="true"} page. It covers:
 
 - Headings, lists, links, and tables
 - Callouts
@@ -89,7 +89,7 @@ For the full list of supported syntax with live examples, see the :Link[Markup e
 - Workflow steps and other Archbee components
 
 :::hint{type="info"}
-Always check the :Link[Markup example]{href="https://docs.flipper.net/one/resources/about-docs/markup-example" newTab="true"} page before writing or editing — some Markdown features behave differently in Archbee, and component syntax can be easy to mistype.
+Always check the :Link[Markup example]{href="./Markup-example.md" newTab="true" hasDisabledNofollow="true"} page before writing or editing — some Markdown features behave differently in Archbee, and component syntax can be easy to mistype.
 :::
 
 ***
@@ -104,9 +104,8 @@ To use an image in a page, reference it from your Markdown using a relative path
 ![Caption text](/files/pics/your-image.png)
 ```
 
-For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Images section of the Markup example]{href="./Markup-example.md#images" newTab="true"} page.
+For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Images section of the Markup example]{href="./Markup-example.md#images" newTab="true" hasDisabledNofollow="true"} page.
 
-For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Images section of the Markup example]{href="./Markup-example.md" newTab="true"} page.
 ‎
 
 **Naming and size guidelines:**
@@ -239,7 +238,7 @@ To contribute to the Docs sub-project, you need to have a GitHub account. You ca
 
 ![How to contribute to the Docs](/files/pics/how-to-contribute-about-docs.jpg)
 
-**Before you start:** Check open tasks in the :Link[task tracker]{href="https://github.com/orgs/flipperdevices/projects/10" newTab="true"} to see what the team is already working on or where help is wanted, and skim the :Link[Markup example]{href="https://docs.flipper.net/one/resources/about-docs/markup-example" newTab="true"} page to get familiar with the supported Markdown and Archbee syntax.
+**Before you start:** Check open tasks in the :Link[task tracker]{href="https://github.com/orgs/flipperdevices/projects/10" newTab="true"} to see what the team is already working on or where help is wanted, and skim the :Link[Markup example]{href="./Markup-example.md" newTab="true" hasDisabledNofollow="true"} page to get familiar with the supported Markdown and Archbee syntax.
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
@@ -263,7 +262,7 @@ If you've spotted an error, want to clarify a section, or want to add a new guid
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Read the&#x20;**:Link[Markup example]{href="https://docs.flipper.net/one/resources/about-docs/markup-example" newTab="true"}**&#x20;page** to learn the supported Markdown and Archbee syntax.
+**Read the&#x20;**:Link[Markup example]{href="./Markup-example.md" newTab="true" hasDisabledNofollow="true"}**&#x20;page** to learn the supported Markdown and Archbee syntax.
 :::
 
 :::WorkflowBlockItem
