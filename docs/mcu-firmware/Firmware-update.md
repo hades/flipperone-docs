@@ -42,7 +42,7 @@ Put the MCU into BOOTSEL mode. The method depends on Flipper One hardware revisi
 
 If the MCU has successfully swithced to BOOTSEL mode, your operating system will detect it as a Mass Storage Device. If it does not appear, try using a different USB cable and repeat the BOOTSEL procedure.
 :::
-
+ 
 :::WorkflowBlockItem
 Copy the `.UF2` firmware file onto the Mass Storage Device. Once the file copy is complete, the MCU will automatically reboot and the Mass Storage Device will disconnect from the computer.
 :::
