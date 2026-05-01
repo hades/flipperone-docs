@@ -1,8 +1,8 @@
 # How to build an image locally
 
-This page describes how to build the OS image locally on your computer. This is useful for testing your changes in the OS components on Flipper One or any of the **[supported boards](Supported-boards.md)** before submitting pull request to the repository.
+This page describes how to build the OS image locally on your computer. This is useful for testing your changes in the OS components on Flipper One or any of the [supported boards](Supported-boards.md) before submitting pull request to the repository.
 
-When building the image locally, the same workflow is used as on the Build Server. This workflow is described in the **[Build system](Build-system.md)** page.
+When building the image locally, the same workflow is used as on the Build Server. This workflow is described in the [Build system](Build-system.md) page.
 
 ## Prerequisites
 
@@ -14,17 +14,17 @@ Before starting the image build, the required components must be installed to en
 
 ### For Linux and MacOS:
 
-Install [**Docker Desktop**](https://www.docker.com/) and [**git**](https://git-scm.com/).
+Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/).
 
 ### For Windows 10/11:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Install [**git**](https://git-scm.com/).
+Install [git](https://git-scm.com/).
 :::
 
 :::WorkflowBlockItem
-Open PowerShell as an administrator and install WSL 2 (Windows Subsystem for Linux 2):
+Open PowerShell as an administrator and install **WSL 2** (Windows Subsystem for Linux v2):
 
 `wsl --install`
 :::
@@ -34,7 +34,7 @@ Download the Docker Desktop installer from the [official web site](https://www.d
 :::
 
 :::WorkflowBlockItem
-Run the Docker Desktop installer as an administrator.
+Run the **Docker Desktop** installer as an administrator.
 In the installer, make sure the **Use WSL 2 instead of Hyper-V (recommended)** option is selected.
 
 ![Use WSL 2 instead of Hyper-V (recommended) option in the installer window](/files/pics/docker-desktop-installation-on-windows.png)
@@ -46,16 +46,13 @@ At the end of the installation, click **Restart Windows**.
 :::
 
 :::WorkflowBlockItem
-After reboot, wait for WSL 2 installation to complete. During the setup process, you will be prompted to enter a Unix username and password, which will be used in WSL 2.
+After reboot, wait for WSL 2 installation to complete. During the setup process, you will be prompted to enter a Unix **username** and **password** for WSL 2.
 :::
 
 :::WorkflowBlockItem
 Run Docker Desktop and go to **Settings → Resources → WSL Integration**. Enable the **Ubuntu** distribution, then click **Apply & Restart**.
 :::
 :::::
-
-На винде по другому задается путь при запуске контейнера:
-docker run --privileged --rm -v ${PWD}\out:/artifacts rk3576-linux-build
 
 ## OS image building
 
