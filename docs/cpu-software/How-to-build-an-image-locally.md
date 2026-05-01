@@ -20,6 +20,10 @@ Install [**Docker Desktop**](https://www.docker.com/) and [**git**](https://git-
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
+Install [**git**](https://git-scm.com/).
+:::
+
+:::WorkflowBlockItem
 Open PowerShell as an administrator and install WSL 2 (Windows Subsystem for Linux 2):
 
 `wsl --install`
@@ -55,6 +59,8 @@ docker run --privileged --rm -v ${PWD}\out:/artifacts rk3576-linux-build
 :::hint{type="info"}
 Building the OS image is a long-running process that may take from several tens of minutes to over an hour.
 :::
+
+To build the OS image:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
