@@ -8,14 +8,14 @@ updatedAt: Tue Apr 28 2026 12:57:35 GMT+0000 (Coordinated Universal Time)
 
 ![Flipper One M.2 expansion port](/files/pics/m2-expansion-port.png)
 
-The M.2 port is an internal expansion slot for cellular modems, SSDs, GNSS modules, and similar off-the-shelf M.2 modules. It sits at the back of the device, under the Back Plate.
+The M.2 port is an internal expansion slot for cellular modems, Wi-Fi, SDR, NVMe SSDs, GNSS modules, AI accelerators, and similar off-the-shelf M.2 modules. It sits at the back of the device, under the Back Plate.
 
 **Tech specs:**
 
 - **M.2 type:** Key B
 - **Supported sizes:** 2242, 3042, 3052 mm
 - **Supported thickness:** up to S3 (double-sided modules)
-- **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I²C / SIM card
+- **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I²C / SIM card + eSIM
 
 ***
 

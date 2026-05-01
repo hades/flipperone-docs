@@ -39,7 +39,7 @@ All Hardware team tasks are tracked in the GitHub project :Link[Flipper One — 
 
 Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on :Link[Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}, the cloud collaboration platform for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
 
-![Altium 365 Web Viewer interface](/files/pics/altium-ui-general.png)
+![Altium 365 Web Viewer interface](/files/pics/altium-ui-general.png "Altium 365 Web Viewer interface")
 
 Click any project in the Flipper One folder to open it in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials).
 
