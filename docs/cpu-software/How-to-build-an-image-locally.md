@@ -12,11 +12,11 @@ The OS image is built using a Docker container in a Linux environment to ensure 
 
 Before starting the image build, the required components must be installed to ensure the container runs properly.
 
-### For Linux and MacOS:
+### On Linux and MacOS:
 
 Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/).
 
-### For Windows 10/11:
+### On Windows 10/11:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -74,7 +74,7 @@ To build the OS image:
 :::
 
 :::WorkflowBlockItem
-3. Enter to the folder you just cloned:
+3. Enter the folder you just cloned:
 
 `cd rk3576-linux-build`
 :::
