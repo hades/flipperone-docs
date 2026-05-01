@@ -28,7 +28,7 @@ All MCU Firmware team tasks are tracked in the GitHub project [Flipper One — M
 
 ![MCU Firmware sub-project task tracker on GitHub](/files/pics/mcu-firmware-board-explainer.png "MCU Firmware sub-project task tracker on GitHub")
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [**Contribution guide**](About-MCU-Firmware.md) first.
+**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals.
 
 ***
 
