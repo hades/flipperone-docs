@@ -43,6 +43,15 @@ If the MCU has successfully swithced to BOOTSEL mode, your operating system will
 
 :::WorkflowBlockItem
 Copy the `.UF2` firmware file onto the Mass Storage Device. Once the file copy is complete, the MCU will automatically reboot and the Mass Storage Device will disconnect from the computer.
+
+:::Iframe{iframeHeight="500" code="
+<video    
+    autoplay muted loop playsinline style="width: 100%; margin: 0 !important;"
+    src="https://cdn.flipperzero.one/Monosnap_screencast_2024-01-24_21-27-24.mp4"
+></video>"}
+
+:::
+
 :::
 :::::
 
