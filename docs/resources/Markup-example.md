@@ -144,9 +144,19 @@ Flipper One documentation supports headings H1–H3.
 
 \u200E&#x20;
 
-To control whether a link opens in a new tab, use Archbee's `:Link[]` directive instead of plain Markdown:
+To control whether a link opens in a new tab — and to write short relative hrefs for in-docs links — use Archbee's `:Link[]` directive instead of plain Markdown.
+
+**External link (new tab):**
 
 `:Link[label]{href="https://example.com" newTab="true" hasDisabledNofollow="false"}`
+
+**Same-page anchor (same tab):**
+
+`:Link[label]{href="./#section-name" newTab="false" hasDisabledNofollow="true"}`
+
+**Sibling page in the same folder (optional anchor):**
+
+`:Link[label]{href="./Other-Page.md#section-name" newTab="true" hasDisabledNofollow="true"}`
 
 <table isTableHeaderOn="true" columnWidths="141,522">
   <tr>
@@ -162,7 +172,7 @@ To control whether a link opens in a new tab, use Archbee's `:Link[]` directive 
       <p><code>href</code></p>
     </td>
     <td>
-      <p>Target URL. For same-page anchors, use the full page URL with the anchor — e.g. <code>https://docs.flipper.net/one/page#section</code>.</p>
+      <p>Link target. Supports full URLs (<code>https://example.com</code>), same-page anchors (<code>./#section</code>), and sibling-page paths in the same folder (<code>./Other-Page.md</code>, with optional <code>#section</code>).</p>
     </td>
   </tr>
   <tr>
