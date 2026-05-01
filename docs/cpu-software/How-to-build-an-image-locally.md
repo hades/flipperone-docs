@@ -12,11 +12,11 @@ The OS image is built using a Docker container in a Linux environment to ensure 
 
 Before starting the image build, the required components must be installed to ensure the container runs properly.
 
-**For Linux and MacOS:**
+### For Linux and MacOS:
 
 Install [**Docker Desktop**](https://www.docker.com/) and [**git**](https://git-scm.com/).
 
-**For Windows 10/11:**
+### For Windows 10/11:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -36,6 +36,9 @@ Download the Docker Desktop installer from the [official web site](https://www.d
 :::WorkflowBlockItem
 Run the Docker Desktop installer as an administrator.
 In the installer, make sure the **Use WSL 2 instead of Hyper-V (recommended)** option is selected.
+
+![Use WSL 2 instead of Hyper-V (recommended) option in the installer window](/files/pics/docker-desktop-installation-on-windows.png)
+
 :::
 
 :::WorkflowBlockItem
