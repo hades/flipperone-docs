@@ -54,5 +54,6 @@ If you get an error during the first build, click **Compile Project** again.
 
 :::::
 
-
+:::hint{type="success"}
 After a successful build, the firmware .UF2 file will be located in the **flipperone-mcu-firmware/build** folder. To flash it to the MCU, follow the instructions on the [Firmware Update](Firmware-update.md) page.
+:::
