@@ -4,10 +4,6 @@ This page describes how to build the OS image locally on your computer. This is 
 
 When building the image locally, the same workflow is used as on the Build Server. This workflow is described in the **[Build system](Build-system.md)** page.
 
-:::hint{style="warning"}
-Now image building is supported **only on Linux** (on EXT4 or XFS file system) due to limitations related to sparse images handling.
-:::
-
 ## Prerequisites
 
 :::hint{type="info"}
@@ -56,20 +52,34 @@ docker run --privileged --rm -v ${PWD}\out:/artifacts rk3576-linux-build
 
 ## OS image building
 
-1. Open the terminal (on Linux/MacOS) or PowerShell (on Windows) in the folder where you plan to save image build system.
+:::hint{type="info"}
+Building the OS image is a long-running process that may take from several tens of minutes to over an hour.
+:::
 
+:::::WorkflowBlock
+:::WorkflowBlockItem
+1. Open the terminal (on Linux/MacOS) or PowerShell (on Windows) in the folder where you plan to save image build system.
+:::
+
+:::WorkflowBlockItem
 2. Clone the build scripts repository:
 
 `git clone https://github.com/flipperdevices/rk3576-linux-build`
+:::
 
+:::WorkflowBlockItem
 3. Enter to the folder you just cloned:
 
 `cd rk3576-linux-build`
+:::
 
+:::WorkflowBlockItem
 4. Build the Docker image: 
 
 `docker build -t rk3576-linux-build .`
+:::
 
+:::WorkflowBlockItem
 5. Run the container
 
 **On Linux/MacOS:**
@@ -79,12 +89,12 @@ docker run --privileged --rm -v ${PWD}\out:/artifacts rk3576-linux-build
 **On Windows 10/11:**
 
 `docker run --privileged --rm -v ${PWD}\out:/artifacts rk3576-linux-build`
-
-6. Wait for the build to complete. 
-
-:::hint{type="info"}
-Building the OS image is a long-running process that may take from several tens of minutes to over an hour.
 :::
+
+:::WorkflowBlockItem
+6. Wait for the build to complete. 
+:::
+:::::
 
 :::hint{type="success"}
 The full-disk OS images are stored in the `rk3576-linux-build/out/images` directory. You can now [install the image to your board](How-to-install-an-image.md).
