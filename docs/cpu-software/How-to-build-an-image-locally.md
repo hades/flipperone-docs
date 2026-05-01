@@ -51,7 +51,11 @@ After reboot, wait for WSL 2 installation to complete. During the setup process,
 
 :::WorkflowBlockItem
 Run Docker Desktop and go to **Settings → Resources → WSL Integration**. Enable the **Ubuntu** distribution, then click **Apply & Restart**.
+
+![Docker Desktop Ubuntu option in the app settings](/files/pics/docker-desktop-integration-with-ubuntu-distro.png)
+
 :::
+
 :::::
 
 ## OS image building
@@ -64,29 +68,29 @@ To build the OS image:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-1. Open the terminal (on Linux/MacOS) or PowerShell (on Windows) in the folder where you plan to save image build system.
+Open the terminal (on Linux/MacOS) or PowerShell (on Windows) in the folder where you plan to save image build system.
 :::
 
 :::WorkflowBlockItem
-2. Clone the build scripts repository:
+Clone the build scripts repository:
 
 `git clone https://github.com/flipperdevices/rk3576-linux-build`
 :::
 
 :::WorkflowBlockItem
-3. Enter the folder you just cloned:
+Enter the folder you just cloned:
 
 `cd rk3576-linux-build`
 :::
 
 :::WorkflowBlockItem
-4. Build the Docker image: 
+Build the Docker image: 
 
 `docker build -t rk3576-linux-build .`
 :::
 
 :::WorkflowBlockItem
-5. Run the container
+Run the container
 
 **On Linux/MacOS:**
 
@@ -98,7 +102,7 @@ To build the OS image:
 :::
 
 :::WorkflowBlockItem
-6. Wait for the build to complete. 
+Wait for the build to complete. 
 :::
 :::::
 
