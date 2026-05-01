@@ -118,7 +118,7 @@ Hardware documentation is split across two sections:
 - 🔌 **Hardware section** (you're here) — port pinouts, modules, and subsystem references (Wi-Fi & Bluetooth, power, M.2, GPIO).
 - :Link[🧪 Testing section]{href="../testing/About-Testing.md" newTab="true" hasDisabledNofollow="true"} — hardware verification procedures for each subsystem.
 
-See also the :Link[Tech specs]{href="https://docs.flipper.net/one/general/tech-specs" newTab="true" hasDisabledNofollow="false"} page for full hardware specifications in one place.
+See also the :Link[Tech specs]{href="../general/Tech-Specs.md" newTab="true" hasDisabledNofollow="false"} page for full hardware specifications in one place.
 
 ***
 
@@ -176,7 +176,7 @@ For a longer change, fork the repository, make your edits on a new branch, and o
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Read the&#x20;**:Link[Markup example]{href="https://docs.flipper.net/one/resources/about-docs/markup-example" newTab="true"}**&#x20;page** to learn the supported Markdown and Archbee syntax.
+**Read the&#x20;**:Link[Markup example]{href="../resources/Markup-example.md" newTab="true"}**&#x20;page** to learn the supported Markdown and Archbee syntax.
 :::
 
 :::WorkflowBlockItem
@@ -198,7 +198,7 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="https://docs.flipper.net/one/resources/about-docs#how-archbeejson-works" newTab="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
+**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="../resources/About-Docs.md#how-archbeejson-works" newTab="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
 :::
 
 :::WorkflowBlockItem

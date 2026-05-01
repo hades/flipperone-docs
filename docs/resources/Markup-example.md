@@ -142,7 +142,7 @@ Flipper One documentation supports headings H1–H3.
   </tr>
 </table>
 
-\u200E&#x20;
+‎&#x20;
 
 To control whether a link opens in a new tab — and to write short relative hrefs for in-docs links — use Archbee's `:Link[]` directive instead of plain Markdown.
 
@@ -154,9 +154,17 @@ To control whether a link opens in a new tab — and to write short relative hre
 
 `:Link[label]{href="./#section-name" newTab="false" hasDisabledNofollow="true"}`
 
-**Sibling page in the same folder (optional anchor):**
+**Another page in the docs (optional anchor):**
 
-`:Link[label]{href="./Other-Page.md#section-name" newTab="true" hasDisabledNofollow="true"}`
+`:Link[label]{href="<relative-path>.md#section-name" newTab="true" hasDisabledNofollow="true"}`
+
+Use a path relative to the current file:
+
+- `./Other-Page.md` — file in the same folder
+- `./folder/Other-Page.md` — file in a subfolder
+- `../folder/Other-Page.md` — file in a sibling folder
+
+The `#section-name` anchor is optional. Anchor IDs are derived from the heading text (lowercased, spaces replaced with hyphens).
 
 <table isTableHeaderOn="true" columnWidths="141,522">
   <tr>
@@ -172,7 +180,7 @@ To control whether a link opens in a new tab — and to write short relative hre
       <p><code>href</code></p>
     </td>
     <td>
-      <p>Link target. Supports full URLs (<code>https://example.com</code>), same-page anchors (<code>./#section</code>), and sibling-page paths in the same folder (<code>./Other-Page.md</code>, with optional <code>#section</code>).</p>
+      <p>Link target. Supports full URLs (<code>https://example.com</code>), same-page anchors (<code>./#section</code>), and relative paths to other docs pages (<code>./Other-Page.md</code>, <code>./folder/Other-Page.md</code>, <code>../folder/Other-Page.md</code>). Append <code>#section</code> to jump to a specific heading.</p>
     </td>
   </tr>
   <tr>
