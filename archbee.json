@@ -147,7 +147,7 @@
           {
             "categoryName": "MCU↔CPU interface",
             "isCategory": false,
-            "path": "mcu-firmware/MCU-CPU-interface.md",
+            "path": "mcu-firmware/MCU-CPU-interconnect.md",
             "children": []
           },
           {
