@@ -6,17 +6,20 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:32:40 GMT+0000 (Coordinated Universal Time)
 ---
 
+# Title
+
 This page explains the structure of the Hardware sub-project, provides links to its resources, and outlines how to contribute to Flipper One's electrical hardware development.
 
-TODO: Add hero image (e.g., Hardware sub-project structure diagram).
+![About Hardware](/files/pics/about-hardware-main.png)
 
 The Hardware sub-project covers electrical hardware development: printed circuit boards (PCBs), antennas, schematics, and everything related to the electrical connections of chips, connectors, and processors. The Hardware team works closely with the Mechanics team to ensure the electronics are compatible with the enclosure.
 
 The Hardware sub-project consists of:
 
 - ✅ :Link[Task tracker]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}
-- ⚡ :Link[Schematics and PCB design on Altium 365]{href="TODO" newTab="true" hasDisabledNofollow="false"}
-- 📚 **Docs**: this 🔌 **Hardware section** and :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"}
+- ⚡ :Link[Schematics and PCB design on Altium 365]{href="https://flipper.365.altium.com/designs/folder-7D774A8C-512F-4F4E-8518-0403C2316421" newTab="true" hasDisabledNofollow="false"}
+- 📁 :Link[GitHub repository]{href="https://github.com/flipperdevices/flipperone-hardware" newTab="true" hasDisabledNofollow="false"} — currently README only
+- 📚 Docs: 🔌 **Hardware section** (you're here) and :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"}
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, share your ideas in the comments, or contribute directly to the docs.
 
@@ -36,9 +39,9 @@ All Hardware team tasks are tracked in the GitHub project :Link[Flipper One — 
 
 ## ⚡ Schematics and PCB design on Altium 365
 
-Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on :Link[Altium 365]{href="TODO" newTab="true" hasDisabledNofollow="false"}, the cloud collaboration platform for Altium, the industry-standard EDA tool for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
+Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on :Link[Altium 365]{href="https://flipper.365.altium.com/designs/folder-7D774A8C-512F-4F4E-8518-0403C2316421" newTab="true" hasDisabledNofollow="false"}, the cloud collaboration platform for for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
 
-TODO: Add a brief description of what's accessible (which boards, antennas, etc.) and a hero image or screenshot of the Altium 365 project.
+![Altium 365 Web Viewer interface](/files/pics/altium-ui-general.png)
 
 :::hint{type="info"}
 Shared schematics and PCB layouts match the real product, allowing development of accessories, modules, and external hardware for Flipper One.
@@ -46,15 +49,70 @@ Shared schematics and PCB layouts match the real product, allowing development o
 
 ***
 
+### Altium 365 folder structure
+
+Shared Flipper hardware projects live in the **Flipper Public Altium365 Space** workspace, organized into a folder hierarchy:
+
+```none
+Flipper Public Altium365 Space/
+└── Projects/
+    ├── Flipper One/                   # Flipper One hardware projects
+    └── Flipper Zero/                  # Flipper Zero hardware projects
+```
+
+Open the **Flipper One** folder to access Flipper One hardware projects and click any project to open it in the Web Viewer.
+
+![Altium 365 workspace folder view](/files/pics/altium-ui-projects.png "Altium 365 workspace folder view")
+
+Each project opens in the Web Viewer with five view tabs along the top — **SCH** (schematic), **PCB** (2D layout), **3D** (interactive 3D render), **Draftsman** (fabrication documentation), and **BOM** (Bill of Materials) — plus a left sidebar for navigating **Design** files, **Simulation**, **Tasks**, **Releases**, **History**, and the **Assembly Assistant**.
+
+![Altium 365 open project — schematic view](/files/pics/altium-ui-view.png "Altium 365 open project — schematic view")
+
+***
+
 ### How to view the design files
 
-TODO: Document the steps for opening the Altium 365 project in a browser, navigating schematics, and inspecting the PCB.
+The Altium 365 Web Viewer gives interactive, read-only access to the project directly in your browser — no Altium Designer install required.
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+**Open the shared workspace.** Go to the :Link[Flipper Public Altium365 Space]{href="https://flipper.365.altium.com/designs/folder-7D774A8C-512F-4F4E-8518-0403C2316421" newTab="true" hasDisabledNofollow="false"}.
+:::
+
+:::WorkflowBlockItem
+**Sign in with your Altium account.** You can also sign in with your Google account. If you don't have an Altium account, create one on the :Link[Altium website]{href="https://www.altium.com/" newTab="true" hasDisabledNofollow="false"} — it's free for viewing shared projects.
+
+![Altium 365 sign-in](/files/pics/altium-ui-login.png "Altium 365 sign-in")
+:::
+
+:::WorkflowBlockItem
+**Open a project.** In **Projects → Flipper One**, click the project you want to inspect (for example, `SDIO-JTAG_ADAPTER` or `Flipper_One_Debug_Probe_V1`).
+:::
+
+:::WorkflowBlockItem
+**Switch between views.** Use the tabs at the top of the viewer to move between **SCH**, **PCB**, **3D**, **Draftsman**, and **BOM**.
+:::
+
+:::WorkflowBlockItem
+**Inspect components and nets.** All views support pan and zoom, plus search and cross-probing — click a component on the schematic to highlight it on the PCB, or select a net to trace it across the design.
+:::
+::::
+
+Available views in the Web Viewer:
+
+- **Schematic sheets** — full electrical diagrams.
+- **2D PCB layout** — board outline, placement, routing, layers.
+- **3D board** — interactive 3D render of the assembled board.
+- **Bill of Materials (BOM)** — full component list.
+- **Draftsman documents, layer stackup, and Gerber data** — where available.
 
 ***
 
 ### How to export the design files
 
-TODO: Document supported export formats (PDF, Gerber, STEP, BOM, etc.) and the export workflow.
+The Web Viewer includes a download control whose available formats depend on the view you're in. From the schematic, PCB, or BOM views you can download a copy of the document for offline reference. For the exact list of supported export formats, see Altium's :Link[Web Viewer documentation]{href="https://www.altium.com/documentation/altium-365/viewers/web-viewer#downloading" newTab="true" hasDisabledNofollow="false"}.
+
+![Altium 365 Web Viewer download control](/files/pics/altium-ui-download.png "Altium 365 Web Viewer download control")
 
 ***
 
@@ -62,7 +120,7 @@ TODO: Document supported export formats (PDF, Gerber, STEP, BOM, etc.) and the e
 
 Hardware-related documentation lives across two sections of the Developer Portal:
 
-- 🔌 **Hardware section** (you are here) — references for ports, modules, and subsystems: GPIO and M.2 port pinouts, power subsystem, Wi-Fi & Bluetooth, and the GPIO and M.2 modules supported by Flipper One.
+- 🔌 **Hardware section** (you're here) — references for ports, modules, and subsystems: GPIO and M.2 port pinouts, power subsystem, Wi-Fi & Bluetooth, and the GPIO and M.2 modules supported by Flipper One.
 - :Link[🧪 Testing section]{href="https://docs.flipper.net/one/testing/about" newTab="true" hasDisabledNofollow="false"} — hardware verification procedures for each subsystem (power, graphics, network, M.2, video decoding) so we can confirm components meet design requirements before production.
 
 The :Link[Tech specs]{href="https://docs.flipper.net/one/general/tech-specs" newTab="true" hasDisabledNofollow="false"} page consolidates the full hardware specifications in one place, including controls, ports, dimensions, and pinouts.
@@ -149,7 +207,7 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="https://docs.flipper.net/one/resources/about-docs#how-archbee-json-works" newTab="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
+**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="https://docs.flipper.net/one/resources/about-docs#how-archbeejson-works" newTab="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
 :::
 
 :::WorkflowBlockItem
