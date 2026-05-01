@@ -44,7 +44,7 @@ All Docs sub-project tasks are tracked in the GitHub project [Flipper One — Do
 
 ![Docs board explainer](/files/pics/docs-board-explainer.png "How the Docs task tracker is organized")
 
-Tasks labeled **help wanted** are open for contribution. You're welcome to join discussions or submit changes — just read the :Link[Contribution guide]{href="https://docs.flipper.net/one/resources/about-docs#how-to-contribute" hasDisabledNofollow="true"} first.
+Tasks labeled **help wanted** are open for contribution. You're welcome to join discussions or submit changes — just read the :Link[Contribution guide]{href="./#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
 
 ***
 
@@ -210,7 +210,7 @@ All diagrams used in the Developer Portal, architecture overviews, flow charts, 
 The board is publicly viewable: anyone can open it, inspect existing diagrams and templates, and export a copy for reference or offline editing.
 
 :::hint{type="info"}
-Spotted an error or have an idea for a new diagram? Share them with us in a [pull request](https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request).
+Spotted an error or have an idea for a new diagram? Share them with us in a :Link[pull request]{href="./#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
 :::
 
 ***
@@ -224,7 +224,7 @@ Illustrations used across the Developer Portal — section illustrations and dec
 Like the Miro board, the Figma file is publicly viewable: you can browse every frame, inspect layers, and export illustrations at any resolution.
 
 :::hint{type="info"}
-Have an idea for a new illustration or a tweak to an existing one? Share them with us in a [pull request](https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request).
+Have an idea for a new illustration or a tweak to an existing one? Share them with us in a :Link[pull request]{href="./#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
 :::
 
 ***
@@ -283,7 +283,7 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="https://docs.flipper.net/one/resources/about-docs#how-archbee-json-works" newTab="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
+**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="./#how-archbee-json-works" newTab="false" hasDisabledNofollow="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
 :::
 
 :::WorkflowBlockItem
@@ -320,7 +320,7 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 **Write your suggestion.** In the comments section, clearly describe your suggestion and, if helpful, attach a screenshot, video, or link to a draft pull request.
 
 :::hint{type="info"}
-**Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="https://docs.flipper.net/one/resources/about-docs#submit-your-fix-or-guide-as-a-pull-request" hasDisabledNofollow="true"}.
+**Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="./#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
 :::
 
 ![](/files/pics/docs-good-vs-bad-comment.png)

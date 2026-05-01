@@ -32,7 +32,9 @@ The source files live on GitHub at [github.com/flipperdevices/flipper-one-docs](
 
 Flipper One documentation supports headings H1–H3.
 
-# # Heading 1
+:::hint{type="warning"}
+**Don't add `# Heading 1` in the body.** Archbee renders the `title:` field from the YAML frontmatter as the page H1, so an extra `# H1` in the body produces two titles. Start body content at `## H2`.
+:::
 
 ## ## Heading 2
 
@@ -140,6 +142,47 @@ Flipper One documentation supports headings H1–H3.
   </tr>
 </table>
 
+\u200E&#x20;
+
+To control whether a link opens in a new tab, use Archbee's `:Link[]` directive instead of plain Markdown:
+
+`:Link[label]{href="https://example.com" newTab="true" hasDisabledNofollow="false"}`
+
+<table isTableHeaderOn="true" columnWidths="141,522">
+  <tr>
+    <td>
+      <p><strong>Attribute</strong></p>
+    </td>
+    <td>
+      <p><strong>Description</strong></p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><code>href</code></p>
+    </td>
+    <td>
+      <p>Target URL. For same-page anchors, use the full page URL with the anchor — e.g. <code>https://docs.flipper.net/one/page#section</code>.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><code>newTab</code></p>
+    </td>
+    <td>
+      <p><code>"true"</code> opens the link in a new tab, <code>"false"</code> opens it in the same tab. Use <code>"false"</code> for same-page anchor links.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <p><code>hasDisabledNofollow</code></p>
+    </td>
+    <td>
+      <p><code>"false"</code> adds <code>rel="nofollow"</code> to the link (default for external links); <code>"true"</code> removes it.</p>
+    </td>
+  </tr>
+</table>
+
 ***
 
 ## Images
@@ -150,7 +193,7 @@ Flipper One documentation supports headings H1–H3.
 
 ‎&#x20;
 
-**Local path:**  `![Alt text](files/pics/test-image.jpg "Caption")`
+**Local path:**  `![Alt text](/files/pics/test-image.jpg "Caption")`
 
 ![Local image](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/pNHUZHZzPZd7qdM08jKuq_test-image.jpg "Caption")
 
@@ -165,7 +208,7 @@ Flipper One documentation supports headings H1–H3.
 
 To **resize or align** an image, standard Markdown is not enough — use Archbee syntax:
 
-`::Image[]{src="files/pics/test-image.jpg" size="40" position="flex-start" caption="Caption text"}`
+`::Image[]{src="/files/pics/test-image.jpg" size="40" position="flex-start" caption="Caption text"}`
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/sDIW27SOFL0HZKEvDEU_T-20260420-092354.png" size="40" width="1950" height="1200" position="flex-start" caption="Caption text"}
 
@@ -218,7 +261,7 @@ To **resize or align** an image, standard Markdown is not enough — use Archbee
 
 You can add inline images to the text using Archbee syntax:
 
-`:inlineImage[]{src="files/pics/icon_usb_c.png" alt caption="usb-c icon"}`
+`:inlineImage[]{src="/files/pics/icon_usb_c.png" alt caption="usb-c icon"}`
 
 This is how an inline image :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/WAXNm79eG0f7AQuFyuqy6-20260420-163829.png" alt caption} looks in text.
 
@@ -236,19 +279,24 @@ Two methods to embed video are supported.
 
 ​
 
-**Method 2: Self-hosted / CDN video** — use the Archbee `:::Iframe` component:
+**Method 2: Self-hosted / CDN video** — use the Archbee `:::Iframe` component. The HTML you embed goes inside the `code="..."` attribute, which means **every `"` must be escaped as `&#x22;` and every newline as `&#xA;`**. The whole HTML ends up on one logical line:
+
+```text
+:::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.example.com/your-video.mp4&#x22;&#xA;></video>&#xA;<div class=&#x22;text-center mt-2.5 text-gray-400 pb-5&#x22;>&#xA;Caption&#xA;</div>" iframeHeight="500"}
+
+:::
+```
+
+Conceptually that decodes to:
 
 ```html
-:::Iframe{iframeHeight="500" code="
-<video    
+<video
     autoplay muted loop playsinline style="width: 100%; margin: 0 !important;"
     src="https://cdn.example.com/your-video.mp4"
-></video>"}
+></video>
 <div class="text-center mt-2.5 text-gray-400 pb-5">
 Caption
 </div>
-
-:::
 ```
 
 :::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipperzero.one/Pan_rotate_and_move_parts_compressed.mp4&#x22;&#xA;></video>&#xA;<div class=&#x22;text-center mt-2.5 text-gray-400 pb-5&#x22;>&#xA;Caption&#xA;</div>" iframeHeight="500"}
