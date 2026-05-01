@@ -26,7 +26,7 @@ Flipper One is a large and complex project, divided into several sub-projects. E
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[Hardware]{href="https://docs.flipper.net/one/hardware/about" newTab="true" hasDisabledNofollow="false"}
+### :Link[Hardware]{href="./hardware/About-Hardware.md" newTab="true" hasDisabledNofollow="true"}
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/9plDPlgbxscoFIacbj8Q9-20260331-093234.png" size="38" width="333" height="243" position="flex-start"}
 :::
