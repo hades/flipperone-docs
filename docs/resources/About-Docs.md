@@ -104,7 +104,9 @@ To use an image in a page, reference it from your Markdown using a relative path
 ![Caption text](/files/pics/your-image.png)
 ```
 
-For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Markup example]{href="https://docs.flipper.net/one/resources/about-docs/markup-example" newTab="true"} page.
+For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Images section of the Markup example]{href="./Markup-example.md#images" newTab="true"} page.
+
+For richer Archbee image syntax (positioning, captions, sizing), see the :Link[Images section of the Markup example]{href="./Markup-example.md" newTab="true"} page.
 ‎
 
 **Naming and size guidelines:**
@@ -283,7 +285,7 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="./#how-archbee-json-works" newTab="false" hasDisabledNofollow="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
+**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="./#how-archbeejson-works" newTab="false" hasDisabledNofollow="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
 :::
 
 :::WorkflowBlockItem
@@ -320,7 +322,7 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 **Write your suggestion.** In the comments section, clearly describe your suggestion and, if helpful, attach a screenshot, video, or link to a draft pull request.
 
 :::hint{type="info"}
-**Important:** If you share a link, ensure the content is accessible to others. If you've already prepared a fix as a pull request, target the `dev` branch — see :Link[Submit your fix or guide as a pull request]{href="./#submit-your-fix-or-guide-as-a-pull-request" newTab="false" hasDisabledNofollow="true"}.
+**Important:** If you share a link, ensure the content is accessible to others.
 :::
 
 ![](/files/pics/docs-good-vs-bad-comment.png)

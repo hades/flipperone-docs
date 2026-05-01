@@ -63,7 +63,7 @@ The Altium 365 Web Viewer lets you browse the project directly in your browser �
 :::
 
 :::WorkflowBlockItem
-**Sign in with your Altium or Google account.** If you don't have an Altium account, create one on the :Link[Altium website]{href="https://www.altium.com/" newTab="true" hasDisabledNofollow="false"} — it's free for viewing shared projects.
+**Sign in with your Altium or Google account.** If you don't have an Altium account, create one — it's free for viewing shared projects.
 
 ![Altium 365 sign-in](/files/pics/altium-ui-login.png)
 :::
@@ -73,7 +73,7 @@ The Altium 365 Web Viewer lets you browse the project directly in your browser �
 :::
 
 :::WorkflowBlockItem
-**Switch between views.** Use the tabs at the top of the viewer to move between **SCH**, **PCB**, **3D**, **Draftsman**, and **BOM**.
+**Switch between views.** Use the tabs at the top of the viewer to move between SCH, PCB, 3D, Draftsman, and BOM.
 
 ![Altium 365 open project — schematic view](/files/pics/altium-ui-view.png)
 :::
@@ -87,7 +87,7 @@ The Altium 365 Web Viewer lets you browse the project directly in your browser �
 
 ### How to export the design files
 
-The Web Viewer includes a download control whose available formats depend on the view you're in. From the schematic, PCB, or BOM views you can download a copy of the document for offline reference. For the exact list of supported export formats, see Altium's :Link[Web Viewer documentation]{href="https://www.altium.com/documentation/altium-365/viewers/web-viewer#downloading" newTab="true" hasDisabledNofollow="false"}.
+The Web Viewer includes a download control whose available formats depend on the view you're in. From the schematic, PCB, or BOM views you can download a copy of the document for offline reference.
 
 ![Altium 365 Web Viewer download control](/files/pics/altium-ui-download.png "Altium 365 Web Viewer download control")
 
@@ -95,15 +95,15 @@ The Web Viewer can export the entire project or individual derived files for off
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Open a project and click the Downloads icon** in the top-right of the viewer. A panel opens with **Project Source Files** and **Derived Files** sections.
+**Open a project and click the Downloads icon** in the top-right of the viewer. A panel opens with Project Source Files and Derived Files sections.
 :::
 
 :::WorkflowBlockItem
-**Download the whole project.** In **Project Source Files**, click the project entry to download all source files as a single archive.
+**Download the whole project.** In Project Source Files, click the project entry to download all source files as a single archive.
 :::
 
 :::WorkflowBlockItem
-**Or download individual files.** In **Derived Files**, pick what you need — Gerber, Assembly Docs, PDF Schematic, STEP, or BOM.
+**Or download individual files.** In Derived Files, pick what you need — Gerber, Assembly Docs, PDF Schematic, STEP, or BOM.
 :::
 ::::
 
@@ -133,7 +133,7 @@ The Hardware sub-project accepts contributions in two forms: **comments on open 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
 
-To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you're always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
+To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you're always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
 
 ::::
 
