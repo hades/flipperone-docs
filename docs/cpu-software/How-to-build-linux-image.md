@@ -1,4 +1,7 @@
-# How to build a Linux image
+---
+title: How to build a Linux image
+slug: cpu-software/how-to-build-linux-image
+---
 
 This page describes how to build an OS image locally on your computer. This is useful for testing your changes in the OS components on Flipper One or any of the [supported boards](Supported-boards.md) before submitting pull request to the repository.
 
