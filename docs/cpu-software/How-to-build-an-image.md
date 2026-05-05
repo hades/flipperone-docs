@@ -16,7 +16,7 @@ Before starting the image build, install the required components to ensure that 
 
 Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/install/mac).
 
-### On Linux
+### On Linux (Debian)
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
