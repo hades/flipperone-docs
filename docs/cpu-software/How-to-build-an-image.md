@@ -12,11 +12,11 @@ Before starting the image build, the required components must be installed to en
 The operating system image is built inside a Docker container, ensuring cross-platform compatibility of the build process.
 :::
 
-### On macOS:
+### On macOS
 
 Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/install/mac).
 
-### On Linux:
+### On Linux
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -26,14 +26,14 @@ Install the required packages:
 :::
 
 :::WorkflowBlockItem
-Add the current user to the **docker group** and apply it in the current session:
+Add the current user to the **docker** group and apply it in the current session:
 
 `sudo usermod -aG docker $USER && newgrp docker`
 :::
 
 :::::
 
-### On Windows 10/11:
+### On Windows 10/11
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -44,12 +44,10 @@ Open a terminal and install **WSL 2** (Windows Subsystem for Linux v2) with Debi
 
 :::WorkflowBlockItem
 Restart your computer. After rebooting, the Debian distribution installation will start automatically. You’ll be prompted to create a Unix **username** and **password** during installation.
-
-After installation, you will be taken to the Debian terminal.
 :::
 
 :::WorkflowBlockItem
-Установите необходимые пакеты:
+Install the required packages:
 `apt install -y docker.io docker-cli git`
 :::
 
@@ -81,11 +79,11 @@ Open the terminal in the folder where you plan to save image build system.
 :::WorkflowBlockItem
 **On Linux/macOS:** skip this step.
 
-**On Windows:** Откройте терминал дистрибутива Debian:
+**On Windows:** Enter the Debian terminal:
 
 `wsl -d Debian`
 
-Перейдите в домашнюю директорию Debian пользователя:
+Go to the Debian user’s home directory:
 
 `cd ˜`
 :::
@@ -116,8 +114,8 @@ Wait for the build to complete.
 :::hint{type="success"}
 The full-disk OS images are stored in:
 
-* On Linux and macOS: `rk3576-linux-build/out/images`. 
-* On Windows 10/11: `Linux/Debian/home/[wsl user]/rk3576-linux-build/out/images`.
+* **Linux and macOS:** `rk3576-linux-build/out/images`. 
+* **Windows 10/11:** `Linux/Debian/home/[wsl user]/rk3576-linux-build/out/images`.
 
 You can now [install the image to your board](How-to-install-an-image.md).
 :::
