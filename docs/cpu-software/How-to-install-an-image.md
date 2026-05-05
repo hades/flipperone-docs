@@ -44,7 +44,7 @@ Please note that the RK3576 boots from storage drives according to its boot prio
 ### Writing to an SD card
 
 :::hint{type="warning"}
-Use an SD card with a capacity of 4 GB or larger. The SD card will be erased during the OS writing process.
+Use an SD card with a capacity of 8 GB or larger. The SD card will be erased during the OS writing process.
 :::
 
 1. Download or build an OS image. Use `debian-512-[Target name]-build-[Build ID].img.gz`, where the target name identifies your board. Available target names are listed on the [Supported Boards](Supported-boards.md) page.
