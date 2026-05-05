@@ -33,11 +33,11 @@ The Flipper OS image files are stored in the `out/images` directory.
 
 The OS image filename consists of several parts. Let’s break them down using the example above:
 
-- `debian` — indicates that the image is based on the Debian Linux distribution.
-- `4096` — the data block size in bytes. It can be either 512 for SD card and eMMC images, or 4096 for UFS images.
-- `nanopi-m5` — the target name of the board for which the image is built. A list of supported target names can be found on the [Supported Boards](Supported-boards.md) page.
-- `build` — a keyword indicating that the following value represents the build ID.
-- `1034` — the build ID. It consists of a sequential build number and an optional textual label, such as `test-dp`, `test-interconnect`, etc.
+- **debian** — indicates that the image is based on the Debian Linux distribution.
+- **4096** — the data block size in bytes. It can be either 512 for SD card and eMMC images, or 4096 for UFS images.
+- **nanopi-m5** — the target name of the board for which the image is built. A list of supported target names can be found on the [Supported Boards](Supported-boards.md) page.
+- **build** — a keyword indicating that the following value represents the build ID.
+- **1034** — the build ID. It consists of a sequential build number and an optional textual label, such as `test-dp`, `test-interconnect`, etc.
 
 Each disk image is accompanied by a `.bmap` file that contains a map of the used data blocks. Using the `.img.gz` image together with the `.bmap` file speeds up the flashing process by skipping unused blocks.
 
