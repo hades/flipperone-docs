@@ -6,27 +6,35 @@ When building the image locally, the same workflow is used as on the Build Serve
 
 ## Prerequisites
 
-:::hint{type="info"}
-The OS image is built using a Docker container in a Linux environment to ensure cross-platform compatibility of the build process.
-:::
-
 Before starting the image build, the required components must be installed to ensure the container runs properly.
 
-### On Linux and MacOS:
+:::hint{type="info"}
+The operating system image is built inside a Docker container in a Linux environment, ensuring cross-platform compatibility of the build process.
+:::
 
-Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/).
+### On Linux/macOS:
+
+:::::WorkflowBlock
+
+:::WorkflowBlockItem
+Install [Docker Desktop](https://www.docker.com/)
+:::
+
+:::WorkflowBlockItem
+Install [git](https://git-scm.com/).
+:::
+
+:::::
 
 ### On Windows 10/11:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Install [git](https://git-scm.com/).
-:::
-
-:::WorkflowBlockItem
-Open PowerShell as an administrator and install **WSL 2** (Windows Subsystem for Linux v2):
+Open terminal and install **WSL 2** (Windows Subsystem for Linux v2) with default Ubintu distribution:
 
 `wsl --install`
+
+During the installation, you will be prompted to enter a Unix **username** and **password** for WSL 2.
 :::
 
 :::WorkflowBlockItem
@@ -34,8 +42,7 @@ Download the Docker Desktop installer from the [official web site](https://www.d
 :::
 
 :::WorkflowBlockItem
-Run the **Docker Desktop** installer as an administrator.
-In the installer, make sure the **Use WSL 2 instead of Hyper-V (recommended)** option is selected.
+Run the **Docker Desktop** installer as an administrator. In the installer, make sure the **Use WSL 2 instead of Hyper-V (recommended)** option is selected.
 
 ![Use WSL 2 instead of Hyper-V (recommended) option in the installer window](/files/pics/docker-desktop-installation-on-windows.png)
 
@@ -46,14 +53,14 @@ At the end of the installation, click **Restart Windows**.
 :::
 
 :::WorkflowBlockItem
-After reboot, wait for WSL 2 installation to complete. During the setup process, you will be prompted to enter a Unix **username** and **password** for WSL 2.
-:::
-
-:::WorkflowBlockItem
-Run Docker Desktop and go to **Settings → Resources → WSL Integration**. Enable the **Ubuntu** distribution, then click **Apply & Restart**.
+After reboot run Docker Desktop and go to **Settings → Resources → WSL Integration**. Enable the **Ubuntu** distribution, then click **Apply & Restart**.
 
 ![Docker Desktop Ubuntu option in the app settings](/files/pics/docker-desktop-integration-with-ubuntu-distro.png)
 
+:::
+
+:::WorkflowBlockItem
+Install [git](https://git-scm.com/).
 :::
 
 :::::
@@ -92,7 +99,7 @@ Build the Docker image:
 :::WorkflowBlockItem
 Run the container
 
-**On Linux/MacOS:**
+**On Linux/macOS:**
 
 `docker run --privileged --rm -v $(pwd)/out:/artifacts rk3576-linux-build`
 
