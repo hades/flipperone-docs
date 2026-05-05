@@ -1,9 +1,6 @@
 ---
 title: How to install a Linux image
-slug: cpu-software/install-image
-docTags: 
-createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
-updatedAt: Tue Apr 28 2026 13:20:03 GMT+0000 (Coordinated Universal Time)
+slug: cpu-software/how-to-install-linux-image
 ---
 
 Flipper OS can be installed on many Rockchip RK3576-based boards, many of which are commercially available. This page explains Rockchip’s MaskROM mode and boot priority logic, and provides installation guides as well as a list of boards supported by FlipperOS.
