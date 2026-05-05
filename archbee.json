@@ -193,15 +193,15 @@
             "children": []
           },
           {
-            "categoryName": "How to build an image",
+            "categoryName": "How to build a Linux image",
             "isCategory": false,
-            "path": "cpu-software/How-to-build-an-image.md",
+            "path": "cpu-software/How-to-build-linux-image.md",
             "children": []
           },
           {
-            "categoryName": "How to install an image",
+            "categoryName": "How to install a Linux image",
             "isCategory": false,
-            "path": "cpu-software/How-to-install-an-image.md",
+            "path": "cpu-software/How-to-install-linux-image.md",
             "children": []
           },
           {
