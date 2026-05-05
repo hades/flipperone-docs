@@ -81,13 +81,14 @@ Open the terminal in the folder where you plan to save image build system.
 :::
 
 :::WorkflowBlockItem
-**On Linux/macOS:** skip this step.
+**On Linux/macOS:** Skip this step.
 
-**On Windows:** Enter the Debian terminal:
+**On Windows:** 
+* Enter the Debian terminal:
 
 `wsl -d Debian`
 
-Go to the Debian user’s home directory:
+* Go to the Debian user’s home directory:
 
 `cd ˜`
 :::
