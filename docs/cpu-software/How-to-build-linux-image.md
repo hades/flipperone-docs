@@ -55,7 +55,7 @@ You’ll be prompted to create a Unix **username** and **password** during insta
 
 :::WorkflowBlockItem
 Install the required packages:
-`sudo apt install -y docker.io docker-cli git`
+`sudo apt install -y docker.io docker-cli git qemu-user-binfmt`
 :::
 
 :::WorkflowBlockItem
