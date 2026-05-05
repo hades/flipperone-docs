@@ -193,9 +193,9 @@
             "children": []
           },
           {
-            "categoryName": "How to build an image locally",
+            "categoryName": "How to build an image",
             "isCategory": false,
-            "path": "cpu-software/How-to-build-an-image-locally.md",
+            "path": "cpu-software/How-to-build-an-image.md",
             "children": []
           },
           {
