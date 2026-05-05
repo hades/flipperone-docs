@@ -21,7 +21,7 @@ The RK3576 chip may have a different boot priority list for onboard storage driv
 
 ::Image[]{src="files/pics/rk3576_boot_priority_logic.jpg" size="80" position="flex-start" sha="a377d28366e6535e8d37e083b6590661a4f80a5a" initialPath="files/pics/rk3576_boot_priority_logic.jpg" githubPath="docs/files/pics/rk3576_boot_priority_logic.jpg" width="1880" height="2126" darkWidth="1880" darkHeight="2126"}
 
-After power-on, the RK3576 reads the voltage on the `SARADC_VIN0_BOOT` pin to determine the boot priority list and to check if MaskROM mode has been requested. If not, it attempts to boot from the first storage drive in the priority list. If no bootable OS is found on that device, it proceeds to the second storage drive in the list. If again no bootable OS is detected, the RK3576 switches to MaskROM mode and waits for commands from a PC via the MaskROM USB port.
+After power-on, the RK3576 reads the voltage on the `SARADC_VIN0_BOOT` pin to determine the boot priority list and to check if MaskROM mode has been requested. If not, it attempts to boot from the first storage drive in the priority list. If no valid Rockchip-compatible bootloader signature is found on that device, it proceeds to the second storage device. If no bootloader signature is found there as well, the RK3576 enters MaskROM mode and waits for commands from a PC via the MaskROM USB interface.
 
 The table below lists all supported boot priority lists (referred to by Rockchip as boot modes) for the RK3576, along with the corresponding resistor combinations and ADC values for each mode.
 
@@ -83,7 +83,7 @@ To complete this step, you need to know your board’s target name, the USB port
 
 1. :Link[Download]{label="Download" overridedLabel="Download" spaceId docId="isVWIRz7zz0jE7gRAHigs" version="v2" docAnchorId="#public-build-server" loadingMethod="dynamic" newTab="false" githubPath="./Build-system.md#public-build-server" href="Build-system.md"} or [build an OS image locally](How-to-build-an-image-locally.md). You need:
    - The bootloader image for your board (the build system places it here: `/u-boot/[Target name]/rk3576_spl_loader_v*.bin`).
-   - The compressed full-disk image `debian-4096-[Target name]-build-[Build ID].img.gz` and the corresponding `.bmap` file, which specifies which parts of the image are used.
+   - The compressed full-disk image `debian-[Block size]-[Target name]-build-[Build ID].img.gz` and the corresponding `.bmap` file, which specifies which parts of the image are used. Block size is 512 for eMMC and 4096 for UFS.
 2. Connect the board to your PC using the MaskROM USB port on your board.
 3. Put the board into :Link[MaskROM mode]{label="MaskROM mode" overridedLabel="MaskROM mode" spaceId docId="ArIvFnCX7_Or8oeQLXVoK" version="v2" docAnchorId="#rockchip-maskrom-mode" loadingMethod="dynamic" newTab="false" href="How-to-install-an-image.md"}.
 
@@ -97,7 +97,7 @@ If no devices are listed, check the USB connection, make sure the correct USB po
 
 2. Load the bootloader into RK3576 RAM:
 
-`rockusb download-boot [path to rk3576_spl_loader_*.bin]`
+`rockusb download-boot [path to rk3576_loader_*.bin]`
 
 3. Select the storage drive you want to use:
 
