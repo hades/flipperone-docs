@@ -1,5 +1,5 @@
 ---
-title: How to install an image
+title: How to install a Linux image
 slug: cpu-software/install-image
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
