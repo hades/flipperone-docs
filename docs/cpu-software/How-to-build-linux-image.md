@@ -99,19 +99,19 @@ Go to the Debian user’s home directory:
 :::WorkflowBlockItem
 Clone the OS image build scripts repository:
 
-`git clone https://github.com/flipperdevices/rk3576-linux-build && cd rk3576-linux-build`
+`git clone https://github.com/flipperdevices/flipperone-linux-build-scripts && cd flipperone-linux-build-scripts`
 :::
 
 :::WorkflowBlockItem
 Build the Docker image: 
 
-`docker build -t rk3576-linux-build .`
+`docker build -t flipperone-linux-build-scripts .`
 :::
 
 :::WorkflowBlockItem
 Run the container
 
-`docker run --privileged --rm -v $(pwd)/out:/artifacts rk3576-linux-build`
+`docker run --privileged --rm -v $(pwd)/out:/artifacts flipperone-linux-build-scripts`
 :::
 
 :::WorkflowBlockItem
@@ -122,8 +122,8 @@ Wait for the build to complete.
 :::hint{type="success"}
 The full-disk OS images are stored in:
 
-* **Linux and macOS:** `rk3576-linux-build/out/images`. 
-* **Windows 10/11:** `Linux/Debian/home/[wsl user]/rk3576-linux-build/out/images`.
+* **Linux and macOS:** `flipperone-linux-build-scripts/out/images`. 
+* **Windows 10/11:** `Linux/Debian/home/[wsl user]/flipperone-linux-build-scripts/out/images`.
 
 You can now [install the image to your board](How-to-install-an-image.md).
 :::
