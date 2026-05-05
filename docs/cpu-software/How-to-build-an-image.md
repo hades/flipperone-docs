@@ -1,16 +1,16 @@
 # How to build an image
 
-This page describes how to build the OS image locally on your computer. This is useful for testing your changes in the OS components on Flipper One or any of the [supported boards](Supported-boards.md) before submitting pull request to the repository.
+This page describes how to build an OS image locally on your computer. This is useful for testing your changes in the OS components on Flipper One or any of the [supported boards](Supported-boards.md) before submitting pull request to the repository.
 
-When building the image locally, the same workflow is used as on the Build Server. This workflow is described in the [Build system](Build-system.md) page.
+When building an image locally, the same workflow is used as on the Build Server. This workflow is described in the [Build system](Build-system.md) page.
 
 ## Prerequisites
-
-Before starting the image build, the required components must be installed to ensure the container runs properly.
 
 :::hint{type="info"}
 The operating system image is built inside a Docker container, ensuring cross-platform compatibility of the build process.
 :::
+
+Before starting the image build, install the required components to ensure that the container runs properly.
 
 ### On macOS
 
@@ -22,7 +22,7 @@ Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/
 :::WorkflowBlockItem
 Install the required packages:
 
-`apt install -y docker.io docker-cli git sudo passwd qemu-user-binfmt`
+`sudo apt install -y docker.io docker-cli git qemu-user-binfmt`
 :::
 
 :::WorkflowBlockItem
@@ -37,18 +37,22 @@ Add the current user to the **docker** group and apply it in the current session
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Open a terminal and install **WSL 2** (Windows Subsystem for Linux v2) with Debian distribution:
+Open a terminal and start the installation of **WSL 2** (Windows Subsystem for Linux v2) with Debian distribution:
 
 `wsl --install -d Debian`
 :::
 
 :::WorkflowBlockItem
-Restart your computer. After rebooting, the Debian distribution installation will start automatically. You’ll be prompted to create a Unix **username** and **password** during installation.
+Restart your computer. After rebooting, the installation of the Debian distribution will continue automatically.
+:::
+
+:::WorkflowBlockItem
+You’ll be prompted to create a Unix **username** and **password** during installation.
 :::
 
 :::WorkflowBlockItem
 Install the required packages:
-`apt install -y docker.io docker-cli git`
+`sudo apt install -y docker.io docker-cli git`
 :::
 
 :::WorkflowBlockItem
@@ -66,10 +70,10 @@ Close the terminal.
 ## Building an OS Image
 
 :::hint{type="info"}
-Building the OS image is a long-running process that may take from several tens of minutes to over an hour.
+Building an OS image is a long-running process that may take from several tens of minutes to over an hour.
 :::
 
-To build the OS image:
+To build an OS image:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
