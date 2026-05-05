@@ -12,11 +12,11 @@ Before starting the image build, the required components must be installed to en
 The operating system image is built inside a Docker container, ensuring cross-platform compatibility of the build process.
 :::
 
-### On macOS:
+### On macOS
 
 Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/install/mac).
 
-### On Linux:
+### On Linux
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -33,7 +33,7 @@ Add the current user to the **docker** group and apply it in the current session
 
 :::::
 
-### On Windows 10/11:
+### On Windows 10/11
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
