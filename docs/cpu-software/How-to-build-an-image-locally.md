@@ -9,10 +9,10 @@ When building the image locally, the same workflow is used as on the Build Serve
 Before starting the image build, the required components must be installed to ensure the container runs properly.
 
 :::hint{type="info"}
-The operating system image is built inside a Docker container in a Linux environment, ensuring cross-platform compatibility of the build process.
+The operating system image is built inside a Docker container, ensuring cross-platform compatibility of the build process.
 :::
 
-### On Linux/macOS:
+### On Linux or macOS:
 
 :::::WorkflowBlock
 
@@ -30,7 +30,7 @@ Install [git](https://git-scm.com/).
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Open terminal and install **WSL 2** (Windows Subsystem for Linux v2) with default Ubintu distribution:
+Open a terminal and install **WSL 2** (Windows Subsystem for Linux v2) with default Ubintu distribution:
 
 `wsl --install`
 
@@ -42,7 +42,7 @@ Download the Docker Desktop installer from the [official web site](https://www.d
 :::
 
 :::WorkflowBlockItem
-Run the **Docker Desktop** installer as an administrator. In the installer, make sure the **Use WSL 2 instead of Hyper-V (recommended)** option is selected.
+Run the Docker Desktop installer as an administrator. In the installer, ensure that the option **Use WSL 2 instead of Hyper-V (recommended)** is selected.
 
 ![Use WSL 2 instead of Hyper-V (recommended) option in the installer window](/files/pics/docker-desktop-installation-on-windows.png)
 
@@ -65,7 +65,7 @@ Install [git](https://git-scm.com/).
 
 :::::
 
-## OS image building
+## Building the OS Image
 
 :::hint{type="info"}
 Building the OS image is a long-running process that may take from several tens of minutes to over an hour.
@@ -75,11 +75,11 @@ To build the OS image:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Open the terminal (on Linux/MacOS) or PowerShell (on Windows) in the folder where you plan to save image build system.
+Open the terminal in the folder where you plan to save image build system.
 :::
 
 :::WorkflowBlockItem
-Clone the build scripts repository:
+Clone the OS image build scripts repository:
 
 `git clone https://github.com/flipperdevices/rk3576-linux-build`
 :::
@@ -99,7 +99,7 @@ Build the Docker image:
 :::WorkflowBlockItem
 Run the container
 
-**On Linux/macOS:**
+**On Linux or macOS:**
 
 `docker run --privileged --rm -v $(pwd)/out:/artifacts rk3576-linux-build`
 
