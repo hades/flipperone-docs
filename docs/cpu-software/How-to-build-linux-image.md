@@ -15,7 +15,7 @@ The operating system image is built inside a Docker container, ensuring cross-pl
 
 Before starting the image build, install the required components to ensure that the container runs properly.
 
-### :inlineImage[]{src="/files/icons/apple-logo.svg" alt caption=""} macOS
+### :inlineImage[]{src="/files/icons/apple-logo.png" alt caption=""} macOS
 
 Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/install/mac).
 
