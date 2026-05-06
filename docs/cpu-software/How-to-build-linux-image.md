@@ -7,7 +7,7 @@ This page describes how to build an OS image locally on your computer. This is u
 
 When building an image locally, the same workflow is used as on the Build Server. This workflow is described in the [Build system](Build-system.md) page.
 
-## Install required tools
+## Step 1: Install required tools
 
 :::hint{type="info"}
 The operating system image is built inside a Docker container, ensuring cross-platform compatibility of the build process.
@@ -80,7 +80,7 @@ Close the terminal.
 
 :::::
 
-## Build an OS Image
+## Step 2: Build an OS Image
 
 :::hint{type="info"}
 Building an OS image is a long-running process that may take from several tens of minutes to over an hour.
