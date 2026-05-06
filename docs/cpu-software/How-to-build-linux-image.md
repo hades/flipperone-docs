@@ -83,7 +83,7 @@ Close the terminal.
 ## Step 2: Build an OS Image
 
 :::hint{type="info"}
-Building an OS image is a long-running process that may take from several tens of minutes to over an hour.
+Building an OS image is a long-running process that **takes from several tens of minutes to over an hour**.
 :::
 
 To build an OS image:
