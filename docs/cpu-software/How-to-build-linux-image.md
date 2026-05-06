@@ -7,7 +7,7 @@ This page describes how to build an OS image locally on your computer. This is u
 
 When building an image locally, the same workflow is used as on the Build Server. This workflow is described in the [Build system](Build-system.md) page.
 
-## Prerequisites
+## Install required tools
 
 :::hint{type="info"}
 The operating system image is built inside a Docker container, ensuring cross-platform compatibility of the build process.
@@ -15,7 +15,7 @@ The operating system image is built inside a Docker container, ensuring cross-pl
 
 Before starting the image build, install the required components to ensure that the container runs properly.
 
-### On macOS
+### :inlineImage[]{src="/files/icons/apple-logo.svg" alt caption=""} macOS
 
 Install [Docker Desktop](https://www.docker.com/) and [git](https://git-scm.com/install/mac).
 
@@ -70,7 +70,7 @@ Close the terminal.
 
 :::::
 
-## Building an OS Image
+## Build an OS Image
 
 :::hint{type="info"}
 Building an OS image is a long-running process that may take from several tens of minutes to over an hour.
