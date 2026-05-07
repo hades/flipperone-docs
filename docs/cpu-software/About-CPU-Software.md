@@ -6,13 +6,13 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:34:10 GMT+0000 (Coordinated Universal Time)
 ---
 
+# test
+
 This page explains the structure of the Linux (CPU Software) sub-project, provides links to all the repositories, and explains how they are used to build Flipper One's official Linux operating system.
 
 ![About Linux (CPU Software)](/files/pics/about-cpu-main-image.png)
 
-Flipper One has two chips: a high-performance CPU and a low-power MCU. The CPU (Rockchip RK3576) runs the Linux operating system. It executes user applications, controls all networking interfaces, and manages high-speed peripherals including USB3 and PCIe. It also integrates an NPU for AI acceleration and a GPU for graphics output via HDMI and DisplayPort.
-
-The MCU handles power management, display output, button and touchpad event processing, and Power Bank mode.
+Flipper One has two chips. The high-performance CPU (Rockchip RK3576) runs Linux and handles user applications, networking, high-speed peripherals (USB3, PCIe), AI acceleration (NPU), and graphics output (HDMI, DisplayPort). The low-power MCU manages power, the display, button and touchpad input, and Power Bank mode.
 
 The CPU Software sub-project consists of:
 
@@ -25,9 +25,9 @@ The CPU Software sub-project consists of:
   - [Linux kernel](https://github.com/flipperdevices/flipper-linux-kernel)
   - [rkloader](https://github.com/flipperdevices/rkloader) & [gofastboot](https://github.com/flipperdevices/gofastboot)
 
-![CPU software subproject structure](/files/pics/cpu-software-subproject-structure.jpg)
-
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositories via pull requests.
+
+![CPU software subproject structure](/files/pics/cpu-software-subproject-structure.jpg)
 
 ***
 
@@ -45,11 +45,11 @@ All Linux (CPU Software) team tasks are tracked in the GitHub project [Flipper O
 
 Our official OS image build server automatically builds a new OS image whenever changes are made to any of the GitHub repositories included in the build process. You can monitor the build status in the [server’s web interface](https://linux-images.flipp.dev/).
 
-![OS buildbot](/files/pics/os-buildbot.png)
+![OS buildbot](/files/pics/os-buildbot.png "BuildBot web interface")
 
 Once the build succeeds, full-disk images for all supported RK3576-based boards listed under [supported boards](Supported-boards.md) are published on the [web server](https://dl-linux-images.flipp.dev/full-img/), where they can be downloaded.
 
-![OS build list](/files/pics/os-build-list.png)
+![OS build list](/files/pics/os-build-list.png "Web server interface with build list")
 
 **See also:**
 
@@ -75,9 +75,9 @@ The Linux (CPU Software) sub-project includes several public GitHub repositories
 
 The Linux (CPU Software) sub-project accepts contributions in two forms: **comments on open tasks** for ideas, suggestions, and improvements, and **pull requests for code changes** to OS components such as the bootloader, kernels, build scripts, or flashing tools.
 
-***
+‎ 
 
-### Suggest your change as a comment on an open task
+### Comment on an open task
 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
@@ -112,9 +112,9 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 
 We review all comments carefully! We may ask additional questions about your idea in the task thread, so please follow notifications from GitHub in your email.
 
-***
+‎
 
-## Contribute to OS components via a pull request
+## Contribute to Linux OS via a pull request
 
 ![Contribute via a pull request](/files/pics/cpu-contribute-via-pr.jpg)
 
@@ -122,19 +122,20 @@ Contributing via pull requests allows anyone to propose changes to the component
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Clone the** [Linux build scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) **repository.** During the build process, these scripts also clone several other repositories — see the [Build system](Build-system.md) page for details on the architecture.
+**Clone the** [Linux build scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) **repository.** 
 :::
 
 :::WorkflowBlockItem
-**Fork and clone the build-process repositories you want to modify.**
+**Make local copies of OS components.**
+During the build process, the scripts use public GitHub repositories for OS components such as Kernel and U-Boot. Learn more: [Build system](Build-system.md).
+
+To modify these components without changing the original repositories, create local copies instead:
+1. Clone the required repositories locally.
+2. Edit the build scripts to use the local repositories.
 :::
 
 :::WorkflowBlockItem
-**Point the build scripts at your local clones** so they use your forks instead of pulling the remote sources.
-:::
-
-:::WorkflowBlockItem
-**Make your changes** in the forked repositories.
+**Make your changes** in the cloned repositories.
 :::
 
 :::WorkflowBlockItem
@@ -142,11 +143,11 @@ Contributing via pull requests allows anyone to propose changes to the component
 :::
 
 :::WorkflowBlockItem
-**Flash the image and test your changes** on an RK3576-based board — see [How to install a Linux image](How-to-install-linux-image.md) for the steps.
+**Test your changes.** Flash the OS image to a supported board and check your changes. Learn [how to install a Linux image](How-to-install-linux-image.md).
 :::
 
 :::WorkflowBlockItem
-**Open pull requests to all repositories you modified.**
+**Open pull requests** to all repositories you modified.
 :::
 ::::
 

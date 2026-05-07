@@ -12,6 +12,8 @@ While Flipper OS is still under active development, we are currently validating 
 
 This page provides an overview of the key features of the future operating system.
 
+***
+
 ## Open Linux distribution
 
 Our goal is to build a fully open Linux distribution for the Flipper One, based on the latest mainline kernel and containing zero proprietary blobs. Achieving this on a modern SoC (System-On-Chip) is extremely challenging, as chip vendors in the consumer segment typically keep the source code for early boot stages and hardware drivers closed. Nevertheless, our current RK3576 mainline Linux build supports a wide range of features.
@@ -19,6 +21,8 @@ Our goal is to build a fully open Linux distribution for the Flipper One, based 
 ![Current status of Linux distribution and our goal](/files/pics/flipper-os-current-status-and-our-goal.png "Current status of Linux distribution and our goal")
 
 While achieving 100% code openness is not possible (for example, due to the immutable boot ROM embedded in the SoC), we will continue working together with the community toward this goal.
+
+***
 
 ## OS profiles
 
@@ -36,6 +40,8 @@ A list of built-in OS profiles:
 
 And of course, you can create your own custom profiles for any use case.
 
+***
+
 ## A/B atomic updates
 
 In most Linux distributions, the update system is not fully reliable. If an error occurs during an update, the operating system can end up in an inconsistent state, where some files are updated and others are not.
@@ -44,6 +50,8 @@ In most Linux distributions, the update system is not fully reliable. If an erro
 
 In Flipper OS, updates are atomic. If an error occurs during installation, the system automatically rolls back to the previous working version.
 
+***
+
 ## FlipCTL
 
 FlipCTL is a lightweight GUI framework for embedded and headless Linux systems, designed as a modern replacement for traditional HMI solutions. Originally built for Flipper One, it runs on any Linux system — from servers and routers to single-board computers — with no desktop environment required.
@@ -51,6 +59,8 @@ FlipCTL is a lightweight GUI framework for embedded and headless Linux systems, 
 ![FlipCTL GUI demo](/files/pics/flipctl-nmap-wrapper.jpg "FlipCTL GUI demo (nmap wrapper)")
 
 The core idea: instead of running a desktop GUI (GNOME, KDE) on a tiny screen, FlipCTL provides a pixel-rendered, navigation-friendly interface. Learn more about FlipCTL on a [dedicated page](FlipCTL.md).
+
+***
 
 ## Flipper One features support
 

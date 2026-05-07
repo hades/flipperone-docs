@@ -269,7 +269,27 @@
             "categoryName": "M.2 Modules",
             "isCategory": false,
             "path": "testing/M_2.md",
-            "children": []
+            "children": [
+              {
+                "categoryName": "Cellular modems",
+                "isCategory": false,
+                "path": "testing/Cellular-Modems.md",
+                "children": [
+                  {
+                    "categoryName": "RM530N-GL",
+                    "isCategory": false,
+                    "path": "testing/RM530N-GL.md",
+                    "children": []
+                  },
+                  {
+                    "categoryName": "FM350-GL",
+                    "isCategory": false,
+                    "path": "testing/FM350-GL.md",
+                    "children": []
+                  }
+                ]
+              }
+            ]
           }
         ]
       },
