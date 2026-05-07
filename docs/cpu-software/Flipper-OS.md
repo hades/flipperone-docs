@@ -8,7 +8,7 @@ updatedAt: Tue Apr 28 2026 13:17:42 GMT+0000 (Coordinated Universal Time)
 
 We are building a highly open and user-friendly Linux distribution for the Flipper One, based on the latest mainline kernel, featuring atomic updates and OS profiles (overlays), as well as Flipper One's advanced features. We call it **Flipper OS**.
 
-While Flipper OS is still under active development, we are currently validating Flipper One hardware using temporarily patched Debian OS builds. You can also try running these builds on a compatible RK3576-based board. You can also contribute by testing OS builds or developing code. A Flipper One is not required — the OS runs on various affordable single-board computers (SBCs). Learn more on the [How to install an image](How-to-install-an-image.md) page.
+While Flipper OS is still under active development, we are currently validating Flipper One hardware using temporarily patched Debian OS builds. You can also try running these builds on a compatible RK3576-based board. You can also contribute by testing OS builds or developing code. A Flipper One is not required — the OS runs on various affordable single-board computers (SBCs). Learn more on the [How to install a Linux image](How-to-install-linux-image.md) page.
 
 This page provides an overview of the key features of the future operating system.
 

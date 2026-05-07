@@ -12,9 +12,9 @@ This page explains the structure of the MCU Firmware sub-project, provides links
 
 The MCU Firmware sub-project consists of:
 
-- ✅ **[Task tracker](https://github.com/orgs/flipperdevices/projects/8)**
-- 📁 **[Firmware sources](https://github.com/flipperdevices/flipperone-mcu-firmware)**
-- 🏭 **[Firmware update server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)**
+- ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/8)
+- 📁 [Firmware sources](https://github.com/flipperdevices/flipperone-mcu-firmware)
+- 🏭 [Firmware update server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositoriy via pull requests.
 
