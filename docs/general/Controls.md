@@ -28,7 +28,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left">
       <p>Push-to-talk button to activate microphone in walkie-talkie mode, for voice control and more.</p>
       <p>This button may be used as an adaptive App-Defined Button. In this case, the current action is context-dependent and displayed on the screen.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -39,7 +39,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left">
       <p>Touchpad for on-screen keyboard and menu navigation, content scrolling. Support horizontal and vertical scroll.</p>
       <p>Most likely will be always duplicate D-pad navigation and will be used for quick move in long lists.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -50,7 +50,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left">
       <p>Adaptive App-Defined Button. Current action is context dependent and displayed on screen above the button.</p>
       <p><strong>Recommended UI actions:</strong> cancel, stop, pause, breake, abort, back, discard.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -62,7 +62,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
       <p>Adaptive App-Defined Button. Current action is context dependent and displayed on screen above the button.
       </p>
       <p><strong>Recommended UI actions:</strong> more, edit, extra, config, rename.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left" colSpan="1" rowSpan="1">
       <p><code>Long press for 1 second:</code> Device power mode control: turn ON/OFF, reboot.</p>
       <p><code>Short press on Linux level:</code> Action is context dependent and displayed on screen above the button.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -84,7 +84,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left" colSpan="1" rowSpan="1">
       <p>Adaptive App-Defined Button. Current action is context dependent and displayed on screen above the button.</p>
       <p><strong>Recommended UI actions:</strong> help, search, view.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -95,7 +95,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left" colSpan="1" rowSpan="1">
       <p>Adaptive App-Defined Button. Current action is context dependent and displayed on screen above the button.</p>
       <p><strong>Recommended UI actions:</strong> start, run, enter, save.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -106,7 +106,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
     <td align="left" colSpan="1" rowSpan="1">
       <p><strong>Works only on Linux level:</strong></p>
       <p>ALT+TAB like button, list all opened apps windows.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -150,7 +150,7 @@ Some buttons and their combinations have hardware-defined behavior that does not
     </td>
     <td align="left">
       <p><code>Back + Left</code> — hold for 0.5 seconds, ⚠️ but we want 3 seconds? An analog circuit (OR gate) charges a capacitor and sends a reset to all chips: MCU, CPU, and two expanders.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -160,7 +160,7 @@ Some buttons and their combinations have hardware-defined behavior that does not
     <td align="left">
       <p>Hold <code>Power</code> button for 1 sec to turn ON device from Power OFF.</p>
       <p>First turn ON from transport mode is the same Power ON. Connecting USB to charging port also Power ON the device.</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ Some buttons and their combinations have hardware-defined behavior that does not
     <td align="left">
       <p>Hold <code>Power</code> button for 10 seconds to complety power cycle device. It will quicly turn off and on battery.</p>
       <p>What will happen when USB charger connected?</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
   <tr>
@@ -181,7 +181,7 @@ Some buttons and their combinations have hardware-defined behavior that does not
     <td align="left" colSpan="1" rowSpan="1">
       <p>Hold <code>??? + ???</code> before Powering ON or power cycle to enter in MCU Firmware Recovery.</p>
       <p>TODO: Find better shortcut</p>
-      ‎ 
+      <p>‎</p>
     </td>
   </tr>
 </table>

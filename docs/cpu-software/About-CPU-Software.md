@@ -6,8 +6,6 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:34:10 GMT+0000 (Coordinated Universal Time)
 ---
 
-# test
-
 This page explains the structure of the Linux (CPU Software) sub-project, provides links to all the repositories, and explains how they are used to build Flipper One's official Linux operating system.
 
 ![About Linux (CPU Software)](/files/pics/about-cpu-main-image.png)
