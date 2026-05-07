@@ -8,6 +8,10 @@ updatedAt: Tue Apr 28 2026 13:34:10 GMT+0000 (Coordinated Universal Time)
 
 This page explains the structure of the CPU Software sub-project, provides links to all the repositories and explains how they uses to build the official Flipper One's Linux operating system.
 
+![About Linux (CPU Software)](/files/pics/about-cpu-main-image.png)
+
+The CPU runs a Linux-based operating system and is connected to all high-level interfaces, while the MCU handles power management, display output, button and touchpad event processing, and also implements the Power Bank mode.
+
 The CPU Software sub-project consists of:
 
 - ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/11)
@@ -29,7 +33,7 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 All Linux (CPU Software) team tasks are tracked in the GitHub project [Flipper One — Linux (CPU Software)](https://github.com/orgs/flipperdevices/projects/11/). There, you can see what the engineering team is working on and follow progress and discussions.
 
-**\<TODO: Task tracker screenshot with collouts)>**
+![Linux (CPU Software) task tracker](/files/pics/cpu-task-tracker.png)
 
 **Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [Contribution guide](#how-to-contribute) first.
 
@@ -41,13 +45,13 @@ Our official OS image build server automatically builds a new OS image whenever 
 
 ![](/files/pics/os-buildbot.png)
 
-Once the build succeeds, full-disk images for all supported RK3576-based boards listed under [supported boards](Supported-boards.md) are published on the [web server](), where they can be downloaded.
+Once the build succeeds, full-disk images for all supported RK3576-based boards listed under [supported boards](Supported-boards.md) are published on the [web server](https://dl-linux-images.flipp.dev/), where they can be downloaded.
 
 ![](/files/pics/os-build-list.png)
 
 More details about the build system architecture and how to build the image locally are available on the [Build system](Build-system.md) page.
 
-Instructions for installing a full-disk OS image on a board are available on the [How to install an image](How-to-install-an-image.md) page.
+Instructions for installing a full-disk OS image on a board are available on the [How to install a Linux image](How-to-install-linux-image.md) page.
 
 ***
 

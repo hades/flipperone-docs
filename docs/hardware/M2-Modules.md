@@ -6,23 +6,48 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:00:55 GMT+0000 (Coordinated Universal Time)
 ---
 
-List of M.2 modules for Flipper One that are currently in development or testing.
+This page lists the categories of M.2 modules that can extend Flipper One's capabilities. We'll add more details to each category as the corresponding modules are developed and tested.
 
-## About M.2
+## About M.2 modules
 
-M.2 modules are expansion boards in the M.2 form factor (formerly called NGFF). These modules are often used in laptops and industrial computers. In this format, you can commonly find SSDs, cellular modems, Wi-Fi adapters, SDR radios, and more.
+M.2 modules are off-the-shelf expansion boards in the M.2 form factor (formerly NGFF), commonly used in laptops and industrial computers. The format covers a wide range of devices, which makes the M.2 port a flexible way to extend Flipper One's capabilities.
 
-Flipper One uses an M.2 Key-B connector with USB and PCIe interfaces. TODO: full M.2 specification in Flipper One. Also, part of the M.2 modules for Flipper One includes the design of the back cover, intended for installing SMA antennas and routing cables.
+Flipper One uses a Key B connector exposing PCIe 2.1 ×1, USB 2.0 / 3.1, SATA3, UART, I²C, Serial Audio, and SIM + eSIM lines. Full pinout, supported sizes, and the schematic are on the [M.2 port](M2-port.md) page.
 
-### M.2 Tech specs
+Some Flipper One M.2 modules also include a custom back cover that mounts SMA antennas and routes RF cables out of the device.
 
-TODO: Describe the technical specifications of the M.2 modules.
+***
 
-### sSDR
+## Cellular modems
 
-SDR module [https://www.crowdsupply.com/wavelet-lab/ssdr](https://www.crowdsupply.com/wavelet-lab/ssdr)
-Require hardware verification and tests.
+M.2 cellular modems add 4G/5G connectivity over a SIM or eSIM, turning Flipper One into a portable mobile-connected device.
 
-### 5G modem
+***
 
-Need to verify the best 5G modem for Flipper One. eSIM support will be nice.
+## Wi-Fi adapters
+
+M.2 Wi-Fi cards add wireless networking and, on most modules, Bluetooth as well.
+
+***
+
+## SDR radios
+
+Software-defined radio modules turn Flipper One into a portable SDR platform for receiving and transmitting across a wide range of frequencies. One example is the [sSDR by Wavelet Lab](https://www.crowdsupply.com/wavelet-lab/ssdr).
+
+***
+
+## NVMe SSDs
+
+M.2 NVMe SSDs add fast onboard storage over PCIe for logging, captured RF data, or large datasets.
+
+***
+
+## GNSS receivers
+
+M.2 GNSS modules add satellite positioning (GPS, GLONASS, Galileo, BeiDou) for location-aware applications.
+
+***
+
+## AI accelerators
+
+M.2 AI accelerators (NPUs / TPUs) offload on-device inference for vision, audio, and signal-processing workloads.
