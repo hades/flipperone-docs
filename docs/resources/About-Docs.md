@@ -6,7 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:39:05 GMT+0000 (Coordinated Universal Time)
 ---
 
-The Developer Portal — also called the wiki or the Docs — is the main documentation for Flipper One sub-projects. We update it as we work on Flipper One, so some pages may be out of date. This page explains how the Docs are organized, how pages are stored and published, and how you can contribute.
+The Developer Portal — also called the wiki or the Docs — is the main documentation for Flipper One sub-projects. We update it as we work on Flipper One, so some pages may change frequently. This page explains how the Docs are organized, how pages are stored and published, and how you can contribute.
 
 ![About Docs](/files/pics/about-docs-main-image.jpg)
 
