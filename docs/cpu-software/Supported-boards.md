@@ -111,7 +111,7 @@ Recommended board!
 Evaluation board. Not for sale!
 :::
 
-::Image[]{src="/files/pics/evb1.jpg" size="38" position="center" alt="Rockchip RK3576 EVB1"}
+::Image[]{src="/files/pics/evb1.jpg" size="55" position="center" alt="Rockchip RK3576 EVB1"}
 
 **Target name:** `evb1`.
 
