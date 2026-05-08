@@ -112,6 +112,8 @@ We review all comments carefully! We may ask additional questions about your ide
 
 ‎
 
+***
+
 ## Contribute to Linux OS via a pull request
 
 ![Contribute via a pull request](/files/pics/cpu-contribute-via-pr.jpg)
