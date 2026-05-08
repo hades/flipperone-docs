@@ -50,6 +50,4 @@ The DC-DC converter powering the WXT2AM2101 module can be software-controlled vi
 
 ### The module power sequence issue
 
-Currently, in the Flipper One (rev. F0.B0.C1), there is an issue with the power sequencing of the WXT2AM2101 module. If power is supplied to the USB hub and the WXT2AM2101 module simultaneously, the module may freeze. A temporary workaround is to reset the module via the RESET pin during the Linux OS boot process.
-
-Сейчас в Flipper One (rev. F0.B0.C1) наблюдается проблема с power sequence модуля WXT2AM2101. Если подать питание на USB HUB и на модуль WXT2AM2101 одновременно, то модуль зависает. Временное решение - перезагрузка модуля через пин `PMU_EN` при загрузке Linux OS.
+Currently, in the Flipper One (rev. F0.B0.C1), there is an issue with the power sequencing of the WXT2AM2101 module. If power is supplied to the USB hub and the WXT2AM2101 module simultaneously, the module may freeze. A temporary workaround is to reset the module via the `PMU_EN` pin during the Linux OS boot process.
