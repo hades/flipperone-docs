@@ -7,6 +7,8 @@ This page describes how to build an OS image locally on your computer. This is u
 
 When building an image locally, the same workflow is used as on the Build Server. This workflow is described in the [Build system](Build-system.md) page.
 
+***
+
 ## Step 1: Install required tools
 
 :::hint{type="info"}
@@ -29,6 +31,8 @@ Install [git](https://git-scm.com/install/mac).
 
 :::::
 
+‎ 
+
 ### :inlineImage[]{src="/files/icons/linux-logo.png"} Linux (Debian)
 
 :::::WorkflowBlock
@@ -45,6 +49,8 @@ Add the current user to the **docker** group and apply it in the current session
 :::
 
 :::::
+
+‎ 
 
 ### :inlineImage[]{src="/files/icons/windows-logo.png"} Windows 10/11
 
@@ -79,6 +85,8 @@ Close the terminal.
 :::
 
 :::::
+
+***
 
 ## Step 2: Build an OS Image
 
