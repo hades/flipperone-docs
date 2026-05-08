@@ -6,11 +6,13 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:17:42 GMT+0000 (Coordinated Universal Time)
 ---
 
-We are building a highly open and user-friendly Linux distribution for the Flipper One, based on the latest mainline kernel, featuring atomic updates and OS profiles (overlays), as well as Flipper One's advanced features. We call it **Flipper OS**.
+We are building a fully open and user-friendly Linux distribution for Flipper One, based on the latest mainline kernel, featuring atomic updates and OS profiles (overlays), as well as Flipper One's advanced features. We call it **Flipper OS**.
 
-While Flipper OS is still under active development, we are currently validating Flipper One hardware using temporarily patched Debian OS builds. You can also try running these builds on a compatible RK3576-based board. You can also contribute by testing OS builds or developing code. A Flipper One is not required — the OS runs on various affordable single-board computers (SBCs). Learn more on the [How to install an image](How-to-install-an-image.md) page.
+While Flipper OS is still under active development, we are validating Flipper One hardware on Debian OS builds with temporary patches. You can also try running these builds on a compatible RK3576-based board, or contribute by testing OS builds or developing code. A Flipper One is not required — the OS runs on various affordable single-board computers (SBCs). Learn more on the [How to install a Linux image](How-to-install-linux-image.md) page.
 
 This page provides an overview of the key features of the future operating system.
+
+***
 
 ## Open Linux distribution
 
@@ -18,11 +20,13 @@ Our goal is to build a fully open Linux distribution for the Flipper One, based 
 
 ![Current status of Linux distribution and our goal](/files/pics/flipper-os-current-status-and-our-goal.png "Current status of Linux distribution and our goal")
 
-While achieving 100% code openness is not possible (for example, due to the immutable boot ROM embedded in the SoC), we will continue working together with the community toward this goal.
+While achieving 100% code openness is not possible (for example, due to the immutable boot ROM embedded in the SoC), we will continue working with the community toward this goal.
+
+***
 
 ## OS profiles
 
-Operating system profiles let you load a preconfigured environment by selecting an OS profile during the device’s early boot stage without connecting an external monitor and keyboard. The menu also lets you clone profiles and restore them to their original preconfigured state.
+Operating system profiles let you load a preconfigured environment by selecting one during the device’s early boot stage without connecting an external monitor and keyboard. The menu also lets you clone profiles and restore them to their original preconfigured state.
 
 ![Flipper OS profiles menu](/files/pics/flipper-os-profiles-menu.jpg "Flipper OS profiles menu")
 
@@ -36,6 +40,8 @@ A list of built-in OS profiles:
 
 And of course, you can create your own custom profiles for any use case.
 
+***
+
 ## A/B atomic updates
 
 In most Linux distributions, the update system is not fully reliable. If an error occurs during an update, the operating system can end up in an inconsistent state, where some files are updated and others are not.
@@ -43,6 +49,8 @@ In most Linux distributions, the update system is not fully reliable. If an erro
 ![FlipCTL GUI demo](/files/pics/flipper-os-ab-updating.jpg "A/B update flow diagram")
 
 In Flipper OS, updates are atomic. If an error occurs during installation, the system automatically rolls back to the previous working version.
+
+***
 
 ## FlipCTL
 
@@ -52,11 +60,13 @@ FlipCTL is a lightweight GUI framework for embedded and headless Linux systems, 
 
 The core idea: instead of running a desktop GUI (GNOME, KDE) on a tiny screen, FlipCTL provides a pixel-rendered, navigation-friendly interface. Learn more about FlipCTL on a [dedicated page](FlipCTL.md).
 
-## Flipper One features support
+***
 
-Flipper One hardware features supported in Flipper OS that are rarely found on typical Linux PCs:
+## Support for Flipper One features
 
-- **Built-in display, buttons, and touchpad.** Flipper OS can use the built-in display as a small monitor, handle button events for UI navigation, and use the touchpad for cursor control and for text input via an on-screen keyboard. Wrappers for common Linux tools provide a UI optimized for the built-in display.
-- **Advanced power monitoring.** Flipper One includes a battery gauge for charge and discharge currents measurement, multiple current and voltage sensors, and temperature sensors. All these parameters are available within Flipper OS.
+Flipper OS supports several Flipper One hardware features that are rarely found on typical Linux PCs:
+
+- **Built-in display, buttons, and touchpad.** Flipper OS can use the built-in display as a small monitor, handle button events for UI navigation, and use the touchpad for cursor control and text input via an on-screen keyboard. Wrappers for common Linux tools provide a UI optimized for the built-in display.
+- **Advanced power monitoring.** Flipper One includes a battery gauge for measuring charge and discharge currents, multiple current and voltage sensors, and temperature sensors. All these parameters are available within Flipper OS.
 - **Expansion module interface access.** From Linux user space, you can control GPIO pins and low-speed interfaces such as UART, SPI, I²C, CAN, and S/PDIF. Two pins can also be used as ADC inputs, PWM outputs, or PIO (Programmable Input/Output).
-- **Built-in microphone and speaker.** Audio input and output are available in the operating system. A 3.5mm jack supports automatic switching and headset button.
+- **Built-in microphone and speaker.** Audio input and output are available in the operating system. A 3.5mm jack supports automatic switching and a headset button.
