@@ -13,7 +13,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 ## Flipper One (HW ver. F0B0C1)
 
 :::hint{type="info"}
-**Prototype. Not for sale!**
+Prototype. Not for sale!
 :::
 
 ::Image[]{src="files/pics/flipper_one_prototype.jpg" size="50" position="flex-start" caption="Flipper One (HW ver. F0B0C1)" sha="dff3152b6d79cccddbd83ebbd304765e8184518c" initialPath="files/pics/flipper_one_prototype.jpg" githubPath="docs/files/pics/flipper_one_prototype.jpg" width="500" height="500" darkWidth="500" darkHeight="500"}
@@ -30,7 +30,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 ## Armsom Sige5 (aka Banana Pi BPI-M5 Pro)
 
 :::hint{type="success"}
-**Recommended board!**
+Recommended board!
 :::
 
 ::Image[]{src="files/pics/banana-pi-m5-pro.png" size="38" position="flex-start" caption="Banana Pi BPI-M5 Pro" sha="2d83d808da6981fa0c2a044d184f77fddc55e1c5" initialPath="files/pics/banana-pi-m5-pro.png" githubPath="docs/files/pics/banana-pi-m5-pro.png" width="280" height="198" darkWidth="280" darkHeight="198"}
@@ -108,7 +108,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 ## Rockchip RK3576 EVB1
 
 :::hint{type="info"}
-**Evaluation board. Not for sale!**
+Evaluation board. Not for sale!
 :::
 
 ::Image[]{src="files/pics/evb1.png" size="38" position="flex-start" caption="Rockchip RK3576 EVB1" sha="ec731e80438e05355afe2d8fd22d2536e2bcaafe" initialPath="files/pics/evb1.png" githubPath="docs/files/pics/evb1.png" width="200" height="120" darkWidth="200" darkHeight="120"}

@@ -22,7 +22,7 @@ The OS images are built using scripts from the [flipperone-linux-build-scripts](
 
 The build system flow consists of steps required for building a full disk image from scratch:
 
-:::::WorkflowBlock
+::::WorkflowBlock
 :::WorkflowBlockItem
 **Build the U-Boot bootloader image.** It includes Rockchip RK3576 binaries, trusted firmware for ARM, and open-source upstream U-Boot sources. Each supported board needs a separate U-Boot image.
 :::
