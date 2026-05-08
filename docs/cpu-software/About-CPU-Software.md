@@ -53,7 +53,7 @@ Once the build succeeds, full-disk images for all supported RK3576-based boards 
 
 - [Build system](Build-system.md) — build system architecture and image build flow.
 - [How to build a Linux image](How-to-build-linux-image.md) — building the OS image locally.
-- [How to install a Linux image](How-to-install-linux-image.md) — installing a full-disk OS image on a development board.
+- [How to install a Linux image](How-to-install-linux-image.md) — installing a full-disk OS image on a supported board.
 
 ***
 
@@ -71,7 +71,7 @@ The Linux (CPU Software) sub-project includes several public GitHub repositories
 
 ## How to contribute
 
-The Linux (CPU Software) sub-project accepts contributions in two forms: **comments on open tasks** for ideas, suggestions, and improvements, and **pull requests for code changes** to OS components such as the bootloader, kernels, build scripts, or flashing tools.
+The Linux (CPU Software) sub-project accepts contributions in two forms: **comments on open tasks** for ideas, suggestions, improvements, and **pull requests for code changes** to OS components such as the bootloader, kernels, build scripts, or flashing tools.
 
 ‎ 
 
@@ -120,16 +120,16 @@ Contributing via pull requests allows anyone to propose changes to the component
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Clone the** [Linux build scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) **repository.** 
+**Fork and clone the** [Linux build scripts](https://github.com/flipperdevices/flipperone-linux-build-scripts) **repository.**
 :::
 
 :::WorkflowBlockItem
-**Make local copies of OS components.**
-During the build process, the scripts use public GitHub repositories for OS components such as Kernel and U-Boot. Learn more: [Build system](Build-system.md).
+**Set up your own copies of OS components.**
+During the build, the scripts pull public GitHub repositories for components such as the kernel and U-Boot. Learn more: [Build system](Build-system.md).
 
-To modify these components without changing the original repositories, create local copies instead:
-1. Clone the required repositories locally.
-2. Edit the build scripts to use the local repositories.
+To modify these components without touching the originals:
+1. Fork each component repo on GitHub, then clone your fork locally.
+2. Edit the build scripts to point at your forks.
 :::
 
 :::WorkflowBlockItem

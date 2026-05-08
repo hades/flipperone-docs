@@ -55,7 +55,7 @@ flowchart LR
     CORE --> APP["Desktop App<br/>React (native)"]
 ```
 
-<table isTableHeaderOn="true" columnWidths="331,332">
+<table isTableHeaderOn="true" columnWidths="198,462">
   <tr>
     <td>
       <p>Frontend</p>
@@ -123,7 +123,7 @@ A compact rectangular device built around a central **256×144 px LCD screen** w
 
 ### Below the screen — 5 App-Defined Buttons (left to right)
 
-TODO: Add controls schematics
+![Flipper One controls](/files/pics/controls-explainer.png)
 
 <table isTableHeaderOn="true" columnWidths="331,332">
   <tr>
