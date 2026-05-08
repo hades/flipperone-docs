@@ -67,8 +67,6 @@ To keep collaboration productive, please keep issues and comments on-topic — t
 
 ![Contribute a comment on an open task](/files/pics/cpu-contribute-a-comment.jpg)
 
-You can contribute by **commenting on an open task** to share an idea, suggestion, or design proposal, or by **opening a new issue** to report a bug or propose a feature. Open tasks that need the community's help are labeled **help wanted**.
-
 #### Comment on an open task
 
 If you have ideas on how to improve the MCU firmware, you can contribute by commenting on a **help wanted** task and attaching screenshots, videos, code snippets, or links:
@@ -109,7 +107,7 @@ If you find a bug or have a feature idea, search the [MCU Firmware issues](https
 :::
 
 :::WorkflowBlockItem
-**Follow the discussion.** Watch the issue for notifications — we may ask clarifying questions or triage it into the [Project tracker](https://github.com/orgs/flipperdevices/projects/8).
+**Follow the discussion.** Watch the issue for notifications — we may ask clarifying questions.
 :::
 ::::
 
