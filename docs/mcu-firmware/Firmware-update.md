@@ -6,53 +6,49 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:14:38 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page explains how to flash the MCU firmware file (`.UF2`) to the Flipper One MCU via USB. You can download the firmware file from the [Firmware Update Server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/) or [build it from source code](How-to-build-firmware.md).
+This page explains how to flash the MCU firmware file (`.UF2`) to the Flipper One MCU via USB.
 
-To flash Flipper One MCU:
+To flash firmware to the Flipper One MCU:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-Connect Flipper One **USB-C 1** port to your computer.
+**Get the `.UF2` firmware file.**
+- [Download the file from Update Server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)
+    or
+- [Build the file from source code](How-to-build-firmware.md) — if you modified the firmware.
+:::
+
+:::WorkflowBlockItem
+**Connect Flipper One to your PC** via the **USB-C 1** port.
 
 ![](/files/pics/mcu-firmware-usbc1-connection.png)
 :::
  
 :::WorkflowBlockItem
-Put the MCU into BOOTSEL mode. The method depends on Flipper One hardware revision. If you are unsure which revision you have, try the available methods below.
+**Switch the MCU to BOOTSEL mode.**
 
-**For Flipper One rev F0.B0.C1:** 
+**Step 1:** Press and hold the **PTT** button.
+![BOOTSEL step 1: hold PTT button](/files/pics/mcu-bootsel-rev-f0-b0-c1-step-1.png)
 
-**Step 1:** Press and hold **PTT** button.
+**Step 2:** Press and hold **Left** and **Back** buttons for **3 seconds**, then release.
+![BOOTSEL step 2: hold Left and Back buttons](/files/pics/mcu-bootsel-rev-f0-b0-c1-step-2.png)
 
-**Step 2:** Press and hold **Left** and **Back** buttons for **3 sec**, then release.
+**Step 3:** Release the **PTT** button.
+![BOOTSEL step 3: release PTT button](/files/pics/mcu-bootsel-rev-f0-b0-c1-step-3.png)
 
-**Step 3:** Release **PTT** button.
+After switching the MCU to BOOTSEL mode, Flipper One's screen goes black and the device appears on your PC as a Mass Storage Device named RP2350.
 
-![](/files/pics/mcu-switching-to-bootsel-mode-rev-F0.B0.C1.png)
-
-**For Flipper One rev 2.F0.B1.C2:** 
-
-**Step 1:** Press and hold **✔ and ✖** buttons.
-
-**Step 2:** Press and hold **Left** and **Back** buttons for **3 sec**, then release.
-
-**Step 3:** Release **✔ and ✖** buttons.
-
-![](/files/pics/mcu-switching-to-bootsel-mode-rev-2.F0.B1.C2.png)
-
-If the MCU has successfully swithced to BOOTSEL mode, your operating system will detect it as a Mass Storage Device. If it does not appear, try using a different USB cable and repeat the BOOTSEL procedure.
+If Flipper One does not appear, try a different USB cable and repeat the BOOTSEL procedure.
 :::
  
 :::WorkflowBlockItem
-Copy the `.UF2` firmware file onto the Mass Storage Device.
+**Upload the `.UF2` firmware file** to the Mass Storage Device.
 :::
 :::::
 
-:::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipperzero.one/Monosnap_screencast_2024-01-24_21-27-24.mp4&#x22;&#xA;></video>" iframeHeight="500"}
-
+:::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipperzero.one/Upload_uf2_file.mp4&#x22;&#xA;></video>" iframeHeight="500"}
 :::
 
 :::hint{type="success"}
-Once the `ÙF2` file copy is complete, the MCU will automatically reboot and the Mass Storage Device will disconnect from your computer.
-The MCU firmware has been successfully updated.
+Once the `.UF2` file upload is complete, the Flipper One will automatically reboot and the Mass Storage Device will disconnect from your PC — the MCU firmware has been successfully updated.
 :::

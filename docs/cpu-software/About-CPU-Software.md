@@ -10,7 +10,7 @@ This page explains the structure of the Linux (CPU Software) sub-project, provid
 
 ![About Linux (CPU Software)](/files/pics/about-cpu-main-image.png)
 
-Flipper One has two chips. The high-performance CPU (Rockchip RK3576) runs Linux and handles user applications, networking, high-speed peripherals (USB3, PCIe), AI acceleration (NPU), and graphics output (HDMI, DisplayPort). The low-power MCU manages power, the display, button and touchpad input, and Power Bank mode.
+Flipper One has two processors. The high-performance CPU (Rockchip RK3576) runs Linux and handles user applications, networking, high-speed peripherals (USB3, PCIe), AI acceleration (NPU), and graphics output (HDMI, DisplayPort). The low-power MCU manages power, the display, button and touchpad input, and Power Bank mode.
 
 The CPU Software sub-project consists of:
 
