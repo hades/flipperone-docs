@@ -16,7 +16,7 @@ This page provides a list of boards that support installing Flipper OS using ima
 Prototype. Not for sale!
 :::
 
-::Image[]{src="files/pics/flipper_one_prototype.jpg" size="50" position="flex-start" caption="Flipper One (HW ver. F0B0C1)" sha="dff3152b6d79cccddbd83ebbd304765e8184518c" initialPath="files/pics/flipper_one_prototype.jpg" githubPath="docs/files/pics/flipper_one_prototype.jpg" width="500" height="500" darkWidth="500" darkHeight="500"}
+::Image[]{src="/files/pics/flipper_one_prototype.jpg" size="50" position="center" alt="Flipper One (HW ver. F0B0C1)"}
 
 - ✅ DisplayPort on USB-C1.
 - ✅ USB-A to USB-A cable not required for flashing via MaskROM mode.
@@ -33,7 +33,7 @@ Prototype. Not for sale!
 Recommended board!
 :::
 
-::Image[]{src="files/pics/banana-pi-m5-pro.png" size="38" position="flex-start" caption="Banana Pi BPI-M5 Pro" sha="2d83d808da6981fa0c2a044d184f77fddc55e1c5" initialPath="files/pics/banana-pi-m5-pro.png" githubPath="docs/files/pics/banana-pi-m5-pro.png" width="280" height="198" darkWidth="280" darkHeight="198"}
+::Image[]{src="/files/pics/banana-pi-m5-pro.png" size="38" position="center" alt="Banana Pi BPI-M5 Pro"}
 
 - ✅ DisplayPort on USB-C.
 - ✅ USB-A to USB-A cable not required for flashing via MaskROM mode.
@@ -49,7 +49,7 @@ Recommended board!
 
 ## FireFly ROC-RK3576-PC
 
-::Image[]{src="files/pics/roc-rk3576.jpg" size="42" position="flex-start" caption="FireFly ROC-RK3576-PC" sha="625c47e1c70bf6d099ee877be9e5da6ad72f0bb0" initialPath="files/pics/roc-rk3576.jpg" githubPath="docs/files/pics/roc-rk3576.jpg" width="1534" height="979" darkWidth="1534" darkHeight="979"}
+::Image[]{src="/files/pics/roc-rk3576.jpg" size="42" position="center" alt="FireFly ROC-RK3576-PC"}
 
 - ✅ DisplayPort on USB-C.
 - ✅ USB-A to USB-A cable not required for flashing via MaskROM mode.
@@ -63,7 +63,7 @@ Recommended board!
 
 ## Luckfox Omni3576
 
-::Image[]{src="files/pics/luckfox-omni3576.png" size="48" position="flex-start" caption="Luckfox Omni3576" sha="5ad0f24e5a69de1ee4bf77f4239fdad3307d6611" initialPath="files/pics/luckfox-omni3576.png" githubPath="docs/files/pics/luckfox-omni3576.png" width="621" height="464" darkWidth="621" darkHeight="464"}
+::Image[]{src="/files/pics/luckfox-omni3576.png" size="48" position="center" alt="Luckfox Omni3576"}
 
 - ✅ DisplayPort on USB-C.
 - ✅ USB-A to USB-A cable not required for flashing via MaskROM mode.
@@ -77,7 +77,7 @@ Recommended board!
 
 ## Radxa ROCK 4D
 
-::Image[]{src="files/pics/radxa-rock-4d.png" size="38" position="flex-start" caption="Radxa ROCK 4D" sha="26bd3166e461632b84fd366e11791fa5c8db8411" initialPath="files/pics/radxa-rock-4d.png" githubPath="docs/files/pics/radxa-rock-4d.png" width="1200" height="800" darkWidth="1200" darkHeight="800"}
+::Image[]{src="/files/pics/radxa-rock-4d.png" size="38" position="center" alt="Radxa ROCK 4D"}
 
 - ❌ No DisplayPort on USB-C.
 - ❌ USB-A to USB-A cable required for flashing via MaskROM mode.
@@ -91,7 +91,7 @@ Recommended board!
 
 ## NanoPi M5
 
-::Image[]{src="files/pics/nanopi-m5.png" size="38" position="flex-start" caption="NanoPi M5" sha="568baeee09ac6b17566a0b101b92f299bb3d5df2" initialPath="files/pics/nanopi-m5.png" githubPath="docs/files/pics/nanopi-m5.png" width="1104" height="810" darkWidth="1104" darkHeight="810"}
+::Image[]{src="/files/pics/nanopi-m5.png" size="38" position="center" alt="NanoPi M5"}
 
 - ❌ No DisplayPort on USB-C.
 - ❌ USB-A to USB-A cable required for flashing via MaskROM mode.
@@ -111,7 +111,7 @@ Recommended board!
 Evaluation board. Not for sale!
 :::
 
-::Image[]{src="files/pics/evb1.png" size="38" position="flex-start" caption="Rockchip RK3576 EVB1" sha="ec731e80438e05355afe2d8fd22d2536e2bcaafe" initialPath="files/pics/evb1.png" githubPath="docs/files/pics/evb1.png" width="200" height="120" darkWidth="200" darkHeight="120"}
+::Image[]{src="/files/pics/evb1.jpg" size="38" position="center" alt="Rockchip RK3576 EVB1"}
 
 **Target name:** `evb1`.
 
