@@ -6,9 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:14:38 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page explains how to flash the MCU firmware file (`.UF2`) to the Flipper One MCU via USB.
-
-To flash firmware to the Flipper One MCU:
+This page explains how to flash the MCU firmware file (`.UF2`) to the Flipper One MCU via USB. To flash firmware to the Flipper One MCU:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -25,7 +23,7 @@ Connect Flipper One to your PC via the **USB-C 1** port.
 :::
  
 :::WorkflowBlockItem
-Switch the MCU to BOOTSEL mode.
+Switch the MCU to **BOOTSEL** mode.
 
 **Step 1:** Press and hold the **PTT** button.
 
@@ -45,7 +43,7 @@ If Flipper One does not appear, try a different USB cable and repeat the BOOTSEL
 :::
  
 :::WorkflowBlockItem
-Upload the `.UF2` firmware file to the Mass Storage Device.
+Upload the `.UF2` firmware file to the RP2350 Mass Storage Device.
 :::
 :::::
 
