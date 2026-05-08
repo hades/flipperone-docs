@@ -65,6 +65,12 @@
             "children": []
           },
           {
+            "categoryName": "Power meter",
+            "isCategory": false,
+            "path": "hardware/Power-meter.md",
+            "children": []
+          },
+          {
             "categoryName": "Wi-Fi & Bluetooth",
             "isCategory": false,
             "path": "hardware/WiFi-Bluetooth.md",
