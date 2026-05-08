@@ -32,7 +32,7 @@ Open Visual Studio Code and go to **File → Open Folder...** and select the **f
 :::WorkflowBlockItem
 Visual Studio Code will prompt you to install the recommended extensions. Click **Install** to accept, and wait until the process is complete.
 
-![](/files/pics/mcu-firmware-vscode-install-extensions.png)
+![VS Code prompt to install recommended extensions](/files/pics/mcu-firmware-vscode-install-extensions.png)
 :::
 
 :::WorkflowBlockItem
@@ -50,7 +50,7 @@ Click **Compile Project**.
 If you get an error during the first build, click **Compile Project** again.
 :::
 
-![](/files/pics/mcu-firmware-vscode-compilation.png)
+![Building the MCU firmware in VS Code](/files/pics/mcu-firmware-vscode-compilation.png)
 
 :::::
 
