@@ -12,20 +12,20 @@ To flash firmware to the Flipper One MCU:
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-**Get the `.UF2` firmware file.**
+Get the `.UF2` firmware file.
 - [Download the file from Update Server](https://update.flipperzero.one/builds/flipper-one-mcu/dev/)
     or
 - [Build the file from source code](How-to-build-firmware.md) — if you modified the firmware.
 :::
 
 :::WorkflowBlockItem
-**Connect Flipper One to your PC** via the **USB-C 1** port.
+Connect Flipper One to your PC via the **USB-C 1** port.
 
 ![](/files/pics/mcu-firmware-usbc1-connection.png)
 :::
  
 :::WorkflowBlockItem
-**Switch the MCU to BOOTSEL mode.**
+Switch the MCU to BOOTSEL mode.
 
 **Step 1:** Press and hold the **PTT** button.
 
@@ -45,7 +45,7 @@ If Flipper One does not appear, try a different USB cable and repeat the BOOTSEL
 :::
  
 :::WorkflowBlockItem
-**Upload the `.UF2` firmware file** to the Mass Storage Device.
+Upload the `.UF2` firmware file to the Mass Storage Device.
 :::
 :::::
 
