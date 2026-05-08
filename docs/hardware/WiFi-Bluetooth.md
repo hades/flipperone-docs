@@ -49,7 +49,7 @@ The number of internal USB interfaces in Flipper One is limited, so when integra
 
 A typical USB 3.0 host port includes both USB 2.0 pins and additional differential pairs for USB 3.0 (3.2 gen1, 3.2 gen2, etc). This design ensures backward compatibility, allowing USB 2.0 devices to operate through USB 3.0 ports. However, not all USB devices utilize both interfaces simultaneously.
 
-Since the MT7921AUN chipset can operate **over the USB 3.0 differential pairs only**, we repurposed the USB 2.0 pins of the same port to provide a separate USB connection via the GPIO expansion connector. This approach is only safe when you are certain that one device uses only the USB 2.0 lines while the other uses only the USB 3.0 differential pairs.
+Since the MT7921AUN chipset can operate **over the USB 3.0 differential pairs only**, we repurposed the USB 2.0 pins of the same port to provide a separate USB connection via the GPIO expansion connector.
 
 ### RK3576 wake-up by Wi-Fi/BT module events
 
