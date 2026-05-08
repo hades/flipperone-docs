@@ -43,7 +43,7 @@ The Wi-Fi/BT module is connected to the Rockchip RK3576 via USB 3.0 through a US
 
 ![Wi-Fi/BT module schematics](/files/pics/flipper-one-wifi-module-schematics.png "Wi-Fi/BT module schematics")
 
-### A trick for connecting two USB devices to one port 
+### A trick for USB port sharing 
 
 The number of internal USB interfaces in Flipper One is limited, so when integrating the Wi-Fi/BT module, we used an interesting workaround.
 
@@ -51,7 +51,7 @@ A typical USB 3.0 host port includes both USB 2.0 pins and additional differenti
 
 Since the MT7921AUN chipset can operate **over the USB 3.0 differential pairs only**, we repurposed the USB 2.0 pins of the same port to provide a separate USB connection via the GPIO expansion connector.
 
-### RK3576 wake-up by Wi-Fi/BT module events
+### CPU wake-up via Wi-Fi/BT
 
 The **WGPIO0** and **WGPIO1** pins of the WXT2AM2101 module are connected to two GPIO pins on the RK3576 and are used to wake the RK3576 in response to Wi-Fi and Bluetooth events.
 
