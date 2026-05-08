@@ -6,18 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 12:56:47 GMT+0000 (Coordinated Universal Time)
 ---
 
-The Flipper One includes a built-in **Wi-Fi 6** (802.11ax, 2.4/5/6 GHz) and **Bluetooth 5.4** module — the Hui Zhou Gaoshengda WXT2AM2101, based on the MediaTek MT7921AUN chipset. This chip has a well-supported and stable Linux driver and provides the following capabilities:
-
-* Monitor mode
-* Packet capture
-* Wireless traffic sniffing
-* WPA/WPA2 handshake capture
-* Client device enumeration
-* Signal strength analysis
-* Channel hopping
-* Raw 802.11 frame monitoring
-* Passive network reconnaissance
-* Packet injection (limited)
+The Flipper One includes a built-in **Wi-Fi 6** (802.11ax, 2.4/5/6 GHz) and **Bluetooth 5.4** module — the Hui Zhou Gaoshengda WXT2AM2101, based on the MediaTek MT7921AUN chipset. This chip has an open-source and stable Linux driver and supports monitor mode.
 
 In addition, users can expand connectivity by attaching an external Wi-Fi module via USB or installing one through the M.2 slot using an M.2 E-key to M.2 B-key adapter.
 
@@ -58,3 +47,9 @@ The **WGPIO0** and **WGPIO1** pins of the WXT2AM2101 module are connected to two
 ### Module power management
 
 The DC-DC converter powering the WXT2AM2101 module can be software-controlled via the `WIFI_HUB_PWR_EN` signal, which is managed by the MCU through a GPIO expander. The CPU can also instruct the MCU to turn the module’s power on or off via the [MCU↔CPU interconnect interface](../mcu-firmware/MCU-CPU-interconnect.md).
+
+### The module power sequence issue
+
+Currently, in the Flipper One (rev. F0.B0.C1), there is an issue with the power sequencing of the WXT2AM2101 module. If power is supplied to the USB hub and the WXT2AM2101 module simultaneously, the module may freeze. A temporary workaround is to reset the module via the RESET pin during the Linux OS boot process.
+
+Сейчас в Flipper One (rev. F0.B0.C1) наблюдается проблема с power sequence модуля WXT2AM2101. Если подать питание на USB HUB и на модуль WXT2AM2101 одновременно, то модуль зависает. Временное решение - перезагрузка модуля через пин `PMU_EN` при загрузке Linux OS.
