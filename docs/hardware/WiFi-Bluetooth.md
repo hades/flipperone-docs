@@ -17,7 +17,7 @@ The Flipper One includes a built-in **Wi-Fi 6E** and **Bluetooth 2.1/BLE 5.4** m
 
 The `MT7921AUN` chipset has an open-source and stable Linux driver and supports monitor mode.
 
-## Wi-Fi/BT module and antennas placement
+## Wi-Fi/Bluetooth module and antennas placement
 
 The `WXT2AM2101` module is soldered on the Main board. It is located beneath the M.2 module and covered by an aluminum heatsink.
 
@@ -33,11 +33,11 @@ The **Bluetooth antenna** is located behind the top edge of the device housing, 
 
 ![Bluetooth antenna placement](/files/pics/flipper-one-bluetooth-antenna.jpg "Bluetooth antenna placement")
 
-## Wi-Fi/BT module schematics
+## Wi-Fi/Bluetooth module schematics
 
-The Wi-Fi/BT module is connected to the Rockchip RK3576 via USB 3.0 through a USB hub. 
+The Wi-Fi/Bluetooth module is connected to the Rockchip RK3576 via USB 3.0 through a USB hub. 
 
-![Wi-Fi/BT module schematics](/files/pics/flipper-one-wifi-module-schematics.png "Wi-Fi/BT module schematics")
+![Wi-Fi/Bluetooth module schematics](/files/pics/flipper-one-wifi-module-schematics.png "Wi-Fi/Bluetooth module schematics")
 
 ### A trick for USB port sharing 
 
