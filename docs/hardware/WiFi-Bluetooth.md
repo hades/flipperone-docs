@@ -17,7 +17,7 @@ The Flipper One includes a built-in **Wi-Fi 6E** and **Bluetooth 2.1/BLE 5.4** m
 
 The `MT7921AUN` chipset has an open-source and stable Linux driver and supports monitor mode.
 
-## Wi-Fi/Bluetooth module and antennas placement
+## Module and antennas placement
 
 The `WXT2AM2101` module is soldered on the Main board. It is located beneath the M.2 module and covered by an aluminum heatsink.
 
@@ -39,7 +39,7 @@ The Wi-Fi/Bluetooth module is connected to the Rockchip RK3576 via USB 3.0 throu
 
 ![Wi-Fi/Bluetooth module schematics](/files/pics/flipper-one-wifi-module-schematics.png "Wi-Fi/Bluetooth module schematics")
 
-### A trick for USB port sharing 
+## A trick for USB port sharing 
 
 The number of internal USB ports in the Flipper One is limited, and we needed one extra USB 2.0 port for the GPIO expansion header. So when connecting the Wi-Fi/Bluetooth module over USB, we used an interesting hardware trick.
 
@@ -47,11 +47,11 @@ A typical USB 3.0 host port includes both USB 2.0 pins and additional USB 3.0 pi
 
 Since the `MT7921AUN` chipset can operate **using only the USB 3.0 pins** and `SL6341` USB hub **supports independent operation of USB 2.0 and USB 3.0 lanes**, we repurposed the USB 2.0 pins of the port used for Wi-Fi/Bluetooth module to provide a separate USB connection via the GPIO expansion connector.
 
-### CPU wake-up via Wi-Fi/BT
+## CPU wake-up via Wi-Fi/BT
 
 The **WGPIO0** and **WGPIO1** pins of the `WXT2AM2101` module are connected to two GPIO pins on the RK3576 and are used to wake the RK3576 in response to Wi-Fi and Bluetooth events.
 
-### Module power and reset management
+## Module power and reset management
 
 The DC-DC converter powering the `WXT2AM2101` module can be software-controlled via the `WIFI_HUB_PWR_EN` signal, which is managed by the MCU through. The `PMU_EN` pin is also controlled by the MCU, allowing a full hardware reset of the module and ensuring the correct initialization sequence:
 
