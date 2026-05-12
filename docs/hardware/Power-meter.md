@@ -24,11 +24,15 @@ The power meter consists of four separate sections:
 
 The following describes common use cases and how the power meter shows the device’s power state in each of them, depending on the power received via the USB-C1 port, the device’s power consumption, and the battery charging state.
 
+---
+
 ### Case 1: Battery-only operation
 
 The device is powered only by the battery and is discharging. The battery indicator is on, and the power consumption gauge blinks to show current draw from the battery.
 
 ![](/files/pics/flipper-one-power-meter-battery-only.jpg)
+
+---
 
 ### Case 2: Battery charged, device powered via USB-C
 
@@ -36,11 +40,15 @@ A power source is connected to USB-C 1, but the battery is not charging because 
 
 ![](/files/pics/flipper-one-power-meter-usb-only.jpg)
 
+---
+
 ### Case 3: Battery charging, device powered via USB-C
 
 A power source is connected to USB-C 1, and its output is sufficient to both power the device and charge the battery. Both the battery and lightning icons are lit, indicating power is connected and the battery is charging. The power consumption gauge shows the device’s current power usage, while the input power gauge shows power drawn from the USB-C1 port.
 
 ![](/files/pics/flipper-one-power-meter-battery-charging.jpg)
+
+---
 
 ### Case 4: Device powered by both USB-C and battery
 
