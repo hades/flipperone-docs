@@ -6,21 +6,23 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 11:00:55 GMT+0000 (Coordinated Universal Time)
 ---
 
-Спереди в правой части Flipper One есть особый блок LED индикаторов, позволяющий в реальном времени отслеживать состояние power subsystem. Он состоит из 4 отдельных частей:
+On the front right side of Flipper One, there is a power meter that enables real-time monitoring of the device’s power subsystem. It helps understand what is happening under the hood: whether the system is idle or active, charging or discharging, and how much power the connected USB power source is supplying.
 
-* **Power consumption gauge.** Displays real-time overall device power consumption. This gauge shows in real time how much power the entire system uses, including the CPU and peripherals. It helps to understand what is happening under the hood: whether the system is idle or actively working.
+The power meter consists of four separate sections:
+
+* **Power consumption gauge.** Displays real-time overall device power consumption. This gauge shows in real time how much power the entire system uses, including the CPU and peripherals.
 
 * **Power & charging status light.** The battery icon shows the device is powered on, and the lightning-in-battery icon shows it is charging.
 
 * **Input power gauge.** This gauge shows the USB-C1 port input power. You can see if power is not enough to charge the battery or the device is using both power sources to operate without charging.
 
-* **USB-C power in status light.** Lights up when a power source connects to USB-C 1.
+* **USB-C power in status light.** Lights up when a power source connects to USB-C1.
 
 ![Power meter LED indicators](/files/pics/flipper-one-power-meter.jpg "Power meter LED indicators")
 
 ## Power meter states
 
-Depending on the power received via the USB-C 1 port, the device’s power consumption, and the battery charging state, the power meter may display one of the following states.
+Depending on the power received via the USB-C1 port, the device’s power consumption, and the battery charging state, the power meter may display one of the following states.
 
 ### Battery-only operation
 
@@ -30,18 +32,18 @@ The battery is discharging. The battery indicator is on, and the power consumpti
 
 ### Battery charged, device powered via USB-C
 
-The lightning icon inside the battery is off, indicating that charging is not in progress. The power consumption gauge and input power gauge show the power drawn by the device from the USB-C 1 port.
+The lightning icon inside the battery is off, indicating that charging is not in progress. The power consumption gauge and input power gauge show the power drawn by the device from the USB-C1 port.
 
 ![](/files/pics/flipper-one-power-meter-usb-only.jpg)
 
 ### Battery charging, device powered via USB-C
 
-Both the battery and lightning icons are lit, indicating power is connected and the battery is charging. The power consumption gauge shows the device’s current power usage, while the input power gauge shows power drawn from the USB-C 1 port.
+Both the battery and lightning icons are lit, indicating power is connected and the battery is charging. The power consumption gauge shows the device’s current power usage, while the input power gauge shows power drawn from the USB-C1 port.
 
 ![](/files/pics/flipper-one-power-meter-battery-charging.jpg)
 
 ### Device powered by both USB-C and battery
 
-A power source is connected to USB-C 1, but its output is insufficient to charge the battery while the device is operating, so the lightning icon inside the battery is off and the battery icon is red. The power consumption gauge shows higher power than the input power gauge.
+A power source is connected to USB-C1, but its output is insufficient to charge the battery while the device is operating, so the lightning icon inside the battery is off and the battery icon is red. The power consumption gauge shows higher power than the input power gauge.
 
 ![](/files/pics/flipper-one-power-meter-battery-not-charging.jpg)
