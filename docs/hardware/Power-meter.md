@@ -12,7 +12,7 @@ The power meter consists of four separate sections:
 
 * **Power consumption gauge.** Displays real-time overall device power consumption. This gauge shows in real time how much power the entire system uses, including the CPU and peripherals.
 
-* **Power & charging status light.** The battery icon shows the device is powered on, and the lightning-in-battery icon shows it is charging.
+* **Power & charging status light.** The battery icon shows the device is powered on, and the lightning-in-battery icon shows it is charging. 
 
 * **Input power gauge.** This gauge shows the USB-C1 port input power. You can see if power is not enough to charge the battery or the device is using both power sources to operate without charging.
 
