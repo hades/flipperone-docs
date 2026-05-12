@@ -38,7 +38,7 @@ The device is powered only by the battery and is discharging. The green battery 
 
 A power source is connected to USB-C1, but the battery is not charging because it is fully charged. The lightning icon inside the battery is off, indicating no charging. The input power gauge shows the power drawn by the device from the USB-C1 port.
 
-::Image[]{src="/files/pics/flipper-one-power-meter-usb-only.jpg" size="80" position="center" caption="A power source is connected to USB-C1, but the battery is not charging because it is fully charged"}
+::Image[]{src="/files/pics/flipper-one-power-meter-usb-only.jpg" size="80" position="center" caption="A power source is connected to USB-C1, but the battery is already fully charged"}
 
 ---
 
@@ -46,7 +46,7 @@ A power source is connected to USB-C1, but the battery is not charging because i
 
 A power source is connected to USB-C1, and its output is sufficient to both power the device and charge the battery. The input power gauge shows the power drawn by the device from the USB-C1 port, including charging.
 
-::Image[]{src="/files/pics/flipper-one-power-meter-battery-charging.jpg" size="80" position="center" caption="A power source is connected to USB-C1, and it powers the device while charging the battery"}
+::Image[]{src="/files/pics/flipper-one-power-meter-battery-charging.jpg" size="80" position="center" caption="USB-C1 powers the device while charging the battery"}
 
 ---
 
@@ -54,4 +54,4 @@ A power source is connected to USB-C1, and its output is sufficient to both powe
 
 A power source is connected to USB-C1, but its output is insufficient to charge the battery while the device is operating, so the lightning-in-battery icon is off and the battery icon is red. The battery discharge gauge shows the power drawn from the battery, while the input power gauge shows the power supplied through the USB-C1 port.
 
-::Image[]{src="/files/pics/flipper-one-power-meter-battery-not-charging.jpg" size="80" position="center" caption="A power source is connected to USB-C1, but its output is not enough to charge the battery while the device is running"}
+::Image[]{src="/files/pics/flipper-one-power-meter-battery-not-charging.jpg" size="80" position="center" caption="USB-C1 power is insufficient to charge the battery during operation"}
