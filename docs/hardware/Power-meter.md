@@ -10,13 +10,13 @@ On the front right side of Flipper One, there is a power meter that enables real
 
 The power meter consists of four separate sections:
 
-* **Power consumption gauge.** Displays real-time overall device power consumption. This gauge shows in real time how much power the entire system uses, including the CPU and peripherals.
+* **Battery discharge gauge.** The gauge displays power drawn from the battery in real time.
 
-* **Power & charging status light.** The battery icon shows the device is powered on, and the lightning-in-battery icon shows it is charging. 
+* **Power & charging status lights.** The battery icon is green when the device is powered on and red when the power source output is insufficient to charge the battery. The green lightning-in-battery icon shows it is charging. 
 
-* **Input power gauge.** This gauge shows the USB-C1 port input power. You can see if power is not enough to charge the battery or the device is using both power sources to operate without charging.
+* **Input power gauge.** The gauge displays the USB-C1 port input power. You can see if power is not enough to charge the battery.
 
-* **USB-C power in status light.** Lights up when a power source connects to USB-C1.
+* **USB-C power in status light.** Lights up when a power source connects to USB-C1 port of the device.
 
 ![Power meter sections](/files/pics/flipper-one-power-meter.jpg "Power meter sections")
 
@@ -28,30 +28,30 @@ The following describes common use cases and how the power meter shows the devic
 
 ### Case 1: Battery-only operation
 
-The device is powered only by the battery and is discharging. The battery indicator is on, and the power consumption gauge blinks to show current draw from the battery.
+The device is powered only by the battery and is discharging. The green battery indicator is on, and the battery discharge gauge blinks to show current draw from the battery.
 
-![](/files/pics/flipper-one-power-meter-battery-only.jpg)
+::Image[]{src="/files/pics/flipper-one-power-meter-battery-only.jpg" size="80" position="center" caption="The device is powered only by the battery and is discharging"}
 
 ---
 
 ### Case 2: Battery charged, device powered via USB-C
 
-A power source is connected to USB-C 1, but the battery is not charging because it is fully charged. The lightning icon inside the battery is off, indicating that charging is not in progress. Both gauges show the power drawn by the device from the USB-C1 port.
+A power source is connected to USB-C1, but the battery is not charging because it is fully charged. The lightning icon inside the battery is off, indicating no charging. The input power gauge shows the power drawn by the device from the USB-C1 port.
 
-![](/files/pics/flipper-one-power-meter-usb-only.jpg)
+::Image[]{src="/files/pics/flipper-one-power-meter-usb-only.jpg" size="80" position="center" caption="A power source is connected to USB-C1, but the battery is not charging because it is fully charged"}
 
 ---
 
 ### Case 3: Battery charging, device powered via USB-C
 
-A power source is connected to USB-C 1, and its output is sufficient to both power the device and charge the battery. Both the battery and lightning icons are lit, indicating power is connected and the battery is charging. The power consumption gauge shows the device’s current power usage, while the input power gauge shows power drawn from the USB-C1 port.
+A power source is connected to USB-C1, and its output is sufficient to both power the device and charge the battery. The input power gauge shows the power drawn by the device from the USB-C1 port, including charging.
 
-![](/files/pics/flipper-one-power-meter-battery-charging.jpg)
+::Image[]{src="/files/pics/flipper-one-power-meter-battery-charging.jpg" size="80" position="center" caption="A power source is connected to USB-C1, and it powers the device while charging the battery"}
 
 ---
 
 ### Case 4: Device powered by both USB-C and battery
 
-A power source is connected to USB-C1, but its output is insufficient to charge the battery while the device is operating, so the lightning icon inside the battery is off and the battery icon is red. The power consumption gauge shows higher power than the input power gauge.
+A power source is connected to USB-C1, but its output is insufficient to charge the battery while the device is operating, so the lightning-in-battery icon is off and the battery icon is red. The battery discharge gauge shows the power drawn from the battery, while the input power gauge shows the power supplied through the USB-C1 port.
 
-![](/files/pics/flipper-one-power-meter-battery-not-charging.jpg)
+::Image[]{src="/files/pics/flipper-one-power-meter-battery-not-charging.jpg" size="80" position="center" caption="A power source is connected to USB-C1, but its output is not enough to charge the battery while the device is running"}
