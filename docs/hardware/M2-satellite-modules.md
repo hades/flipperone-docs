@@ -1,5 +1,5 @@
 ---
-title: M.2 port
+title: Satellite modules
 slug: hardware/m2-modules/satellite
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
