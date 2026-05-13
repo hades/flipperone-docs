@@ -36,15 +36,21 @@ Software-defined radio modules turn Flipper One into a portable SDR platform for
 
 ***
 
-## NVMe SSDs
+## NTN modems
 
-M.2 NVMe SSDs add fast onboard storage over PCIe for logging, captured RF data, or large datasets.
+M.2 NTN (Non-Terrestrial Network) modems provide connectivity through satellites and high-altitude platforms. Standardized by 3GPP (3rd Generation Partnership Project) as part of 5G and LTE specifications, NTN technology enables data transmission outside terrestrial cellular coverage.
 
 ***
 
 ## GNSS receivers
 
 M.2 GNSS modules add satellite positioning (GPS, GLONASS, Galileo, BeiDou) for location-aware applications.
+
+***
+
+## NVMe SSDs
+
+M.2 NVMe SSDs add fast onboard storage over PCIe for logging, captured RF data, or large datasets.
 
 ***
 
