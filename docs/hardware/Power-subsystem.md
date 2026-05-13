@@ -8,13 +8,13 @@ updatedAt: Tue Apr 28 2026 11:00:55 GMT+0000 (Coordinated Universal Time)
 
 ## Specifications (preliminary)
 
-* 2-cell 22.9Wh Li-ion battery.
-* Fast PD charging (up to 60W).
-* 8.4V internal power rail.
-* Controllable DC/DCs and switches for flexible power management.
-* Up to 15W on each USB host port.
-* Up to 25W on GPIO expansion port.
-* Up to 13W on M.2 slot.
+* 2-cell 22.9 Wh Li-ion battery
+* Fast USB PD charging (up to 60 W)
+* 8.4V internal power rail
+* Controllable DC/DC converters and switches for flexible power management
+* Up to 15 W per USB host port
+* Up to 25W on GPIO expansion port
+* Up to 13W on M.2 slot
 
 Below is a simplified block diagram of the power subsystem showing power distribution to the device’s internal loads.
 
