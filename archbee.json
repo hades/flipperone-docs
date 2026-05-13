@@ -90,14 +90,7 @@
                     "categoryName": "Satellite modules",
                     "isCategory": false,
                     "path": "hardware/M2-satellite-modules.md",
-                    "children": [
-                      {
-                        "categoryName": "NTN module",
-                        "isCategory": false,
-                        "path": "hardware/M2-ntn-module.md",
-                        "children": []
-                      }
-                    ]
+                    "children": [ ]
                   }
                 ]
               }
