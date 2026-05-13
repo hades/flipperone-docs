@@ -78,14 +78,28 @@
           },
           {
             "categoryName": "M.2 port",
-            "isCategory": false,
+            "isCategory": true,
             "path": "hardware/M2-port.md",
             "children": [
               {
                 "categoryName": "M.2 modules",
                 "isCategory": false,
                 "path": "hardware/M2-Modules.md",
-                "children": []
+                "children": [
+                  {
+                    "categoryName": "Satellite modules",
+                    "isCategory": false,
+                    "path": "hardware/M2-satellite-modules.md",
+                    "children": [
+                      {
+                        "categoryName": "NTN module",
+                        "isCategory": false,
+                        "path": "hardware/M2-ntn-module.md",
+                        "children": []
+                      }
+                    ]
+                  }
+                ]
               }
             ]
           },
