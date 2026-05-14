@@ -218,6 +218,12 @@
             "children": []
           },
           {
+            "categoryName": "RK3576 Mainline Support",
+            "isCategory": false,
+            "path": "cpu-software/rk3576-mainlining.md",
+            "children": []
+          },
+          {
             "categoryName": "Supported boards",
             "isCategory": false,
             "path": "cpu-software/Supported-boards.md",
