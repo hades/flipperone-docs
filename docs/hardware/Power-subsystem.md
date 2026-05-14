@@ -23,7 +23,7 @@ Some specifications listed here have not yet been fully validated and are subjec
 * **USB-C2 output power:** up to 15 W
 * **USB-A output power:** up to 15 W
 * **GPIO port output power:** up to 25 W
-* **M.2 slot power delivery:** up to 13 W
+* **M.2 port output power:** up to 13 W
 
 Below is a simplified block diagram of the power subsystem showing power distribution to the device’s internal loads.
 
