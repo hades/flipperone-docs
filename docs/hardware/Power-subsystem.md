@@ -14,7 +14,7 @@ Flipper One is a portable device powered by an internal 2-cell Li-ion battery, w
 
 **Specifications are preliminary**
 
-Some specifications listed here have not yet been fully validated and are subject to change. Device performance and power capabilities may also be reduced under thermal limiting conditions.
+Some specifications listed here have not yet been fully validated and are subject to change. The device may also dynamically reduce performance and power capabilities under thermal limiting conditions.
 
 :::
 
@@ -22,12 +22,12 @@ Some specifications listed here have not yet been fully validated and are subjec
 * **USB-C1 charging input:** USB PD up to 60 W
 * **USB-C2 output power:** up to 15 W
 * **USB-A output power:** up to 15 W
-* **GPIO connector output power:** up to 25 W
+* **GPIO port output power:** up to 25 W
 * **M.2 slot power delivery:** up to 13 W
 
 Below is a simplified block diagram of the power subsystem showing power distribution to the device’s internal loads.
 
-![Power subsystem block diagram](/files/pics/flipper-one-power-subsystem-diagram.jpg "Power subsystem block diagram")
+![Power subsystem block diagram](/files/pics/flipper-one-power-subsystem-diagram.svg "Power subsystem block diagram")
 
 ## How we measure power consumption
 
