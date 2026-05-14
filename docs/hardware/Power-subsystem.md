@@ -31,10 +31,12 @@ Below is a simplified block diagram of the power subsystem showing power distrib
 
 ## How we measure power consumption
 
-In the Flipper One prototypes, power monitoring is significantly more advanced than in the production version to support debugging and optimization of low-power modes.
+Flipper One includes a single-channel INA219 power monitor for measuring total system power consumption, as well as a BQ28Z620 battery fuel gauge for monitoring battery parameters.
 
-The power monitoring uses five INA4230 chips, each providing four measurement channels. Every channel measures both voltage and current in its corresponding power path. In addition, a single-channel INA219 power monitor is connected to the main power rail to track the device’s total power consumption, while the battery protection board includes a fuel gauge for measuring charge and discharge currents.
+In **Flipper One prototype units**, the power monitoring system is extended with five additional INA4230 power monitors, providing 20-channel monitoring of voltage and current across RK3576 power domains.
 
-![Power monitor in Linux](/files/pics/flipper-one-power-monitor-linux.png "Power monitor in Linux")
+All measured parameters are available as graphs in the Linux System Monitor, along with CPU load and temperature metrics.
+
+![System monitor in Linux](/files/pics/flipper-one-power-monitor-linux.png "System monitor in Linux")
 
 In production devices, only the fuel gauge and the power monitor on the main power rail will remain, with real-time power consumption displayed on the [power meter](Power-meter.md).
