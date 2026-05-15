@@ -128,9 +128,9 @@
             "children": []
           },
           {
-            "categoryName": "Mechanical design",
+            "categoryName": "Heatsink",
             "isCategory": false,
-            "path": "mechanics/Mechanical-design.md",
+            "path": "mechanics/Heatsink.md",
             "children": []
           },
           {
@@ -139,12 +139,6 @@
             "path": "mechanics/Module-enclosures.md",
             "children": []
           },
-          {
-            "categoryName": "Heat sink",
-            "isCategory": false,
-            "path": "mechanics/Heat-sink.md",
-            "children": []
-          }
         ]
       },
       {
