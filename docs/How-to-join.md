@@ -116,7 +116,7 @@ Developer portal wiki, technical docs, guides, and datasheets. All documentation
 :::
 
 :::VerticalSplitItem
-Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes, demos, and sample audio and video files. [**Learn more**](./testing/About-Testing.md)**&#x20;→**
+Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes, demos, and sample audio and video files. [**Learn more →**](./testing/About-Testing.md)
 :::
 ::::
 

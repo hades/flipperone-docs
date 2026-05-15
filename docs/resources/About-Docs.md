@@ -63,7 +63,8 @@ flipperone-docs/
     ├── How-to-join.md
     ├── Open-tasks.md      # Auto-generated — do not edit manually
     ├── files/
-    │   └── pics/          # Images and other assets
+    │   ├── pics/          # Images and other assets
+    │   └── icons/         # OS / brand icons used in docs
     ├── general/
     ├── hardware/
     ├── mechanics/
