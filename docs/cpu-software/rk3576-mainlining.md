@@ -1,4 +1,8 @@
-# Rockchip RK3576 mainline support
+---
+title: Rockchip RK3576 mainline support
+slug: cpu-software/rk3576-mainlining
+docTags: 
+---
 
 ![RK3576 location on the Flipper One mainboard](/files/pics/flipper_one_rk3576_in_body_outline.png "RK3576 on the Flipper One mainboard")
 
