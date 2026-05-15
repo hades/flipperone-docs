@@ -87,9 +87,15 @@
                 "path": "hardware/M2-Modules.md",
                 "children": [
                   {
-                    "categoryName": "Satellite modules",
+                    "categoryName": "Satellite modem",
                     "isCategory": false,
-                    "path": "hardware/M2-satellite-modules.md",
+                    "path": "hardware/M2-satellite-modem.md",
+                    "children": [ ]
+                  },
+                  {
+                    "categoryName": "GNSS receiver",
+                    "isCategory": false,
+                    "path": "hardware/M2-gnss-receiver.md",
                     "children": [ ]
                   }
                 ]
