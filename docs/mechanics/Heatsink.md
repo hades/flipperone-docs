@@ -29,8 +29,6 @@ Flipper One dissipates heat from its hottest chips through a aluminum heatsink. 
 
 We cannot use the entire rear surface of the device enclosure for a heatsink because it must also accommodate a removable antenna rail and a back plate covering the cable routing to the antenna connectors and the M.2 module.
 
-We cannot use the entire rear surface of the device enclosure for heatsink because it must also accommodate a removable antenna rail and a back plate, covering the cable routing to the antenna connectors, and a the M.2 module.
-
 !["Rear surface of Flipper One with an integrated heatsink"](/files/pics/flipper-one-heatsink-in-body.png "Rear surface of Flipper One with an integrated heatsink")
 
 Our preliminary simulations and real-world prototype testing show that this heatsink can keep the radiator temperature below 50 °C under realistic (non-synthetic) workloads with a thermal load of about 6 W.
