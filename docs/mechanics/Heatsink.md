@@ -33,8 +33,8 @@ We cannot use the entire rear surface of the device enclosure for a heatsink bec
 
 !["Rear surface of Flipper One with an integrated heatsink"](/files/pics/flipper-one-heatsink-in-body.png "Rear surface of Flipper One with an integrated heatsink")
 
-Our preliminary simulations and real-world prototype testing show that this heatsink can keep the radiator temperature below 50 °C under realistic (non-synthetic) workloads with a thermal load of about 6 W.
+Our preliminary simulations and real-world prototype testing at an ambient air temperature of 21 °C show that this heatsink can maintain the radiator temperature below 50 °C under realistic (non-synthetic) workloads with a thermal load of about 6 W.
 
-At higher loads or high ambient temperatures, the SoC will reduce CPU core frequencies, while the MCU will disable low-priority peripheral loads, limit charging power, and notify the user of these limits on the display.
+At higher loads or higher ambient temperatures, the SoC will reduce CPU core frequencies, while the MCU will disable low-priority peripheral loads, limit charging power, and notify the user of these limits on the display.
 
 ---
