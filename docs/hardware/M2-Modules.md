@@ -38,13 +38,13 @@ Software-defined radio modules turn Flipper One into a portable SDR platform for
 
 ## Satellite (NTN) modems
 
-M.2 NTN (Non-Terrestrial Network) modems provide connectivity through satellites and high-altitude platforms. Standardized by 3GPP (3rd Generation Partnership Project) as part of 5G and LTE specifications. Learn more about [Satellite modems](M2-satellite-modem.md)
+M.2 NTN (Non-Terrestrial Network) modems provide connectivity through satellites and high-altitude platforms. Standardized by 3GPP (3rd Generation Partnership Project) as part of 5G and LTE specifications. Learn more about [Satellite modems](M2-satellite-modem.md).
 
 ***
 
 ## GNSS receivers
 
-M.2 GNSS modules add satellite positioning (GPS, GLONASS, Galileo, BeiDou) for location-aware applications. Learn more about [GNSS receivers](M2-gnss-receiver.md)
+M.2 GNSS modules add satellite positioning (GPS, GLONASS, Galileo, BeiDou) for location-aware applications. Learn more about [GNSS receivers](M2-gnss-receiver.md).
 
 ***
 
