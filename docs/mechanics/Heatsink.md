@@ -10,6 +10,8 @@ Inside Flipper One, several components generate a significant amount of heat. Th
 
 The device also contains a Li-Ion battery, which should not be heated above 60 °C, as excessive heat accelerates battery degradation and negatively affects its lifespan and safety.
 
+## Main heat sources
+
 The main heat sources inside Flipper One are:
 
 * **RK3576 SoC.** Up to **5.5 W** under maximum load (CPU + GPU + NPU simultaneously).
@@ -32,8 +34,6 @@ We cannot use the entire rear surface of the device enclosure for a heatsink bec
 !["Rear surface of Flipper One with an integrated heatsink"](/files/pics/flipper-one-heatsink-in-body.png "Rear surface of Flipper One with an integrated heatsink")
 
 Our preliminary simulations and real-world prototype testing show that this heatsink can keep the radiator temperature below 50 °C under realistic (non-synthetic) workloads with a thermal load of about 6 W.
-
-At higher loads, the SoC will reduce CPU core frequencies, while the MCU will disable low-priority loads and notify the user via the display.
 
 At higher loads or high ambient temperatures, the SoC will reduce CPU core frequencies, while the MCU will disable low-priority peripheral loads, limit charging power, and notify the user of these limits on the display.
 
