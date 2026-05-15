@@ -14,12 +14,12 @@ The Hardware sub-project covers electrical hardware development: printed circuit
 
 The Hardware sub-project consists of:
 
-- ✅ :Link[Task tracker]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}
-- ⚡ :Link[Design files on Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}
-- 📁 :Link[GitHub repository]{href="https://github.com/flipperdevices/flipperone-hardware" newTab="true" hasDisabledNofollow="false"}
+- ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/9)
+- ⚡ [Design files on Altium 365](https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410)
+- 📁 [GitHub repository](https://github.com/flipperdevices/flipperone-hardware)
 - 📚 Docs:
   - 🔌 **Hardware section** (you're here)
-  - :Link[🧪 Testing section]{href="../testing/About-Testing.md" newTab="true" hasDisabledNofollow="true"}
+  - [🧪 Testing section](../testing/About-Testing.md)
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, share your ideas in the comments, or contribute directly to the docs.
 
@@ -29,17 +29,17 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 ## ✅  Tasks tracker
 
-All Hardware team tasks are tracked in the GitHub project :Link[Flipper One — Hardware]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}. There, you can see what the engineering team is working on and follow progress and discussions.
+All Hardware team tasks are tracked in the GitHub project [Flipper One — Hardware](https://github.com/orgs/flipperdevices/projects/9). There, you can see what the engineering team is working on and follow progress and discussions.
 
 ![Hardware board explainer](/files/pics/hardware-board-explainer.png)
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You're welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="./#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
+**Some tasks are open** to the community and marked with a **help wanted** label. You're welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [Contribution guide](./#how-to-contribute) first.
 
 ***
 
 ## ⚡ Design files on Altium 365
 
-Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on :Link[Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}, the cloud collaboration platform for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
+Selected parts of Flipper One's electrical design — schematics, PCB layouts, and BOM — are hosted on [Altium 365](https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410), the cloud collaboration platform for circuit design. Altium 365 hosts the latest version of the shared design files; you can view them in your browser without installing any software.
 
 ![Altium 365 Web Viewer interface](/files/pics/altium-ui-general.png "Altium 365 Web Viewer interface")
 
@@ -59,7 +59,7 @@ The Altium 365 Web Viewer lets you browse the project directly in your browser �
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Open the Flipper One folder.** Go to :Link[Flipper One on Altium 365]{href="https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410" newTab="true" hasDisabledNofollow="false"}.
+**Open the Flipper One folder.** Go to [Flipper One on Altium 365](https://flipper.365.altium.com/designs/folder-A78C8D02-EA07-49E1-AC7A-E84FAA2AF410).
 :::
 
 :::WorkflowBlockItem
@@ -107,7 +107,7 @@ or
 :::
 ::::
 
-For full info about the download feature, see Altium's :Link[official Web Viewer documentation]{href="https://www.altium.com/documentation/altium-365/viewers/web-viewer#downloading" newTab="true" hasDisabledNofollow="false"}.
+For full info about the download feature, see Altium's [official Web Viewer documentation](https://www.altium.com/documentation/altium-365/viewers/web-viewer#downloading).
 
 ***
 
@@ -116,7 +116,7 @@ For full info about the download feature, see Altium's :Link[official Web Viewer
 Hardware documentation is split across two sections:
 
 - 🔌 **Hardware section** (you're here) — port pinouts, modules, and subsystem references (Wi-Fi & Bluetooth, power, M.2, GPIO).
-- :Link[🧪 Testing section]{href="../testing/About-Testing.md" newTab="true" hasDisabledNofollow="true"} — hardware verification procedures for each subsystem.
+- [🧪 Testing section](../testing/About-Testing.md) — hardware verification procedures for each subsystem.
 
 ***
 
@@ -131,7 +131,7 @@ The Hardware sub-project accepts contributions in two forms: **comments on open 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
 
-To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you're always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
+To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you're always welcome to join the conversation on [social media](https://x.com/Flipper_RND) or [Discord](https://discord.com/invite/flipper)!
 
 ::::
 
@@ -141,7 +141,7 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-**Pick a task.** In the :Link[Hardware GitHub project]{href="https://github.com/orgs/flipperdevices/projects/9" newTab="true" hasDisabledNofollow="false"}, browse the open tasks and click the one labeled **help wanted** that you want to contribute to.
+**Pick a task.** In the [Hardware GitHub project](https://github.com/orgs/flipperdevices/projects/9), browse the open tasks and click the one labeled **help wanted** that you want to contribute to.
 :::
 
 ::::WorkflowBlockItem
@@ -174,11 +174,11 @@ For a longer change, fork the repository, make your edits on a new branch, and o
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Read the&#x20;**:Link[Markup example]{href="../resources/Markup-example.md" newTab="true"}**&#x20;page** to learn the supported Markdown and Archbee syntax.
+**Read the&#x20;**[Markup example](../resources/Markup-example.md)**&#x20;page** to learn the supported Markdown and Archbee syntax.
 :::
 
 :::WorkflowBlockItem
-**Fork the repository.** Go to :Link[flipperone-docs]{href="https://github.com/flipperdevices/flipperone-docs" newTab="true"} and click **Fork** in the upper-right corner. Your fork opens on the `dev` branch — our staging branch for contributions. All your work happens here.
+**Fork the repository.** Go to [flipperone-docs](https://github.com/flipperdevices/flipperone-docs) and click **Fork** in the upper-right corner. Your fork opens on the `dev` branch — our staging branch for contributions. All your work happens here.
 :::
 
 :::WorkflowBlockItem
@@ -196,7 +196,7 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**(Optional) Register the new page in&#x20;**:Link[archbee.json]{href="https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json" newTab="true"}**.** Place it in the sidebar hierarchy (no deeper than two levels) — see :Link[How archbee.json works]{href="../resources/About-Docs.md#how-archbeejson-works" newTab="true"} for the syntax. It's okay to skip — we'll update the file after merging your PR.
+**(Optional) Register the new page in&#x20;**[archbee.json](https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json)**.** Place it in the sidebar hierarchy (no deeper than two levels) — see [How archbee.json works](../resources/About-Docs.md#how-archbeejson-works) for the syntax. It's okay to skip — we'll update the file after merging your PR.
 :::
 
 :::WorkflowBlockItem
@@ -210,4 +210,4 @@ After review, we promote your changes from `dev` to `public-release`, which publ
 :::
 ::::
 
-Once your pull request is merged into `dev` and later promoted to `public-release`, Archbee automatically picks up the changes and rebuilds the live site at :Link[docs.flipper.net/one]{href="https://docs.flipper.net/one" newTab="true"}.
+Once your pull request is merged into `dev` and later promoted to `public-release`, Archbee automatically picks up the changes and rebuilds the live site at [docs.flipper.net/one](https://docs.flipper.net/one).

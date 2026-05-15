@@ -34,13 +34,13 @@ Whether you're an engineer, developer, designer, programmer, or simply an enthus
 
 ::::LinkArray{contentSource="CUSTOM"}
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/O5IbFQ7KAuHJE_lqbKbNX-20260401-145400.jpg"}
-:Link[X.com/Flipper\_RND]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"}
+[X.com/Flipper\_RND](https://x.com/Flipper_RND)
 
 Follow updates and project announcements on X.com
 :::
 
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/doVC8Airf2_FH2IwVxxAV_monosnap-miro-2023-04-13-19-25-16.png"}
-:Link[Flipper Devices Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}
+[Flipper Devices Discord](https://discord.com/invite/flipper)
 
 Chat with the community and Flipper team on our Discord server
 :::

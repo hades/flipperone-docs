@@ -14,9 +14,9 @@ The Mechanics sub-project is where we engineer the enclosure, buttons, plastic a
 
 The Mechanics sub-project consists of:
 
-- ✅ :Link[Task tracker]{href="https://github.com/orgs/flipperdevices/projects/15" newTab="true" hasDisabledNofollow="false"}
-- ⚙️ :Link[3D models hosted on Onshape]{href="https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20" newTab="true" hasDisabledNofollow="false"}
-- 📁 :Link[Design files on GitHub]{href="https://github.com/flipperdevices/flipperone-mechanics" newTab="true" hasDisabledNofollow="false"}
+- ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/15)
+- ⚙️ [3D models hosted on Onshape](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20)
+- 📁 [Design files on GitHub](https://github.com/flipperdevices/flipperone-mechanics)
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repository via pull requests.
 
@@ -26,17 +26,17 @@ We'd love your feedback — look for tasks tagged **help wanted** in the task tr
 
 ## ✅  Tasks tracker
 
-All mechanical team tasks are tracked in the GitHub project :Link[Flipper One — Mechanics]{href="https://github.com/orgs/flipperdevices/projects/15" newTab="true" hasDisabledNofollow="false"}. There, you can see what the engineering team is working on and follow progress and discussions.
+All mechanical team tasks are tracked in the GitHub project [Flipper One — Mechanics](https://github.com/orgs/flipperdevices/projects/15). There, you can see what the engineering team is working on and follow progress and discussions.
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/j85RNnCbi9_-rFd0k5pPt-20260426-190415.png "Mechaincs sub-project task tracker on GitHub")
 
-**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the :Link[Contribution guide]{href="./#how-to-contribute" newTab="false" hasDisabledNofollow="true"} first.
+**Some tasks are open** to the community and marked with a **help wanted** label. You’re welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [Contribution guide](./#how-to-contribute) first.
 
 ***
 
 ## ⚙️ 3D models hosted on Onshape
 
-You can view and export the 3D models via :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/BWs6BlQTIuaA34qFFvyY0-20260422-193237.png" alt caption} :Link[Onshape]{href="https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20" newTab="true" hasDisabledNofollow="false"} – a cloud-based CAD tool (similar to SolidWorks) that runs directly in your web browser. Onshape hosts the latest version of the 3D models. The same 3D models are also available in the :Link[CURRENT folder on GitHub]{href="https://github.com/flipperdevices/flipperone-mechanics/tree/dev/CURRENT" newTab="true" hasDisabledNofollow="false"}.
+You can view and export the 3D models via :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/BWs6BlQTIuaA34qFFvyY0-20260422-193237.png" alt caption} [Onshape](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) – a cloud-based CAD tool (similar to SolidWorks) that runs directly in your web browser. Onshape hosts the latest version of the 3D models. The same 3D models are also available in the [CURRENT folder on GitHub](https://github.com/flipperdevices/flipperone-mechanics/tree/dev/CURRENT).
 
 :::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipperzero.one/Pan_rotate_and_move_parts_compressed.mp4&#x22;&#xA;></video>" iframeHeight="500"}
 
@@ -61,7 +61,7 @@ All surfaces and dimensions match the real product, allowing development of acce
 
 ### How to view 3D models
 
-Simply click the :Link[Flipper One - Onshape]{href="https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20" newTab="true" hasDisabledNofollow="false"} link — the model will open in your browser in view mode. Here you can navigate the model:
+Simply click the [Flipper One - Onshape](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) link — the model will open in your browser in view mode. Here you can navigate the model:
 
 - **Pan model** — click :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/n3aUz4Jq-P7dqI647w6Kb-20260325-114158.png" alt caption} Pan or click and hold the :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/290PzLQDUGQo8RuaFZv_j-20260325-133300.png" alt caption} middle wheel on your mouse.
 - **Rotate model** — click :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/NjfVebUq_P1cC0Sc3lFjR-20260325-115455.png" alt caption} Rotate or :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/UXZ-1Id6BT7BeIBA6UJrO-20260325-133317.png" alt caption} right-click and hold your mouse.
@@ -69,7 +69,7 @@ Simply click the :Link[Flipper One - Onshape]{href="https://cad.onshape.com/docu
 - **Move parts** — click a part in the 3D view or from the list on the left, then drag it to the desired position.
 
 :::hint{type="info"}
-For all methods of navigating models in Onshape, view :Link[the official documentation]{href="https://cad.onshape.com/help/Content/View/view_navigation_and_viewing_parts.htm?TocPath=Getting%20Started%20with%20Onshape%7CUser%20Interface%20Basics%7C_____2" newTab="true" hasDisabledNofollow="false"}.
+For all methods of navigating models in Onshape, view [the official documentation](https://cad.onshape.com/help/Content/View/view_navigation_and_viewing_parts.htm?TocPath=Getting%20Started%20with%20Onshape%7CUser%20Interface%20Basics%7C_____2).
 :::
 
 ***
@@ -106,10 +106,10 @@ Click **Export**.
 
 ## 📁 Design files on GitHub
 
-The :Link[flipperone-mechanics]{href="https://github.com/flipperdevices/flipperone-mechanics" newTab="true" hasDisabledNofollow="false"} GitHub repository hosts both current and legacy versions of Flipper One’s enclosure 3D models in `.stp` format. It also includes other design files, such as enclosure text and labels, as well as designs for official hardware modules and add-ons. You can download the design files to explore and modify them.
+The [flipperone-mechanics](https://github.com/flipperdevices/flipperone-mechanics) GitHub repository hosts both current and legacy versions of Flipper One’s enclosure 3D models in `.stp` format. It also includes other design files, such as enclosure text and labels, as well as designs for official hardware modules and add-ons. You can download the design files to explore and modify them.
 
 :::hint{type="info"}
-Both the :Link[CURRENT folder on GitHub]{href="https://github.com/flipperdevices/flipperone-mechanics/tree/dev/CURRENT" newTab="true" hasDisabledNofollow="false"} and :Link[Onshape]{href="https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20" newTab="true" hasDisabledNofollow="false"} host the latest Flipper One 3D models, but there is a difference:
+Both the [CURRENT folder on GitHub](https://github.com/flipperdevices/flipperone-mechanics/tree/dev/CURRENT) and [Onshape](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) host the latest Flipper One 3D models, but there is a difference:
 
 - :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/35CMh7cPaEJY42c0x205l-20260422-192635.svg" alt caption}**&#x20;GitHub** — only download models in `.stp` format.
 - :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/17t3meaKNqmY8q-e1hSp_-20260422-194815.png" alt caption}**&#x20;Onshape** — view the current models and export in multiple formats.
@@ -146,16 +146,16 @@ Design versioning scheme includes two parts: `<LETTER>.<NUMBER>` (for example, A
 ## How to contribute
 
 :::hint{type="info"}
-To contribute to the Mechanics sub-project, you need to have a GitHub account. You can create one on the :Link[GitHub website]{href="https://github.com/signup" newTab="true" hasDisabledNofollow="false"}.
+To contribute to the Mechanics sub-project, you need to have a GitHub account. You can create one on the [GitHub website](https://github.com/signup).
 :::
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/Mo4LPAlsvBYBJ0LdlcZWd-20260423-202546.jpg)
 
-**Before you start:** Check open tasks in the :Link[task tracker]{href="https://github.com/orgs/flipperdevices/projects/15" newTab="true" hasDisabledNofollow="false"} to see what the team is already working on or where help is wanted.
+**Before you start:** Check open tasks in the [task tracker](https://github.com/orgs/flipperdevices/projects/15) to see what the team is already working on or where help is wanted.
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-Download 3D models from :Link[GitHub]{href="https://github.com/flipperdevices/flipperone-mechanics" newTab="true" hasDisabledNofollow="false"} or :Link[Onshape]{href="https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20" newTab="true" hasDisabledNofollow="false"}.
+Download 3D models from [GitHub](https://github.com/flipperdevices/flipperone-mechanics) or [Onshape](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20).
 :::
 
 :::WorkflowBlockItem
@@ -175,7 +175,7 @@ If you have an idea for improving the design of Flipper One, you're welcome to c
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Open the repository.** Go to :Link[flipperone-mechanics]{href="https://github.com/flipperdevices/flipperone-mechanics" newTab="true" hasDisabledNofollow="false"} on GitHub.
+**Open the repository.** Go to [flipperone-mechanics](https://github.com/flipperdevices/flipperone-mechanics) on GitHub.
 :::
 
 :::WorkflowBlockItem
@@ -250,7 +250,7 @@ We review all ideas carefully! We may ask additional questions about your idea i
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
 
-To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you’re always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
+To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you’re always welcome to join the conversation on [social media](https://x.com/Flipper_RND) or [Discord](https://discord.com/invite/flipper)!
 
 ::::
 
@@ -260,11 +260,11 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
-**Pick a task.** In the :Link[Mechanics GitHub project]{href="https://github.com/orgs/flipperdevices/projects/15" newTab="true" hasDisabledNofollow="false"}, browse the open tasks and click the one labeled **help wanted** that you want to contribute to.
+**Pick a task.** In the [Mechanics GitHub project](https://github.com/orgs/flipperdevices/projects/15), browse the open tasks and click the one labeled **help wanted** that you want to contribute to.
 :::
 
 ::::WorkflowBlockItem
-**Write your suggestion.** In the comments section, clearly describe your suggestion and attach a screenshot, video, or a link to your 3D model on :Link[Onshape]{href="https://www.onshape.com/en/" newTab="true" hasDisabledNofollow="false"}. Unfortunately, `.stp` files can't be attached to the comment.
+**Write your suggestion.** In the comments section, clearly describe your suggestion and attach a screenshot, video, or a link to your 3D model on [Onshape](https://www.onshape.com/en/). Unfortunately, `.stp` files can't be attached to the comment.
 
 :::hint{type="info"}
 **Important:** If you share a link to your design on Onshape, ensure the model is accessible for others to view.
