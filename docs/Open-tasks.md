@@ -63,8 +63,8 @@ User interface design: operating modes, on-screen graphics, device prints, and F
 :::hint{type="info"}
 🌐 Links of the User Interface sub-project:
 
-- :Link[Task tracker]{href="https://github.com/orgs/flipperdevices/projects/12" newTab="true" hasDisabledNofollow="false"}
-- :Link[Contribution guide]{href="https://docs.flipper.net/one" newTab="true" hasDisabledNofollow="false"}
-- :Link[GitHub repository]{href="https://github.com/flipperdevices/flipperone-ui" newTab="true" hasDisabledNofollow="false"}
+- [Task tracker](https://github.com/orgs/flipperdevices/projects/12)
+- [Contribution guide](https://docs.flipper.net/one)
+- [GitHub repository](https://github.com/flipperdevices/flipperone-ui)
 :::
 

@@ -13,18 +13,18 @@ The source files live on GitHub at [github.com/flipperdevices/flipper-one-docs](
 
 **Quick jump:**
 
-- :Link[Headings]{label="Headings" overridedLabel="Headings" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#headings" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Text styles]{label="Text styles" overridedLabel="Text styles" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#text-styles" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Links]{label="Links" overridedLabel="Links" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#links" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Images]{label="Images" overridedLabel="Images" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#images" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Videos]{label="Videos" overridedLabel="Videos" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#videos" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Lists]{label="Lists" overridedLabel="Lists" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#lists" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Tables]{label="Tables" overridedLabel="Tables" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#tables" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Code]{label="Code" overridedLabel="Code" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#code-syntax-highlighting" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Callouts]{label="Callouts" overridedLabel="Callouts" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#callouts" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Math]{label="Math" overridedLabel="Math" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#math" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Mermaid diagrams]{label="Mermaid diagrams" overridedLabel="Mermaid diagrams" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#mermaid-diagrams" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Archbee components]{label="Archbee components" overridedLabel="Archbee components" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#archbee-components" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
+- [Headings](#headings)
+- [Text styles](#text-styles)
+- [Links](#links)
+- [Images](#images)
+- [Videos](#videos)
+- [Lists](#lists)
+- [Tables](#tables)
+- [Code](#code-syntax-highlighting)
+- [Callouts](#callouts)
+- [Math](#math)
+- [Mermaid diagrams](#mermaid-diagrams)
+- [Archbee components](#archbee-components)
 
 ***
 
