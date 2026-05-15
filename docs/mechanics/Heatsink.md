@@ -27,7 +27,7 @@ In real-world use, reaching the maximum heat output is difficult. During heatsin
 
 Flipper One dissipates heat from its hottest chips through a aluminum heatsink. In addition to thermal management, the heatsink also serves as a structural element, mechanically integrating with the enclosure and the main PCB.
 
-!["Shape of the integrated aluminum heatsink in Flipper One (HW rev F0B0C1)"](/files/pics/flipper-one-heatsink.png "Shape of the integrated aluminum heatsink in Flipper One (HW rev F0B0C1)")
+!["Shape of the integrated aluminum heatsink in Flipper One (HW rev F0B0C1)"](/files/pics/flipper-one-heatsink.png "Shape of the integrated aluminum heatsink in Flipper One (HW rev. F0B0C1)")
 
 We cannot use the entire rear surface of the device enclosure for a heatsink because it must also accommodate a removable antenna rail and a back plate covering the cable routing to the antenna connectors and the M.2 module.
 
