@@ -22,6 +22,8 @@ Flipper One is currently in active development. As a community-driven project, w
 
 Flipper One is a large and complex project, divided into several sub-projects. Each sub-project is managed by a dedicated Flipper team, with its own structure, rules, and workflows. This Developer Portal acts as a wiki and the main entry point into all sub-projects, hosting their documentation and contribution guides.
 
+‎ 
+
 **Currently, we have the following sub-projects:**
 
 ::::VerticalSplit{layout="left"}
@@ -74,7 +76,7 @@ Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This
 :::
 
 :::VerticalSplitItem
-Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touchpad, and power subsystem, as well as co-processor communication between the MCU and CPU. [**Learn more →**](./mcu-firmware/About-MCU-Firmware.md)
+Firmware for the RP2350 microcontroller (MCU), which controls the display, power subsystem, and CPU boot process, and handles button and touchpad events. [**Learn more →**](./mcu-firmware/About-MCU-Firmware.md)
 :::
 ::::
 
@@ -158,7 +160,9 @@ This wiki is a sub-project of its own, and anyone can contribute by editing [its
 
 Tasks for each sub-project are managed in a task tracker — a Kanban board on GitHub. Each task on the board is a GitHub issue from the sub-project repository. You can view [all task trackers on GitHub](https://github.com/orgs/flipperdevices/projects).
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/mcpZH-vu_oT0W5RG7ft-X-20260410-160905.png "Each Sub-project has its own Kanban board on GitHub")
+![MCU Firmware task tracker](/files/pics/mcu-firmware-task-tracker.png)
+
+‎ 
 
 ### What’s the difference between GitHub issues and task tracker issues?
 
@@ -168,11 +172,13 @@ For example, here is a [list of GitHub issues](https://github.com/flipperdevices
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/QoPhF9YoGDfIllcZR8_5p-20260410-161735.jpg "Task tracker is a Kanban-style view of standard GitHub issues")
 
+‎ 
+
 ### Open tasks
 
 Some of our tasks are open. This means the community can interact with them just as they would with any issue in a classic GitHub repository — leaving comments, attaching files, and so on. Each task includes a short title and a detailed description, often with links and screenshots to help you understand it.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/HfxrhnxuYaoQidaQHad-F-20260410-163206.jpg "Example of an open task in MCU Firmware sub-project")
+![Example of an open task in MCU Firmware sub-project](/files/pics/open-task.jpg)
 
 Tasks can be marked with different **labels**:
 
@@ -218,7 +224,7 @@ Find a sub-project that interests you. Explore its documentation in this Develop
 
 Go to the task tracker of the sub-project you’re interested in to explore current tasks. Open Tasks where your help is welcome are labeled **help wanted**. Read through a task and follow the contribution guidelines when submitting your input.
 
-![Open taks](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/ZWucCsRvdOhYn-Og3KwFF-20260410-165617.png "Task where community contribution is welcome are marked help wanted")
+![Open tasks](/files/pics/step-2-check-task-tracker.png)
 
 :::hint{type="info"}
 You can also visit the [🚧 Open tasks](./Open-tasks.md) to find tasks that need community help or feedback.
