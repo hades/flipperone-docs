@@ -178,7 +178,7 @@ For a longer change, fork the repository, make your edits on a new branch, and o
 :::
 
 :::WorkflowBlockItem
-**Fork the repository.** Go to [flipperone-docs](https://github.com/flipperdevices/flipperone-docs) and click **Fork** in the upper-right corner. Your fork opens on the `dev` branch — our staging branch for contributions. All your work happens here.
+**Fork the repository.** Go to [flipperone-docs](https://github.com/flipperdevices/flipperone-docs) and click **Fork** in the upper-right corner. Your fork opens on the `public-release` branch — the production branch connected to the live site. All your work happens here.
 :::
 
 :::WorkflowBlockItem
@@ -204,10 +204,12 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**Open a pull request from your branch to the original repository.** The target is pre-selected to `dev` — leave it as is. Add a clear title and description, and ideally attach screenshots and a link to the related open task.
+**Open a pull request from your branch to the original repository.** The target is pre-selected to `public-release` — leave it as is. Add a clear title and description, and ideally attach screenshots and a link to the related open task.
 
-After review, we promote your changes from `dev` to `public-release`, which publishes them to the live site.
+Make sure **Allow edits by maintainers** is ticked so we can apply small wording or syntax fixes directly to your PR.
+
+Once merged, Archbee publishes your changes to the live site.
 :::
 ::::
 
-Once your pull request is merged into `dev` and later promoted to `public-release`, Archbee automatically picks up the changes and rebuilds the live site at [docs.flipper.net/one](https://docs.flipper.net/one).
+Once your pull request is merged into `public-release`, Archbee automatically picks up the changes and rebuilds the live site at [docs.flipper.net/one](https://docs.flipper.net/one).
