@@ -111,13 +111,13 @@ If you find a bug or have a feature idea, search the [MCU Firmware issues](https
 :::
 ::::
 
-We review all issues and comments carefully! We may ask additional questions in the thread, so please follow notifications from GitHub in your email.
+We review all issues and comments carefully! We may ask additional questions in the thread, so please watch for GitHub notifications in your email.
 
 ‎ 
 
 ***
 
-## Contribute to MCU Firmware via a pull request
+### Contribute to MCU Firmware via a pull request
 
 ![Contribute via a pull request](/files/pics/mcu-contribute-via-pr.jpg)
 
@@ -141,4 +141,4 @@ Contributing via pull requests allows anyone to propose changes to the MCU firmw
 :::
 ::::
 
-We review all pull requests carefully! We may ask additional questions in the PR thread, so please follow notifications from GitHub in your email.
+We review all pull requests carefully! We may ask additional questions in the PR thread, so please watch for GitHub notifications in your email.

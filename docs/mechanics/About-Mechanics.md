@@ -169,7 +169,7 @@ Submit your work as a **pull request** to our GitHub repo. If there is an open t
 
 ***
 
-## Submit your design as a pull request
+### Submit your design as a pull request
 
 If you have an idea for improving the design of Flipper One, you're welcome to contribute it. Copy the GitHub repository, make your changes to the design files, and submit a pull request to the original repository:
 
@@ -241,11 +241,11 @@ We highly recommend attaching screenshots that show what changed and a link to t
 :::
 ::::
 
-We review all ideas carefully! We may ask additional questions about your idea in the pull request thread, so please follow notifications from GitHub in your email.
+We review all ideas carefully! We may ask additional questions about your idea in the pull request thread, so please watch for GitHub notifications in your email.
 
 ***
 
-## Suggest your change as a comment on an open task
+### Suggest your change as a comment on an open task
 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
@@ -283,4 +283,4 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 :::
 :::::
 
-We review all comments carefully! We may ask additional questions about your idea in the task thread, so please follow notifications from GitHub in your email.
+We review all comments carefully! We may ask additional questions about your idea in the task thread, so please watch for GitHub notifications in your email.
