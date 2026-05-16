@@ -6,6 +6,10 @@ createdAt: Wed Apr 08 2026 17:29:37 GMT+0000 (Coordinated Universal Time)
 updatedAt: Wed Apr 08 2026 18:15:41 GMT+0000 (Coordinated Universal Time)
 ---
 
+:::hint{type="warning"}
+**Prototype page.** This is a prototype of how the final page will look like. The page will be updated automatically based on tasks across all sub-projects.
+:::
+
 This page highlights open tasks across all Flipper One sub-project repositories that need community help or feedback. Each task corresponds to an issue labeled `help wanted` in its respective GitHub repository.
 
 All tasks on this page are organized by sub-project and include a title, a short description, the number of comments, and a link to the task on GitHub. Each sub-project is managed by a team that defines its own contribution process — please review these guidelines before contributing.
@@ -64,7 +68,7 @@ User interface design: operating modes, on-screen graphics, device prints, and F
 🌐 Links of the User Interface sub-project:
 
 - [Task tracker](https://github.com/orgs/flipperdevices/projects/12)
-- [Contribution guide](https://docs.flipper.net/one)
+- [Contribution guide](https://docs.flipper.net/one/user-interface/about#how-to-contribute)
 - [GitHub repository](https://github.com/flipperdevices/flipperone-ui)
 :::
 
