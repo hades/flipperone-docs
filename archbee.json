@@ -142,42 +142,6 @@
         ]
       },
       {
-        "categoryName": "🕹️ MCU Firmware",
-        "isCategory": true,
-        "children": [
-          {
-            "categoryName": "About MCU Firmware",
-            "isCategory": false,
-            "path": "mcu-firmware/About-MCU-Firmware.md",
-            "children": []
-          },
-          {
-            "categoryName": "Firmware architecture",
-            "isCategory": false,
-            "path": "mcu-firmware/Architecture.md",
-            "children": []
-          },
-          {
-            "categoryName": "MCU↔CPU interface",
-            "isCategory": false,
-            "path": "mcu-firmware/MCU-CPU-interconnect.md",
-            "children": []
-          },
-          {
-            "categoryName": "How to build firmware",
-            "isCategory": false,
-            "path": "mcu-firmware/How-to-build-firmware.md",
-            "children": []
-          },
-          {
-            "categoryName": "Firmware update",
-            "isCategory": false,
-            "path": "mcu-firmware/Firmware-update.md",
-            "children": []
-          }
-        ]
-      },
-      {
         "categoryName": "🐧 Linux (CPU Software)",
         "isCategory": true,
         "children": [
@@ -227,6 +191,42 @@
             "categoryName": "Supported boards",
             "isCategory": false,
             "path": "cpu-software/Supported-boards.md",
+            "children": []
+          }
+        ]
+      },
+      {
+        "categoryName": "🕹️ MCU Firmware",
+        "isCategory": true,
+        "children": [
+          {
+            "categoryName": "About MCU Firmware",
+            "isCategory": false,
+            "path": "mcu-firmware/About-MCU-Firmware.md",
+            "children": []
+          },
+          {
+            "categoryName": "Firmware architecture",
+            "isCategory": false,
+            "path": "mcu-firmware/Architecture.md",
+            "children": []
+          },
+          {
+            "categoryName": "MCU↔CPU interface",
+            "isCategory": false,
+            "path": "mcu-firmware/MCU-CPU-interconnect.md",
+            "children": []
+          },
+          {
+            "categoryName": "How to build firmware",
+            "isCategory": false,
+            "path": "mcu-firmware/How-to-build-firmware.md",
+            "children": []
+          },
+          {
+            "categoryName": "Firmware update",
+            "isCategory": false,
+            "path": "mcu-firmware/Firmware-update.md",
             "children": []
           }
         ]

@@ -6,7 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 10:58:51 GMT+0000 (Coordinated Universal Time)
 ---
 
-This section covers high-level product features expressed as user stories. Each feature describes a practical benefit for the user and a real use case.
+This page covers high-level product features expressed as user stories. Each feature describes a practical benefit for the user and a real use case.
 
 ***
 
@@ -19,7 +19,7 @@ Features related to IP networking, internet access, sharing, and filtering.
 ![Classic Wi-Fi router](/files/pics/feature-classic-wifi-router.png)
 
 A basic Wi-Fi router with NAT and a built-in DHCP server.
-**Eth0** is used as the WAN port; the remaining interfaces act as LAN interfaces: Wi-Fi access point, **Eth1**, and USB Ethernet adapters.
+Eth0 is used as the WAN port. The remaining interfaces act as LAN interfaces: Wi-Fi access point, Eth1, and USB Ethernet adapters.
 
 :::hint{type="info"}
 **User story**
@@ -51,7 +51,7 @@ To pass the captive portal authorization, I connect my phone to Flipper One’s 
 
 ![USB Wi-Fi / Ethernet adapter](/files/pics/feature-usb-wifi-ethernet-adapter.png)
 
-Flipper One can act as a USB network adapter by bridging either Wi-Fi (STA mode) or **Eth0** to a USB Ethernet interface, with MAC address proxying. NAT is disabled in this mode. Wi-Fi STA proxying has limitations because Wi-Fi access points allow only a single client MAC address per connection. For this reason, the user must explicitly select this mode before connecting Flipper One to a Wi-Fi access point as a client.
+Flipper One can act as a USB network adapter by bridging either Wi-Fi (STA mode) or Eth0 to a USB Ethernet interface, with MAC address proxying. NAT is disabled in this mode. Wi-Fi STA proxying has limitations because Wi-Fi access points allow only a single client MAC address per connection. For this reason, the user must explicitly select this mode before connecting Flipper One to a Wi-Fi access point as a client.
 
 :::hint{type="info"}
 **User story**
@@ -83,7 +83,7 @@ I want a dedicated device that guarantees all internet traffic is forced through
 
 ![Ethernet MitM sniffer](/files/pics/feature-ethernet-mitm-sniffer.png)
 
-Flipper One can be placed inline between two Ethernet devices and operate as a fully transparent bridge. Both **Eth0** and **Eth1** ports form a pass-through link that is invisible to the monitored devices. The MAC addresses of Flipper One’s Ethernet interfaces are never exposed to the observed traffic.
+Flipper One can be placed inline between two Ethernet devices and operate as a fully transparent bridge. Both Eth0 and Eth1 ports form a pass-through link that is invisible to the monitored devices. The MAC addresses of Flipper One’s Ethernet interfaces are never exposed to the observed traffic.
 
 This mode allows passive inspection and capture of network traffic without modifying the existing network topology or breaking the target device’s connectivity.
 
