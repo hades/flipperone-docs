@@ -14,6 +14,8 @@ This page highlights open tasks across all Flipper One sub-project repositories 
 
 All tasks on this page are organized by sub-project and include a title, a short description, the number of comments, and a link to the task on GitHub. Each sub-project is managed by a team that defines its own contribution process — please review these guidelines before contributing.
 
+***
+
 # 🎨 User Interface tasks
 
 User interface design: operating modes, on-screen graphics, device prints, and FlipCTL.

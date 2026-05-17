@@ -219,7 +219,7 @@ The `#section-name` anchor is optional. Anchor IDs are derived from the heading 
 
 ‎&#x20;
 
-**Local path:**  `![Alt text](/files/pics/test-image.jpg "Caption")`
+**Local path:** `![Alt text](/files/pics/test-image.jpg "Caption")`
 
 ![Local image](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/pNHUZHZzPZd7qdM08jKuq_test-image.jpg "Caption")
 ​

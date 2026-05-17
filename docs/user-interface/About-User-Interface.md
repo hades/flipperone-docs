@@ -135,7 +135,7 @@ The User Interface sub-project accepts contributions through **comments on open 
 :::
 
 :::WorkflowBlockItem
-**Submit your design as a comment.** On the task, attach a screenshot of your design and paste the link to your Figma source file.
+**Write your comment.** Describe your changes, attach a screenshot of your design and paste the link to your Figma source file.
 
 ![Good vs bad comment example](/files/pics/ui-good-vs-bad-comment.png)
 
