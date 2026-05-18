@@ -50,15 +50,6 @@ SECTIONS = [
         "github_repo": "https://github.com/flipperdevices/flipperone-mechanics",
     },
     {
-        "slug": "flipperdevices/flipperone-mcu-firmware",
-        "title": "MCU Firmware",
-        "emoji": "🕹️",
-        "description": "Firmware for the RP2350 co-processor: FreeRTOS, display, buttons, touchpad, LEDs, and power management.",
-        "task_tracker": "https://github.com/orgs/flipperdevices/projects/8",
-        "contribution_guide": "https://docs.flipper.net/one/mcu-firmware/about#how-to-contribute",
-        "github_repo": "https://github.com/flipperdevices/flipperone-mcu-firmware",
-    },
-    {
         "slug": "flipperdevices/flipperone-linux-build-scripts",
         "title": "Linux (CPU Software)",
         "emoji": "🐧",
@@ -66,6 +57,15 @@ SECTIONS = [
         "task_tracker": "https://github.com/orgs/flipperdevices/projects/11",
         "contribution_guide": "https://docs.flipper.net/one/cpu-software/about#how-to-contribute",
         "github_repo": "https://github.com/flipperdevices/flipperone-linux-build-scripts",
+    },
+    {
+        "slug": "flipperdevices/flipperone-mcu-firmware",
+        "title": "MCU Firmware",
+        "emoji": "🕹️",
+        "description": "Firmware for the RP2350 co-processor: FreeRTOS, display, buttons, touchpad, LEDs, and power management.",
+        "task_tracker": "https://github.com/orgs/flipperdevices/projects/8",
+        "contribution_guide": "https://docs.flipper.net/one/mcu-firmware/about#how-to-contribute",
+        "github_repo": "https://github.com/flipperdevices/flipperone-mcu-firmware",
     },
     {
         "slug": "flipperdevices/flipperone-ui",
@@ -161,6 +161,16 @@ def parse_existing_created_at(path: Path | None) -> str | None:
     text = path.read_text(encoding="utf-8")
     match = re.search(r"^createdAt:\s*(.+)$", text, flags=re.MULTILINE)
     return match.group(1).strip() if match else None
+
+
+def _content_equal_ignoring_updated_at(a: str, b: str) -> bool:
+    """True if two page renderings differ only in the `updatedAt:` frontmatter line.
+
+    The timestamp bumps on every run, so without this the workflow would commit
+    a noise-only diff every hour.
+    """
+    pattern = re.compile(r"^updatedAt:.*$", flags=re.MULTILINE)
+    return pattern.sub("updatedAt: -", a) == pattern.sub("updatedAt: -", b)
 
 
 def render_section(section: dict, issues: list[dict]) -> str:
@@ -280,6 +290,12 @@ def main() -> int:
     page = generate_page(issues, existing_created_at=existing_created_at)
 
     if args.out:
+        if args.out.exists():
+            existing_text = args.out.read_text(encoding="utf-8")
+            if _content_equal_ignoring_updated_at(existing_text, page):
+                # Nothing of substance changed — leave the file alone so the
+                # workflow doesn't commit a timestamp-only diff.
+                return 0
         args.out.write_text(page, encoding="utf-8")
     else:
         sys.stdout.write(page)
