@@ -63,7 +63,7 @@ My PC has no built-in Wi-Fi or Ethernet interface. I want to use Flipper One as 
 
 ### VPN gateway (leak-proof mode)
 
-![VPN gateway (leak-proof mode)](/files/pics/feature-vpn-gateway.png)
+![VPN gateway (leak-proof mode)](/files/pics/feature-vpn-gateway_v1.png)
 
 A router mode that tunnels all routed traffic through a VPN, preventing any direct internet access and eliminating traffic leaks. This includes protection against common leakage paths such as DNS and IPv6 traffic.
 
