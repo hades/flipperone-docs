@@ -27,7 +27,7 @@ Some specifications listed here have not yet been fully validated and are subjec
 
 Below is a simplified block diagram of the power subsystem showing power distribution to the device’s internal loads.
 
-![Power subsystem block diagram](/files/pics/flipper-one-power-subsystem-diagram.png "Power subsystem block diagram") 
+![Power subsystem block diagram](/files/pics/flipper-one-power-subsystem-diagram.png "Power subsystem block diagram")
 
 ## How we measure power consumption
 
