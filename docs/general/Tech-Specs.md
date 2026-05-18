@@ -3,7 +3,7 @@ title: Tech specs
 slug: general/tech-specs
 docTags: 
 createdAt: Wed Apr 22 2026 13:04:54 GMT+0000 (Coordinated Universal Time)
-updatedAt: Wed Apr 22 2026 13:16:25 GMT+0000 (Coordinated Universal Time)
+updatedAt: Wed Apr 22 2026 13:16:26 GMT+0000 (Coordinated Universal Time)
 ---
 
 This page describes the full technical specifications of the Flipper One. Since the device is under active development, specifications may change.
