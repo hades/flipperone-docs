@@ -259,6 +259,9 @@ def generate_page(issues: list[dict], existing_created_at: str | None = None) ->
         repo_issues = by_repo.get(section["slug"], [])
         if not repo_issues:
             continue
+        if rendered_any:
+            out.append("***")
+            out.append("")
         out.append(render_section(section, repo_issues))
         out.append("")
         rendered_any = True
