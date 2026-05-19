@@ -51,7 +51,7 @@ User OS profiles can be stored on removable media, allowing users to select and 
 
 An operating system profile can be selected directly from the boot menu without connecting an external monitor or keyboard. The menu also allows users to clone profiles and restore them to their original preconfigured state.
 
-![](/files/pics/flipper-os-switching-os-profile-on-boot.png)
+![Boot menu with OS profile selection](/files/pics/flipper-os-switching-os-profile-on-boot.png "Boot menu with OS profile selection")
 
 Official built-in OS profiles cannot be deleted, but they can be cloned and used as a base for creating user profiles. At any time, a profile can be quickly reset to the default state of the original official built-in OS profile.
 
@@ -65,7 +65,7 @@ On a running system, the user can:
 - Clone the built-in OS profile or rename the user OS profile.
 - Delete the user OS profile or reset a built-in OS profile to its default state.
 
-![Boot menu with OS profile selection](/files/pics/flipper-os-managing-os-profile-on-running-system.png "Boot menu with OS profile selection")
+![Managing OS profiles on running system UI](/files/pics/flipper-os-managing-os-profile-on-running-system.png "Managing OS profiles on running system UI")
 
 ***
 
