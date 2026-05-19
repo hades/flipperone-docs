@@ -16,7 +16,7 @@ When you try to use any Linux-based SBC as a universal “on-the-go” tool and 
 
 One workaround is to use separate SD cards for different preconfigured setups, but this is inconvenient and does not scale well.
 
-![](/files/pics/linux-os-classic-problem.png)
+![A typical scenario with the common approach](/files/pics/linux-os-classic-problem.png "A typical scenario with the common approach")
 
 Problems with common approach:
 
@@ -33,24 +33,17 @@ In Flipper OS, the concept of operating system profiles is introduced, which are
 
 Thus, the operating system consists of two distinct parts:
 
-1. **Flipper OS base system** — a clean, unmodified Debian-based system. It consists of:
-- Linux kernel
-- RootFS
-- MCU firmware
-
-The base system is distributed through official updates. This part of the operating system remains unchanged during user customization and configuration.
+1. **Flipper OS base system** — a clean, unmodified Debian-based system. It consists of `Linux kernel`, `RootFS`, and `MCU firmware`. The base system is distributed through official updates. This part of the operating system remains unchanged during user customization and configuration.
 
 2. **OS profiles** — an overlay on top of the base system that contains all user customizations, including installed packages, containers, and modifications to the RootFS including config files edits. By applying an OS profile to the Flipper OS base system, you get a fully configured system tailored for a specific use case.
 
-Several **official built-in OS profiles** are distributed as part of the operating system, for example: `Minimal system`, `Wi-Fi router`, `TV media box`, `Network sniffer`, and `Desktop computer`.
+**Official built-in OS profiles** are distributed as part of the operating system, for example: `Minimal system`, `Wi-Fi router`, `TV media box`, `Network sniffer`, and `Desktop computer`.
 
-**User OS profiles** contain user-modified packages and RootFS changes. Users configure the system in the usual way by editing configs and installing packages using package manager. The process remains fully transparent to the user, while all changes are automatically stored inside the active profile. 
+**User OS profiles** contain user-modified packages and RootFS changes. Users configure the system in the usual way by editing configs and installing packages using package manager. The process remains fully transparent to the user, while all changes are automatically stored inside the active profile. In addition to OS profiles, users can separately store personal files such as media files, documents, and other data not related to the operating system.
 
-OS profiles can be stored on removable media, allowing users to select and boot a profile from the boot menu, for example from an SD card.
+User OS profiles can be stored on removable media, allowing users to select and boot a profile from the boot menu, for example from an SD card.
 
-In addition to OS profiles, users can separately store personal files such as media files, documents, and other data not related to the operating system.
-
-![](/files/pics/flipper-os-architecture.png)
+![Flipper OS architecture](/files/pics/flipper-os-architecture.png "Flipper OS architecture")
 
 ***
 
@@ -72,15 +65,15 @@ On a running system, the user can:
 - Clone the built-in OS profile or rename the user OS profile.
 - Delete the user OS profile or reset a built-in OS profile to its default state.
 
-![](/files/pics/flipper-os-managing-os-profile-on-running-system.png)
+![Boot menu with OS profile selection](/files/pics/flipper-os-managing-os-profile-on-running-system.png "Boot menu with OS profile selection")
 
 ***
 
-## Update system
+## System update
 
 Flipper OS includes an update agent that notifies the user about available system updates from any active OS profile. Both the base system and the official built-in profiles are updated.
 
-![](/files/pics/flipper-os-system-update.png)
+![System update UI](/files/pics/flipper-os-system-update.png "System update UI")
 
 We are currently exploring mechanisms for reliable atomic updates of both the operating system and OS profiles. We invite the community to help develop the best solutions.
 
