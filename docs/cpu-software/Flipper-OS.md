@@ -10,7 +10,7 @@ updatedAt: Tue Apr 28 2026 13:17:42 GMT+0000 (Coordinated Universal Time)
 
 ***
 
-## Problems with common approach
+## Common approach issues
 
 When you try to use any Linux-based SBC as a universal “on-the-go” tool and keep changing its purpose over time, for example using it as a media server, a Wi-Fi router, or a desktop, **you eventually end up with a messy system**. You install so many packages and modify so many system configuration files that, at some point, reconfiguring the system becomes harder than reinstalling the OS and rebuilding the entire setup from scratch.
 
@@ -18,7 +18,7 @@ One workaround is to use separate SD cards for different preconfigured setups, b
 
 ![A typical scenario with the common approach](/files/pics/linux-os-classic-problem.png "A typical scenario with the common approach")
 
-Problems with common approach:
+Issues with the common approach:
 
 * **Cannot restore configuration to default.** The only way to revert to default settings is to reinstall the operating system.
 * **Single configuration state, no profiles or snapshots.** The system has only one current configuration. Once you modify config files or install packages, the previous state is lost. You cannot easily switch between setups, save working versions, or roll back after breaking something.
