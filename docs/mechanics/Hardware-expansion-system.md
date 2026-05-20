@@ -36,7 +36,7 @@ Examples of M.2 modules can be found on the [M.2 modules](../hardware/M2-Modules
 
 ***
 
-## Antenna rail
+### Antenna rail
 
 At the top of the rear side of Flipper One, above the back plate, there is an antenna rail — a separate part designed to hold up to four SMA antennas connected to an M.2 module. It is intentionally separated from the back plate, allowing antennas to be installed into the antenna rail and cables to be routed before attaching the rail to the device. This design helps prevent antenna cable damage during assembly.
 
