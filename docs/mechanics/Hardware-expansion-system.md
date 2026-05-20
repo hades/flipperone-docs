@@ -34,7 +34,9 @@ M.2 port pinout and a list of supported interfaces are available on the [M.2 por
 Examples of M.2 modules can be found on the [M.2 modules](../hardware/M2-Modules.md) page.
 :::
 
-**Antenna rail**
+***
+
+## Antenna rail
 
 At the top of the rear side of Flipper One, above the back plate, there is an antenna rail — a separate part designed to hold up to four SMA antennas connected to an M.2 module. It is intentionally separated from the back plate, allowing antennas to be installed into the antenna rail and cables to be routed before attaching the rail to the device. This design helps prevent antenna cable damage during assembly.
 
@@ -52,13 +54,17 @@ GPIO port pinout and a list of supported interfaces are available on the [GPIO p
 Examples of GPIO modules can be found on the [GPIO modules](../hardware/GPIO-Modules.md) page.
 :::
 
-**GPIO module screw mounting**
+***
+
+### GPIO module screw mounting
 
 The back plate and antenna rail include six threaded nuts for mounting GPIO modules. The threads are M2, with a maximum screw insertion depth of 3 mm. All threaded nuts are arranged on a 2.54 mm grid, aligned with the GPIO connector pin layout. This makes it possible to build a simple GPIO module from perfboard by cutting it to size and drilling out the existing holes to 2 mm in diameter for mounting to the Flipper One enclosure.
 
 ![](/files/pics/flipper-one-gpio-module-screw-mount.png)
 
-**Snap-fit mounting for module cover**
+***
+
+### Snap-fit mounting for module cover
 
 On the Flipper One enclosure, there are two snap-fit notches located on the top and bottom, designed to secure a GPIO module cover to the device body.
 
