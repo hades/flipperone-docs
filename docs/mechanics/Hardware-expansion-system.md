@@ -22,7 +22,7 @@ The M.2 expansion module (SSDs, cellular or satellite modems, SDR radios, and mo
 
 ![](/files/pics/m2-expansion-port.png)
 
-Flipper One supports M.2 modules with top-side component placement (S3 type, with component height up to 1.5 mm above the PCB). The following module form factors are supported:
+Flipper One supports M.2 modules with top-side component placement (S3 type, with component height up to 1.5 mm above the module PCB). The following module form factors are supported:
 
 * **2242:** 22 mm wide, 42 mm long
 * **3042:** 30 mm wide, 42 mm long
