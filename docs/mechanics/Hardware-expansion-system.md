@@ -8,13 +8,9 @@ updatedAt: Tue Apr 28 2026 13:04:15 GMT+0000 (Coordinated Universal Time)
 
 Flipper One features a hardware expansion system with two types of expansion modules:
 
-* **[M.2 module](./#m-2-modules).** A standardized internal expansion module that connects to the device’s M.2 B-key port, providing access to high-speed interfaces, SIM/eSIM connectivity, and several GPIO pins. The module can also expose an external antenna connector through dedicated openings in the device’s chassis.
+* **M.2 module.** A standardized internal expansion module that connects to the device’s M.2 B-key port, providing access to high-speed interfaces, SIM/eSIM connectivity, and several GPIO pins. The module can also expose an external antenna connector through dedicated openings in the device’s chassis.
 
-* **[GPIO module](./#gpio-modules).** A custom external expansion module that connects to the GPIO port on the back of the device, which provides access to a range of low-speed interfaces including USB 2.0, UART, SPI, ADC inputs, and more.
-
-:::hint{type="info"}
-Pinouts of the expansion ports and lists of supported interfaces are available on the [M.2 port](../hardware/M2-port.md) and [GPIO port](../hardware/GPIO-port.md) pages.
-:::
+* **GPIO module.** A custom external expansion module that connects to the GPIO port on the back of the device, which provides access to a range of low-speed interfaces including USB 2.0, UART, SPI, ADC inputs, and more.
 
 We have open-sourced the [3D models of the enclosure parts](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) involved in the hardware expansion system, enabling the community and module manufacturers to design custom enclosure parts.
 
@@ -33,9 +29,9 @@ Flipper One supports M.2 modules with top-side component placement (S3 type, wit
 * **3052:** 30 mm wide, 52 mm long
 
 :::hint{type="info"}
-Pinout of the M.2 port and lists of supported interfaces are available on the [M.2 port](../hardware/M2-port.md) page.
+M.2 port pinout and a list of supported interfaces are available on the [M.2 port](../hardware/M2-port.md) page.
 
-More examples of compatible M.2 modules can be found on the [M.2 modules](../hardware/M2-Modules.md) page.
+Examples of M.2 modules can be found on the [M.2 modules](../hardware/M2-Modules.md) page.
 :::
 
 **Antenna rail**
@@ -51,7 +47,7 @@ At the top of the rear side of Flipper One, above the back plate, there is an an
 The GPIO module connects to the GPIO port on the back of the device. 
 
 :::hint{type="info"}
-Pinout of the GPIO port and lists of supported interfaces are available on the [GPIO port](../hardware/GPIO-port.md) page.
+GPIO port pinout and a list of supported interfaces are available on the [GPIO port](../hardware/GPIO-port.md) page.
 
 Examples of GPIO modules can be found on the [GPIO modules](../hardware/GPIO-Modules.md) page.
 :::
