@@ -8,9 +8,9 @@ updatedAt: Tue Apr 28 2026 13:04:15 GMT+0000 (Coordinated Universal Time)
 
 Flipper One features a hardware expansion system with two types of expansion modules:
 
-* **M.2 module.** A standardized internal expansion module that connects to the device’s M.2 B-key port, providing access to high-speed interfaces, SIM/eSIM connectivity, and several GPIO pins. The module can also expose an external antenna connector through dedicated openings in the device’s chassis.
+* **M.2 module** — a standardized internal expansion module that connects to the device’s M.2 B-key port, providing access to high-speed interfaces, SIM/eSIM connectivity, and several GPIO pins. The module can also expose an external antenna connector through dedicated openings in the device’s antenna rail.
 
-* **GPIO module.** A custom external expansion module that connects to the GPIO port on the back of the device, which provides access to a range of low-speed interfaces including USB 2.0, UART, SPI, ADC inputs, and more.
+* **GPIO module** — a custom external expansion module that connects to the GPIO port on the back of the device, which provides access to a range of low-speed interfaces including USB 2.0, UART, SPI, ADC inputs, and more.
 
 We have open-sourced the [3D models of the enclosure parts](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) involved in the hardware expansion system, enabling the community and module manufacturers to design custom enclosure parts.
 
