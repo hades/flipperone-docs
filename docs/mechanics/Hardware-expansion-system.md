@@ -56,7 +56,7 @@ Examples of GPIO modules can be found on the [GPIO modules](../hardware/GPIO-Mod
 
 ***
 
-### GPIO module screw mounting
+### Module screw mounting
 
 The back plate and antenna rail include six threaded nuts for mounting GPIO modules. The threads are M2, with a maximum screw insertion depth of 3 mm. All threaded nuts are arranged on a 2.54 mm grid, aligned with the GPIO connector pin layout. This makes it possible to build a simple GPIO module from perfboard by cutting it to size and drilling out the existing holes to 2 mm in diameter for mounting to the Flipper One enclosure.
 
