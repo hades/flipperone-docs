@@ -1,18 +1,18 @@
 ---
-title: Hardware expansion system
-slug: mechanics/hardware-expansion-system
+title: Module mounting system
+slug: mechanics/module-mounting-system
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:04:15 GMT+0000 (Coordinated Universal Time)
 ---
 
-Flipper One features a hardware expansion system with two types of expansion modules:
+Flipper One features a module mounting system with two types of modules:
 
 * **M.2 module** — a standardized internal expansion module that connects to the device’s M.2 B-key port, providing access to high-speed interfaces, SIM/eSIM connectivity, and several GPIO pins. The module can also expose an external antenna connector through dedicated openings in the device’s antenna rail.
 
 * **GPIO module** — a custom external expansion module that connects to the GPIO port on the back of the device, which provides access to a range of low-speed interfaces including USB 2.0, UART, SPI, ADC inputs, and more.
 
-We have open-sourced the [3D models of the enclosure parts](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) involved in the hardware expansion system, enabling the community and module manufacturers to design custom enclosure parts.
+We have open-sourced the [3D models of the enclosure parts](https://cad.onshape.com/documents/32ee3b79861e4ff5fe28ee3b/w/8eca0dcb9e92b0271d434028/e/adb36e3c67cc1a734691cf20) involved in the module mounting system, enabling the community and module manufacturers to design custom enclosure parts.
 
 ***
 
@@ -20,7 +20,7 @@ We have open-sourced the [3D models of the enclosure parts](https://cad.onshape.
 
 The M.2 expansion module (SSDs, cellular or satellite modems, SDR radios, and more) can be installed inside the device via the internal M.2 port. To access the port, the back plate must be removed by unscrewing its mounting screws. The module is then secured to one of the two threaded standoffs on the device’s main board, depending on the module’s length.
 
-![](/files/pics/m2-expansion-port.png)
+![M.2 module inside Flipper One](/files/pics/m2-expansion-port.png "M.2 module inside Flipper One")
 
 Flipper One supports M.2 modules with top-side component placement (S3 type, with component height up to 1.5 mm above the module PCB). The following module form factors are supported:
 
@@ -40,7 +40,7 @@ Examples of M.2 modules can be found on the [M.2 modules](../hardware/M2-Modules
 
 At the top of the rear side of Flipper One, above the back plate, there is an antenna rail — a separate part designed to hold up to four SMA antennas connected to an M.2 module. It is intentionally separated from the back plate, allowing antennas to be installed into the antenna rail and cables to be routed before attaching the rail to the device. This design helps prevent antenna cable damage during assembly.
 
-![](/files/pics/flipper-one-antenna-rail-with-sma-pigtails.png)
+![Antenna rail with 4 SMA pigtails on the back of Flipper One](/files/pics/flipper-one-antenna-rail-with-sma-pigtails.png "Antenna rail with 4 SMA pigtails on the back of Flipper One")
 
 ***
 
@@ -60,7 +60,7 @@ Examples of GPIO modules can be found on the [GPIO modules](../hardware/GPIO-Mod
 
 The back plate and antenna rail include six threaded nuts for mounting GPIO modules. The threads are M2, with a maximum screw insertion depth of 3 mm. All threaded nuts are arranged on a 2.54 mm grid, aligned with the GPIO connector pin layout. This makes it possible to build a simple GPIO module from perfboard by cutting it to size and drilling out the existing holes to 2 mm in diameter for mounting to the Flipper One enclosure.
 
-![](/files/pics/flipper-one-gpio-module-screw-mount.png)
+![Threaded nuts for mounting GPIO modules on the back of Flipper One](/files/pics/flipper-one-gpio-module-screw-mount.png "Threaded nuts for mounting GPIO modules on the back of Flipper One")
 
 ***
 
@@ -68,4 +68,4 @@ The back plate and antenna rail include six threaded nuts for mounting GPIO modu
 
 On the Flipper One enclosure, there are two snap-fit notches located on the top and bottom, designed to secure a GPIO module cover to the device body.
 
-![](/files/pics/flipper-one-gpio-module-cover-mount.png)
+![Attaching the GPIO module cover to Flipper One using Snap-Fit mounts](/files/pics/flipper-one-gpio-module-cover-mount.png "Attaching the GPIO module cover to Flipper One using Snap-Fit mounts")
