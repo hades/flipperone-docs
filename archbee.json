@@ -137,9 +137,9 @@
             "children": []
           },
           {
-            "categoryName": "Hardware expansion system",
+            "categoryName": "Module mounting system",
             "isCategory": false,
-            "path": "mechanics/Hardware-expansion-system.md",
+            "path": "mechanics/Module-mounting-system.md",
             "children": []
           }
         ]
