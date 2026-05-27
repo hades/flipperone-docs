@@ -6,42 +6,28 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:41:00 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page explains the structure of the Testing sub-project, links to the public test scripts, and describes how testing notes in this section should be used.
+This page explains the structure of the Testing sub-project, links to the public task tracker and test scripts, and describes how testing notes in this section should be used.
 
 The Testing sub-project covers checks for RK3576-based boards used in Flipper One development. Its goal is to turn each device feature into a repeatable test with a clear result. Testing currently prioritizes hardware verification, but test notes and assets can also cover user-interface or sound checks when those areas need repeatable pass/fail criteria.
 
 The Testing sub-project consists of:
 
-- 📁 [Testing scripts](https://github.com/flipperdevices/flipperone-testing)
 - ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/14)
-- 📚 Testing docs, listed below
+- 📚 Descriptions for manual tests
+- 📁 [Scripts for automated tests](https://github.com/flipperdevices/flipperone-testing)
+- 🤝 How to contribute
 
 ***
 
-## 📁 Testing scripts
+## Task tracker
 
-The public [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) repository contains scripts and test assets for RK3576-based boards. It includes a shared test runner, module directories for major subsystems, and a `results/` directory layout for generated reports.
-
-The implemented test area is:
-
-- temperature monitoring
-
-Planned areas include:
-
-- Power consumption monitoring
-- CPU stress tests and benchmarks
-- GPU performance tests
-- Network throughput tests
-- Disk I/O benchmarks
-- NPU performance tests
-
-The repository also contains sound and UI test assets. Some modules are still placeholders, so treat it as work in progress.
+The public [Testing project board](https://github.com/orgs/flipperdevices/projects/14) tracks open work for the Testing sub-project. Use it to find tasks, share progress, and see which areas already need help.
 
 ***
 
-## 📚 Testing docs
+## Descriptions for manual tests
 
-The Testing section describes what should be checked for each subsystem. These pages are meant to complement the scripts: the docs explain the test goal, setup, expected result, and known gaps, while the repository contains runnable scripts or assets when they are available.
+The Testing docs explain what should be checked for each subsystem. These pages are meant to complement the scripts: the docs describe the test goal, setup, expected result, and known gaps, while the repository contains runnable scripts or assets when they are available.
 
 Docs in this section follow the same order as the navigation:
 
@@ -53,9 +39,7 @@ Docs in this section follow the same order as the navigation:
 - [Expansion modules (M.2)](M_2.md) - M.2 expansion-module test notes.
   - [Cellular Modems](Cellular-Modems.md) - cellular modem tests for M.2 modules.
 
-***
-
-## Hardware verification
+### Hardware verification
 
 At this stage, testing is mainly used to verify whether each hardware component performs its intended function. A good test should answer a narrow question, for example:
 
@@ -66,39 +50,36 @@ At this stage, testing is mainly used to verify whether each hardware component 
 
 Each test should end with a clear **YES/NO** or pass/fail result. When a result is not clear, document the exact observation and mark the open question instead of hiding it behind a vague pass.
 
+### Test bench
+
+TODO: Describe publicly available test setup.
+
 ***
 
-## Testbench
+## Scripts for automated tests
 
-A testing note should include enough context for another contributor to repeat the check. When possible, record:
+The public [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) repository contains scripts and test assets for RK3576-based boards. It includes a shared test runner, module directories for major subsystems, and a `results/` directory layout for generated reports.
 
-- board or device revision
-- OS image or firmware build
-- boot target
-- connected modules, cables, monitors, and peripherals
-- command or script used to run the test
-- expected result
-- actual result
-- logs, screenshots, or generated reports
-
-For script-based tests, use the [`flipperone-testing`](https://github.com/flipperdevices/flipperone-testing) repository as the public source for commands and report formats. For manual tests, keep the steps short and write down the exact condition that makes the test pass or fail.
+To avoid duplicating a fast-changing list of implemented tests here, use the repository README as the current index of available automated checks, supported modules, and report formats.
 
 ***
 
 ## How to contribute
 
-Testing contributions can be made through documentation updates, issue comments, or pull requests to the testing scripts repository.
+The Testing sub-project accepts contributions in three forms: **comments on open tasks** for ideas and improvements, **issues** for bugs or proposals that need their own thread, and **pull requests** for either testing-script changes or docs updates.
 
 :::hint{type="info"}
 Before opening a docs pull request, read [How to contribute to documentation](/resources/about-docs#how-to-contribute).
 :::
 
-Good contributions include:
+### Comment on an open task
 
-- adding missing setup details to a Testing docs page
-- turning a manual checklist into a repeatable script
-- attaching logs or reports from a supported RK3576-based board
-- documenting a failed test with the exact image, command, hardware setup, and output
-- improving a script without changing the result format unnecessarily
+If you have an idea on how to improve a test, add missing setup details, or clarify expected results, comment on a relevant task in the [Testing project board](https://github.com/orgs/flipperdevices/projects/14).
+
+### Open a new issue
+
+If you find a bug in the testing scripts or a gap that does not already have a task, search the [flipperone-testing issues](https://github.com/flipperdevices/flipperone-testing/issues) first, then open a new issue with enough detail to reproduce the problem or understand the proposal.
+
+### Contribute to flipperone-testing via a pull request
 
 For runnable tests, fork [flipperone-testing](https://github.com/flipperdevices/flipperone-testing), make the script change there, and include the command and result files in the pull request description. For docs-only changes, follow the guide: [How to contribute to documentation](/resources/about-docs#how-to-contribute).
