@@ -3,7 +3,7 @@ title: Tech specs
 slug: general/tech-specs
 docTags: 
 createdAt: Wed Apr 22 2026 13:04:54 GMT+0000 (Coordinated Universal Time)
-updatedAt: Wed Apr 22 2026 13:16:25 GMT+0000 (Coordinated Universal Time)
+updatedAt: Wed Apr 27 2026 10:51:01 GMT+0000 (Coordinated Universal Time)
 ---
 
 This page describes the full technical specifications of the Flipper One. Since the device is under active development, specifications may change.
@@ -158,9 +158,9 @@ The M.2 expansion port is at the back of the device, under the Back Plate.
 ![Flipper One M.2 expansion port](/files/pics/m2-expansion-port.png)
 
 - **M.2 type:** Key B
-- **Supported sizes:** 2242, 3042, 3052 mm
-- **Supported thickness:** up to D3 (double-sided modules)
-- **Interfaces:** PCIe 2.1 ×1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card
+- **Supported sizes:** 2230 (via extender), 2242, 3042, 3052
+- **Supported thickness:** up to S3 (single-sided modules)
+- **Interfaces:** PCIe 2.1 x1 / USB 2.0 / USB 3.1 / SATA3 / Serial Audio / UART / I2C / SIM card
 
 ### M.2 port pinout
 

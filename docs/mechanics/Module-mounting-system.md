@@ -3,7 +3,7 @@ title: Module mounting system
 slug: mechanics/module-mounting-system
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
-updatedAt: Tue Apr 28 2026 13:04:15 GMT+0000 (Coordinated Universal Time)
+updatedAt: Wed Apr 27 2026 10:51:01 GMT+0000 (Coordinated Universal Time)
 ---
 
 Flipper One features a module mounting system with two types of modules:
@@ -24,6 +24,7 @@ The M.2 expansion module (SSDs, cellular or satellite modems, SDR radios, and mo
 
 Flipper One supports M.2 modules with top-side component placement (S3 type, with component height up to 1.5 mm above the module PCB). The following module form factors are supported:
 
+* **2230:** 22 mm wide, 30 mm long (via extender)
 * **2242:** 22 mm wide, 42 mm long
 * **3042:** 30 mm wide, 42 mm long
 * **3052:** 30 mm wide, 52 mm long
