@@ -1,5 +1,8 @@
 {
+  "name": "Flipper One Documentation",
   "root": "./docs",
+  "publishSpace": true,
+  "docsPath": "docs/",
   "structure": {
     "readme": "Welcome.md",
     "summary": "Summary.md",
@@ -138,42 +141,6 @@
             "isCategory": false,
             "path": "mechanics/Module-mounting-system.md",
             "children": []
-          },
-        ]
-      },
-      {
-        "categoryName": "🕹️ MCU Firmware",
-        "isCategory": true,
-        "children": [
-          {
-            "categoryName": "About MCU Firmware",
-            "isCategory": false,
-            "path": "mcu-firmware/About-MCU-Firmware.md",
-            "children": []
-          },
-          {
-            "categoryName": "Firmware architecture",
-            "isCategory": false,
-            "path": "mcu-firmware/Architecture.md",
-            "children": []
-          },
-          {
-            "categoryName": "MCU↔CPU interface",
-            "isCategory": false,
-            "path": "mcu-firmware/MCU-CPU-interconnect.md",
-            "children": []
-          },
-          {
-            "categoryName": "How to build firmware",
-            "isCategory": false,
-            "path": "mcu-firmware/How-to-build-firmware.md",
-            "children": []
-          },
-          {
-            "categoryName": "Firmware update",
-            "isCategory": false,
-            "path": "mcu-firmware/Firmware-update.md",
-            "children": []
           }
         ]
       },
@@ -227,6 +194,42 @@
             "categoryName": "Supported boards",
             "isCategory": false,
             "path": "cpu-software/Supported-boards.md",
+            "children": []
+          }
+        ]
+      },
+      {
+        "categoryName": "🕹️ MCU Firmware",
+        "isCategory": true,
+        "children": [
+          {
+            "categoryName": "About MCU Firmware",
+            "isCategory": false,
+            "path": "mcu-firmware/About-MCU-Firmware.md",
+            "children": []
+          },
+          {
+            "categoryName": "Firmware architecture",
+            "isCategory": false,
+            "path": "mcu-firmware/Architecture.md",
+            "children": []
+          },
+          {
+            "categoryName": "MCU↔CPU interface",
+            "isCategory": false,
+            "path": "mcu-firmware/MCU-CPU-interconnect.md",
+            "children": []
+          },
+          {
+            "categoryName": "How to build firmware",
+            "isCategory": false,
+            "path": "mcu-firmware/How-to-build-firmware.md",
+            "children": []
+          },
+          {
+            "categoryName": "Firmware update",
+            "isCategory": false,
+            "path": "mcu-firmware/Firmware-update.md",
             "children": []
           }
         ]
@@ -351,7 +354,5 @@
         ]
       }
     ]
-  },
-  "publishSpace": true,
-  "docsPath": "docs/"
+  }
 }

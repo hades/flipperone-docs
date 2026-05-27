@@ -6,67 +6,75 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:17:42 GMT+0000 (Coordinated Universal Time)
 ---
 
-We are building a fully open and user-friendly Linux distribution for Flipper One, based on the latest mainline kernel, featuring atomic updates and OS profiles (overlays), as well as Flipper One's advanced features. We call it **Flipper OS**.
-
-While Flipper OS is still under active development, we are validating Flipper One hardware on Debian OS builds with temporary patches. You can also try running these builds on a compatible RK3576-based board, or contribute by testing OS builds or developing code. A Flipper One is not required — the OS runs on various affordable single-board computers (SBCs). Learn more on the [How to install a Linux image](How-to-install-linux-image.md) page.
-
-This page provides an overview of the key features of the future operating system.
+**Flipper OS** is a Linux-based operating system we are developing for the Flipper One. This page outlines the core concept behind Flipper OS and explains how we aim to solve common challenges users face when using a Linux computer as an all-in-one multitool.
 
 ***
 
-## Open Linux distribution
+## Common approach issues
 
-Our goal is to build a fully open Linux distribution for the Flipper One, based on the latest mainline kernel and containing zero proprietary blobs. Achieving this on a modern SoC (System-On-Chip) is extremely challenging, as chip vendors in the consumer segment typically keep the source code for early boot stages and hardware drivers closed. Nevertheless, our current RK3576 mainline Linux build supports a wide range of features.
+When you try to use any Linux-based SBC as a universal “on-the-go” tool and keep changing its purpose over time, for example using it as a media server, a Wi-Fi router, or a desktop, **you eventually end up with a messy system**. You install so many packages and modify so many system configuration files that, at some point, reconfiguring the system becomes harder than reinstalling the OS and rebuilding the entire setup from scratch.
 
-![Current status of Linux distribution and our goal](/files/pics/flipper-os-current-status-and-our-goal.png "Current status of Linux distribution and our goal")
+One workaround is to use separate SD cards for different preconfigured setups, but this is inconvenient and does not scale well.
 
-While achieving 100% code openness is not possible (for example, due to the immutable boot ROM embedded in the SoC), we will continue working with the community toward this goal.
+![A typical scenario with the common approach](/files/pics/linux-os-classic-problem.png "A typical scenario with the common approach")
 
-***
+Issues with the common approach:
 
-## OS profiles
-
-Operating system profiles let you load a preconfigured environment by selecting one during the device’s early boot stage without connecting an external monitor and keyboard. The menu also lets you clone profiles and restore them to their original preconfigured state.
-
-![Flipper OS profiles menu](/files/pics/flipper-os-profiles-menu.jpg "Flipper OS profiles menu")
-
-A list of built-in OS profiles:
-
-- **Router Profile.** A system preconfigured to work with two wired ISPs, a Wi-Fi client + AP, and a 5G modem. It can share internet via a Wi-Fi hotspot, connect securely to a home NAS, and be controlled with a low-power display and physical buttons.
-- **TV Media Box.** A system with a media player, DLNA server, automatic content metadata fetching, arcade game emulation, and support for popular game controllers.
-- **Desktop Computer.** A full desktop environment based on Wayland, with support for 4K @ 120 Hz and hardware-accelerated 2D/3D graphics.
-- **Minimal Profile.** A lightweight system without a GUI, containing only a basic set of packages for maximum performance and efficiency.
-- **Network Multitool Profile.** A system with quick access to network diagnostics and traffic analysis tools such as `nmap`, `tcpdump`, `tshark`, `iperf`, `netcat`, and more.
-
-And of course, you can create your own custom profiles for any use case.
+* **Cannot restore configuration to default.** The only way to revert to default settings is to reinstall the operating system.
+* **Single configuration state, no profiles or snapshots.** The system has only one current configuration. Once you modify config files or install packages, the previous state is lost. You cannot easily switch between setups, save working versions, or roll back after breaking something.
+* **Easy to break the system.** Small changes, incorrect packages, or edits to config files can easily make the system unstable or cause it to stop working correctly.
+* **No atomic updates.** If an update fails midway, the system can end up in a partially updated or broken state. Updates may also conflict with modified system config files, and newer packages can conflict with your customized environment.
 
 ***
 
-## A/B atomic updates
+## Flipper OS architecture
 
-In most Linux distributions, the update system is not fully reliable. If an error occurs during an update, the operating system can end up in an inconsistent state, where some files are updated and others are not.
+In Flipper OS, the concept of operating system profiles is introduced, which are architecturally separated from the base system.
 
-![FlipCTL GUI demo](/files/pics/flipper-os-ab-updating.jpg "A/B update flow diagram")
+Thus, the operating system consists of two distinct parts:
 
-In Flipper OS, updates are atomic. If an error occurs during installation, the system automatically rolls back to the previous working version.
+1. **Flipper OS base system** — a clean, unmodified Debian-based system. It consists of `Linux kernel`, `RootFS`, and `MCU firmware`. The base system is distributed through official updates. This part of the operating system remains unchanged during user customization and configuration.
+
+2. **OS profiles** — an overlay on top of the base system that contains all user customizations, including installed packages, containers, and modifications to the RootFS including config files edits. By applying an OS profile to the Flipper OS base system, you get a fully configured system tailored for a specific use case.
+
+**Official built-in OS profiles** are distributed as part of the operating system, for example: `Minimal system`, `Wi-Fi router`, `TV media box`, `Network sniffer`, and `Desktop computer`.
+
+**User OS profiles** contain user-modified packages and RootFS changes. Users configure the system in the usual way by editing configs and installing packages using package manager. The process remains fully transparent to the user, while all changes are automatically stored inside the active profile. In addition to OS profiles, users can separately store personal files such as media files, documents, and other data not related to the operating system.
+
+User OS profiles can be stored on removable media, allowing users to select and boot a profile from the boot menu, for example from an SD card.
+
+![Flipper OS architecture](/files/pics/flipper-os-architecture.png "Flipper OS architecture")
 
 ***
 
-## FlipCTL
+## OS profile selection at boot
 
-FlipCTL is a lightweight GUI framework for embedded and headless Linux systems, designed as a modern replacement for traditional HMI solutions. Originally built for Flipper One, it runs on any Linux system — from servers and routers to single-board computers — with no desktop environment required.
+An operating system profile can be selected directly from the boot menu without connecting an external monitor or keyboard. The menu also allows users to clone profiles and restore them to their original preconfigured state.
 
-![FlipCTL GUI demo](/files/pics/flipctl-nmap-wrapper.jpg "FlipCTL GUI demo (nmap wrapper)")
+![Boot menu with OS profile selection](/files/pics/flipper-os-switching-os-profile-on-boot.png "Boot menu with OS profile selection")
 
-The core idea: instead of running a desktop GUI (GNOME, KDE) on a tiny screen, FlipCTL provides a pixel-rendered, navigation-friendly interface. Learn more about FlipCTL on a [dedicated page](FlipCTL.md).
+Official built-in OS profiles cannot be deleted, but they can be cloned and used as a base for creating user profiles. At any time, a profile can be quickly reset to the default state of the original official built-in OS profile.
 
 ***
 
-## Support for Flipper One features
+## Managing OS profiles on running system
 
-Flipper OS supports several Flipper One hardware features that are rarely found on typical Linux PCs:
+On a running system, the user can:
 
-- **Built-in display, buttons, and touchpad.** Flipper OS can use the built-in display as a small monitor, handle button events for UI navigation, and use the touchpad for cursor control and text input via an on-screen keyboard. Wrappers for common Linux tools provide a UI optimized for the built-in display.
-- **Advanced power monitoring.** Flipper One includes a battery gauge for measuring charge and discharge currents, multiple current and voltage sensors, and temperature sensors. All these parameters are available within Flipper OS.
-- **Expansion module interface access.** From Linux user space, you can control GPIO pins and low-speed interfaces such as UART, SPI, I²C, CAN, and S/PDIF. Two pins can also be used as ADC inputs, PWM outputs, or PIO (Programmable Input/Output).
-- **Built-in microphone and speaker.** Audio input and output are available in the operating system. A 3.5mm jack supports automatic switching and a headset button.
+- View the current OS profile info, including the profile name, size, creation date, modification date, and other details.
+- Clone the built-in OS profile or rename the user OS profile.
+- Delete the user OS profile or reset a built-in OS profile to its default state.
+
+![Managing OS profiles on running system UI](/files/pics/flipper-os-managing-os-profile-on-running-system.png "Managing OS profiles on running system UI")
+
+***
+
+## System update
+
+Flipper OS includes an update agent that notifies the user about available system updates from any active OS profile. Both the base system and the official built-in profiles are updated.
+
+![System update UI](/files/pics/flipper-os-system-update.png "System update UI")
+
+We are currently exploring mechanisms for reliable atomic updates of both the operating system and OS profiles. We invite the community to help develop the best solutions.
+
+***

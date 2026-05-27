@@ -59,8 +59,7 @@ This page describes the controls of Flipper One — the buttons, touchpad, and D
       <p><img src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/rDgkRg_dF9IFOgihFVzjh-20260122-124532.svg" alt=""></p>
     </td>
     <td align="left" colSpan="1" rowSpan="1">
-      <p>Adaptive App-Defined Button. Current action is context dependent and displayed on screen above the button.
-      </p>
+      <p>Adaptive App-Defined Button. Current action is context dependent and displayed on screen above the button.</p>
       <p><strong>Recommended UI actions:</strong> more, edit, extra, config, rename.</p>
       <p>‎</p>
     </td>
@@ -169,7 +168,7 @@ Some buttons and their combinations have hardware-defined behavior that does not
       (Hardware Reboot)</strong></p>
     </td>
     <td align="left">
-      <p>Hold <code>Power</code> button for 10 seconds to complety power cycle device. It will quicly turn off and on battery.</p>
+      <p>Hold <code>Power</code> button for 10 seconds to completely power cycle device. It will quickly turn off and on battery.</p>
       <p>What will happen when USB charger connected?</p>
       <p>‎</p>
     </td>

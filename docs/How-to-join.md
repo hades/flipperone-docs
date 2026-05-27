@@ -22,17 +22,19 @@ Flipper One is currently in active development. As a community-driven project, w
 
 Flipper One is a large and complex project, divided into several sub-projects. Each sub-project is managed by a dedicated Flipper team, with its own structure, rules, and workflows. This Developer Portal acts as a wiki and the main entry point into all sub-projects, hosting their documentation and contribution guides.
 
+‎ 
+
 **Currently, we have the following sub-projects:**
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[Hardware]{href="./hardware/About-Hardware.md" newTab="true" hasDisabledNofollow="true"}
+### [Hardware](./hardware/About-Hardware.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/9plDPlgbxscoFIacbj8Q9-20260331-093234.png" size="38" width="333" height="243" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Electrical hardware development. This is where the printed circuit boards (PCBs), antennas, and everything related to the electrical connections of chips, connectors, and processors are designed. The Hardware team works closely with the Mechanics team to ensure the electronics are compatible with the enclosure. :Link[**Learn more →**]{href="./hardware/About-Hardware.md" newTab="true" hasDisabledNofollow="false"}
+Electrical hardware development. This is where the printed circuit boards (PCBs), antennas, and everything related to the electrical connections of chips, connectors, and processors are designed. The Hardware team works closely with the Mechanics team to ensure the electronics are compatible with the enclosure. [**Learn more →**](./hardware/About-Hardware.md)
 :::
 ::::
 
@@ -40,13 +42,13 @@ Electrical hardware development. This is where the printed circuit boards (PCBs)
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[Mechanics]{href="./mechanics/About-Mechanics.md" newTab="true" hasDisabledNofollow="false"}
+### [Mechanics](./mechanics/About-Mechanics.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/C5VLSGhfaLWBS5E3VIMF8-20260331-093258.png" size="50" width="357" height="333" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Mechanical and industrial design. This is where the enclosure, buttons, plastic and metal parts, and mounting components are designed. Everything the user physically interacts with. Many mechanical tasks are tightly coupled with the Hardware team. :Link[**Learn more →**]{href="./mechanics/About-Mechanics.md" newTab="true" hasDisabledNofollow="false"}
+Mechanical and industrial design. This is where the enclosure, buttons, plastic and metal parts, and mounting components are designed. Everything the user physically interacts with. Many mechanical tasks are tightly coupled with the Hardware team. [**Learn more →**](./mechanics/About-Mechanics.md)
 :::
 ::::
 
@@ -54,13 +56,13 @@ Mechanical and industrial design. This is where the enclosure, buttons, plastic 
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[Linux (CPU Software)]{href="./cpu-software/About-CPU-Software.md" newTab="true" hasDisabledNofollow="false"}
+### [Linux (CPU Software)](./cpu-software/About-CPU-Software.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/ELzD0IezeYIDXuYC1yP2a-20260331-093341.png" size="34" width="267" height="318" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This is the largest and most complex sub-project, spanning many repositories. It contains the core software that users will interact with directly. :Link[**Learn more →**]{href="./cpu-software/About-CPU-Software.md" newTab="true" hasDisabledNofollow="false"}
+Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This is the largest and most complex sub-project, spanning many repositories. It contains the core software that users will interact with directly. [**Learn more →**](./cpu-software/About-CPU-Software.md)
 :::
 ::::
 
@@ -68,13 +70,13 @@ Linux kernel, modules, drivers, userspace, bootloader, Rockchip tools, etc. This
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[MCU Firmware]{href="./mcu-firmware/About-MCU-Firmware.md" newTab="true" hasDisabledNofollow="false"}
+### [MCU Firmware](./mcu-firmware/About-MCU-Firmware.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/On5sGCZ3-QWo2sYbRVTam-20260331-093415.png" size="38" width="309" height="306" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touchpad, and power subsystem, as well as co-processor communication between the MCU and CPU. :Link[**Learn more →**]{href="./mcu-firmware/About-MCU-Firmware.md" newTab="true" hasDisabledNofollow="false"}
+Firmware for the RP2350 microcontroller (MCU), which controls the display, power subsystem, and CPU boot process, and handles button and touchpad events. [**Learn more →**](./mcu-firmware/About-MCU-Firmware.md)
 :::
 ::::
 
@@ -82,13 +84,13 @@ Firmware for the RP2350 microcontroller. The MCU controls buttons, display, touc
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[User Interface]{href="./user-interface/About-User-Interface.md" newTab="true" hasDisabledNofollow="false"}
+### [User Interface](./user-interface/About-User-Interface.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/CzLfRFqDmQf-g_0Mu_WA--20260331-093442.png" size="36" width="282" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-UI/UX development. This is where the user interface, visual communication of the device, all graphics, and visual design are developed. :Link[**Learn more →**]{href="./user-interface/About-User-Interface.md" newTab="true" hasDisabledNofollow="false"}
+UI/UX development. This is where the user interface, visual communication of the device, all graphics, and visual design are developed. [**Learn more →**](./user-interface/About-User-Interface.md)
 :::
 ::::
 
@@ -96,13 +98,13 @@ UI/UX development. This is where the user interface, visual communication of the
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[Docs]{href="./resources/About-Docs.md" newTab="true" hasDisabledNofollow="false"}
+### [Docs](./resources/About-Docs.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/RfUa81BVRdDm1qKCoXnrd-20260331-093508.png" size="36" width="273" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contribution guides. :Link[**Learn more →**]{href="./resources/About-Docs.md" newTab="true" hasDisabledNofollow="false"}
+Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contribution guides. [**Learn more →**](./resources/About-Docs.md)
 :::
 ::::
 
@@ -110,13 +112,13 @@ Developer portal wiki, technical docs, guides, and datasheets. All documentation
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### :Link[Testing]{href="./testing/About-Testing.md" newTab="true" hasDisabledNofollow="false"}
+### [Testing](./testing/About-Testing.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/M8o8dC4criD5llKbqSJB6-20260331-093535.png" size="36" width="282" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes, demos, and sample audio and video files. :Link[**Learn more**]{href="./testing/About-Testing.md" newTab="true" hasDisabledNofollow="false"}**&#x20;→**
+Tools for testing device subsystems and hardware validation. Includes various scripts and programs for testing power, networking, CPU, audio, graphics, etc. Also includes interface prototypes, demos, and sample audio and video files. [**Learn more →**](./testing/About-Testing.md)
 :::
 ::::
 
@@ -149,30 +151,34 @@ For those who want to explore further, some sub-projects provide more in-depth m
 :::hint{type="info"}
 **You can contribute to the documentation**
 
-This wiki is a sub-project of its own, and anyone can contribute by editing :Link[its source files on GitHub]{href="https://github.com/flipperdevices/flipperone-docs" newTab="true" hasDisabledNofollow="false"}. Learn more in the :Link[Docs sub-project]{href="./resources/About-Docs.md" newTab="true" hasDisabledNofollow="true"}.
+This wiki is a sub-project of its own, and anyone can contribute by editing [its source files on GitHub](https://github.com/flipperdevices/flipperone-docs). Learn more in the [Docs sub-project](./resources/About-Docs.md).
 :::
 
 ***
 
 ## ✅ Task tracker
 
-Tasks for each sub-project are managed in a task tracker — a Kanban board on GitHub. Each task on the board is a GitHub issue from the sub-project repository. You can view :Link[all task trackers on GitHub]{href="https://github.com/orgs/flipperdevices/projects" newTab="true" hasDisabledNofollow="false"}.
+Tasks for each sub-project are managed in a task tracker — a Kanban board on GitHub. Each task on the board is a GitHub issue from the sub-project repository. You can view [all task trackers on GitHub](https://github.com/orgs/flipperdevices/projects).
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/mcpZH-vu_oT0W5RG7ft-X-20260410-160905.png "Each Sub-project has its own Kanban board on GitHub")
+![MCU Firmware task tracker](/files/pics/mcu-firmware-task-tracker.png)
+
+‎ 
 
 ### What’s the difference between GitHub issues and task tracker issues?
 
 There’s no difference. The task tracker simply organizes the existing GitHub issues into a Kanban board. It also allows issues from different repositories to be grouped together in one place and managed as a single large task with sub-tasks.
 
-For example, here is a :Link[list of GitHub issues]{href="https://github.com/flipperdevices/flipperone-mcu-firmware/issues" newTab="true" hasDisabledNofollow="false"} from the MCU Firmware sub-project and :Link[how they are organized on the Kanban board]{href="https://github.com/orgs/flipperdevices/projects/8" newTab="true" hasDisabledNofollow="false"}.
+For example, here is a [list of GitHub issues](https://github.com/flipperdevices/flipperone-mcu-firmware/issues) from the MCU Firmware sub-project and [how they are organized on the Kanban board](https://github.com/orgs/flipperdevices/projects/8).
 
 ![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/QoPhF9YoGDfIllcZR8_5p-20260410-161735.jpg "Task tracker is a Kanban-style view of standard GitHub issues")
+
+‎ 
 
 ### Open tasks
 
 Some of our tasks are open. This means the community can interact with them just as they would with any issue in a classic GitHub repository — leaving comments, attaching files, and so on. Each task includes a short title and a detailed description, often with links and screenshots to help you understand it.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/HfxrhnxuYaoQidaQHad-F-20260410-163206.jpg "Example of an open task in MCU Firmware sub-project")
+![Example of an open task in MCU Firmware sub-project](/files/pics/open-task.jpg)
 
 Tasks can be marked with different **labels**:
 
@@ -182,7 +188,7 @@ Tasks can be marked with different **labels**:
 ::::hint{type="info"}
 ### ⚠️ Contributions only — no flooding
 
-To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you’re always welcome to join the conversation on :Link[social media]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"} or :Link[Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}!
+To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you’re always welcome to join the conversation on [social media](https://x.com/Flipper_RND) or [Discord](https://discord.com/invite/flipper)!
 
 :::Paragraph{indent="1"}
 **Bad vs good comments:**
@@ -218,10 +224,10 @@ Find a sub-project that interests you. Explore its documentation in this Develop
 
 Go to the task tracker of the sub-project you’re interested in to explore current tasks. Open Tasks where your help is welcome are labeled **help wanted**. Read through a task and follow the contribution guidelines when submitting your input.
 
-![Open taks](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/ZWucCsRvdOhYn-Og3KwFF-20260410-165617.png "Task where community contribution is welcome are marked help wanted")
+![Open tasks](/files/pics/step-2-check-task-tracker.png)
 
 :::hint{type="info"}
-You can also visit the :Link[🚧 Open tasks]{href="./Open-tasks.md" newTab="true" hasDisabledNofollow="false"} to find tasks that need community help or feedback.
+You can also visit the [🚧 Open tasks](./Open-tasks.md) to find tasks that need community help or feedback.
 :::
 
 ## Step 3. Join discussions in our socials
@@ -230,13 +236,13 @@ Follow us on X and join our Discord server to hang out, ask questions, and conne
 
 ::::LinkArray{contentSource="CUSTOM"}
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/O5IbFQ7KAuHJE_lqbKbNX-20260401-145400.jpg"}
-:Link[X.com/Flipper\_RND]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"}
+[X.com/Flipper\_RND](https://x.com/Flipper_RND)
 
 Follow updates and project announcements on X.com
 :::
 
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/doVC8Airf2_FH2IwVxxAV_monosnap-miro-2023-04-13-19-25-16.png"}
-:Link[Flipper Devices Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}
+[Flipper Devices Discord](https://discord.com/invite/flipper)
 
 Chat with the community and Flipper team on our Discord server
 :::

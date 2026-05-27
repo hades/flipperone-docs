@@ -34,15 +34,29 @@ Whether you're an engineer, developer, designer, programmer, or simply an enthus
 
 ::::LinkArray{contentSource="CUSTOM"}
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/O5IbFQ7KAuHJE_lqbKbNX-20260401-145400.jpg"}
-:Link[X.com/Flipper\_RND]{href="https://x.com/Flipper_RND" newTab="true" hasDisabledNofollow="false"}
+[X.com/Flipper\_RND](https://x.com/Flipper_RND)
 
 Follow updates and project announcements on X.com
 :::
 
 :::LinkArrayItem{headerType="IMAGE" headerImage="https://app.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/doVC8Airf2_FH2IwVxxAV_monosnap-miro-2023-04-13-19-25-16.png"}
-:Link[Flipper Devices Discord]{href="https://discord.com/invite/flipper" newTab="true" hasDisabledNofollow="false"}
+[Flipper Devices Discord](https://discord.com/invite/flipper)
 
 Chat with the community and Flipper team on our Discord server
 :::
 ::::
+
+***
+
+## Subscribe to our weekly digest
+
+Each week, we'll share a quick update on how things are coming along and flag any areas where extra help would be welcome. Read at your own pace — jump in whenever a topic grabs you.
+
+:::hint{type="info"}
+⚠️ **Nerds Warning**: this is a developer-focused, highly technical newsletter.
+:::
+
+:::Iframe{code="<iframe width=&#x22;540&#x22; height=&#x22;750&#x22; src=&#x22;https://183c2432.sibforms.com/serve/MUIFAAgzua23MvPHbQJyGmSkqAwomY_d-OtcEmQJaZ90xXKQQ_70E5jmVi97OFh-kF6NR69IL74D7n6ieCsJTlnda6j8F0RncbcEgx2_tiYW6qISyQvH3voXD4pnmD2QG2zc0xuKFyp23AnaKWSmyfLm2npNnpagS7W1qW4edPKI60csfWz9k6YhaKyavmH0rZOVz6_ZJxmCtrji&#x22; frameborder=&#x22;0&#x22; scrolling=&#x22;auto&#x22; allowfullscreen style=&#x22;display: block;margin-left: auto;margin-right: auto;max-width: 100%;&#x22;></iframe>" iframeHeight="750"}
+
+:::
 

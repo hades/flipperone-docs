@@ -6,86 +6,149 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:36:25 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page explains resources for developing graphic user interfaces for Flipper One:
+This page explains the structure of the User Interface sub-project, provides links to its design resources, and outlines how to contribute to Flipper One's UI development.
 
- ### UI constaints:
-- Pixel perfect UI elements to avoid sub pixels
-- 256x144 px screen resolution
-- 64 color shades of black
-- Orange LCD backlight
+![About User Interface](/files/pics/about-ui-main-image.jpg)
+
+The User Interface sub-project covers the visual and interaction design of Flipper One: the on-screen UI, graphic elements, icons, illustrations, and the design assets used to build them.
 
 The User Interface sub-project consists of:
-- [Flipper One UI asset library](https://www.figma.com/design/U4k0qHkl9JdCu17MEtLFdI/Flipper-One-UI-Assets-library?node-id=0-1&t=zfmlKGksE4iBQ57H-1)
-- [Flipper One UI — Main board](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1)
-- [Task tracker](https://github.com/orgs/flipperdevices/projects/12)
+
+- ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/12)
+- 🎨 [Asset library on Figma](https://www.figma.com/design/U4k0qHkl9JdCu17MEtLFdI/Flipper-One-UI-Assets-library?node-id=0-1&t=zfmlKGksE4iBQ57H-1) — core components for building UI
+- 🖼️ [Main board on Figma](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1) — assembled UI layouts and design documentation
+- 📁 [GitHub repository](https://github.com/flipperdevices/flipperone-ui) — currently contains only a README
+
+We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, share your designs in the comments, or contribute directly to the docs.
+
+![User Interface sub-project structure](/files/pics/ui-structure.jpg)
 
 ***
 
-### Flipper One UI asset library
-Core Figma components for building UI
-<img width="3584" height="1993" alt="" src="https://github.com/user-attachments/assets/1f6f3bf5-8707-49f5-816f-913ab0d0e775" />
+## ✅ Task tracker
 
-[Asset library in Figma](https://www.figma.com/design/U4k0qHkl9JdCu17MEtLFdI/Flipper-One-UI-Assets-library?node-id=0-1&t=zfmlKGksE4iBQ57H-1) includes the following pages:
-1. `UI - Prototype Assets` - comonents for mockups and testing hypotheses inside Figma. Oragne and black screen like colors to mimic Flipper One screen.
-2. `UI - Dev ready` - components for building UI that will be shipped to the Flipper One screen
+All User Interface team tasks are tracked in the GitHub project [Flipper One — User Interface](https://github.com/orgs/flipperdevices/projects/12). There, you can see what the design team is working on and follow progress and discussions.
 
-If you have a paid Figma plan, you can add these assets to your libraries. Check the [official Figma guide](https://help.figma.com/hc/en-us/articles/360041051154-Guide-to-libraries-in-Figma).
+![User Interface task tracker](/files/pics/ui-task-tracker.png "User Interface sub-project task tracker on GitHub")
 
-<img width="1156" height="472" alt="" src="https://github.com/user-attachments/assets/6f015f05-927b-4f50-a74a-1516996c18cc" />
+**Some tasks are open** to the community and marked with a **help wanted** label. You're welcome to join the discussion on these tasks or submit your design proposals — just make sure to read the [Contribution guide](./#how-to-contribute) first.
 
 ***
 
-### Flipper One UI — Main board
-Interface development, design assets, illustrations, and source graphics files.
+## 🎨 Asset library on Figma
 
-<img width="1640" height="557" alt="" src="https://github.com/user-attachments/assets/c5c9a9c7-2447-421a-9b4e-8eb994586c7a" />
+The [Asset library](https://www.figma.com/design/U4k0qHkl9JdCu17MEtLFdI/Flipper-One-UI-Assets-library?node-id=0-1&t=zfmlKGksE4iBQ57H-1) hosts the core Figma components used to build Flipper One's UI. You can browse it in your browser without a paid Figma plan — just open the link.
 
-[Main board](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1) includes the following pages:
-1. `Documentation` — Illustrations and technical drawings
-2. `UI OUT` — Development-ready, assembled UI layouts
-3. `UI Live Preview` — Pre-assembled UI layouts for look and feel tests on device
+![Flipper One Asset library on Figma](/files/pics/figma-library-overview.jpg "Flipper One Asset library on Figma")
 
-***
+The library has two pages:
 
-# Fonts
+- **UI — Prototype Assets** — components for mockups and hypothesis testing inside Figma. Uses orange and black screen-like colors that mimic the Flipper One display.
+- **UI — Dev ready** — components for building UI that will be shipped to the Flipper One screen.
 
-Currently in UI use two fonts:
-<img width="585" height="81" alt="" src="https://github.com/user-attachments/assets/096c2da7-e36b-42dc-8e7c-2cb8a04f8165" />
-[Born2bSportyV2](https://github.com/olikraus/u8g2/blob/master/tools/font/ttf/Born2bSportyV2.ttf)
-
-<img width="376" height="56" alt="" src="https://github.com/user-attachments/assets/e33fd268-b0e8-4034-8311-580d539458a1" />
-
-[haxrcorp4089](https://github.com/olikraus/u8g2/blob/master/tools/font/ttf/haxrcorp4089.ttf)
+:::hint{type="info"}
+If you have a paid Figma plan, you can add the Asset library to your team libraries for use across projects. See [Figma's guide to libraries](https://help.figma.com/hc/en-us/articles/360041051154-Guide-to-libraries-in-Figma).
+:::
 
 ***
 
-### Prototypes
-Prototypes based on ProtoPie are deprecated and were used at the stage when we were not able to prototype directly on the Flipper One screen. But they are still accessible in the [flipperone-ui repository](https://github.com/flipperdevices/flipperone-ui).
+## 🖼️ Main board on Figma
+
+The [Main board](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1) hosts interface development, design assets, illustrations, and source graphics files.
+
+![Flipper One Main board on Figma](/files/pics/figma-main-board-overview.png "Flipper One Main board on Figma")
+
+The Main board has three pages:
+
+- **Documentation** — illustrations and technical drawings.
+- **UI OUT** — development-ready, assembled UI layouts.
+- **UI Live Preview** — pre-assembled UI layouts for look-and-feel tests on the device.
 
 ***
 
-# How to contibute
+## Display constraints
 
-### Step 1
-Finf the issue with `Help wanted` tag
-<img width="700" height="212" alt="" src="https://github.com/user-attachments/assets/977619ef-6838-43f7-b1d8-8e6b5b348cbe" />
+Flipper One's display has specific constraints all UI designs must follow:
 
-### Step 2
-Using comonents from [Asset library](https://www.figma.com/design/U4k0qHkl9JdCu17MEtLFdI/Flipper-One-UI-Assets-library?node-id=0-1&t=zfmlKGksE4iBQ57H-1) as a base for designs. Feel free to duplicate [Main board](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1) to reuse ready screens.
+- **Resolution:** 256 × 144 px
+- **Color depth:** 64 shades of black (6-bit grayscale)
+- **Backlight:** orange LCD
+- **Pixel-perfect rendering:** UI elements must align to whole pixels — sub-pixel rendering is not supported
 
-**How to duplicate board:**
+Keep these in mind when designing screens, icons, or illustrations — anything that doesn't respect them won't render correctly on the device.
 
-Select `Duplicate to your drafts` inside the dropdown menu next to the board name.
+***
 
-<img width="799" height="581" alt="" src="https://github.com/user-attachments/assets/5b09c48b-856e-4ec5-979d-f44324c57115" />
+## Fonts
 
-### Step 3
-Allow anyone to **View** your board
+The UI uses two fonts:
 
-<img width="1787" height="547" alt="image" src="https://github.com/user-attachments/assets/87baceb0-d9c0-4078-ac36-8cd3aace3705" />
+- [Born2bSportyV2](https://github.com/olikraus/u8g2/blob/master/tools/font/ttf/Born2bSportyV2.ttf) — primary UI font.
+- [haxrcorp4089](https://github.com/olikraus/u8g2/blob/master/tools/font/ttf/haxrcorp4089.ttf) — secondary UI font.
 
+![UI fonts](/files/pics/ui-fonts.png)
 
-### Step 4
-Submit design to issue providing screenshot and link to the source file.
-<img width="1850" height="662" alt="image" src="https://github.com/user-attachments/assets/9febf2c0-4e15-4fdb-adb2-bad8c6d137d7" />
+***
 
+## Prototypes (deprecated)
+
+Earlier prototypes based on ProtoPie are deprecated — they were used when we couldn't prototype directly on the Flipper One screen. They remain accessible in the [flipperone-ui repository](https://github.com/flipperdevices/flipperone-ui) for reference.
+
+***
+
+## How to contribute
+
+:::hint{type="info"}
+To contribute to the User Interface sub-project, you need to have a GitHub account. You can create one on the [GitHub website](https://github.com/signup).
+:::
+
+::::hint{type="info"}
+**⚠️ Contributions only — no flooding**
+
+To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you're always welcome to join the conversation on [social media](https://x.com/Flipper_RND) or [Discord](https://discord.com/invite/flipper)!
+::::
+
+![How to contribute to the User Interface sub-project](/files/pics/ui-how-to-contribute.jpg)
+
+The User Interface sub-project accepts contributions through **comments on open tasks** — submit your design proposals as comments on a **help wanted** task, including a screenshot and a link to your Figma source file.
+
+::::WorkflowBlock
+:::WorkflowBlockItem
+**Pick a task.** In the [User Interface GitHub project](https://github.com/orgs/flipperdevices/projects/12), browse the open tasks and click the one labeled **help wanted** that you want to contribute to.
+:::
+
+:::WorkflowBlockItem
+**Create your design.** Use components from the [Asset library](https://www.figma.com/design/U4k0qHkl9JdCu17MEtLFdI/Flipper-One-UI-Assets-library?node-id=0-1&t=zfmlKGksE4iBQ57H-1) as a base. You can duplicate the [Main board](https://www.figma.com/design/PhlEqdtgjFfcizdVV0qNSR/Flipper-One-UI---Main-board?node-id=368-270&t=YcLCv1SFsc4TCTiV-1) into your drafts to reuse ready screens — click the dropdown next to the board name and select **Duplicate to your drafts**.
+
+![Duplicate the Main board to your Figma drafts](/files/pics/figma-duplicate-to-drafts.png)
+:::
+
+:::WorkflowBlockItem
+**Allow anyone to view your board.** In Figma, open your board's share settings and set general access so reviewers can open your design from the link.
+
+1. Click **Share**.
+2. Set access to **Anyone can view**.
+3. In Share settings, enable **Viewers can copy, save, and export**.
+4. Click **Save**.
+5. Click **Copy link**.
+
+:::
+
+:::WorkflowBlockItem
+**Write your comment.** Describe your changes, attach a screenshot of your design and paste the link to your Figma source file.
+
+![Good vs bad comment example](/files/pics/ui-good-vs-bad-comment.png)
+
+**Attachment size limit:**
+
+- Images: 10 MB
+- Videos: 100 MB
+
+:::
+
+:::WorkflowBlockItem
+**Click Comment** to submit.
+:::
+::::
+
+We review all design proposals carefully! We may ask additional questions in the task thread, so please watch for GitHub notifications in your email.

@@ -108,7 +108,7 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 :::
 :::::
 
-We review all comments carefully! We may ask additional questions about your idea in the task thread, so please follow notifications from GitHub in your email.
+We review all comments carefully! We may ask additional questions about your idea in the task thread, so please watch for GitHub notifications in your email.
 
 ‎
 
@@ -151,4 +151,4 @@ To modify these components without touching the originals:
 :::
 ::::
 
-We review all pull requests carefully! We may ask additional questions in the PR thread, so please follow notifications from GitHub in your email.
+We review all pull requests carefully! We may ask additional questions in the PR thread, so please watch for GitHub notifications in your email.

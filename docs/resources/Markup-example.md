@@ -13,18 +13,18 @@ The source files live on GitHub at [github.com/flipperdevices/flipper-one-docs](
 
 **Quick jump:**
 
-- :Link[Headings]{label="Headings" overridedLabel="Headings" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#headings" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Text styles]{label="Text styles" overridedLabel="Text styles" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#text-styles" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Links]{label="Links" overridedLabel="Links" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#links" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Images]{label="Images" overridedLabel="Images" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#images" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Videos]{label="Videos" overridedLabel="Videos" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#videos" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Lists]{label="Lists" overridedLabel="Lists" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#lists" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Tables]{label="Tables" overridedLabel="Tables" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#tables" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Code]{label="Code" overridedLabel="Code" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#code-syntax-highlighting" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Callouts]{label="Callouts" overridedLabel="Callouts" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#callouts" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Math]{label="Math" overridedLabel="Math" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#math" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Mermaid diagrams]{label="Mermaid diagrams" overridedLabel="Mermaid diagrams" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#mermaid-diagrams" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
-- :Link[Archbee components]{label="Archbee components" overridedLabel="Archbee components" spaceId docId="43g4bBZ9VHcuZq4Hl9m1e" version="v2" docAnchorId="#archbee-components" loadingMethod="dynamic" newTab="false" href="Markup-example.md"}
+- [Headings](#headings)
+- [Text styles](#text-styles)
+- [Links](#links)
+- [Images](#images)
+- [Videos](#videos)
+- [Lists](#lists)
+- [Tables](#tables)
+- [Code](#code-syntax-highlighting)
+- [Callouts](#callouts)
+- [Math](#math)
+- [Mermaid diagrams](#mermaid-diagrams)
+- [Archbee components](#archbee-components)
 
 ***
 
@@ -147,22 +147,21 @@ Flipper One documentation supports headings H1–H3.
 To control whether a link opens in a new tab — and to write short relative hrefs for in-docs links — use Archbee's `:Link[]` directive instead of plain Markdown.
 
 **External link (new tab):**
-
-`:Link[label]{href="https://example.com" newTab="true" hasDisabledNofollow="false"}`
-
-‎ 
+```markdown
+:Link[label]{href="https://example.com" newTab="true" hasDisabledNofollow="false"}
+```
 
 **Same-page anchor (same tab):**
 
-`:Link[label]{href="./#section-name" newTab="false" hasDisabledNofollow="true"}`
-
-‎ 
+```markdown
+:Link[label]{href="./#section-name" newTab="false" hasDisabledNofollow="true"}
+```
 
 **Another page in the docs (optional anchor):**
 
-`:Link[label]{href="<relative-path>.md#section-name" newTab="true" hasDisabledNofollow="true"}`
-
-‎ 
+```markdown
+:Link[label]{href="<relative-path>.md#section-name" newTab="true" hasDisabledNofollow="true"}
+```
 
 Use a path relative to the current file:
 
@@ -171,8 +170,6 @@ Use a path relative to the current file:
 - `../folder/Other-Page.md` — file in a sibling folder
 
 The `#section-name` anchor is optional. Anchor IDs are derived from the heading text (lowercased, spaces replaced with hyphens).
-
-‎ 
 
 <table isTableHeaderOn="true" columnWidths="141,522">
   <tr>
@@ -219,7 +216,7 @@ The `#section-name` anchor is optional. Anchor IDs are derived from the heading 
 
 ‎&#x20;
 
-**Local path:**  `![Alt text](/files/pics/test-image.jpg "Caption")`
+**Local path:** `![Alt text](/files/pics/test-image.jpg "Caption")`
 
 ![Local image](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/pNHUZHZzPZd7qdM08jKuq_test-image.jpg "Caption")
 ​
@@ -338,17 +335,12 @@ Caption
   <tr>
     <td>
       <ul>
-      <li>Item A
-      <ul>
-      <li>Nested A.1</li>
-      </ul>
-      </li>
-      <li>Item B</li>
+        <li>Item A</li>
+        <li>Item B</li>
       </ul>
     </td>
     <td>
       <p><code>- Item A</code></p>
-      <p><code>  - Nested A.1</code></p>
       <p><code>- Item B</code></p>
     </td>
   </tr>

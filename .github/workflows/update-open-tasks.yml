@@ -1,0 +1,50 @@
+name: Update Open-tasks page
+
+on:
+  schedule:
+    # Hourly at :15 (offset from :00 to avoid the GitHub Actions runner-queue
+    # spike that hits on every cron-aligned minute).
+    - cron: "15 * * * *"
+  workflow_dispatch:
+  push:
+    branches: [public-release]
+    paths:
+      - "tools/generate_open_tasks.py"
+      - ".github/workflows/update-open-tasks.yml"
+
+# Don't let a manual dispatch race with the cron run.
+concurrency:
+  group: update-open-tasks
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    if: github.repository == 'flipperdevices/flipperone-docs'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: public-release
+
+      - name: Regenerate docs/Open-tasks.md
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/generate_open_tasks.py --out docs/Open-tasks.md
+
+      - name: Commit and push if changed
+        run: |
+          set -euo pipefail
+          if [[ -z "$(git status --porcelain docs/Open-tasks.md)" ]]; then
+            echo "Open-tasks.md is up to date — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/Open-tasks.md
+          git commit -m "Auto-update Open-tasks.md"
+          # Rebase on top of any concurrent pushes, then push.
+          git pull --rebase origin public-release
+          git push origin HEAD:public-release
