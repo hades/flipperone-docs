@@ -328,13 +328,12 @@
           {
             "categoryName": "About Docs",
             "isCategory": false,
-            "path": "resources/About-Docs.md",
+            "path": "resources/docs/About-Docs.md",
             "children": [
               {
-                "categoryName": "Markup example test",
+                "categoryName": "Markup reference",
                 "isCategory": false,
-                "path": "resources/Markup-example.md",
-                "children": []
+                "path": "resources/docs/Markup-reference.md"
               }
             ]
           },

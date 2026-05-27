@@ -174,7 +174,7 @@ For a longer change, fork the repository, make your edits on a new branch, and o
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Read the&#x20;**[Markup example](../resources/Markup-example.md)**&#x20;page** to learn the supported Markdown and Archbee syntax.
+**Read the [Markup reference](../resources/docs/Markup-reference.md)** to learn the supported Markdown and Archbee syntax.
 :::
 
 :::WorkflowBlockItem
@@ -196,7 +196,7 @@ Use descriptive, lowercase filenames with hyphens (e.g. `gpio-pinout.png`). Keep
 :::
 
 :::WorkflowBlockItem
-**(Optional) Register the new page in&#x20;**[archbee.json](https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json)**.** Place it in the sidebar hierarchy (no deeper than two levels) — see [How archbee.json works](../resources/About-Docs.md#how-archbeejson-works) for the syntax. It's okay to skip — we'll update the file after merging your PR.
+**(Optional) Register the new page in&#x20;**[archbee.json](https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json)**.** Place it in the sidebar hierarchy (no deeper than two levels) — see [How archbee.json works](../resources/docs/About-Docs.md#how-archbeejson-works) for the syntax. It's okay to skip — we'll update the file after merging your PR.
 :::
 
 :::WorkflowBlockItem

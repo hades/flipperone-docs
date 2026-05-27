@@ -18,7 +18,7 @@ This repository contains the source files from which the Developer Portal is gen
 
 1. Read [How to contribute](https://docs.flipper.net/one/resources/about-docs#how-to-contribute)
 2. Fork this repository
-3. Edit Markdown files (Read [markup example](https://docs.flipper.net/one/resources/about-docs/markup-example))
+3. Edit Markdown files (Read the [Markup reference](https://docs.flipper.net/one/resources/about-docs/markup-reference))
 4. Create a pull request
 
 ## Automation
