@@ -80,7 +80,7 @@ flipperone-docs/
 
 All pages in the Developer Portal are written in **Markdown** (`.md`) — the same format used for GitHub READMEs and most open-source documentation. On top of standard Markdown, Archbee adds a set of components for callouts, tabs, workflow blocks, embedded media, and more.
 
-For the full list of supported syntax with live examples, see the [Markup example](./Markup-example.md) page. It covers:
+For the full list of supported syntax with live examples, see the [Markup reference](./Markup-reference.md) page. It covers:
 
 - Headings, lists, links, and tables
 - Callouts
@@ -89,7 +89,7 @@ For the full list of supported syntax with live examples, see the [Markup exampl
 - Workflow steps and other Archbee components
 
 :::hint{type="info"}
-Always check the [Markup example](./Markup-example.md) page before writing or editing — some Markdown features behave differently in Archbee, and component syntax can be easy to mistype.
+Always check the [Markup reference](./Markup-reference.md) page before writing or editing — some Markdown features behave differently in Archbee, and component syntax can be easy to mistype.
 :::
 
 ***
@@ -104,7 +104,7 @@ To use an image in a page, reference it from your Markdown using a relative path
 ![Caption text](/files/pics/your-image.png)
 ```
 
-For richer Archbee image syntax (positioning, captions, sizing), see the [Markup example](./Markup-example.md) page.
+For richer Archbee image syntax (positioning, captions, sizing), see the [Markup reference](./Markup-reference.md) page.
 
 ‎
 
@@ -238,7 +238,7 @@ To contribute to the Docs sub-project, you need to have a GitHub account. You ca
 
 ![How to contribute to the Docs](/files/pics/how-to-contribute-about-docs.jpg)
 
-**Before you start:** Check open tasks in the [task tracker](https://github.com/orgs/flipperdevices/projects/10) to see what the team is already working on or where help is wanted, and skim the [Markup example](./Markup-example.md) page to get familiar with the supported Markdown and Archbee syntax.
+**Before you start:** Check open tasks in the [task tracker](https://github.com/orgs/flipperdevices/projects/10) to see what the team is already working on or where help is wanted, and skim the [Markup reference](./Markup-reference.md) page to get familiar with the supported Markdown and Archbee syntax.
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
@@ -262,7 +262,7 @@ If you've spotted an error, want to clarify a section, or want to add a new guid
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Read the&#x20;**[Markup example](./Markup-example.md)**&#x20;page** to learn the supported Markdown and Archbee syntax.
+**Read the [Markup reference](./Markup-reference.md)** to learn the supported Markdown and Archbee syntax.
 :::
 
 :::WorkflowBlockItem
@@ -270,7 +270,7 @@ If you've spotted an error, want to clarify a section, or want to add a new guid
 :::
 
 :::WorkflowBlockItem
-**Edit or create your&#x20;**`.md`**&#x20;file.** In your fork, find the file you want to edit under `docs/`, or create a new one in the appropriate subfolder. Follow the syntax shown on the Markup example page — some Markdown features behave differently in Archbee.
+**Edit or create an `.md` file.** In your fork, find the file you want to edit under `docs/`, or create a new one in the appropriate subfolder. Follow the syntax shown on the Markup reference page — some Markdown features behave differently in Archbee.
 :::
 
 :::WorkflowBlockItem

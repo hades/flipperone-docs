@@ -1,6 +1,6 @@
 ---
-title: Markup example
-slug: resources/about-docs/markup-example
+title: Markup reference
+slug: resources/about-docs/markup-reference
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:28:23 GMT+0000 (Coordinated Universal Time)
@@ -134,7 +134,7 @@ Flipper One documentation supports headings H1–H3.
   </tr>
   <tr>
     <td>
-      <p><a href="Markup-example.md">Jump to Tables</a></p>
+      <p><a href="Markup-reference.md">Jump to Tables</a></p>
     </td>
     <td>
       <p><code>[Jump to Tables](./#tables)</code></p>

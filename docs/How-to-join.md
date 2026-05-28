@@ -98,13 +98,13 @@ UI/UX development. This is where the user interface, visual communication of the
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem
-### [Docs](./resources/About-Docs.md)
+### [Docs](./resources/docs/About-Docs.md)
 
 ::Image[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/RfUa81BVRdDm1qKCoXnrd-20260331-093508.png" size="36" width="273" height="273" position="flex-start"}
 :::
 
 :::VerticalSplitItem
-Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contribution guides. [**Learn more →**](./resources/About-Docs.md)
+Developer portal wiki, technical docs, guides, and datasheets. All documentation — including this wiki — is developed here. It covers both the Flipper One product documentation and descriptions of development processes and contribution guides. [**Learn more →**](./resources/docs/About-Docs.md)
 :::
 ::::
 
@@ -151,7 +151,7 @@ For those who want to explore further, some sub-projects provide more in-depth m
 :::hint{type="info"}
 **You can contribute to the documentation**
 
-This wiki is a sub-project of its own, and anyone can contribute by editing [its source files on GitHub](https://github.com/flipperdevices/flipperone-docs). Learn more in the [Docs sub-project](./resources/About-Docs.md).
+This wiki is a sub-project of its own, and anyone can contribute by editing [its source files on GitHub](https://github.com/flipperdevices/flipperone-docs). Learn more in the [Docs sub-project](./resources/docs/About-Docs.md).
 :::
 
 ***
