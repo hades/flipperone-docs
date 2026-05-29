@@ -6,7 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Thu May 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page describes the cold-boot sequence of the Rockchip RK3576 SoC used in Flipper One: from the on-chip Boot ROM through DDR initialization, SPL, the FIT-packaged main bootloader (U-Boot + Arm Trusted Firmware), and finally the operating system. It also documents the on-flash layout that the Boot ROM and SPL rely on.
+This page describes the cold-boot sequence of the Rockchip RK3576 SoC used in Flipper One: from the on-chip Boot ROM through DDR initialization, SPL, the FIT-packaged main bootloader (U-Boot + ARM Trusted Firmware-A), and finally the operating system. It also documents the on-flash layout that the Boot ROM and SPL rely on.
 
 The legacy [Rockchip Boot option wiki](https://opensource.rock-chips.com/wiki_Boot_option) covers older SoCs (RK33xx and earlier) and uses obsolete terminology (`miniloader`, `idbloader`) that is **not** part of the current RK3576 stack.
 
@@ -46,7 +46,9 @@ For details on using MaskROM mode and available boot priority lists, see [Rockch
 
 ### Stage 2: Early bootloader (RKNS image)
 
-The RKNS (Rockchip Boot Image) container (`idbloader.img`) is loaded by the Boot ROM into on-chip SRAM and executed in place. On older Rockchip SoCs this stage was split between a TPL (DDR init) and an SPL (bootloader hand-off). On RK3576 the equivalent functionality is delivered as a small set of binaries bundled into one RKNS image, executed in order:
+The RKNS (Rockchip Boot Image) container includes a set of binaries that are loaded into on-chip SRAM by the Boot ROM and executed sequentially, normally returning control to the Boot ROM after each stage until the SPL locates the main bootloader image and jumps to it.
+
+Binaries included in the RKNS image:
 
 <table isTableHeaderOn="true" columnWidths="180,480">
   <tr>
@@ -90,7 +92,7 @@ The FIT image is a Flattened Image Tree container (`u-boot.itb`) that may includ
   </tr>
   <tr>
     <td><p><strong>BL31</strong></p></td>
-    <td><p>Part of Arm Trusted Firmware-A. It runs at <a href="https://developer.arm.com/documentation/102412/0103/Privilege-and-Exception-levels/Exception-levels">EL3</a> and provides secure monitor functionality and EL3 runtime services. BL31 handles operations such as CPU power-state transitions, PSCI services, suspend/resume support, and other platform-specific secure monitor calls issued by software running in the non-secure OS.</p></td>
+    <td><p>Part of ARM Trusted Firmware-A. It runs at <a href="https://developer.arm.com/documentation/102412/0103/Privilege-and-Exception-levels/Exception-levels">EL3</a> and provides secure monitor functionality and EL3 runtime services. BL31 handles operations such as CPU power-state transitions, PSCI services, suspend/resume support, and other platform-specific secure monitor calls issued by software running in the non-secure OS.</p></td>
   </tr>
   <tr>
     <td><p><strong>BL32</strong></p></td>
@@ -129,12 +131,12 @@ Only two on-flash offsets are fixed by the boot chain; everything else is determ
     <td><p><strong>Notes</strong></p></td>
   </tr>
   <tr>
-    <td><p>RKNS image (<code>idbloader.img</code>)</p></td>
+    <td><p>Early bootloader<br>(RKNS image)</p></td>
     <td><p>0x8000</p></td>
     <td><p>Sector <strong>64</strong> on 512-byte-sector media (SD, eMMC); sector <strong>8</strong> on 4096-byte-sector media (UFS). Searched by Boot ROM.</p></td>
   </tr>
   <tr>
-    <td><p>FIT image (<code>u-boot.itb</code>)</p></td>
+    <td><p>Main bootloader<br>(FIT image)</p></td>
     <td><p>0x800000 (default)</p></td>
     <td><p>Loaded by SPL. The actual offset is set in the SPL build config and can be changed.</p></td>
   </tr>
@@ -165,4 +167,4 @@ The combined image is normally written with `dd`, e.g. `dd if=u-boot-rockchip.bi
 - Comment by alchark in the flipperone-docs#52 issue: https://github.com/flipperdevices/flipperone-docs/issues/52#issuecomment-4509109037
 - U-Boot Rockchip documentation: https://docs.u-boot.org/en/latest/board/rockchip/rockchip.html
 - U-Boot Rockchip README in the official repo: https://github.com/u-boot/u-boot/blob/master/doc/README.rockchip
-- Firmware design documentation in Arm Trusted Firmware-A: https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html
+- Firmware design documentation in ARM Trusted Firmware-A: https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html
