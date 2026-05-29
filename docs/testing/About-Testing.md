@@ -13,19 +13,18 @@ The Testing sub-project covers checks for RK3576-based boards used in Flipper On
 The Testing sub-project consists of:
 
 - ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/14)
-- 📚 Descriptions for manual tests
-- 📁 [Scripts for automated tests](https://github.com/flipperdevices/flipperone-testing)
-- 🤝 How to contribute
+- 📚 [Manual test descriptions](./#manual-test-descriptions)
+- 📁 [Automated test scripts](https://github.com/flipperdevices/flipperone-testing)
 
 ***
 
-## Task tracker
+## ✅ Task tracker
 
 The public [Testing project board](https://github.com/orgs/flipperdevices/projects/14) tracks open work for the Testing sub-project. Use it to find tasks, share progress, and see which areas already need help.
 
 ***
 
-## Descriptions for manual tests
+## 📚 Manual test descriptions
 
 The Testing docs explain what should be checked for each subsystem. These pages are meant to complement the scripts: the docs describe the test goal, setup, expected result, and known gaps, while the repository contains runnable scripts or assets when they are available.
 
@@ -56,7 +55,7 @@ TODO: Describe publicly available test setup.
 
 ***
 
-## Scripts for automated tests
+## 📁 Automated test scripts
 
 The public [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) repository contains scripts and test assets for RK3576-based boards. It includes a shared test runner, module directories for major subsystems, and a `results/` directory layout for generated reports.
 
@@ -64,12 +63,12 @@ To avoid duplicating a fast-changing list of implemented tests here, use the rep
 
 ***
 
-## How to contribute
+## 🤝 How to contribute
 
 The Testing sub-project accepts contributions in three forms: **comments on open tasks** for ideas and improvements, **issues** for bugs or proposals that need their own thread, and **pull requests** for either testing-script changes or docs updates.
 
 :::hint{type="info"}
-Before opening a docs pull request, read [How to contribute to documentation](/resources/about-docs#how-to-contribute).
+Before opening a docs pull request, read [How to contribute to documentation](/resources/About-Docs.md#how-to-contribute).
 :::
 
 ### Comment on an open task
@@ -82,4 +81,4 @@ If you find a bug in the testing scripts or a gap that does not already have a t
 
 ### Contribute to flipperone-testing via a pull request
 
-For runnable tests, fork [flipperone-testing](https://github.com/flipperdevices/flipperone-testing), make the script change there, and include the command and result files in the pull request description. For docs-only changes, follow the guide: [How to contribute to documentation](/resources/about-docs#how-to-contribute).
+For runnable tests, fork [flipperone-testing](https://github.com/flipperdevices/flipperone-testing), make the script change there, and include the command and result files in the pull request description. For docs-only changes, follow the guide: [How to contribute to documentation](/resources/About-Docs.md#how-to-contribute).
