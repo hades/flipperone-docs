@@ -348,7 +348,7 @@
             "path": "resources/rockchip/Rockchip-RK3576.md",
             "children": [
               {
-                "categoryName": "RK3576 Boot flow",
+                "categoryName": "RK3576 boot flow",
                 "isCategory": false,
                 "path": "resources/rockchip/RK3576-Boot-flow.md",
                 "children": []
