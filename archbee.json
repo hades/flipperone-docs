@@ -331,14 +331,19 @@
             "path": "resources/docs/About-Docs.md",
             "children": [
               {
-                "categoryName": "Preview and test the docs",
-                "isCategory": false,
-                "path": "resources/docs/How-to-preview-archbee.md"
-              },
-              {
                 "categoryName": "Markup reference",
                 "isCategory": false,
                 "path": "resources/docs/Markup-reference.md"
+              },
+              {
+                "categoryName": "Style guide",
+                "isCategory": false,
+                "path": "resources/docs/Style-guide.md"
+              },
+              {
+                "categoryName": "Preview and test the docs",
+                "isCategory": false,
+                "path": "resources/docs/How-to-preview-archbee.md"
               }
             ]
           },

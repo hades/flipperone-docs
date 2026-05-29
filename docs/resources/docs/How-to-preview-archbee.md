@@ -82,8 +82,7 @@ To stop the preview server, press `Ctrl+C` in the terminal.
 ### Known issues
 
 If you see that documentation content is rendered incorrectly, first of all, restart the preview server.
-  
-- (CLI v0.1.33) Preview server may not show some images from the repository.
+
 - (CLI v0.1.33) Complex formatting, such as lists inside table cells, may disappear on preview server. If markup syntax is correct, it will render correctly on docs.flipper.net.
 - (CLI v0.1.33) If a page's URL does not match the file path, links to this page result in 404 on preview server.
   If `archbee broken-links` shows no errors, the links will work correctly on docs.flipper.net.

@@ -65,5 +65,3 @@ DevNo=1 Vid=0x2207,Pid=0x350e,LocationID=102    Maskrom
 # ./rkdeveloptool db ./rk3576_spl_loader.bin
  Downloading bootloader succeeded.
 ```
-
-Will this break the URL?
