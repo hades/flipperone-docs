@@ -1,5 +1,5 @@
 ---
-title: RK3576 Boot flow
+title: RK3576 boot flow
 slug: resources/rockchip/boot-flow
 docTags: 
 createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
@@ -133,7 +133,7 @@ Only two on-flash offsets are fixed by the boot chain; everything else is determ
   <tr>
     <td><p>Early bootloader<br>(RKNS image)</p></td>
     <td><p>0x8000</p></td>
-    <td><p>Sector <strong>64</strong> on 512-byte-sector media (SD, eMMC); sector <strong>8</strong> on 4096-byte-sector media (UFS). Searched by Boot ROM.</p></td>
+    <td><p>Sector 64 on 512-byte-sector media (SD, eMMC); sector 8 on 4096-byte-sector media (UFS). Searched by Boot ROM.</p></td>
   </tr>
   <tr>
     <td><p>Main bootloader<br>(FIT image)</p></td>
@@ -156,7 +156,7 @@ Only two on-flash offsets are fixed by the boot chain; everything else is determ
 **Modern packaging.** Upstream U-Boot produces a single combined bootloader image, `u-boot-rockchip.bin`, in which the RKNS part and the FIT part are already placed at the correct offsets with the necessary padding between them, so for most users the particular structure of those images shouldn't matter much.
 :::
 
-:::hint{type="danger"}
+:::hint{type="warning"}
 The combined image is normally written with `dd`, e.g. `dd if=u-boot-rockchip.bin of=/dev/<target> bs=512 seek=64 conv=fsync`. **Verify the target device with `lsblk` before running** — `dd` overwrites the target unconditionally, and pointing it at the wrong disk will destroy data on the host system.
 :::
 
@@ -164,7 +164,7 @@ The combined image is normally written with `dd`, e.g. `dd if=u-boot-rockchip.bi
 
 ## References
 
-- Comment by alchark in the flipperone-docs#52 issue: https://github.com/flipperdevices/flipperone-docs/issues/52#issuecomment-4509109037
-- U-Boot Rockchip documentation: https://docs.u-boot.org/en/latest/board/rockchip/rockchip.html
-- U-Boot Rockchip README in the official repo: https://github.com/u-boot/u-boot/blob/master/doc/README.rockchip
-- Firmware design documentation in ARM Trusted Firmware-A: https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html
+- [Comment by alchark](https://github.com/flipperdevices/flipperone-docs/issues/52#issuecomment-4509109037) in the flipperone-docs#52 issue. 
+- [U-Boot Rockchip documentation](https://docs.u-boot.org/en/latest/board/rockchip/rockchip.html).
+- [U-Boot Rockchip README](https://github.com/u-boot/u-boot/blob/master/doc/README.rockchip) in the official repo.
+- [Firmware design documentation](https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html) in ARM Trusted Firmware-A.
