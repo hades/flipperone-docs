@@ -63,7 +63,7 @@ To avoid duplicating a fast-changing list of implemented tests here, use the rep
 
 ***
 
-## 🤝 How to contribute
+## How to contribute
 
 The Testing sub-project accepts contributions in three forms: **comments on open tasks** for ideas and improvements, **issues** for bugs or proposals that need their own thread, and **pull requests** for either testing-script changes or docs updates.
 
