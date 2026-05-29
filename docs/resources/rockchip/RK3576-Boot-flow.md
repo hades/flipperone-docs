@@ -6,21 +6,23 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Thu May 21 2026 00:00:00 GMT+0000 (Coordinated Universal Time)
 ---
 
-This page describes the cold-boot sequence of the Rockchip RK3576 SoC used in Flipper One: from the on-chip Boot ROM through DDR initialization, SPL, the FIT-packaged main bootloader (U-Boot + ARM Trusted Firmware), and finally the operating system. It also documents the on-flash layout that the Boot ROM and SPL rely on.
+This page describes the cold-boot sequence of the Rockchip RK3576 SoC used in Flipper One: from the on-chip Boot ROM through DDR initialization, SPL, the FIT-packaged main bootloader (U-Boot + Arm Trusted Firmware), and finally the operating system. It also documents the on-flash layout that the Boot ROM and SPL rely on.
 
 The legacy [Rockchip Boot option wiki](https://opensource.rock-chips.com/wiki_Boot_option) covers older SoCs (RK33xx and earlier) and uses obsolete terminology (`miniloader`, `idbloader`) that is **not** part of the current RK3576 stack.
 
 ***
 
-## Overview
+## Boot sequence
+
+The RK3576 boot chain is built from several stages. Each stage has a narrow responsibility and prepares the system for the next one.
 
 ```mermaid
 flowchart TD
   A[Power-on / reset] --> B[On-chip Boot ROM]
   B -->|Enumerate boot sources<br/>per SARADC_VIN0 strapping| C{Valid RKNS at<br/>byte offset 0x8000?}
-  C -- No on any device --> M[Maskrom mode<br/>USB upload]
-  C -- Yes --> D[RKNS image<br/>boost.bin → ddr.bin → SPL]
-  D -->|DDR trained,<br/>SPL running in DRAM| E[Load FIT image<br/>default offset 0x800000]
+  C -- No on any device --> M[MaskROM mode<br/>for USB upload]
+  C -- Yes --> D[Run binaries from RKNS image<br/>boost.bin → ddr.bin → SPL]
+  D -->|DDR trained,<br/>SPL running in DRAM| E[FIT image<br/>default offset 0x800000]
   E --> F[BL31 / TF-A]
   F --> G[U-Boot proper]
   G -->|Standard Boot<br/>extlinux.conf / EFI / PXE| H[Linux kernel + rootfs]
@@ -28,25 +30,23 @@ flowchart TD
 
 ***
 
-## Stage 1 — On-chip Boot ROM
+### Stage 1: On-chip Boot ROM
 
-The Boot ROM is mask-programmed silicon that runs the moment power is applied to the RK3576. It is responsible for:
+The Boot ROM is mask-programmed silicon that cannot be modified. It begins executing as soon as power is applied to the RK3576. It is responsible for:
 
-1. Reading the **`SARADC_VIN0`** strapping pin to determine the priority order of boot sources. Typical orderings are `eMMC → SD → Maskrom` or `UFS → SD → Maskrom`, depending on the board design.
-2. Walking the boot-source list and, for each device, looking for a valid **RKNS** image signature at **byte offset `0x8000`**.
-3. Falling back to **Maskrom mode** (USB upload from a host PC) if no bootable device is found.
+1. Reading the voltage on the `SARADC_VIN0_BOOT` strapping pin to determine the boot priority list. Typical orderings are `eMMC → SD → MaskROM` or `UFS → SD → MaskROM`, depending on the board design.
+2. Walking the boot-source list and, for each device, looking for a valid RKNS image signature at byte offset `0x8000`.
+3. Entering **MaskROM mode** if no bootable device is found. It allows access to the boot storages via USB.
 
 :::hint{type="info"}
-The `SARADC_VIN0` pin samples an analog voltage divider on the board; the divider ratio encodes the boot-priority configuration. See the RK3576 TRM, chapter *Boot configuration*, for the full table of recognized voltage ranges.
+For details on using MaskROM mode and available boot priority lists, see [Rockchip MaskROM mode](/cpu-software/How-to-install-linux-image.md#rockchip-maskrom-mode).
 :::
-
-For details on entering and using Maskrom mode, see :Link[Rockchip RK3576 — Maskrom]{href="./Rockchip-RK3576.md#maskrom" newTab="false" hasDisabledNofollow="true"}.
 
 ***
 
-## Stage 2 — RKNS image (early bootloaders)
+### Stage 2: Early bootloader (RKNS image)
 
-The RKNS (Rockchip Boot Image) container is loaded by the Boot ROM into on-chip SRAM and executed in place. On older Rockchip SoCs this stage was split between a TPL (DDR init) and an SPL (bootloader hand-off); on RK3576 the equivalent functionality is delivered as a small set of binaries bundled into one RKNS image, executed in order:
+The RKNS (Rockchip Boot Image) container (`idbloader.img`) is loaded by the Boot ROM into on-chip SRAM and executed in place. On older Rockchip SoCs this stage was split between a TPL (DDR init) and an SPL (bootloader hand-off). On RK3576 the equivalent functionality is delivered as a small set of binaries bundled into one RKNS image, executed in order:
 
 <table isTableHeaderOn="true" columnWidths="180,480">
   <tr>
@@ -55,27 +55,27 @@ The RKNS (Rockchip Boot Image) container is loaded by the Boot ROM into on-chip 
   </tr>
   <tr>
     <td><p><code>boost.bin</code></p></td>
-    <td><p>Patches parts of the Boot ROM code already loaded in SRAM and configures power-mode parameters for UFS flash. Optional on boards that do not boot from UFS.</p></td>
+    <td><p>Patches parts of the Boot ROM code already loaded into SRAM and configures power-mode parameters for UFS flash. Optional on boards that do not boot from UFS.</p></td>
   </tr>
   <tr>
     <td><p><code>ddr.bin</code></p></td>
-    <td><p>Initializes the DDR memory controller and runs RAM <em>training</em> (timing calibration). After this stage DRAM is usable.</p></td>
+    <td><p>Initializes the DDR memory controller and runs <em>RAM training</em> (timing calibration). After this stage, DRAM is usable.</p></td>
   </tr>
   <tr>
     <td><p><code>SPL</code></p></td>
-    <td><p>U-Boot Secondary Program Loader. Runs from DRAM, re-discovers the boot device, and loads the FIT-packaged main bootloader.</p></td>
+    <td><p>U-Boot Secondary Program Loader. Runs from DRAM, re-discovers the boot device to load the main bootloader's FIT image from.</p></td>
   </tr>
 </table>
 
 :::hint{type="warning"}
-On RK3576 the `ddr.bin` produced by Rockchip is a closed-source binary blob — there is currently no open-source replacement. This is tracked in :Link[flipperone-linux-build-scripts#56]{href="https://github.com/flipperdevices/flipperone-linux-build-scripts/issues/56" newTab="true" hasDisabledNofollow="false"}.
+On RK3576 the `ddr.bin` produced by Rockchip is a closed-source binary blob — there is currently no open-source replacement. This is tracked in [flipperone-linux-build-scripts#56](https://github.com/flipperdevices/flipperone-linux-build-scripts/issues/56).
 :::
 
 ***
 
-## Stage 3 — FIT image (main bootloader)
+### Stage 3: Main bootloader (FIT image)
 
-Once SPL is running in DRAM it loads the **main bootloader FIT image** from a fixed offset on the boot device — by default **byte offset `0x800000`**. The exact offset is hard-coded in the SPL build configuration and can be changed at compile time.
+Once SPL is running in DRAM, it loads the **main bootloader FIT image** from a fixed offset on the boot device. The default byte offset is 0x800000. The exact offset is hard-coded in the SPL build configuration and can be changed at compile time.
 
 The FIT image is a Flattened Image Tree container (`u-boot.itb`) that may include any combination of:
 
@@ -89,49 +89,38 @@ The FIT image is a Flattened Image Tree container (`u-boot.itb`) that may includ
     <td><p>Device tree blob describing on-board peripherals to U-Boot and (later) Linux.</p></td>
   </tr>
   <tr>
-    <td><p><strong>U-Boot proper</strong></p></td>
-    <td><p>The main bootloader binary that runs after BL31 hands off control.</p></td>
-  </tr>
-  <tr>
     <td><p><strong>BL31</strong></p></td>
-    <td><p>ARM Trusted Firmware-A — the EL3 secure monitor. Mandatory on ARMv8.</p></td>
+    <td><p>Part of Arm Trusted Firmware-A. It runs at <a href="https://developer.arm.com/documentation/102412/0103/Privilege-and-Exception-levels/Exception-levels">EL3</a> and provides secure monitor functionality and EL3 runtime services. BL31 handles operations such as CPU power-state transitions, PSCI services, suspend/resume support, and other platform-specific secure monitor calls issued by software running in the non-secure OS.</p></td>
   </tr>
   <tr>
     <td><p><strong>BL32</strong></p></td>
-    <td><p>Optional TEE OS (OP-TEE). Tracked for RK3576 in :Link[flipperone-linux-build-scripts#57]{href="https://github.com/flipperdevices/flipperone-linux-build-scripts/issues/57" newTab="true" hasDisabledNofollow="false"}.</p></td>
+    <td><p>Optional Trusted Execution Environment (OP-TEE). Used when the platform requires a secure OS for trusted applications. Tracked for RK3576 in <a href="https://github.com/flipperdevices/flipperone-linux-build-scripts/issues/57">flipperone-linux-build-scripts#57</a>.</p></td>
+  </tr>
+  <tr>
+    <td><p><strong>U-Boot proper</strong></p></td>
+    <td><p>The main bootloader binary that runs after BL31 hands off control. Runs at <a href="https://developer.arm.com/documentation/102412/0103/Privilege-and-Exception-levels/Exception-levels">EL2</a>.</p></td>
   </tr>
 </table>
 
-The FIT *configuration* node decides which images are loaded and in what order. In a normal boot **BL31 runs first**; it then drops to EL2 and starts U-Boot proper.
+The FIT image also includes a configuration node, that determines which images where must be loaded and in what order. In a normal boot BL31 runs first and takes care of further steps.
 
 ***
 
-## Stage 4 — U-Boot proper
+### Stage 4: U-Boot proper
 
 U-Boot is feature-rich enough to load almost anything from almost anywhere, so the flow becomes board- and image-specific from this point on.
 
-<table isTableHeaderOn="true" columnWidths="220,440">
-  <tr>
-    <td><p><strong>U-Boot flavour</strong></p></td>
-    <td><p><strong>Boot behaviour</strong></p></td>
-  </tr>
-  <tr>
-    <td><p>Rockchip vendor U-Boot (~2017 base)</p></td>
-    <td><p>Boots via hard-coded commands defined at build time. Used in Rockchip's BSP / SDK images.</p></td>
-  </tr>
-  <tr>
-    <td><p>Mainline U-Boot (Flipper One)</p></td>
-    <td><p>Uses <strong>Standard Boot</strong>: enumerates available storage, scans each for bootable partitions, and tries multiple boot methods per partition (<code>extlinux.conf</code>, plain EFI binaries, PXElinux scripts, …).</p></td>
-  </tr>
-</table>
+**Rockchip vendor U-Boot** (based on a 2017 codebase) boots via hard-coded commands. Used in Rockchip's BSP / SDK images.
 
-Current Flipper One test images boot through **`extlinux.conf`**, but this may change.
+**Current mainline U-Boot** uses Standard Boot, which enumerates the available storage devices, looks for "bootable" partitions on each, and for each partition considers a variety of boot methods such as `extlinux.conf`, plain EFI bootable binaries, PXElinux boot scripts etc.
+
+Current Flipper test images use `extlinux.conf`, but that may change in the future.
 
 ***
 
-## Flash structure
+## Flash layout
 
-Only two on-flash offsets are fixed by the boot chain — everything else is determined by the partition table and the SPL build configuration.
+Only two on-flash offsets are fixed by the boot chain; everything else is determined by the partition table and the SPL build configuration.
 
 <table isTableHeaderOn="true" columnWidths="220,140,300">
   <tr>
@@ -140,29 +129,29 @@ Only two on-flash offsets are fixed by the boot chain — everything else is det
     <td><p><strong>Notes</strong></p></td>
   </tr>
   <tr>
-    <td><p>RKNS image (TPL + SPL)</p></td>
-    <td><p><code>0x8000</code></p></td>
+    <td><p>RKNS image (<code>idbloader.img</code>)</p></td>
+    <td><p>0x8000</p></td>
     <td><p>Sector <strong>64</strong> on 512-byte-sector media (SD, eMMC); sector <strong>8</strong> on 4096-byte-sector media (UFS). Searched by Boot ROM.</p></td>
   </tr>
   <tr>
-    <td><p>FIT image (U-Boot proper + BL31 [+ BL32] + DTB)</p></td>
-    <td><p><code>0x800000</code> (default)</p></td>
-    <td><p>Loaded by SPL. The actual offset is set in the SPL build config and can be moved.</p></td>
+    <td><p>FIT image (<code>u-boot.itb</code>)</p></td>
+    <td><p>0x800000 (default)</p></td>
+    <td><p>Loaded by SPL. The actual offset is set in the SPL build config and can be changed.</p></td>
   </tr>
   <tr>
     <td><p>Partition table (GPT or Rockchip parameter)</p></td>
-    <td><p>varies</p></td>
+    <td><p>Varies</p></td>
     <td><p>Read by U-Boot proper; not consulted by Boot ROM or SPL.</p></td>
   </tr>
   <tr>
     <td><p>Bootable partition(s) — kernel, rootfs, <code>extlinux.conf</code>, EFI binaries, …</p></td>
-    <td><p>per partition table</p></td>
+    <td><p>Per partition table</p></td>
     <td><p>Discovered by U-Boot Standard Boot.</p></td>
   </tr>
 </table>
 
 :::hint{type="info"}
-**Modern packaging.** Upstream U-Boot now produces a single combined image, `u-boot-rockchip.bin`, in which the RKNS part and the FIT part are already placed at the correct offsets with the required padding between them. Writing this one file to the start of the boot device takes care of both pieces, so the on-disk layout of the individual sub-images rarely needs to be touched by hand.
+**Modern packaging.** Upstream U-Boot produces a single combined bootloader image, `u-boot-rockchip.bin`, in which the RKNS part and the FIT part are already placed at the correct offsets with the necessary padding between them, so for most users the particular structure of those images shouldn't matter much.
 :::
 
 :::hint{type="danger"}
@@ -173,7 +162,7 @@ The combined image is normally written with `dd`, e.g. `dd if=u-boot-rockchip.bi
 
 ## References
 
-- alchark, [comment on flipperone-docs#52](https://github.com/flipperdevices/flipperone-docs/issues/52#issuecomment-4509109037) — primary source for the boot flow and flash offsets documented here.
-- Rockchip, *RK3576 Technical Reference Manual* — chapter *Boot configuration* covers `SARADC_VIN0` strapping and the RKNS signature.
-- Mainline U-Boot, [`doc/board/rockchip/rockchip.rst`](https://docs.u-boot.org/en/latest/board/rockchip/rockchip.html) — documents `u-boot-rockchip.bin` packaging and Standard Boot.
-- ARM Trusted Firmware-A documentation, [TF-A boot flow](https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html#cold-boot).
+- Comment by alchark in the flipperone-docs#52 issue: https://github.com/flipperdevices/flipperone-docs/issues/52#issuecomment-4509109037
+- U-Boot Rockchip documentation: https://docs.u-boot.org/en/latest/board/rockchip/rockchip.html
+- U-Boot Rockchip README in the official repo: https://github.com/u-boot/u-boot/blob/master/doc/README.rockchip
+- Firmware design documentation in Arm Trusted Firmware-A: https://trustedfirmware-a.readthedocs.io/en/latest/design/firmware-design.html
