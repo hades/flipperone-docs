@@ -68,9 +68,9 @@ To avoid duplicating a fast-changing list of implemented tests here, use the rep
 ## How to contribute
 
 The Testing sub-project accepts contributions in three forms:
-* **Comments on open task** with ideas, suggestions, and improvements.
-* **Testing and uploading test results** to open testing tasks. 
-* **Pull requests for test improvements**.
+* **[Comments on open task](/.#comment-on-an-open-task)** with ideas, suggestions, and improvements.
+* **[Testing and uploading test results](./#test-and-report-the-results)** to open testing tasks. 
+* **[Pull requests for test improvements](./#contribute-via-a-pull-request)**.
 
 ‎ 
 
@@ -113,7 +113,7 @@ We review all comments carefully! We may ask additional questions about your ide
 
 ***
 
-### Testing and reporting test results
+### Test and report the results
 
 Testing tasks are published in the [Task Tracker](https://github.com/orgs/flipperdevices/projects/14) with the **help wanted** label. Each testing task contains all essential testing requirements, as well as the expected format for submitting a test report.
 
