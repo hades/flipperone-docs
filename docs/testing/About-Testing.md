@@ -13,8 +13,8 @@ The Testing sub-project covers checks for RK3576-based boards used in Flipper On
 The Testing sub-project consists of:
 
 - ✅ [Task tracker](https://github.com/orgs/flipperdevices/projects/14)
-- 📚 [Descriptions for manual tests](./#descriptions-for-manual-tests)
-- 📁 [Scripts for automated tests](https://github.com/flipperdevices/flipperone-testing)
+- 📚 [Manual test descriptions](./#manual-test-descriptions)
+- 📁 [Automated test scripts](https://github.com/flipperdevices/flipperone-testing)
 
 ***
 
@@ -26,7 +26,7 @@ The public [Testing project board](https://github.com/orgs/flipperdevices/projec
 
 ***
 
-## 📚 Descriptions for manual tests
+## 📚 Manual test descriptions
 
 The Testing docs explain what should be checked for each subsystem. These pages are meant to complement the scripts: the docs describe the test goal, setup, expected result, and known gaps, while the repository contains runnable scripts or assets when they are available.
 
@@ -57,7 +57,7 @@ TODO: Describe publicly available test setup.
 
 ***
 
-## 📁 Scripts for automated tests
+## 📁 Automated test scripts
 
 The public [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) repository contains scripts and test assets for RK3576-based boards. It includes a shared test runner, module directories for major subsystems, and a `results/` directory layout for generated reports.
 
@@ -67,14 +67,21 @@ To avoid duplicating a fast-changing list of implemented tests here, use the rep
 
 ## How to contribute
 
-The Testing sub-project accepts contributions in three forms: **comments on open tasks**, **new issues**, and **pull requests for code changes** to the automated testing scripts.
+The Testing sub-project accepts contributions in three forms:
+* **Comments on open task** with ideas, suggestions, and improvements.
+* **Testing and uploading test results** to open testing tasks. 
+* **Pull requests for test improvements**.
+
+‎ 
 
 ### Comment on an open task
+
+If you have an idea on how to improve a test, add missing setup details, or clarify expected results, comment on a relevant task in the [Testing project board](https://github.com/orgs/flipperdevices/projects/14).
 
 ::::hint{type="info"}
 **⚠️ Contributions only — no flooding**
 
-To keep collaboration productive, please keep issues and comments on-topic — they are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on an existing task or as a new issue. For general questions or discussions, you're always welcome to join the conversation on [social media](https://x.com/Flipper_RND) or [Discord](https://discord.com/invite/flipper)!
+To keep collaboration productive, please keep comments on-topic. Open tasks are for contribution-related discussion only. If you have an idea or concern, first turn it into a concrete contribution and share it as a comment on a task. For general questions or discussions, you're always welcome to join the conversation on [social media](https://x.com/Flipper_RND) or [Discord](https://discord.com/invite/flipper)!
 ::::
 
 ![Contribute a comment on an open task](/files/pics/cpu-contribute-a-comment.jpg)
@@ -102,49 +109,37 @@ If you have an idea on how to improve a test, add missing setup details, clarify
 
 We review all comments carefully! We may ask additional questions about your idea in the task thread, so please watch for GitHub notifications in your email.
 
-***
-
-### Open a new issue
-
-If you find a testing bug, missing automated check, or repeatable test idea that does not already have an open task, search the [flipperone-testing issues](https://github.com/flipperdevices/flipperone-testing/issues) first to confirm it has not already been reported, then open a new issue.
-
-::::WorkflowBlock
-:::WorkflowBlockItem
-**Search existing issues** in the [flipperone-testing repository](https://github.com/flipperdevices/flipperone-testing/issues) to make sure your bug or proposal has not already been reported.
-:::
-
-:::WorkflowBlockItem
-**Open a new issue.** Click **New issue** and provide enough detail to reproduce the problem or understand the proposal — board revision, OS image or firmware build, command, expected result, actual result, screenshots, logs, or generated reports where relevant.
-:::
-
-:::WorkflowBlockItem
-**Follow the discussion.** Watch the issue for notifications — we may ask clarifying questions.
-:::
-::::
+‎
 
 ***
 
-### Contribute to flipperone-testing via a pull request
+### Testing and reporting test results
+
+Testing tasks are published in the [Task Tracker](https://github.com/orgs/flipperdevices/projects/14) with the **help wanted** label. Each testing task contains all essential testing requirements, as well as the expected format for submitting a test report.
+
+Review the testing requirements and perform the test. Attach your test report as a comment in the task thread.
+
+‎
+
+***
+
+### Contribute via a pull request
 
 ![Contribute via a pull request](/files/pics/testing-contribute-via-pr.jpg)
 
-Contributing via pull requests allows anyone to propose changes to the automated test scripts in the public [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) repository.
+Contributing via pull requests allows anyone to propose changes to the automated test scripts in the [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) repository on to manual test descriptions in the [flipperone-docs](https://github.com/flipperdevices/flipperone-docs) repository.
+
 
 ::::WorkflowBlock
 :::WorkflowBlockItem
-**Fork and clone the** [flipperone-testing](https://github.com/flipperdevices/flipperone-testing) **repository.**
+**Fork and clone the repository** ([flipperone-testing](https://github.com/flipperdevices/flipperone-testing) for changing testing scripts or [flipperone-docs](https://github.com/flipperdevices/flipperone-docs) for changing manual test descriptions).
+
+:::WorkflowBlockItem
+**Make your changes** in the cloned repository.
 :::
 
 :::WorkflowBlockItem
-**Make your changes** in the cloned repository. Update the repository README or result format documentation if your script change needs it.
-:::
-
-:::WorkflowBlockItem
-**Run the relevant test or script check** and save the command, result files, logs, or screenshots that show what changed.
-:::
-
-:::WorkflowBlockItem
-**Open a pull request** to the flipperone-testing repository and include the command you ran plus the result files or logs in the pull request description.
+**Open a pull request** to the repository.
 :::
 ::::
 
