@@ -21,7 +21,6 @@ The CPU Software sub-project consists of:
   - [Rkbin](https://github.com/flipperdevices/rkbin)
   - [U-Boot](https://github.com/flipperdevices/u-boot)
   - [Linux kernel](https://github.com/flipperdevices/flipper-linux-kernel)
-  - [rkloader](https://github.com/flipperdevices/rkloader) & [gofastboot](https://github.com/flipperdevices/gofastboot)
 
 We'd love your feedback — look for tasks tagged **help wanted** in the task tracker, or contribute directly to the GitHub repositories via pull requests.
 
@@ -65,7 +64,6 @@ The Linux (CPU Software) sub-project includes several public GitHub repositories
 - [Rkbin](https://github.com/flipperdevices/rkbin) — Rockchip RK3576 binaries, including DDR trainer and internal storage access binaries in MaskROM mode.
 - [U-Boot](https://github.com/flipperdevices/u-boot) — Mirror of the official U-Boot bootloader sources with RK3576-specific patches not in mainline yet.
 - [Linux kernel](https://github.com/flipperdevices/flipper-linux-kernel) — Our fork of the latest mainline Linux kernel release with patches not in mainline yet.
-- [rkloader](https://github.com/flipperdevices/rkloader) & [gofastboot](https://github.com/flipperdevices/gofastboot) — Go tools for flashing images to Rockchip devices via fastboot protocol.
 
 ***
 
