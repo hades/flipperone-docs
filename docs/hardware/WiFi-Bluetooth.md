@@ -23,7 +23,7 @@ The `WXT2AM2101` module is soldered on the Main board. It is located beneath the
 
 ![WXT2AM2101 module on the Main board](/files/pics/flipper-one-wifi-module-on-main-pcb.jpg "WXT2AM2101 module on the Main board")
 
-The antennas for the built-in Wi-Fi/BT module are located inside the Flipper Zero enclosure and connected to the module via coaxial cables with I-PEX connectors.
+The antennas for the built-in Wi-Fi/BT module are located inside the Flipper One enclosure and connected to the module via coaxial cables with I-PEX connectors.
 
 The **Wi-Fi antenna** is located in the middle of the lower part of the device housing. It is a MIMO (Multiple Input Multiple Output) antenna system, consisting of two separate antenna elements mounted on a single PCB.
 
