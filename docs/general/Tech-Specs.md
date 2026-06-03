@@ -123,10 +123,10 @@ This page describes the full technical specifications of the Flipper One. Since 
 ## Wi-Fi & Bluetooth
 
 - **Module:** WXT2AM2101
-- **Wi-Fi Chipset:** MediaTek MT7921AUN
-- **Wi-Fi Modes:** Wi-Fi 6 (802.11ax), 2.4 / 5 / 6 GHz bands, 2×2 MIMO
-- **Bluetooth:** 5.2 (integrated in MT7921U)
-
+- **Wi-Fi chipset:** MediaTek MT7921AUN
+- **Wi-Fi modes:** Wi-Fi 6 (802.11ax), 2.4 / 5 / 6 GHz bands, 2×2 MIMO
+- **Bluetooth:** 5.2 (integrated in MT7921AUN)
+- **Module interface:** USB 3.0
 ***
 
 ## Gigabit Ethernet
