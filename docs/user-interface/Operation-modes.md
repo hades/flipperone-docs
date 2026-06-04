@@ -6,7 +6,7 @@ createdAt: Sun Apr 26 2026 18:22:16 GMT+0000 (Coordinated Universal Time)
 updatedAt: Tue Apr 28 2026 13:21:50 GMT+0000 (Coordinated Universal Time)
 ---
 
-Flipper One operates in several modes depending on its hardware state and the type of software loaded. An LED and a screen indicate the current mode.
+Flipper One operates in several modes depending on its hardware state and the type of software loaded. The display and LED indicate the current mode.
 
 ---
 
