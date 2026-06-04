@@ -12,7 +12,7 @@ For general tone and formatting guidance, see the [Style guide](Style-guide.md).
 
 ## Hardware
 
-| Term | Write it as | Avoid | Notes |
+| Term | Write it as | Avoid | Concept |
 |---|---|---|---|
 | Flipper One | Flipper One | FlipperOne, Flipper-One, flipper one | Two words, title case. Use with an article where needed: *a Flipper One*, *the Flipper One*. See the [Style guide](Style-guide.md#articles-with-flipper-devices) for article rules. |
 | Flipper Zero | Flipper Zero | FlipperZero, Flipper-Zero | The predecessor device. Same pattern as Flipper One. |
@@ -31,7 +31,7 @@ For general tone and formatting guidance, see the [Style guide](Style-guide.md).
 
 ## Software
 
-| Term | Write it as | Avoid | Notes |
+| Term | Write it as | Avoid | Concept |
 |---|---|---|---|
 | Flipper OS | Flipper OS | FlipperOS, flipper OS, flipper os | Two words, both capitalized. The Debian-based Linux OS developed for Flipper One. |
 | FlipCTL | FlipCTL | Flipctl, FLIPCTL, Flip CTL, flipctl | One word, this capitalization. Full name: Flipper's Universal Control Interface. Lowercase (`flipctl`) is acceptable in code, commands, and file paths. |
@@ -43,7 +43,7 @@ For general tone and formatting guidance, see the [Style guide](Style-guide.md).
 
 ## Project
 
-| Term | Write it as | Avoid | Notes |
+| Term | Write it as | Avoid | Concept |
 |---|---|---|---|
 | Developer Portal | Developer Portal | developer portal, dev portal | Title case when referring to the site at docs.flipper.net/one. Lowercase when used generically. |
 | sub-project | sub-project | Sub-project, subproject, sub project | Lowercase. One of seven: Hardware, Mechanics, Linux (CPU Software), MCU Firmware, User Interface, Docs, Testing. |
