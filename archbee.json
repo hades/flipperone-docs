@@ -249,6 +249,12 @@
             "isCategory": false,
             "path": "user-interface/Design-guide.md",
             "children": []
+          },
+                    {
+            "categoryName": "Operation modes",
+            "isCategory": false,
+            "path": "user-interface/Operation-modes.md",
+            "children": []
           }
         ]
       },
