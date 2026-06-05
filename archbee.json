@@ -27,6 +27,20 @@
         "children": []
       },
       {
+        "categoryName": "Dev Log",
+        "isCategory": false,
+        "path": "dev-log/Dev-Log.md",
+        "isFoldedByDefault": true,
+        "children": [
+          {
+            "categoryName": "#1",
+            "isCategory": false,
+            "path": "dev-log/1.md",
+            "children": []
+          }
+        ]
+      },
+      {
         "categoryName": "General",
         "isCategory": true,
         "children": [
