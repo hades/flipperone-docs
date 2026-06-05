@@ -117,6 +117,12 @@
                 "children": []
               }
             ]
+          },
+          {
+            "categoryName": "Debug Probe",
+            "isCategory": false,
+            "path": "hardware/Debug-probe.md",
+            "children": []
           }
         ]
       },
