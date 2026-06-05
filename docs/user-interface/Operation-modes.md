@@ -44,9 +44,9 @@ Primary mode: the full Linux system is running. All hardware components are acti
 
 ### How to switch modes
 
-Modes can be switched through the Power button :inlineImage[]{src="/files/pics/ui/ui_power_button.png" alt caption} and the Power menu. 
+Depending on the current operating mode, the Power button :inlineImage[]{src="/files/pics/ui/ui_power_button.png" alt caption} switches the mode or opens the Power menu.
 
-**Power menu** - a modal window with the available power options.
+**Power menu** — a modal window with the available power and boot options.
 
 - To turn on the device from `Power OFF` to `MCU Mode`, long press :inlineImage[]{src="/files/pics/ui/ui_power_button.png" alt caption} for 1 second. 
 
