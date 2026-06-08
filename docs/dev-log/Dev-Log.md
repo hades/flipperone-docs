@@ -15,7 +15,7 @@ This is our regular Dev Log, where we share how Flipper One development is going
 
 All logs:
 
-- [#1: RK3576 hardware video decoding is now in mainline Kernel](./1.md), official Debug Probe, and first contributions from the community.
+- [#1: RK3576 hardware video decoding is now in mainline kernel](./1.md), official Debug Probe, and first contributions from the community.
 
 ---
 
