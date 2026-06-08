@@ -370,6 +370,11 @@
                 "categoryName": "Preview and test the docs",
                 "isCategory": false,
                 "path": "resources/docs/How-to-preview-archbee.md"
+              },
+              {
+                "categoryName": "Glossary",
+                "isCategory": false,
+                "path": "resources/docs/Glossary.md"
               }
             ]
           },
