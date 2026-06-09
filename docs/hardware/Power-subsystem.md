@@ -19,7 +19,7 @@ Some specifications listed here have not yet been fully validated and are subjec
 :::
 
 * **Battery capacity:** 22.9 Wh
-* **USB-C1 charging input:** USB PD up to 60 W
+* **USB-C1 input power:** USB PD up to 60 W
 * **USB-C1 output power:** USB PD up to 36 W
 * **USB-C2 output power:** up to 15 W
 * **USB-A output power:** up to 15 W
