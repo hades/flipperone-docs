@@ -57,9 +57,9 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 ![Flipper One MicroSD and SIM slots](/files/pics/microsd-and-sim-slots.png)
 
-- **USB-C1:** USB 3.1 (5 Gbps), DisplayPort Alt Mode, USB Power Delivery charging
-- **USB-C2:** USB 3.1 (5 Gbps), host only, power out
-- **USB-A:** USB 3.1 (5 Gbps), host only, power out
+- **USB-C1:** USB 3.1 (5 Gbps), DisplayPort Alt Mode, USB Power Delivery (input and output)
+- **USB-C2:** USB 3.1 (5 Gbps), host only, power output
+- **USB-A:** USB 3.1 (5 Gbps), host only, power output
 - **HDMI out:** full-size, v2.1, CEC support, 4K @ 120 Hz
 - **Ethernet:** 2× RJ45, Gigabit
 - **3.5 mm audio jack:** stereo out and microphone input (TRRS)
@@ -116,7 +116,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 - **Battery capacity:** 7000 mAh ⚠️ (not final)
 - **Charger IC:** TI BQ25792, up to 3.32 A
 - **Fuel Gauge:** TI BQ28Z610
-- **Charging:** USB-C Power Delivery, up to 26 V
+- **Charging:** via USB-C1 port, USB Power Delivery supported
 
 ***
 
@@ -124,7 +124,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 
 - **Module:** WXT2AM2101
 - **Wi-Fi chipset:** MediaTek MT7921AUN
-- **Wi-Fi modes:** Wi-Fi 6 (802.11ax), 2.4 / 5 / 6 GHz bands, 2×2 MIMO
+- **Wi-Fi modes:** Wi-Fi 6E (802.11ax), 2.4 / 5 / 6 GHz bands, 2×2 MIMO
 - **Bluetooth:** 5.2 (integrated in MT7921AUN)
 - **Module interface:** USB 3.0
 ***
