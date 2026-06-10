@@ -41,9 +41,7 @@ Recommended board!
 - **Boot priority:** eMMC flash → SD card → USB (MaskROM).
 - **Switching to MaskROM mode:** Hold the MASKROM button while powering on the board.
 - **MaskROM USB port:** :inlineImage[]{src="https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/7BdCiDckZzDk-h4Qpo3E4_iconusbc.png" alt caption="usb-c icon"} OTG USB-C.
-- **Product documentation:**
-  - Banana Pi BPI-M5 Pro: [https://docs.banana-pi.org/en/BPI-M5/BananaPi\_BPI-M5\_Pro](https://docs.banana-pi.org/en/BPI-M5/BananaPi_BPI-M5_Pro)
-  - Armsom Sige5: [https://docs.armsom.org/armsom-sige5](https://docs.armsom.org/armsom-sige5)
+- **Product documentation:** [Banana Pi BPI-M5 Pro](https://docs.banana-pi.org/en/BPI-M5/BananaPi_BPI-M5_Pro), [Armsom Sige5](https://docs.armsom.org/armsom-sige5)
 
 ***
 
@@ -96,7 +94,7 @@ Recommended board!
 - ❌ No DisplayPort on USB-C.
 - ❌ USB-A to USB-A cable required for flashing via MaskROM mode.
 - **Target name:** `nanopi-m5`.
-- **Boot priority:**
+- **Boot priority**:
   - Boot mode switch in the FSPI position: FSPI1\_M1 flash → eMMC flash → USB (MaskROM).
   - Boot mode switch in the UFS/SD position: UFS flash → SD card → USB (MaskROM).
 - **Switching to MaskROM mode:** Hold the MASK button while powering on the board.

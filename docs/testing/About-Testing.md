@@ -96,7 +96,7 @@ If you have an idea on how to improve a test, add missing setup details, clarify
 ::::WorkflowBlockItem
 **Write your suggestion or report.** In the comments section, clearly describe your contribution and, if helpful, attach screenshots, videos, code snippets, logs, result files, or links to a draft pull request.
 
-**Attachment size limit:**
+Attachment size limit:
 
 - Images: 10 MB
 - Videos: 100 MB

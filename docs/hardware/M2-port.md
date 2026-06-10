@@ -10,7 +10,7 @@ updatedAt: Tue Apr 28 2026 12:57:35 GMT+0000 (Coordinated Universal Time)
 
 The M.2 port is an internal expansion slot for cellular modems, Wi-Fi, SDR, NVMe SSDs, GNSS modules, AI accelerators, and similar off-the-shelf M.2 modules. It sits at the back of the device, under the Back Plate.
 
-**Tech specs:**
+Tech specs:
 
 - **M.2 type:** Key B
 - **Supported sizes:** 2230(via extender), 2242, 3042, 3052

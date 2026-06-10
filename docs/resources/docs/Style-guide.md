@@ -20,9 +20,9 @@ If you use an AI assistant to write or edit, point it to this guide so it matche
 
 Three principles guide our voice:
 
-1. **Clear & accessible**
-2. **Friendly**
-3. **Open & honest**
+1. Clear & accessible
+2. Friendly
+3. Open & honest
 
 ***
 
@@ -289,7 +289,7 @@ Use a hyphen (`-`) to prevent misreading or to build compound words. When multip
 ❌ Firmware-update
 :::
 
-**Always hyphenate in these cases:**
+Always hyphenate in these cases:
 
 - `self` or `cross`: *self-managing*, *cross-region*
 - Before a capitalized noun or a number: *non-Google*, *post-2000*

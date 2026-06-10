@@ -129,7 +129,7 @@ For richer Archbee image syntax (positioning, captions, sizing), see the [Markup
 
 ‎
 
-**Naming and size guidelines:**
+Naming and size guidelines:
 
 - Use descriptive, lowercase filenames with hyphens (for example, `gpio-pinout.png`, not `IMG_0042.PNG`).
 - Compress large screenshots before committing. Keep individual files under a few MB where possible.
@@ -143,7 +143,7 @@ For richer Archbee image syntax (positioning, captions, sizing), see the [Markup
 
 When adding a new page, always update [archbee.json](https://github.com/flipperdevices/flipperone-docs/blob/public-release/archbee.json) to include it. Without this, the page won’t appear in the sidebar, and readers won’t be able to find it.
 
-**Syntax**
+### Syntax
 
 The sidebar tree lives in `structure.docsTree` — an array of entries that are either pages or category groups. For example:
 
@@ -192,14 +192,14 @@ The sidebar tree lives in `structure.docsTree` — an array of entries that are 
 
 ‎&#x20;
 
-**Rules**
+### Rules
 
 - Pages are entries with a path to an `.md` file inside `docs/`.
 - Categories are group headers that visually separate sections (for example, 🔌 Hardware). They have no path, only nested entries.
 - Any page can also have nested sub-pages under it.
 - The sidebar label comes from `categoryName`. Emojis render as-is and are purely cosmetic.
 
-**Page metadata**
+### Page metadata
 
 Every page starts with a YAML frontmatter block at the top of the `.md` file. Archbee reads two fields from it:
 
@@ -215,7 +215,7 @@ slug: resources/about-docs
 ---
 ```
 
-**Adding a new page**
+### Adding a new page
 
 1. Create the `.md` file under `docs/...` and set the `title:` and `slug:` fields in the frontmatter.
 2. Add an entry for it in `archbee.json` → `structure.docsTree` at the right place in the hierarchy. Ideally, nesting should not go deeper than two levels.
@@ -349,7 +349,7 @@ Open tasks that need the community’s help are labeled **help wanted**. If you 
 
 ![](/files/pics/docs-good-vs-bad-comment.png)
 
-**Attachment size limit:**
+Attachment size limit:
 
 - Images: 10 MB
 - Videos: 100 MB

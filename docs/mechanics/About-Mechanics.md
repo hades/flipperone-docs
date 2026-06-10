@@ -272,7 +272,7 @@ Open tasks that need the community's help are labeled **help wanted**. If you ha
 
 ![Good vs bad comment on a Mechanics task](/files/pics/mechanics-good-vs-bad-comment.png)
 
-**Attachment size limit:**
+Attachment size limit:
 
 - Images: 10 MB
 - Videos: 100 MB
