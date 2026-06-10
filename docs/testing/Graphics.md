@@ -16,9 +16,9 @@ This section covers graphics and video output testing procedures for Flipper One
 
 - Boot device in `Default` boot target with 4k\@120 monitor connected to HDMI
 - Check screen resolution and frame rate automatically configured.&#x20;
-  **Expected: 4K\@120hz**
+  Expected: 4K\@120hz
 - Run `/rk3576-linux-tests/gpu/gpu_info.sh`&#x20;
-  **Expected output:**
+  Expected output:
 
 :::CodeblockTabs{indent="1"}
 Output: gpu\_info.sh
@@ -37,7 +37,7 @@ Session type       : wayland
 :::
 
 - Run `/rk3576-linux-tests/gpu/glxgears_quick.sh`
-  **Expected output:**
+  Expected output:
 
 :::CodeblockTabs{indent="1"}
 Output: glxgears\_quick.sh
@@ -60,10 +60,10 @@ In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-Displa
 
 - Boot device in `Default` boot target with 4k\@120 monitor connected to HDMI&#x20;
 - Check what screen resolution and frame rate are automatically configured&#x20;
-  **Expected: 4K\@120hz**
+  Expected: 4K\@120hz
 - Run `GPU driver performance` tests
 - Hotplug test: unplug HDMI cable from working device displaying image and reconnect HDMI cable
-  **Expected: video output restored on monitor&#x20;**&#xA;**⚠️ Currently failed&#x20;**
+  Expected: video output restored on monitor&#x20;&#xA;⚠️ **Currently failed&#x20;**
 - ❌ TODO: Run `HDMI CEC` tests
 - ❌ TODO Run `HDMI Audio` tests
 
@@ -75,7 +75,7 @@ In `4K-USB-DisplayPort` boot target HDMI is routed to second `(vo2)` and USB-C D
 
 - Boot device in `4K-USB-DisplayPort` boot target with 4k\@120 monitor connected to HDMI&#x20;
 - Check what screen resolution and frame rate are automatically configured&#x20;
-  **Expected: FullHD\@60hz**
+  Expected: FullHD\@60hz
 - Run `GPU driver performance` tests
 - ❌ TODO: Run `HDMI CEC` tests
 - ❌ TODO Run `HDMI Audio` tests
@@ -88,8 +88,8 @@ In `Default` boot target HDMI is routed to main video out `(vo0)` and USB-C Disp
 
 - Boot device in `4K-USB-DisplayPort` boot target with 4k\@120 monitor connected to USB-C DisplayPort over USB Type-C cable&#x20;
 - Check screen resolution and frame rate automatically configured.&#x20;
-  **Expected: 1080\@60hz???**
-  **⚠️ Currently failed&#x20;**
+  Expected: 1080\@60hz???
+  ⚠️ **Currently failed&#x20;
 - Run `GPU driver performance` tests
 - ❌ TODO: Test USB device (mouse+keyboard) connected to monitor USB hub
 
@@ -101,8 +101,8 @@ In `4K-USB-DisplayPort` boot target HDMI is routed to second video out `(vo2)` a
 
 - Boot device in `4K-USB-DisplayPort` boot target with 4k\@120 monitor connected to USB-C DisplayPort over USB Type-C cable&#x20;
 - Check screen resolution and frame rate automatically configured.&#x20;
-  **Expected: 1080\@60hz???**
-  **⚠️ Currently failed&#x20;**
+  Expected: 1080\@60hz???
+  ⚠️ **Currently failed&#x20;
 - Run `GPU driver performance` tests
 - ❌ TODO: Test USB device (mouse+keyboard) connected to monitor USB hub
 
@@ -113,4 +113,4 @@ In `4K-USB-DisplayPort` boot target HDMI is routed to second video out `(vo2)` a
 In `NO Graphics` boot target HDMI and USB-DisplayPort are null-routed and not connected to any video core. So no video output should work
 
 - Boot device in `NO Graphics` boot target with monitor connected to USB-C and HDMI ports
-  **Expected: No video ouput**
+  Expected: No video ouput

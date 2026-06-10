@@ -139,7 +139,7 @@ The User Interface sub-project accepts contributions through **comments on open 
 
 ![Good vs bad comment example](/files/pics/ui-good-vs-bad-comment.png)
 
-**Attachment size limit:**
+Attachment size limit:
 
 - Images: 10 MB
 - Videos: 100 MB

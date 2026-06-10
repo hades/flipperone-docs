@@ -11,7 +11,7 @@ It covers both standard **Markdown** and **Archbee-specific syntax** supported b
 
 The source files live on GitHub at [github.com/flipperdevices/flipper-one-docs](https://github.com/flipperdevices/flipper-one-docs). Every merged pull request automatically rebuilds the live site. To contribute, fork the repo and open a pull request.
 
-**Quick jump:**
+Quick jump:
 
 - [Headings](#headings)
 - [Text styles](#text-styles)
@@ -146,18 +146,18 @@ Flipper One documentation supports headings H1–H3.
 
 To control whether a link opens in a new tab — and to write short relative hrefs for in-docs links — use Archbee's `:Link[]` directive instead of plain Markdown.
 
-**External link (new tab):**
+External link (new tab):
 ```markdown
 :Link[label]{href="https://example.com" newTab="true" hasDisabledNofollow="false"}
 ```
 
-**Same-page anchor (same tab):**
+Same-page anchor (same tab):
 
 ```markdown
 :Link[label]{href="./#section-name" newTab="false" hasDisabledNofollow="true"}
 ```
 
-**Another page in the docs (optional anchor):**
+Another page in the docs (optional anchor):
 
 ```markdown
 :Link[label]{href="<relative-path>.md#section-name" newTab="true" hasDisabledNofollow="true"}
@@ -475,7 +475,7 @@ Archbee supports two table formats.
 
 ## Code & syntax highlighting
 
-**Fenced block with language:**
+Fenced block with language:
 
 ````markdown
 ```javascript
@@ -493,7 +493,7 @@ function greet(name) {
 
 ​
 
-**Diff block:**
+Diff block:
 
 ````markdown
 ```diff

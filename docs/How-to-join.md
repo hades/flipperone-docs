@@ -24,7 +24,7 @@ Flipper One is a large and complex project, divided into several sub-projects. E
 
 ‎ 
 
-**Currently, we have the following sub-projects:**
+Currently, we have the following sub-projects:
 
 ::::VerticalSplit{layout="left"}
 :::VerticalSplitItem

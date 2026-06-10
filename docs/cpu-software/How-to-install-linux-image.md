@@ -90,7 +90,7 @@ Reboot the board.
 The recommended tools for flashing boards in MaskROM mode have only been tested on **Linux (Debian)** and **macOS**. Windows instructions will be available later.
 :::
 
-**Step 1: Install the flashing tools**
+**Step 1:** Install the flashing tools
 
 :::::WorkflowBlock
 :::WorkflowBlockItem
@@ -119,7 +119,7 @@ Build the **rockusb tool**:
 
 ‎ 
 
-**Step 2: Prepare the OS image and enter MaskROM mode**
+**Step 2:** Prepare the OS image and enter MaskROM mode
 
 :::hint{type="info"}
 To complete this step, you need to know your board’s target name, the USB port used in MaskROM mode, and how to enter MaskROM mode. This information is available on the [Supported Boards](Supported-boards.md) page for your specific board.
@@ -145,7 +145,7 @@ Put the board into [MaskROM mode](#rockchip-maskrom-mode).
 
 ‎ 
 
-**Step 3: Flash the OS image**
+**Step 3:** Flash the OS image
 
 :::::WorkflowBlock
 :::WorkflowBlockItem

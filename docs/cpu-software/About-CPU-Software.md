@@ -48,11 +48,14 @@ Once the build succeeds, full-disk images for all supported RK3576-based boards 
 
 ![OS build list](/files/pics/os-build-list.png "Web server interface with build list")
 
+:::hint{type="info"}
+
 **See also:**
 
 - [Build system](Build-system.md) — build system architecture and image build flow.
 - [How to build a Linux image](How-to-build-linux-image.md) — building the OS image locally.
 - [How to install a Linux image](How-to-install-linux-image.md) — installing a full-disk OS image on a supported board.
+:::
 
 ***
 

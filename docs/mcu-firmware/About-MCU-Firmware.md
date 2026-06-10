@@ -81,7 +81,7 @@ If you have ideas on how to improve the MCU firmware, you can contribute by comm
 
 ![Good vs bad comment on an MCU Firmware task](/files/pics/cpu-good-vs-bad-comment.png)
 
-**Attachment size limit:**
+Attachment size limit:
 
 - Images: 10 MB
 - Videos: 100 MB

@@ -8,7 +8,8 @@ updatedAt: Tue Apr 28 2026 12:56:47 GMT+0000 (Coordinated Universal Time)
 
 The Flipper One includes a built-in **Wi-Fi 6E** and **Bluetooth 5.2** module. In addition, users can expand connectivity by attaching an external Wi-Fi module via USB or installing one through the M.2 slot using an M.2 E-key to M.2 B-key adapter.
 
-**Built-in Wi-Fi/Bluetooth specs:**
+Built-in Wi-Fi/Bluetooth specs:
+
 * **Module:** Hui Zhou Gaoshengda WXT2AM2101
 * **Chipset:** MediaTek MT7921AUN
 * **Wi-Fi specs:** Wi-Fi 6E (802.11ax), 2.4 / 5 / 6 GHz bands, 2×2 MIMO
