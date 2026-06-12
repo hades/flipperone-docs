@@ -92,7 +92,7 @@ The UI uses two fonts:
 
 ## Prototypes (deprecated)
 
-Earlier prototypes based on ProtoPie are deprecated — they were used when we couldn't prototype directly on the Flipper One screen. They remain accessible in the [flipperone-ui repository](https://github.com/flipperdevices/flipperone-ui) for reference.
+Earlier prototypes based on ProtoPie are deprecated — they were used when we couldn't prototype directly on the Flipper One screen.
 
 ***
 
