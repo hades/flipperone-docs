@@ -35,7 +35,7 @@ This page describes the full technical specifications of the Flipper One. Since 
 - **Heat sink:** Anodized aluminum
 - **Bracket:** Anodized aluminum
 - **Lanyard loop:** Anodized aluminum
-- **Bumpers:** TPU
+- **Bumpers:** TPE
 
 ***
 
