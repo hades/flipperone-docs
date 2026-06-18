@@ -18,7 +18,7 @@ The core idea: instead of running a desktop GUI (GNOME, KDE) on a tiny screen, F
 
 ## The problem FlipCTL solves
 
-:::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipper.net/desktopUI_VS_FlipCTL.mp4&#x22;&#xA;></video>&#xA;<div class=&#x22;text-center mt-2.5 text-gray-400 pb-5&#x22;>&#xA;Caption&#xA;</div>" iframeHeight="500"}
+:::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipper.net/desktopUI_VS_FlipCTL.mp4&#x22;&#xA;></video>&#xA;<div class=&#x22;text-center mt-2.5 text-gray-400 pb-5&#x22;>&#xA;Desktop vs small-screen optimized interface&#xA;</div>" iframeHeight="500"}
 
 :::
 
@@ -214,6 +214,7 @@ A PTT (Push-to-Talk) button is a programmable button originally designed for wal
 ## FlipCTL Control Panel
 
 ![](/files/pics/flipctl-control-panel-raspberry-pi.jpg)
+
 ![](/files/pics/flipctl-control-panel-in-rack.jpg)
 
 FlipCTL Control Panel - a compact device featuring the same display as the Flipper One and the same set of controls, except for the touchpad and the PTT (Push-to-Talk) button. 
