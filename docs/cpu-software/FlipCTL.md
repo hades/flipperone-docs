@@ -18,11 +18,9 @@ The core idea: instead of running a desktop GUI (GNOME, KDE) on a tiny screen, F
 
 ## The problem FlipCTL solves
 
-```text
 :::Iframe{code="<video&#xA;    autoplay muted loop playsinline style=&#x22;width: 100%; margin: 0 !important;&#x22;&#xA;    src=&#x22;https://cdn.flipper.net/desktopUI_VS_FlipCTL.mp4&#x22;&#xA;></video>&#xA;<div class=&#x22;text-center mt-2.5 text-gray-400 pb-5&#x22;>&#xA;Caption&#xA;</div>" iframeHeight="500"}
 
 :::
-```
 
 Existing GUI solutions for embedded computers, also known as HMI (Human-Machine Interface), have several pain points:
 
