@@ -14,8 +14,6 @@ This section covers network connectivity testing and validation for Flipper One.
 
 Built-in WiFi based on Mediatek MT7921AUN chip, Wi-Fi 6E (802.11ax) and Bluetooth 5.2 chipset primarily used in high-performance USB wireless adapters like the ALFA AWUS036AXML. It supports 2.4 GHz, 5 GHz, and 6 GHz bands.
 
-![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/kCU7UPykJBA9NbkYWlK_L_image.png "Built-in WiFi module should work as AP and STA simultaneously")
-
 ### MT7921AUN chipset info
 
 <details>
@@ -1234,6 +1232,10 @@ $ dmesg | grep mt7
 [   43.433616] mt7921u 2-1.1:1.3 wlxb06b11673ade: entered promiscuous mode
   ```
 </details>
+
+##  Access point (AP) + Client (STA) mode
+
+![](https://api.archbee.com/api/optimize/3StCFqarJkJQZV-7N79yY/kCU7UPykJBA9NbkYWlK_L_image.png "Built-in WiFi module should work as AP and STA simultaneously")
 
 ### Access point mode
 
