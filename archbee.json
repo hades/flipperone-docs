@@ -329,13 +329,50 @@
             "categoryName": "Network",
             "isCategory": false,
             "path": "testing/Network.md",
-            "children": []
-          },
-          {
-            "categoryName": "M.2 Modules",
-            "isCategory": false,
-            "path": "testing/M_2.md",
             "children": [
+              {
+                "categoryName": "Wi-Fi",
+                "isCategory": false,
+                "path": "testing/WiFi.md",
+                "children": [
+                  {
+                    "categoryName": "Access Point (AP)",
+                    "isCategory": false,
+                    "path": "testing/WiFi-Access-Point.md",
+                    "children": []
+                  },
+                  {
+                    "categoryName": "Client (STA)",
+                    "isCategory": false,
+                    "path": "testing/WiFi-Client-STA.md",
+                    "children": []
+                  },
+                  {
+                    "categoryName": "AP+STA SCC",
+                    "isCategory": false,
+                    "path": "testing/WiFi-AP-STA-SCC.md",
+                    "children": []
+                  },
+                  {
+                    "categoryName": "DBDC",
+                    "isCategory": false,
+                    "path": "testing/WiFi-DBDC.md",
+                    "children": []
+                  },
+                  {
+                    "categoryName": "Monitor mode",
+                    "isCategory": false,
+                    "path": "testing/WiFi-Monitor.md",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "categoryName": "Ethernet",
+                "isCategory": false,
+                "path": "testing/Ethernet.md",
+                "children": []
+              },
               {
                 "categoryName": "Cellular modems",
                 "isCategory": false,
@@ -354,8 +391,26 @@
                     "children": []
                   }
                 ]
+              },
+              {
+                "categoryName": "NTN satellite modems",
+                "isCategory": false,
+                "path": "testing/Satellite.md",
+                "children": []
+              },
+              {
+                "categoryName": "Bluetooth",
+                "isCategory": false,
+                "path": "testing/Bluetooth.md",
+                "children": []
               }
             ]
+          },
+          {
+            "categoryName": "M.2 Modules",
+            "isCategory": false,
+            "path": "testing/M_2.md",
+            "children": []
           }
         ]
       },

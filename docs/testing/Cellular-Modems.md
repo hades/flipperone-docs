@@ -1,6 +1,6 @@
 ---
 title: Cellular modems
-slug: testing/m2-modules/cellular-modems
+slug: testing/network/cellular
 ---
 
 This page hosts the list of all cellular M.2 modems tested with Flipper One:

@@ -1,6 +1,6 @@
 ---
 title: RM530N-GL
-slug: testing/m2-modules/cellular-modems/rm530n-gl
+slug: testing/network/cellular/rm530n-gl
 ---
 
 ![Quectel RM530N-GL cellular modem](/files/pics/rm530n-gl-cellular-modem.jpg "Quectel RM530N-GL installed in Flipper One")
