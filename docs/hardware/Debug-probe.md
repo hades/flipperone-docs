@@ -149,3 +149,34 @@ Upload the `.UF2` firmware file to the RP2350 Mass Storage Device.
 :::hint{type="success"}
 Once the `.UF2` file upload is complete, the Debug Probe will automatically reboot and the Mass Storage Device will disconnect from your PC — the Ddebug Probe has been successfully updated.
 :::
+
+# Usage
+
+## Serial Ports
+
+The Flipper One Debug Probe is detected by the operating system as four serial ports.  
+Port names and paths may vary depending on your operating system.
+
+Example device paths on macOS:
+
+| Port | Device path | Description | Baud rate |
+| ---- | ----------- | ----------- | --------- |
+| Port 1 | `/dev/tty.usbmodemflip_one_debug2` | RK3576 CPU console | `1500000` |
+| Port 2 | `/dev/tty.usbmodemflip_one_debug4` | Flipper One MCU CLI | `230400` |
+| Port 3 | `/dev/tty.usbmodemflip_one_debug6` | MCU debug log | `230400` |
+| Port 4 | `/dev/tty.usbmodemflip_one_debug8` | Debug Probe MCU CLI | `230400` |
+
+## Connect to the RK3576 CPU Console on macOS
+
+This example shows how to connect to the RK3576 CPU console on macOS.
+
+We recommend using [`tio`](https://github.com/tio/tio), because it is lightweight and stable. You can install it with `brew install tio`  
+
+### Basic connection
+
+`tio -b 1500000 /dev/tty.usbmodemflip_one_debug2`
+
+### Connection with timestamps
+Use timestamps to see delays between boot log lines and identify where the boot process slows down:  
+
+`tio --timestamp --timestamp-format 24hour-delta -b 1500000 /dev/tty.usbmodemflip_one_debug2`
