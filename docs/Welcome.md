@@ -52,7 +52,7 @@ Chat with the community and Flipper team on our Discord server
 
 Each week, we'll share a quick update on how things are coming along and flag any areas where extra help would be welcome. Read at your own pace — jump in whenever a topic grabs you.
 
-:::hint{type="info"}
+:::hint{type="warning"}
 ⚠️ **Nerds Warning**: this is a developer-focused, highly technical newsletter.
 :::
 
